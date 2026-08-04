@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 4,
+  "studyYear": 2,
+  "semesterType": "letnji",
+  "module": "EKM",
+  "submodule": null,
+  "moduleLabel": "ЕКМ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:24.923Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem4-ekm-v2.pdf",
+    "pdfSha256": "889f2ec3ddca2731ace6b2f67fa423592e4d3632d4bcd4a6aaceda5feec8cd6e",
+    "linkText": "IV"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 09 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 12,
+    "byClassType": {
+      "predavanje": 6,
+      "racunske_vezbe": 6
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [
+    "Semestar iz zaglavlja (3) se razlikuje od semestra iz naziva fajla (4)."
+  ],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ОСНОВИ ОПТИКЕ",
+        "group": null,
+        "room": "434",
+        "fromOcr": false,
+        "rawText": "ОСНОВИ ОПТИКЕ (434)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВИ ОПТИКЕ",
+        "group": null,
+        "room": "434",
+        "fromOcr": false,
+        "rawText": "ОСНОВИ ОПТИКЕ (434)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "КОМПОНЕНТЕ ЗА ТЕЛЕКОМУНИКАЦИЈЕ",
+        "group": null,
+        "room": "Л256",
+        "fromOcr": false,
+        "rawText": "КОМПОНЕНТЕ ЗА ТЕЛЕКОМУНИКАЦИЈЕ (Л256)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "КОМПОНЕНТЕ ЗА ТЕЛЕКОМУНИКАЦИЈЕ",
+        "group": null,
+        "room": "434",
+        "fromOcr": false,
+        "rawText": "КОМПОНЕНТЕ ЗА ТЕЛЕКОМУНИКАЦИЈЕ (434)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ЕЛЕКТРОНСКА ФИЗИКА ЧВРСТОГ ТЕЛА",
+        "group": null,
+        "room": "Л233",
+        "fromOcr": false,
+        "rawText": "ЕЛЕКТРОНСКА ФИЗИКА ЧВРСТОГ ТЕЛА (Л233)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ЕЛЕКТРОНСКА ФИЗИКА ЧВРСТОГ ТЕЛА",
+        "group": null,
+        "room": "Л233",
+        "fromOcr": false,
+        "rawText": "ЕЛЕКТРОНСКА ФИЗИКА ЧВРСТОГ ТЕЛА (Л233)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "КАРАКТЕРИЗАЦИЈА МАТЕРИЈАЛА",
+        "group": null,
+        "room": "434",
+        "fromOcr": false,
+        "rawText": "КАРАКТЕРИЗАЦИЈА МАТЕРИЈАЛА (434)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "КАРАКТЕРИЗАЦИЈА МАТЕРИЈАЛА",
+        "group": null,
+        "room": "434",
+        "fromOcr": false,
+        "rawText": "КАРАКТЕРИЗАЦИЈА МАТЕРИЈАЛА (434)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ТЕХНОЛОГИЈЕ МИКРОСИСТЕМА",
+        "group": null,
+        "room": "434",
+        "fromOcr": false,
+        "rawText": "ТЕХНОЛОГИЈЕ МИКРОСИСТЕМА (434)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ТЕХНОЛОГИЈЕ МИКРОСИСТЕМА",
+        "group": null,
+        "room": "Л233",
+        "fromOcr": false,
+        "rawText": "ТЕХНОЛОГИЈЕ МИКРОСИСТЕМА (Л233)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ПОЛУПРОВОДНИЧКЕ КОМПОНЕНТЕ",
+        "group": null,
+        "room": "Л256",
+        "fromOcr": false,
+        "rawText": "ПОЛУПРОВОДНИЧКЕ КОМПОНЕНТЕ (Л256)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ПОЛУПРОВОДНИЧКЕ КОМПОНЕНТЕ",
+        "group": null,
+        "room": "Л256",
+        "fromOcr": false,
+        "rawText": "ПОЛУПРОВОДНИЧКЕ КОМПОНЕНТЕ (Л256)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ОСНОВИ ОПТИКЕ",
+      "group": null,
+      "room": "434",
+      "fromOcr": false,
+      "rawText": "ОСНОВИ ОПТИКЕ (434)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВИ ОПТИКЕ",
+      "group": null,
+      "room": "434",
+      "fromOcr": false,
+      "rawText": "ОСНОВИ ОПТИКЕ (434)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "КОМПОНЕНТЕ ЗА ТЕЛЕКОМУНИКАЦИЈЕ",
+      "group": null,
+      "room": "Л256",
+      "fromOcr": false,
+      "rawText": "КОМПОНЕНТЕ ЗА ТЕЛЕКОМУНИКАЦИЈЕ (Л256)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "КОМПОНЕНТЕ ЗА ТЕЛЕКОМУНИКАЦИЈЕ",
+      "group": null,
+      "room": "434",
+      "fromOcr": false,
+      "rawText": "КОМПОНЕНТЕ ЗА ТЕЛЕКОМУНИКАЦИЈЕ (434)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ЕЛЕКТРОНСКА ФИЗИКА ЧВРСТОГ ТЕЛА",
+      "group": null,
+      "room": "Л233",
+      "fromOcr": false,
+      "rawText": "ЕЛЕКТРОНСКА ФИЗИКА ЧВРСТОГ ТЕЛА (Л233)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ЕЛЕКТРОНСКА ФИЗИКА ЧВРСТОГ ТЕЛА",
+      "group": null,
+      "room": "Л233",
+      "fromOcr": false,
+      "rawText": "ЕЛЕКТРОНСКА ФИЗИКА ЧВРСТОГ ТЕЛА (Л233)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "КАРАКТЕРИЗАЦИЈА МАТЕРИЈАЛА",
+      "group": null,
+      "room": "434",
+      "fromOcr": false,
+      "rawText": "КАРАКТЕРИЗАЦИЈА МАТЕРИЈАЛА (434)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "КАРАКТЕРИЗАЦИЈА МАТЕРИЈАЛА",
+      "group": null,
+      "room": "434",
+      "fromOcr": false,
+      "rawText": "КАРАКТЕРИЗАЦИЈА МАТЕРИЈАЛА (434)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ТЕХНОЛОГИЈЕ МИКРОСИСТЕМА",
+      "group": null,
+      "room": "434",
+      "fromOcr": false,
+      "rawText": "ТЕХНОЛОГИЈЕ МИКРОСИСТЕМА (434)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ТЕХНОЛОГИЈЕ МИКРОСИСТЕМА",
+      "group": null,
+      "room": "Л233",
+      "fromOcr": false,
+      "rawText": "ТЕХНОЛОГИЈЕ МИКРОСИСТЕМА (Л233)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ПОЛУПРОВОДНИЧКЕ КОМПОНЕНТЕ",
+      "group": null,
+      "room": "Л256",
+      "fromOcr": false,
+      "rawText": "ПОЛУПРОВОДНИЧКЕ КОМПОНЕНТЕ (Л256)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ПОЛУПРОВОДНИЧКЕ КОМПОНЕНТЕ",
+      "group": null,
+      "room": "Л256",
+      "fromOcr": false,
+      "rawText": "ПОЛУПРОВОДНИЧКЕ КОМПОНЕНТЕ (Л256)"
+    }
+  ]
+}

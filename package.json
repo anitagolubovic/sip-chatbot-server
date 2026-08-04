@@ -2,17 +2,43 @@
   "name": "sip-chatbot-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "update:exams": "ts-node src/scraper/scrapeExamSchedule.ts",
+    "update:kalendar": "ts-node src/scraper/scrapeActivityCalendar.ts",
+    "update:raspored-casova": "ts-node src/scraper/scrapeClassSchedules.ts",
+    "update:konkursi": "ts-node src/scraper/scrapeOpportunities.ts",
+    "update:dokumentacija": "ts-node src/scraper/scrapeDocumentation.ts",
+    "scheduler": "ts-node src/index.ts",
+    "scheduler:once": "ts-node src/index.ts --once",
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node --transpile-only src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@napi-rs/canvas": "^1.0.2",
     "axios": "^1.18.1",
     "cheerio": "^1.2.0",
-    "express": "^5.2.1"
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "node-cron": "^4.6.0",
+    "nodemon": "^3.1.14",
+    "openai": "^6.48.0",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^6.1.200",
+    "socket.io": "^4.8.3",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }

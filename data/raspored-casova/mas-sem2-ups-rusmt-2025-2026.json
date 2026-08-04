@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "master_akademske",
+  "studyLevelLabel": "Мастер академске студије",
+  "semester": 2,
+  "studyYear": 1,
+  "semesterType": "letnji",
+  "module": "UPS",
+  "submodule": "RUSMT",
+  "moduleLabel": "РУСМТ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:07:03.754Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-mas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-prolece/202526-mas2-ups-rusmt-v3.pdf",
+    "pdfSha256": "a2ff6aa9115b9c5277e43ec4d33ccfd272caa75aa604c362cfb8203dbac6846c",
+    "linkText": "II"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": false,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "Датум 16 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 4,
+    "byClassType": {
+      "predavanje": 2,
+      "racunske_vezbe": 2
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ВИРТУЕЛНА МЕРНА ИНСТРУМЕНТАЦИЈА",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "ВИРТУЕЛНА МЕРНА ИНСТРУМЕНТАЦИЈА (226)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ВИРТУЕЛНА МЕРНА ИНСТРУМЕНТАЦИЈА",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "ВИРТУЕЛНА МЕРНА ИНСТРУМЕНТАЦИЈА (226)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "predavanje",
+        "course": "САВРЕМЕНО УПРАВЉАЊЕ ИНДУСТРИЈСКИМ ПРОЦЕСИМА",
+        "group": null,
+        "room": "Л24",
+        "fromOcr": false,
+        "rawText": "САВРЕМЕНО УПРАВЉАЊЕ ИНДУСТРИЈСКИМ ПРОЦЕСИМА (Л24)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "18:15",
+        "endsAt": "19:00",
+        "classType": "racunske_vezbe",
+        "course": "САВРЕМЕНО УПРАВЉАЊЕ ИНДУСТРИЈСКИМ ПРОЦЕСИМА",
+        "group": null,
+        "room": "Л24",
+        "fromOcr": false,
+        "rawText": "САВРЕМЕНО УПРАВЉАЊЕ ИНДУСТРИЈСКИМ ПРОЦЕСИМА (Л24)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ВИРТУЕЛНА МЕРНА ИНСТРУМЕНТАЦИЈА",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "ВИРТУЕЛНА МЕРНА ИНСТРУМЕНТАЦИЈА (226)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ВИРТУЕЛНА МЕРНА ИНСТРУМЕНТАЦИЈА",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "ВИРТУЕЛНА МЕРНА ИНСТРУМЕНТАЦИЈА (226)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "predavanje",
+      "course": "САВРЕМЕНО УПРАВЉАЊЕ ИНДУСТРИЈСКИМ ПРОЦЕСИМА",
+      "group": null,
+      "room": "Л24",
+      "fromOcr": false,
+      "rawText": "САВРЕМЕНО УПРАВЉАЊЕ ИНДУСТРИЈСКИМ ПРОЦЕСИМА (Л24)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "18:15",
+      "endsAt": "19:00",
+      "classType": "racunske_vezbe",
+      "course": "САВРЕМЕНО УПРАВЉАЊЕ ИНДУСТРИЈСКИМ ПРОЦЕСИМА",
+      "group": null,
+      "room": "Л24",
+      "fromOcr": false,
+      "rawText": "САВРЕМЕНО УПРАВЉАЊЕ ИНДУСТРИЈСКИМ ПРОЦЕСИМА (Л24)"
+    }
+  ]
+}

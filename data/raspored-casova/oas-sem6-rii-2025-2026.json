@@ -1,0 +1,592 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 6,
+  "studyYear": 3,
+  "semesterType": "letnji",
+  "module": "RII",
+  "submodule": null,
+  "moduleLabel": "РИИ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:36.323Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem6-rii-v3.pdf",
+    "pdfSha256": "a34b0c4bfa5b3329073350ff43ff83abc8defff524cc66ee93a32417b12b6d26",
+    "linkText": "VI"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 09 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 21,
+    "byClassType": {
+      "predavanje": 9,
+      "racunske_vezbe": 12
+    },
+    "ocrCells": 6,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО (А1)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "ПАРАЛЕЛНИ СИСТЕМИ",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 89,
+        "rawText": "ПАРАЛЕЛНИ СИСТЕМИ -2– (231)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 79,
+        "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО -3– (531)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "racunske_vezbe",
+        "course": "ПАРАЛЕЛНИ СИСТЕМИ",
+        "group": null,
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 87,
+        "rawText": "ПАРАЛЕЛНИ СИСТЕМИ -]- (131)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "racunske_vezbe",
+        "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 77,
+        "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО -2- (231)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ПАРАЛЕЛНИ СИСТЕМИ",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "ПАРАЛЕЛНИ СИСТЕМИ (А1)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ПАРАЛЕЛНИ СИСТЕМИ",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 82,
+        "rawText": "ПАРАЛЕЛНИ СИСТЕМИ -3- (531)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 92,
+        "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО -1- (131)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "РАЗВОЈ МОБИЛНИХ АПЛИКАЦИЈА И СЕРВИСА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "РАЗВОЈ МОБИЛНИХ АПЛИКАЦИЈА И СЕРВИСА (451)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЗВОЈ МОБИЛНИХ АПЛИКАЦИЈА И СЕРВИСА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "РАЗВОЈ МОБИЛНИХ АПЛИКАЦИЈА И СЕРВИСА (451)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ИНТЕРНЕТ СТВАРИ",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ИНТЕРНЕТ СТВАРИ (221)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНТЕРНЕТ СТВАРИ",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ИНТЕРНЕТ СТВАРИ (221)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "РАЗВОЈ ВЕБ И ВИШЕПЛАТФОРМСКИХ АПЛИКАЦИЈА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "РАЗВОЈ ВЕБ И ВИШЕПЛАТФОРМСКИХ АПЛИКАЦИЈА (451)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЗВОЈ ВЕБ И ВИШЕПЛАТФОРМСКИХ АПЛИКАЦИЈА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "РАЗВОЈ ВЕБ И ВИШЕПЛАТФОРМСКИХ АПЛИКАЦИЈА (451)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "СИСТЕМИ БАЗА ПОДАТАКА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "СИСТЕМИ БАЗА ПОДАТАКА (451)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "СИСТЕМИ БАЗА ПОДАТАКА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "СИСТЕМИ БАЗА ПОДАТАКА (451)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ИНТЕРАКЦИЈА ЧОВЕК-РАЧУНАР",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "ИНТЕРАКЦИЈА ЧОВЕК-РАЧУНАР (451)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНТЕРАКЦИЈА ЧОВЕК-РАЧУНАР",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "ИНТЕРАКЦИЈА ЧОВЕК-РАЧУНАР (451)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "СИСТЕМСКО ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": "370",
+        "fromOcr": false,
+        "rawText": "СИСТЕМСКО ПРОГРАМИРАЊЕ (370)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "СИСТЕМСКО ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": "370",
+        "fromOcr": false,
+        "rawText": "СИСТЕМСКО ПРОГРАМИРАЊЕ (370)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ЕНГЛЕСКИ ЈЕЗИК 2",
+        "group": null,
+        "room": "А2",
+        "fromOcr": false,
+        "rawText": "ЕНГЛЕСКИ ЈЕЗИК 2 (А2)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО (А1)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "ПАРАЛЕЛНИ СИСТЕМИ",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 89,
+      "rawText": "ПАРАЛЕЛНИ СИСТЕМИ -2– (231)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 79,
+      "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО -3– (531)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "racunske_vezbe",
+      "course": "ПАРАЛЕЛНИ СИСТЕМИ",
+      "group": null,
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 87,
+      "rawText": "ПАРАЛЕЛНИ СИСТЕМИ -]- (131)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "racunske_vezbe",
+      "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 77,
+      "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО -2- (231)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ПАРАЛЕЛНИ СИСТЕМИ",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "ПАРАЛЕЛНИ СИСТЕМИ (А1)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ПАРАЛЕЛНИ СИСТЕМИ",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 82,
+      "rawText": "ПАРАЛЕЛНИ СИСТЕМИ -3- (531)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 92,
+      "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО -1- (131)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "РАЗВОЈ МОБИЛНИХ АПЛИКАЦИЈА И СЕРВИСА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "РАЗВОЈ МОБИЛНИХ АПЛИКАЦИЈА И СЕРВИСА (451)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЗВОЈ МОБИЛНИХ АПЛИКАЦИЈА И СЕРВИСА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "РАЗВОЈ МОБИЛНИХ АПЛИКАЦИЈА И СЕРВИСА (451)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ИНТЕРНЕТ СТВАРИ",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ИНТЕРНЕТ СТВАРИ (221)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНТЕРНЕТ СТВАРИ",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ИНТЕРНЕТ СТВАРИ (221)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "РАЗВОЈ ВЕБ И ВИШЕПЛАТФОРМСКИХ АПЛИКАЦИЈА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "РАЗВОЈ ВЕБ И ВИШЕПЛАТФОРМСКИХ АПЛИКАЦИЈА (451)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЗВОЈ ВЕБ И ВИШЕПЛАТФОРМСКИХ АПЛИКАЦИЈА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "РАЗВОЈ ВЕБ И ВИШЕПЛАТФОРМСКИХ АПЛИКАЦИЈА (451)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "СИСТЕМИ БАЗА ПОДАТАКА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "СИСТЕМИ БАЗА ПОДАТАКА (451)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "СИСТЕМИ БАЗА ПОДАТАКА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "СИСТЕМИ БАЗА ПОДАТАКА (451)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ИНТЕРАКЦИЈА ЧОВЕК-РАЧУНАР",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "ИНТЕРАКЦИЈА ЧОВЕК-РАЧУНАР (451)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНТЕРАКЦИЈА ЧОВЕК-РАЧУНАР",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "ИНТЕРАКЦИЈА ЧОВЕК-РАЧУНАР (451)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "СИСТЕМСКО ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": "370",
+      "fromOcr": false,
+      "rawText": "СИСТЕМСКО ПРОГРАМИРАЊЕ (370)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "СИСТЕМСКО ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": "370",
+      "fromOcr": false,
+      "rawText": "СИСТЕМСКО ПРОГРАМИРАЊЕ (370)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ЕНГЛЕСКИ ЈЕЗИК 2",
+      "group": null,
+      "room": "А2",
+      "fromOcr": false,
+      "rawText": "ЕНГЛЕСКИ ЈЕЗИК 2 (А2)"
+    }
+  ]
+}

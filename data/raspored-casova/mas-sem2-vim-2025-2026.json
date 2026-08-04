@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "master_akademske",
+  "studyLevelLabel": "Мастер академске студије",
+  "semester": 2,
+  "studyYear": 1,
+  "semesterType": "letnji",
+  "module": "VIM",
+  "submodule": null,
+  "moduleLabel": null,
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:57.285Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-mas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-prolece/202526-mas2-vim-v3.pdf",
+    "pdfSha256": "6851385e442745558aca9d86297aa08e0315345acdcdd42a42153d796b08092e",
+    "linkText": "II"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": false,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "Датум 16 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 8,
+    "byClassType": {
+      "predavanje": 4,
+      "racunske_vezbe": 4
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ОБРАДА ПРИРОДНИХ ЈЕЗИКА",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ОБРАДА ПРИРОДНИХ ЈЕЗИКА (82)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ОБРАДА ПРИРОДНИХ ЈЕЗИКА",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ОБРАДА ПРИРОДНИХ ЈЕЗИКА (82)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "РАЧУНАРСКИ ВИД",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКИ ВИД (82)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКИ ВИД",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКИ ВИД (82)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ДУБОКО УЧЕЊЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ДУБОКО УЧЕЊЕ (82)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ДУБОКО УЧЕЊЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ДУБОКО УЧЕЊЕ (82)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА У МЕДИЦИНИ",
+        "group": null,
+        "room": "122",
+        "fromOcr": false,
+        "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА У МЕДИЦИНИ (122)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА У МЕДИЦИНИ",
+        "group": null,
+        "room": "122",
+        "fromOcr": false,
+        "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА У МЕДИЦИНИ (122)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ОБРАДА ПРИРОДНИХ ЈЕЗИКА",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ОБРАДА ПРИРОДНИХ ЈЕЗИКА (82)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ОБРАДА ПРИРОДНИХ ЈЕЗИКА",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ОБРАДА ПРИРОДНИХ ЈЕЗИКА (82)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "РАЧУНАРСКИ ВИД",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКИ ВИД (82)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКИ ВИД",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКИ ВИД (82)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ДУБОКО УЧЕЊЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ДУБОКО УЧЕЊЕ (82)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ДУБОКО УЧЕЊЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ДУБОКО УЧЕЊЕ (82)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА У МЕДИЦИНИ",
+      "group": null,
+      "room": "122",
+      "fromOcr": false,
+      "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА У МЕДИЦИНИ (122)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА У МЕДИЦИНИ",
+      "group": null,
+      "room": "122",
+      "fromOcr": false,
+      "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА У МЕДИЦИНИ (122)"
+    }
+  ]
+}

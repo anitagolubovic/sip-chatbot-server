@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 5,
+  "studyYear": 3,
+  "semesterType": "zimski",
+  "module": "ELK",
+  "submodule": "EMT",
+  "moduleLabel": "ЕЛК",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:05:09.736Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem5-elk-emt-v1.pdf",
+    "pdfSha256": "cbc002dcf9eb9198d6c0981cfbc832295d313597b38015d83e83cb13dc39a9cf",
+    "linkText": "V"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 10 11",
+      "25",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 11,
+    "byClassType": {
+      "racunske_vezbe": 5,
+      "predavanje": 6
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "АНИМАЦИЈА 2",
+        "group": null,
+        "room": "531А",
+        "fromOcr": false,
+        "rawText": "АНИМАЦИЈА 2 (531А)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "АНИМАЦИЈА 2",
+        "group": null,
+        "room": "531А",
+        "fromOcr": false,
+        "rawText": "АНИМАЦИЈА 2 (531А)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ДИГИТАЛНА ОБРАДА СЛИКЕ",
+        "group": null,
+        "room": "Л204",
+        "fromOcr": false,
+        "rawText": "ДИГИТАЛНА ОБРАДА СЛИКЕ (Л204)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИГИТАЛНА ОБРАДА СЛИКЕ",
+        "group": null,
+        "room": "Л204",
+        "fromOcr": false,
+        "rawText": "ДИГИТАЛНА ОБРАДА СЛИКЕ (Л204)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ",
+        "group": null,
+        "room": "222",
+        "fromOcr": false,
+        "rawText": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ (222)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ",
+        "group": null,
+        "room": "222",
+        "fromOcr": false,
+        "rawText": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ (222)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "РАЧУНАРСКЕ МРЕЖЕ",
+        "group": null,
+        "room": "431",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКЕ МРЕЖЕ (431)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКЕ МРЕЖЕ",
+        "group": null,
+        "room": "431",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКЕ МРЕЖЕ (431)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "АКУСТИКА",
+        "group": null,
+        "room": "122",
+        "fromOcr": false,
+        "rawText": "АКУСТИКА (122)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "АКУСТИКА",
+        "group": null,
+        "room": "122",
+        "fromOcr": false,
+        "rawText": "АКУСТИКА (122)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ЕНГЛЕСКИ ЈЕЗИК 1",
+        "group": null,
+        "room": "А3",
+        "fromOcr": false,
+        "rawText": "ЕНГЛЕСКИ ЈЕЗИК 1 (А3)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "АНИМАЦИЈА 2",
+      "group": null,
+      "room": "531А",
+      "fromOcr": false,
+      "rawText": "АНИМАЦИЈА 2 (531А)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "АНИМАЦИЈА 2",
+      "group": null,
+      "room": "531А",
+      "fromOcr": false,
+      "rawText": "АНИМАЦИЈА 2 (531А)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ДИГИТАЛНА ОБРАДА СЛИКЕ",
+      "group": null,
+      "room": "Л204",
+      "fromOcr": false,
+      "rawText": "ДИГИТАЛНА ОБРАДА СЛИКЕ (Л204)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИГИТАЛНА ОБРАДА СЛИКЕ",
+      "group": null,
+      "room": "Л204",
+      "fromOcr": false,
+      "rawText": "ДИГИТАЛНА ОБРАДА СЛИКЕ (Л204)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ",
+      "group": null,
+      "room": "222",
+      "fromOcr": false,
+      "rawText": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ (222)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ",
+      "group": null,
+      "room": "222",
+      "fromOcr": false,
+      "rawText": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ (222)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "РАЧУНАРСКЕ МРЕЖЕ",
+      "group": null,
+      "room": "431",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКЕ МРЕЖЕ (431)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКЕ МРЕЖЕ",
+      "group": null,
+      "room": "431",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКЕ МРЕЖЕ (431)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "АКУСТИКА",
+      "group": null,
+      "room": "122",
+      "fromOcr": false,
+      "rawText": "АКУСТИКА (122)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "АКУСТИКА",
+      "group": null,
+      "room": "122",
+      "fromOcr": false,
+      "rawText": "АКУСТИКА (122)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ЕНГЛЕСКИ ЈЕЗИК 1",
+      "group": null,
+      "room": "А3",
+      "fromOcr": false,
+      "rawText": "ЕНГЛЕСКИ ЈЕЗИК 1 (А3)"
+    }
+  ]
+}

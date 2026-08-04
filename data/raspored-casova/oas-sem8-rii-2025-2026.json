@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 8,
+  "studyYear": 4,
+  "semesterType": "letnji",
+  "module": "RII",
+  "submodule": null,
+  "moduleLabel": "РИИ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:37.540Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem8-rii-v2.pdf",
+    "pdfSha256": "6a1025b8f9c0d8724c1e6db47f9df804bd7d8b2552283ec7cad002e497a693c0",
+    "linkText": "VIII"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 09 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 21,
+    "byClassType": {
+      "racunske_vezbe": 11,
+      "predavanje": 10
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "МУЛТИМЕДИЈАЛНИ СИСТЕМИ",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "МУЛТИМЕДИЈАЛНИ СИСТЕМИ (451)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "predavanje",
+        "course": "МУЛТИМЕДИЈАЛНИ СИСТЕМИ",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "МУЛТИМЕДИЈАЛНИ СИСТЕМИ (451)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "predavanje",
+        "course": "ИНТЕРНЕТ СТВАРИ И СЕРВИСИ",
+        "group": null,
+        "room": "122",
+        "fromOcr": false,
+        "rawText": "ИНТЕРНЕТ СТВАРИ И СЕРВИСИ (122)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "18:15",
+        "endsAt": "20:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНТЕРНЕТ СТВАРИ И СЕРВИСИ",
+        "group": null,
+        "room": "122",
+        "fromOcr": false,
+        "rawText": "ИНТЕРНЕТ СТВАРИ И СЕРВИСИ (122)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ПРЕТРАЖИВАЊЕ ИНФОРМАЦИЈА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "ПРЕТРАЖИВАЊЕ ИНФОРМАЦИЈА (451)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРЕТРАЖИВАЊЕ ИНФОРМАЦИЈА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "ПРЕТРАЖИВАЊЕ ИНФОРМАЦИЈА (451)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "МЕТОДИ И СИСТЕМИ ЗА ОБРАДУ СИГНАЛА",
+        "group": null,
+        "room": "222",
+        "fromOcr": false,
+        "rawText": "МЕТОДИ И СИСТЕМИ ЗА ОБРАДУ СИГНАЛА (222)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "МЕТОДИ И СИСТЕМИ ЗА ОБРАДУ СИГНАЛА",
+        "group": null,
+        "room": "222",
+        "fromOcr": false,
+        "rawText": "МЕТОДИ И СИСТЕМИ ЗА ОБРАДУ СИГНАЛА (222)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ИНЖЕЊЕРСТВО ПОДАТАКА И ЗНАЊА",
+        "group": null,
+        "room": "370",
+        "fromOcr": false,
+        "rawText": "ИНЖЕЊЕРСТВО ПОДАТАКА И ЗНАЊА (370)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНЖЕЊЕРСТВО ПОДАТАКА И ЗНАЊА",
+        "group": null,
+        "room": "370",
+        "fromOcr": false,
+        "rawText": "ИНЖЕЊЕРСТВО ПОДАТАКА И ЗНАЊА (370)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "МОБИЛНИ КОМУНИКАЦИОНИ СИСТЕМИ",
+        "group": null,
+        "room": "432",
+        "fromOcr": false,
+        "rawText": "МОБИЛНИ КОМУНИКАЦИОНИ СИСТЕМИ (432)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "МОБИЛНИ КОМУНИКАЦИОНИ СИСТЕМИ",
+        "group": null,
+        "room": "432",
+        "fromOcr": false,
+        "rawText": "МОБИЛНИ КОМУНИКАЦИОНИ СИСТЕМИ (432)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "09:00",
+        "classType": "racunske_vezbe",
+        "course": "УПРАВЉАЊЕ ПРОЈЕКТИМА",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "УПРАВЉАЊЕ ПРОЈЕКТИМА (226)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "УПРАВЉАЊЕ ПРОЈЕКТИМА",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "УПРАВЉАЊЕ ПРОЈЕКТИМА (226)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "predavanje",
+        "course": "ПОСЛОВНЕ КОМУНИКАЦИЈЕ",
+        "group": null,
+        "room": "А4",
+        "fromOcr": false,
+        "rawText": "ПОСЛОВНЕ КОМУНИКАЦИЈЕ (А4)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "СОЦИЈАЛНИ, ПРАВНИ И ЕТИЧКИ АСПЕКТИ ИНФОРМАТИКЕ",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "СОЦИЈАЛНИ, ПРАВНИ И ЕТИЧКИ АСПЕКТИ ИНФОРМАТИКЕ (226)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "15:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "СОЦИЈАЛНИ, ПРАВНИ И ЕТИЧКИ АСПЕКТИ ИНФОРМАТИКЕ",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "СОЦИЈАЛНИ, ПРАВНИ И ЕТИЧКИ АСПЕКТИ ИНФОРМАТИКЕ (226)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ДИСТРИБУИРАНИ СИСТЕМИ",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "ДИСТРИБУИРАНИ СИСТЕМИ (А1)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИСТРИБУИРАНИ СИСТЕМИ",
+        "group": "1",
+        "room": "131",
+        "fromOcr": false,
+        "rawText": "ДИСТРИБУИРАНИ СИСТЕМИ -1- (131)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИСТРИБУИРАНИ СИСТЕМИ",
+        "group": "2",
+        "room": "131",
+        "fromOcr": false,
+        "rawText": "ДИСТРИБУИРАНИ СИСТЕМИ -2- (131)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИСТРИБУИРАНИ СИСТЕМИ",
+        "group": "3",
+        "room": "131",
+        "fromOcr": false,
+        "rawText": "ДИСТРИБУИРАНИ СИСТЕМИ -3- (131)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "МУЛТИМЕДИЈАЛНИ СИСТЕМИ",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "МУЛТИМЕДИЈАЛНИ СИСТЕМИ (451)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "predavanje",
+      "course": "МУЛТИМЕДИЈАЛНИ СИСТЕМИ",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "МУЛТИМЕДИЈАЛНИ СИСТЕМИ (451)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "predavanje",
+      "course": "ИНТЕРНЕТ СТВАРИ И СЕРВИСИ",
+      "group": null,
+      "room": "122",
+      "fromOcr": false,
+      "rawText": "ИНТЕРНЕТ СТВАРИ И СЕРВИСИ (122)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "18:15",
+      "endsAt": "20:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНТЕРНЕТ СТВАРИ И СЕРВИСИ",
+      "group": null,
+      "room": "122",
+      "fromOcr": false,
+      "rawText": "ИНТЕРНЕТ СТВАРИ И СЕРВИСИ (122)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ПРЕТРАЖИВАЊЕ ИНФОРМАЦИЈА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "ПРЕТРАЖИВАЊЕ ИНФОРМАЦИЈА (451)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРЕТРАЖИВАЊЕ ИНФОРМАЦИЈА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "ПРЕТРАЖИВАЊЕ ИНФОРМАЦИЈА (451)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "МЕТОДИ И СИСТЕМИ ЗА ОБРАДУ СИГНАЛА",
+      "group": null,
+      "room": "222",
+      "fromOcr": false,
+      "rawText": "МЕТОДИ И СИСТЕМИ ЗА ОБРАДУ СИГНАЛА (222)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "МЕТОДИ И СИСТЕМИ ЗА ОБРАДУ СИГНАЛА",
+      "group": null,
+      "room": "222",
+      "fromOcr": false,
+      "rawText": "МЕТОДИ И СИСТЕМИ ЗА ОБРАДУ СИГНАЛА (222)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ИНЖЕЊЕРСТВО ПОДАТАКА И ЗНАЊА",
+      "group": null,
+      "room": "370",
+      "fromOcr": false,
+      "rawText": "ИНЖЕЊЕРСТВО ПОДАТАКА И ЗНАЊА (370)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНЖЕЊЕРСТВО ПОДАТАКА И ЗНАЊА",
+      "group": null,
+      "room": "370",
+      "fromOcr": false,
+      "rawText": "ИНЖЕЊЕРСТВО ПОДАТАКА И ЗНАЊА (370)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "МОБИЛНИ КОМУНИКАЦИОНИ СИСТЕМИ",
+      "group": null,
+      "room": "432",
+      "fromOcr": false,
+      "rawText": "МОБИЛНИ КОМУНИКАЦИОНИ СИСТЕМИ (432)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "МОБИЛНИ КОМУНИКАЦИОНИ СИСТЕМИ",
+      "group": null,
+      "room": "432",
+      "fromOcr": false,
+      "rawText": "МОБИЛНИ КОМУНИКАЦИОНИ СИСТЕМИ (432)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "09:00",
+      "classType": "racunske_vezbe",
+      "course": "УПРАВЉАЊЕ ПРОЈЕКТИМА",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "УПРАВЉАЊЕ ПРОЈЕКТИМА (226)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "УПРАВЉАЊЕ ПРОЈЕКТИМА",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "УПРАВЉАЊЕ ПРОЈЕКТИМА (226)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "predavanje",
+      "course": "ПОСЛОВНЕ КОМУНИКАЦИЈЕ",
+      "group": null,
+      "room": "А4",
+      "fromOcr": false,
+      "rawText": "ПОСЛОВНЕ КОМУНИКАЦИЈЕ (А4)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "СОЦИЈАЛНИ, ПРАВНИ И ЕТИЧКИ АСПЕКТИ ИНФОРМАТИКЕ",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "СОЦИЈАЛНИ, ПРАВНИ И ЕТИЧКИ АСПЕКТИ ИНФОРМАТИКЕ (226)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "15:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "СОЦИЈАЛНИ, ПРАВНИ И ЕТИЧКИ АСПЕКТИ ИНФОРМАТИКЕ",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "СОЦИЈАЛНИ, ПРАВНИ И ЕТИЧКИ АСПЕКТИ ИНФОРМАТИКЕ (226)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ДИСТРИБУИРАНИ СИСТЕМИ",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "ДИСТРИБУИРАНИ СИСТЕМИ (А1)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИСТРИБУИРАНИ СИСТЕМИ",
+      "group": "1",
+      "room": "131",
+      "fromOcr": false,
+      "rawText": "ДИСТРИБУИРАНИ СИСТЕМИ -1- (131)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИСТРИБУИРАНИ СИСТЕМИ",
+      "group": "2",
+      "room": "131",
+      "fromOcr": false,
+      "rawText": "ДИСТРИБУИРАНИ СИСТЕМИ -2- (131)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИСТРИБУИРАНИ СИСТЕМИ",
+      "group": "3",
+      "room": "131",
+      "fromOcr": false,
+      "rawText": "ДИСТРИБУИРАНИ СИСТЕМИ -3- (131)"
+    }
+  ]
+}

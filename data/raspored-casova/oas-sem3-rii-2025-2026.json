@@ -1,0 +1,584 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 3,
+  "studyYear": 2,
+  "semesterType": "zimski",
+  "module": "RII",
+  "submodule": null,
+  "moduleLabel": "РИИ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:05:22.640Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem3-rii-v1.pdf",
+    "pdfSha256": "16e690662c11bcc33a1698e598976c853de8e585eb1a89fcb3ac40c0243e4097",
+    "linkText": "III"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 10 11",
+      "25",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 20,
+    "byClassType": {
+      "racunske_vezbe": 14,
+      "predavanje": 6
+    },
+    "ocrCells": 11,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИСКРЕТНА МАТЕМАТИКА",
+        "group": "2",
+        "room": "525",
+        "fromOcr": false,
+        "rawText": "ДИСКРЕТНА МАТЕМАТИКА -2- (525)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ДИГИТАЛНА ЕЛЕКТРОНИКА",
+        "group": null,
+        "room": "К4",
+        "fromOcr": true,
+        "ocrConfidence": 92,
+        "rawText": "ДИГИТАЛНА ЕЛЕКТРОНИКА (К4)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ЛОГИЧКО ПРОЈЕКТОВАЊЕ",
+        "group": null,
+        "room": "К5",
+        "fromOcr": true,
+        "ocrConfidence": 89,
+        "rawText": "ЛОГИЧКО ПРОЈЕКТОВАЊЕ (К5)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИГИТАЛНА ЕЛЕКТРОНИКА",
+        "group": null,
+        "room": "К4",
+        "fromOcr": true,
+        "ocrConfidence": 92,
+        "rawText": "ДИГИТАЛНА ЕЛЕКТРОНИКА (К4)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ЛОГИЧКО ПРОЈЕКТОВАЊЕ",
+        "group": null,
+        "room": "К5",
+        "fromOcr": true,
+        "ocrConfidence": 89,
+        "rawText": "ЛОГИЧКО ПРОЈЕКТОВАЊЕ (К5)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ОБЈЕКТНО ОРИЈЕНТИСАНО ПРОГРАМИРАЊE",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "ОБЈЕКТНО ОРИЈЕНТИСАНО ПРОГРАМИРАЊE (А1)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 88,
+        "rawText": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1 -2- (231)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИСКРЕТНА МАТЕМАТИКА",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 94,
+        "rawText": "ДИСКРЕТНА МАТЕМАТИКА -1- (131)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ОБЈЕКТНО- ОРИЈЕНТИСАНО ПРОГРАМИРАЊЕ -3-–",
+        "group": null,
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 81,
+        "rawText": "ОБЈЕКТНО- ОРИЈЕНТИСАНО ПРОГРАМИРАЊЕ -3-– (531)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "БАЗЕ ПОДАТАКА",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "БАЗЕ ПОДАТАКА (А1)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 90,
+        "rawText": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1 -3- (531)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "БАЗЕ ПОДАТАКА",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 90,
+        "rawText": "БАЗЕ ПОДАТАКА -1- (131)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ОБЈЕКТНО ОРИЈЕНТИСАНО ПРОГРАМИРАЊE",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 84,
+        "rawText": "ОБЈЕКТНО- ОРИЈЕНТИСАНО ПРОГРАМИРАЊЕ -2- (231)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1 (А1)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "БАЗЕ ПОДАТАКА",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 76,
+        "rawText": "БАЗЕ ПОДАТАКА -2- (231)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИСКРЕТНА МАТЕМАТИКА",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 75,
+        "rawText": "ДИСКРЕТНА МАТЕМАТИКА -3- (531)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ОБЈЕКТНО ОРИЈЕНТИСАНО ПРОГРАМИРАЊE",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 92,
+        "rawText": "ОБЈЕКТНО- ОРИЈЕНТИСАНО ПРОГРАМИРАЊЕ -1- (131)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "09:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ДИСКРЕТНА МАТЕМАТИКА",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "ДИСКРЕТНА МАТЕМАТИКА (А1)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1",
+        "group": "1",
+        "room": "131",
+        "fromOcr": false,
+        "rawText": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1 -1- (131)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "БАЗЕ ПОДАТАКА",
+        "group": "3",
+        "room": "531",
+        "fromOcr": false,
+        "rawText": "БАЗЕ ПОДАТАКА -3- (531)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИСКРЕТНА МАТЕМАТИКА",
+      "group": "2",
+      "room": "525",
+      "fromOcr": false,
+      "rawText": "ДИСКРЕТНА МАТЕМАТИКА -2- (525)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ДИГИТАЛНА ЕЛЕКТРОНИКА",
+      "group": null,
+      "room": "К4",
+      "fromOcr": true,
+      "ocrConfidence": 92,
+      "rawText": "ДИГИТАЛНА ЕЛЕКТРОНИКА (К4)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ЛОГИЧКО ПРОЈЕКТОВАЊЕ",
+      "group": null,
+      "room": "К5",
+      "fromOcr": true,
+      "ocrConfidence": 89,
+      "rawText": "ЛОГИЧКО ПРОЈЕКТОВАЊЕ (К5)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИГИТАЛНА ЕЛЕКТРОНИКА",
+      "group": null,
+      "room": "К4",
+      "fromOcr": true,
+      "ocrConfidence": 92,
+      "rawText": "ДИГИТАЛНА ЕЛЕКТРОНИКА (К4)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ЛОГИЧКО ПРОЈЕКТОВАЊЕ",
+      "group": null,
+      "room": "К5",
+      "fromOcr": true,
+      "ocrConfidence": 89,
+      "rawText": "ЛОГИЧКО ПРОЈЕКТОВАЊЕ (К5)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ОБЈЕКТНО ОРИЈЕНТИСАНО ПРОГРАМИРАЊE",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "ОБЈЕКТНО ОРИЈЕНТИСАНО ПРОГРАМИРАЊE (А1)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 88,
+      "rawText": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1 -2- (231)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИСКРЕТНА МАТЕМАТИКА",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 94,
+      "rawText": "ДИСКРЕТНА МАТЕМАТИКА -1- (131)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ОБЈЕКТНО- ОРИЈЕНТИСАНО ПРОГРАМИРАЊЕ -3-–",
+      "group": null,
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 81,
+      "rawText": "ОБЈЕКТНО- ОРИЈЕНТИСАНО ПРОГРАМИРАЊЕ -3-– (531)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "БАЗЕ ПОДАТАКА",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "БАЗЕ ПОДАТАКА (А1)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 90,
+      "rawText": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1 -3- (531)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "БАЗЕ ПОДАТАКА",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 90,
+      "rawText": "БАЗЕ ПОДАТАКА -1- (131)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ОБЈЕКТНО ОРИЈЕНТИСАНО ПРОГРАМИРАЊE",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 84,
+      "rawText": "ОБЈЕКТНО- ОРИЈЕНТИСАНО ПРОГРАМИРАЊЕ -2- (231)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1 (А1)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "БАЗЕ ПОДАТАКА",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 76,
+      "rawText": "БАЗЕ ПОДАТАКА -2- (231)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИСКРЕТНА МАТЕМАТИКА",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 75,
+      "rawText": "ДИСКРЕТНА МАТЕМАТИКА -3- (531)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ОБЈЕКТНО ОРИЈЕНТИСАНО ПРОГРАМИРАЊE",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 92,
+      "rawText": "ОБЈЕКТНО- ОРИЈЕНТИСАНО ПРОГРАМИРАЊЕ -1- (131)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "09:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ДИСКРЕТНА МАТЕМАТИКА",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "ДИСКРЕТНА МАТЕМАТИКА (А1)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1",
+      "group": "1",
+      "room": "131",
+      "fromOcr": false,
+      "rawText": "АРХИТЕКТУРА И ОРГАНИЗАЦИЈА РАЧУНАРА 1 -1- (131)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "БАЗЕ ПОДАТАКА",
+      "group": "3",
+      "room": "531",
+      "fromOcr": false,
+      "rawText": "БАЗЕ ПОДАТАКА -3- (531)"
+    }
+  ]
+}

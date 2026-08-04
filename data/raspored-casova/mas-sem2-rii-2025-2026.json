@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "master_akademske",
+  "studyLevelLabel": "Мастер академске студије",
+  "semester": 2,
+  "studyYear": 1,
+  "semesterType": "letnji",
+  "module": "RII",
+  "submodule": null,
+  "moduleLabel": null,
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:58.801Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-mas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-prolece/202526-mas2-rii-v2.pdf",
+    "pdfSha256": "936103e7b3b4012f2fc1894ce0c3b136b06a815288796b986843ddd425b8cfa8",
+    "linkText": "II"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": false,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "Датум 16 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 16,
+    "byClassType": {
+      "predavanje": 8,
+      "racunske_vezbe": 8
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ПРОЦЕСИРАЊЕ ПРИРОДНИХ ЈЕЗИКА",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ПРОЦЕСИРАЊЕ ПРИРОДНИХ ЈЕЗИКА (82)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОЦЕСИРАЊЕ ПРИРОДНИХ ЈЕЗИКА",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ПРОЦЕСИРАЊЕ ПРИРОДНИХ ЈЕЗИКА (82)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "predavanje",
+        "course": "БЛОКЧЕИН ТЕХНОЛОГИЈЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "БЛОКЧЕИН ТЕХНОЛОГИЈЕ (82)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "17:15",
+        "endsAt": "18:00",
+        "classType": "racunske_vezbe",
+        "course": "БЛОКЧЕИН ТЕХНОЛОГИЈЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "БЛОКЧЕИН ТЕХНОЛОГИЈЕ (82)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "СВЕПРИСУТНО РАЧУНАРСТВО",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "СВЕПРИСУТНО РАЧУНАРСТВО (82)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "СВЕПРИСУТНО РАЧУНАРСТВО",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "СВЕПРИСУТНО РАЧУНАРСТВО (82)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "СИСТЕМИ ВИРТУЕЛНЕ И ПРОШИРЕНЕ РЕАЛНОСТИ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "СИСТЕМИ ВИРТУЕЛНЕ И ПРОШИРЕНЕ РЕАЛНОСТИ (82)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "СИСТЕМИ ВИРТУЕЛНЕ И ПРОШИРЕНЕ РЕАЛНОСТИ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "СИСТЕМИ ВИРТУЕЛНЕ И ПРОШИРЕНЕ РЕАЛНОСТИ (82)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "СИСТЕМИ ЗА УПРАВЉАЊЕ БАЗАМА ПОДАТАКА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "СИСТЕМИ ЗА УПРАВЉАЊЕ БАЗАМА ПОДАТАКА (451)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "СИСТЕМИ ЗА УПРАВЉАЊЕ БАЗАМА ПОДАТАКА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "СИСТЕМИ ЗА УПРАВЉАЊЕ БАЗАМА ПОДАТАКА (451)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ДУБОКО УЧЕЊЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ДУБОКО УЧЕЊЕ (82)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ДУБОКО УЧЕЊЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ДУБОКО УЧЕЊЕ (82)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ИНФОРМАЦИОНЕ ТЕХНОЛОГИЈЕ ЗА РАЗВОЈ СИСТЕМА Е-УПРАВЕ",
+        "group": null,
+        "room": "431",
+        "fromOcr": false,
+        "rawText": "ИНФОРМАЦИОНЕ ТЕХНОЛОГИЈЕ ЗА РАЗВОЈ СИСТЕМА Е-УПРАВЕ (431)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНФОРМАЦИОНЕ ТЕХНОЛОГИЈЕ ЗА РАЗВОЈ СИСТЕМА Е-УПРАВЕ",
+        "group": null,
+        "room": "431",
+        "fromOcr": false,
+        "rawText": "ИНФОРМАЦИОНЕ ТЕХНОЛОГИЈЕ ЗА РАЗВОЈ СИСТЕМА Е-УПРАВЕ (431)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "УПРАВЉАЊЕ РАЧУНАРСКИМ РЕСУРСИМА И СИСТЕМИМА",
+        "group": null,
+        "room": "431",
+        "fromOcr": false,
+        "rawText": "УПРАВЉАЊЕ РАЧУНАРСКИМ РЕСУРСИМА И СИСТЕМИМА (431)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "УПРАВЉАЊЕ РАЧУНАРСКИМ РЕСУРСИМА И СИСТЕМИМА",
+        "group": null,
+        "room": "431",
+        "fromOcr": false,
+        "rawText": "УПРАВЉАЊЕ РАЧУНАРСКИМ РЕСУРСИМА И СИСТЕМИМА (431)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ПРОЦЕСИРАЊЕ ПРИРОДНИХ ЈЕЗИКА",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ПРОЦЕСИРАЊЕ ПРИРОДНИХ ЈЕЗИКА (82)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОЦЕСИРАЊЕ ПРИРОДНИХ ЈЕЗИКА",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ПРОЦЕСИРАЊЕ ПРИРОДНИХ ЈЕЗИКА (82)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "predavanje",
+      "course": "БЛОКЧЕИН ТЕХНОЛОГИЈЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "БЛОКЧЕИН ТЕХНОЛОГИЈЕ (82)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "17:15",
+      "endsAt": "18:00",
+      "classType": "racunske_vezbe",
+      "course": "БЛОКЧЕИН ТЕХНОЛОГИЈЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "БЛОКЧЕИН ТЕХНОЛОГИЈЕ (82)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "СВЕПРИСУТНО РАЧУНАРСТВО",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "СВЕПРИСУТНО РАЧУНАРСТВО (82)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "СВЕПРИСУТНО РАЧУНАРСТВО",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "СВЕПРИСУТНО РАЧУНАРСТВО (82)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "СИСТЕМИ ВИРТУЕЛНЕ И ПРОШИРЕНЕ РЕАЛНОСТИ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "СИСТЕМИ ВИРТУЕЛНЕ И ПРОШИРЕНЕ РЕАЛНОСТИ (82)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "СИСТЕМИ ВИРТУЕЛНЕ И ПРОШИРЕНЕ РЕАЛНОСТИ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "СИСТЕМИ ВИРТУЕЛНЕ И ПРОШИРЕНЕ РЕАЛНОСТИ (82)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "СИСТЕМИ ЗА УПРАВЉАЊЕ БАЗАМА ПОДАТАКА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "СИСТЕМИ ЗА УПРАВЉАЊЕ БАЗАМА ПОДАТАКА (451)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "СИСТЕМИ ЗА УПРАВЉАЊЕ БАЗАМА ПОДАТАКА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "СИСТЕМИ ЗА УПРАВЉАЊЕ БАЗАМА ПОДАТАКА (451)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ДУБОКО УЧЕЊЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ДУБОКО УЧЕЊЕ (82)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ДУБОКО УЧЕЊЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ДУБОКО УЧЕЊЕ (82)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ИНФОРМАЦИОНЕ ТЕХНОЛОГИЈЕ ЗА РАЗВОЈ СИСТЕМА Е-УПРАВЕ",
+      "group": null,
+      "room": "431",
+      "fromOcr": false,
+      "rawText": "ИНФОРМАЦИОНЕ ТЕХНОЛОГИЈЕ ЗА РАЗВОЈ СИСТЕМА Е-УПРАВЕ (431)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНФОРМАЦИОНЕ ТЕХНОЛОГИЈЕ ЗА РАЗВОЈ СИСТЕМА Е-УПРАВЕ",
+      "group": null,
+      "room": "431",
+      "fromOcr": false,
+      "rawText": "ИНФОРМАЦИОНЕ ТЕХНОЛОГИЈЕ ЗА РАЗВОЈ СИСТЕМА Е-УПРАВЕ (431)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "УПРАВЉАЊЕ РАЧУНАРСКИМ РЕСУРСИМА И СИСТЕМИМА",
+      "group": null,
+      "room": "431",
+      "fromOcr": false,
+      "rawText": "УПРАВЉАЊЕ РАЧУНАРСКИМ РЕСУРСИМА И СИСТЕМИМА (431)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "УПРАВЉАЊЕ РАЧУНАРСКИМ РЕСУРСИМА И СИСТЕМИМА",
+      "group": null,
+      "room": "431",
+      "fromOcr": false,
+      "rawText": "УПРАВЉАЊЕ РАЧУНАРСКИМ РЕСУРСИМА И СИСТЕМИМА (431)"
+    }
+  ]
+}

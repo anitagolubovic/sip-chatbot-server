@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "master_akademske",
+  "studyLevelLabel": "Мастер академске студије",
+  "semester": 1,
+  "studyYear": 1,
+  "semesterType": "zimski",
+  "module": "KIT",
+  "submodule": null,
+  "moduleLabel": "КОМУНИКАЦИЈЕ И",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:05.734Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-jesen-mas-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/202526-mas1-kit-v2.pdf",
+    "pdfSha256": "f2d6b99d99311db8d70ca073d24a012159c4b93d28d0f67ef3744b373ca7c458",
+    "linkText": "I"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": false,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "Датум 17 11",
+      "25",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 14,
+    "byClassType": {
+      "predavanje": 8,
+      "racunske_vezbe": 6
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ПРОЈЕКТОВАЊЕ ТК МРЕЖА И СИСТЕМА",
+        "group": null,
+        "room": "223",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ ТК МРЕЖА И СИСТЕМА (223)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОЈЕКТОВАЊЕ ТК МРЕЖА И СИСТЕМА",
+        "group": null,
+        "room": "223",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ ТК МРЕЖА И СИСТЕМА (223)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "ПРИНЦИП СОФТВЕРСКОГ РАДИЈА",
+        "group": null,
+        "room": "222",
+        "fromOcr": false,
+        "rawText": "ПРИНЦИП СОФТВЕРСКОГ РАДИЈА (222)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "predavanje",
+        "course": "ДИГИТАЛНА ОБРАДА ИНФОРМАЦИЈА",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "ДИГИТАЛНА ОБРАДА ИНФОРМАЦИЈА (226)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "17:15",
+        "endsAt": "18:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИГИТАЛНА ОБРАДА ИНФОРМАЦИЈА",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "ДИГИТАЛНА ОБРАДА ИНФОРМАЦИЈА (226)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "НАПРЕДНЕ КОМУНИКАЦИОНЕ ТЕХНОЛОГИЈЕ",
+        "group": null,
+        "room": "133",
+        "fromOcr": false,
+        "rawText": "НАПРЕДНЕ КОМУНИКАЦИОНЕ ТЕХНОЛОГИЈЕ (133)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "НАПРЕДНЕ КОМУНИКАЦИОНЕ ТЕХНОЛОГИЈЕ",
+        "group": null,
+        "room": "133",
+        "fromOcr": false,
+        "rawText": "НАПРЕДНЕ КОМУНИКАЦИОНЕ ТЕХНОЛОГИЈЕ (133)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "IoT СЕРВИСИ",
+        "group": null,
+        "room": "433",
+        "fromOcr": false,
+        "rawText": "IoT СЕРВИСИ (433)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ТЕЛЕМЕТРИЈА",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ТЕЛЕМЕТРИЈА (221)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ТЕЛЕМЕТРИЈА",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ТЕЛЕМЕТРИЈА (221)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ДСП АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": "Л59",
+        "fromOcr": false,
+        "rawText": "ДСП АЛГОРИТМИ И ПРОГРАМИРАЊЕ (Л59)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ДСП АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": "Л59",
+        "fromOcr": false,
+        "rawText": "ДСП АЛГОРИТМИ И ПРОГРАМИРАЊЕ (Л59)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "БЕЖИЧНИ ПРИСТУП ИНТЕРНЕТУ",
+        "group": null,
+        "room": "222",
+        "fromOcr": false,
+        "rawText": "БЕЖИЧНИ ПРИСТУП ИНТЕРНЕТУ (222)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "БЕЖИЧНИ ПРИСТУП ИНТЕРНЕТУ",
+        "group": null,
+        "room": "222",
+        "fromOcr": false,
+        "rawText": "БЕЖИЧНИ ПРИСТУП ИНТЕРНЕТУ (222)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ПРОЈЕКТОВАЊЕ ТК МРЕЖА И СИСТЕМА",
+      "group": null,
+      "room": "223",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ ТК МРЕЖА И СИСТЕМА (223)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОЈЕКТОВАЊЕ ТК МРЕЖА И СИСТЕМА",
+      "group": null,
+      "room": "223",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ ТК МРЕЖА И СИСТЕМА (223)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "ПРИНЦИП СОФТВЕРСКОГ РАДИЈА",
+      "group": null,
+      "room": "222",
+      "fromOcr": false,
+      "rawText": "ПРИНЦИП СОФТВЕРСКОГ РАДИЈА (222)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "predavanje",
+      "course": "ДИГИТАЛНА ОБРАДА ИНФОРМАЦИЈА",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "ДИГИТАЛНА ОБРАДА ИНФОРМАЦИЈА (226)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "17:15",
+      "endsAt": "18:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИГИТАЛНА ОБРАДА ИНФОРМАЦИЈА",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "ДИГИТАЛНА ОБРАДА ИНФОРМАЦИЈА (226)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "НАПРЕДНЕ КОМУНИКАЦИОНЕ ТЕХНОЛОГИЈЕ",
+      "group": null,
+      "room": "133",
+      "fromOcr": false,
+      "rawText": "НАПРЕДНЕ КОМУНИКАЦИОНЕ ТЕХНОЛОГИЈЕ (133)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "НАПРЕДНЕ КОМУНИКАЦИОНЕ ТЕХНОЛОГИЈЕ",
+      "group": null,
+      "room": "133",
+      "fromOcr": false,
+      "rawText": "НАПРЕДНЕ КОМУНИКАЦИОНЕ ТЕХНОЛОГИЈЕ (133)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "IoT СЕРВИСИ",
+      "group": null,
+      "room": "433",
+      "fromOcr": false,
+      "rawText": "IoT СЕРВИСИ (433)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ТЕЛЕМЕТРИЈА",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ТЕЛЕМЕТРИЈА (221)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ТЕЛЕМЕТРИЈА",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ТЕЛЕМЕТРИЈА (221)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ДСП АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": "Л59",
+      "fromOcr": false,
+      "rawText": "ДСП АЛГОРИТМИ И ПРОГРАМИРАЊЕ (Л59)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ДСП АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": "Л59",
+      "fromOcr": false,
+      "rawText": "ДСП АЛГОРИТМИ И ПРОГРАМИРАЊЕ (Л59)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "БЕЖИЧНИ ПРИСТУП ИНТЕРНЕТУ",
+      "group": null,
+      "room": "222",
+      "fromOcr": false,
+      "rawText": "БЕЖИЧНИ ПРИСТУП ИНТЕРНЕТУ (222)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "БЕЖИЧНИ ПРИСТУП ИНТЕРНЕТУ",
+      "group": null,
+      "room": "222",
+      "fromOcr": false,
+      "rawText": "БЕЖИЧНИ ПРИСТУП ИНТЕРНЕТУ (222)"
+    }
+  ]
+}

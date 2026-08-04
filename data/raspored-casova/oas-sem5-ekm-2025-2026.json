@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 5,
+  "studyYear": 3,
+  "semesterType": "zimski",
+  "module": "EKM",
+  "submodule": null,
+  "moduleLabel": "ЕКМ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:05:16.713Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem5-ekm-v1.pdf",
+    "pdfSha256": "fab6e819cd64be2f04d392a5823df19742a5d2ed5274c9b97000856d0469335a",
+    "linkText": "V"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 10 11",
+      "25",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 13,
+    "byClassType": {
+      "racunske_vezbe": 6,
+      "predavanje": 7
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "08:15",
+        "endsAt": "09:00",
+        "classType": "racunske_vezbe",
+        "course": "НОВИ МАТЕРИЈАЛИ И ТЕХНОЛОГИЈЕ",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "НОВИ МАТЕРИЈАЛИ И ТЕХНОЛОГИЈЕ (226)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "НОВИ МАТЕРИЈАЛИ И ТЕХНОЛОГИЈЕ",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "НОВИ МАТЕРИЈАЛИ И ТЕХНОЛОГИЈЕ (226)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "predavanje",
+        "course": "АНАЛОГНА МИКРОЕЛЕКТРОНИКА",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "АНАЛОГНА МИКРОЕЛЕКТРОНИКА (226)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "АНАЛОГНА МИКРОЕЛЕКТРОНИКА",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "АНАЛОГНА МИКРОЕЛЕКТРОНИКА (226)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ",
+        "group": null,
+        "room": "431",
+        "fromOcr": false,
+        "rawText": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ (431)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ",
+        "group": null,
+        "room": "431",
+        "fromOcr": false,
+        "rawText": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ (431)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА",
+        "group": null,
+        "room": "525",
+        "fromOcr": false,
+        "rawText": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА (525)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА",
+        "group": null,
+        "room": "А3",
+        "fromOcr": false,
+        "rawText": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА (А3)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "predavanje",
+        "course": "ОСНОВИ МЕХАТРОНИКЕ",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "ОСНОВИ МЕХАТРОНИКЕ (226)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВИ МЕХАТРОНИКЕ",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "ОСНОВИ МЕХАТРОНИКЕ (226)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "КАРАКТЕРИЗАЦИЈА КОМПОНЕНАТА",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "КАРАКТЕРИЗАЦИЈА КОМПОНЕНАТА (226)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "КАРАКТЕРИЗАЦИЈА КОМПОНЕНАТА",
+        "group": null,
+        "room": "226",
+        "fromOcr": false,
+        "rawText": "КАРАКТЕРИЗАЦИЈА КОМПОНЕНАТА (226)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ЕНГЛЕСКИ ЈЕЗИК 1",
+        "group": null,
+        "room": "А3",
+        "fromOcr": false,
+        "rawText": "ЕНГЛЕСКИ ЈЕЗИК 1 (А3)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "08:15",
+      "endsAt": "09:00",
+      "classType": "racunske_vezbe",
+      "course": "НОВИ МАТЕРИЈАЛИ И ТЕХНОЛОГИЈЕ",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "НОВИ МАТЕРИЈАЛИ И ТЕХНОЛОГИЈЕ (226)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "НОВИ МАТЕРИЈАЛИ И ТЕХНОЛОГИЈЕ",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "НОВИ МАТЕРИЈАЛИ И ТЕХНОЛОГИЈЕ (226)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "predavanje",
+      "course": "АНАЛОГНА МИКРОЕЛЕКТРОНИКА",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "АНАЛОГНА МИКРОЕЛЕКТРОНИКА (226)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "АНАЛОГНА МИКРОЕЛЕКТРОНИКА",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "АНАЛОГНА МИКРОЕЛЕКТРОНИКА (226)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ",
+      "group": null,
+      "room": "431",
+      "fromOcr": false,
+      "rawText": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ (431)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ",
+      "group": null,
+      "room": "431",
+      "fromOcr": false,
+      "rawText": "ОБНОВЉИВИ ИЗВОРИ ЕНЕРГИЈЕ (431)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА",
+      "group": null,
+      "room": "525",
+      "fromOcr": false,
+      "rawText": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА (525)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА",
+      "group": null,
+      "room": "А3",
+      "fromOcr": false,
+      "rawText": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА (А3)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "predavanje",
+      "course": "ОСНОВИ МЕХАТРОНИКЕ",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "ОСНОВИ МЕХАТРОНИКЕ (226)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВИ МЕХАТРОНИКЕ",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "ОСНОВИ МЕХАТРОНИКЕ (226)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "КАРАКТЕРИЗАЦИЈА КОМПОНЕНАТА",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "КАРАКТЕРИЗАЦИЈА КОМПОНЕНАТА (226)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "КАРАКТЕРИЗАЦИЈА КОМПОНЕНАТА",
+      "group": null,
+      "room": "226",
+      "fromOcr": false,
+      "rawText": "КАРАКТЕРИЗАЦИЈА КОМПОНЕНАТА (226)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ЕНГЛЕСКИ ЈЕЗИК 1",
+      "group": null,
+      "room": "А3",
+      "fromOcr": false,
+      "rawText": "ЕНГЛЕСКИ ЈЕЗИК 1 (А3)"
+    }
+  ]
+}

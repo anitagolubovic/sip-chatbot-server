@@ -1,0 +1,1408 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 2,
+  "studyYear": 1,
+  "semesterType": "letnji",
+  "module": null,
+  "submodule": null,
+  "moduleLabel": "СВИ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:10.489Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem2-v2.pdf",
+    "pdfSha256": "340d6d7de02911195de011b78ad9a575ae2eacf4d9f10f1349c459c09ce38ac4",
+    "linkText": "II"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 09 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 30,
+    "byClassType": {
+      "predavanje": 15,
+      "racunske_vezbe": 15
+    },
+    "ocrCells": 24,
+    "lowConfidenceCells": 0
+  },
+  "groupRooms": {
+    "lectures": {
+      "А": "А2",
+      "Б": "А3",
+      "Ц": "А4"
+    },
+    "exercises": {
+      "А1": "121",
+      "А2": "122",
+      "А3": "123",
+      "Б1": "132",
+      "Б2": "133",
+      "Б3": "134",
+      "Ц1": "222",
+      "Ц2": "223",
+      "Ц3": "226",
+      "Ц4": "227"
+    }
+  },
+  "indexGroups": {
+    "sourceUrl": "https://sip.elfak.ni.ac.rs/article/nastava/oas-grupe-2025",
+    "ranges": [
+      {
+        "indexFrom": 20465,
+        "indexTo": 20504,
+        "lectureGroup": "А",
+        "exerciseGroup": "А1"
+      },
+      {
+        "indexFrom": 20505,
+        "indexTo": 20544,
+        "lectureGroup": "А",
+        "exerciseGroup": "А2"
+      },
+      {
+        "indexFrom": 20545,
+        "indexTo": 20584,
+        "lectureGroup": "А",
+        "exerciseGroup": "А3"
+      },
+      {
+        "indexFrom": 20585,
+        "indexTo": 20624,
+        "lectureGroup": "Б",
+        "exerciseGroup": "Б1"
+      },
+      {
+        "indexFrom": 20625,
+        "indexTo": 20664,
+        "lectureGroup": "Б",
+        "exerciseGroup": "Б2"
+      },
+      {
+        "indexFrom": 20665,
+        "indexTo": 20704,
+        "lectureGroup": "Б",
+        "exerciseGroup": "Б3"
+      },
+      {
+        "indexFrom": 20705,
+        "indexTo": 20739,
+        "lectureGroup": "Ц",
+        "exerciseGroup": "Ц1"
+      },
+      {
+        "indexFrom": 20740,
+        "indexTo": 20774,
+        "lectureGroup": "Ц",
+        "exerciseGroup": "Ц2"
+      },
+      {
+        "indexFrom": 20775,
+        "indexTo": 20809,
+        "lectureGroup": "Ц",
+        "exerciseGroup": "Ц3"
+      },
+      {
+        "indexFrom": 20810,
+        "indexTo": 20846,
+        "lectureGroup": "Ц",
+        "exerciseGroup": "Ц4"
+      }
+    ]
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+        "group": null,
+        "room": "А3",
+        "fromOcr": true,
+        "ocrConfidence": 89,
+        "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -Б-",
+        "groups": [
+          "Б"
+        ],
+        "roomsByGroup": {
+          "Б": "А3"
+        }
+      },
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "МАТЕМАТИКА 2",
+        "group": null,
+        "room": "А4",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "МАТЕМАТИКА 2 -Ц-",
+        "groups": [
+          "Ц"
+        ],
+        "roomsByGroup": {
+          "Ц": "А4"
+        }
+      },
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+        "group": null,
+        "room": "А2",
+        "fromOcr": true,
+        "ocrConfidence": 80,
+        "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2 -А-",
+        "groups": [
+          "А"
+        ],
+        "roomsByGroup": {
+          "А": "А2"
+        }
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "УВОД У ЕЛЕКТРОНИКУ",
+        "group": null,
+        "room": "А3",
+        "fromOcr": false,
+        "rawText": "УВОД У ЕЛЕКТРОНИКУ -Б-",
+        "groups": [
+          "Б"
+        ],
+        "roomsByGroup": {
+          "Б": "А3"
+        }
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 90,
+        "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -Ц-",
+        "groups": [
+          "Ц1",
+          "Ц2",
+          "Ц3",
+          "Ц4"
+        ],
+        "roomsByGroup": {
+          "Ц1": "222",
+          "Ц2": "223",
+          "Ц3": "226",
+          "Ц4": "227"
+        }
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "МАТЕМАТИКА 2",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 73,
+        "rawText": "МАТЕМАТИКА 2 ; -А-",
+        "groups": [
+          "А1",
+          "А2",
+          "А3"
+        ],
+        "roomsByGroup": {
+          "А1": "121",
+          "А2": "122",
+          "А3": "123"
+        }
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "УВОД У ЕЛЕКТРОНИКУ",
+        "group": null,
+        "room": null,
+        "fromOcr": false,
+        "rawText": "УВОД У ЕЛЕКТРОНИКУ -Б-",
+        "groups": [
+          "Б1",
+          "Б2",
+          "Б3"
+        ],
+        "roomsByGroup": {
+          "Б1": "132",
+          "Б2": "133",
+          "Б3": "134"
+        }
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 91,
+        "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2 -Б-",
+        "groups": [
+          "Б1",
+          "Б2",
+          "Б3"
+        ],
+        "roomsByGroup": {
+          "Б1": "132",
+          "Б2": "133",
+          "Б3": "134"
+        }
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": "А3",
+        "fromOcr": true,
+        "ocrConfidence": 91,
+        "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -Б-",
+        "groups": [
+          "Б"
+        ],
+        "roomsByGroup": {
+          "Б": "А3"
+        }
+      },
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "МАТЕМАТИКА 2",
+        "group": null,
+        "room": "А2",
+        "fromOcr": true,
+        "ocrConfidence": 83,
+        "rawText": "МАТЕМАТИКА 2 -А-",
+        "groups": [
+          "А"
+        ],
+        "roomsByGroup": {
+          "А": "А2"
+        }
+      },
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+        "group": null,
+        "room": "А4",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2 -Ц-",
+        "groups": [
+          "Ц"
+        ],
+        "roomsByGroup": {
+          "Ц": "А4"
+        }
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 79,
+        "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -А-",
+        "groups": [
+          "А1",
+          "А2",
+          "А3"
+        ],
+        "roomsByGroup": {
+          "А1": "121",
+          "А2": "122",
+          "А3": "123"
+        }
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 88,
+        "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -Б-",
+        "groups": [
+          "Б1",
+          "Б2",
+          "Б3"
+        ],
+        "roomsByGroup": {
+          "Б1": "132",
+          "Б2": "133",
+          "Б3": "134"
+        }
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "мапмика 2",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 69,
+        "rawText": "мапмика 2 -Ц-",
+        "groups": [
+          "Ц1",
+          "Ц2",
+          "Ц3",
+          "Ц4"
+        ],
+        "roomsByGroup": {
+          "Ц1": "222",
+          "Ц2": "223",
+          "Ц3": "226",
+          "Ц4": "227"
+        }
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": "А4",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -Ц-",
+        "groups": [
+          "Ц"
+        ],
+        "roomsByGroup": {
+          "Ц": "А4"
+        }
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+        "group": null,
+        "room": "А2",
+        "fromOcr": true,
+        "ocrConfidence": 80,
+        "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -А-",
+        "groups": [
+          "А"
+        ],
+        "roomsByGroup": {
+          "А": "А2"
+        }
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "МАТЕМАТИКА 2",
+        "group": null,
+        "room": "А3",
+        "fromOcr": true,
+        "ocrConfidence": 94,
+        "rawText": "МАТЕМАТИКА 2 -Б-",
+        "groups": [
+          "Б"
+        ],
+        "roomsByGroup": {
+          "Б": "А3"
+        }
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "УВОД У ЕЛЕКТРОНИКУ",
+        "group": null,
+        "room": "А2",
+        "fromOcr": false,
+        "rawText": "УВОД У ЕЛЕКТРОНИКУ -А-",
+        "groups": [
+          "А"
+        ],
+        "roomsByGroup": {
+          "А": "А2"
+        }
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 89,
+        "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -Б-",
+        "groups": [
+          "Б1",
+          "Б2",
+          "Б3"
+        ],
+        "roomsByGroup": {
+          "Б1": "132",
+          "Б2": "133",
+          "Б3": "134"
+        }
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -Ц-",
+        "groups": [
+          "Ц1",
+          "Ц2",
+          "Ц3",
+          "Ц4"
+        ],
+        "roomsByGroup": {
+          "Ц1": "222",
+          "Ц2": "223",
+          "Ц3": "226",
+          "Ц4": "227"
+        }
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "УВОД У ЕЛЕКТРОНИКУ",
+        "group": null,
+        "room": null,
+        "fromOcr": false,
+        "rawText": "УВОД У ЕЛЕКТРОНИКУ -А-",
+        "groups": [
+          "А1",
+          "А2",
+          "А3"
+        ],
+        "roomsByGroup": {
+          "А1": "121",
+          "А2": "122",
+          "А3": "123"
+        }
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 83,
+        "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2 -А-",
+        "groups": [
+          "А1",
+          "А2",
+          "А3"
+        ],
+        "roomsByGroup": {
+          "А1": "121",
+          "А2": "122",
+          "А3": "123"
+        }
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": "А2",
+        "fromOcr": true,
+        "ocrConfidence": 78,
+        "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -А-",
+        "groups": [
+          "А"
+        ],
+        "roomsByGroup": {
+          "А": "А2"
+        }
+      },
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+        "group": null,
+        "room": "А4",
+        "fromOcr": true,
+        "ocrConfidence": 91,
+        "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -Ц-",
+        "groups": [
+          "Ц"
+        ],
+        "roomsByGroup": {
+          "Ц": "А4"
+        }
+      },
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+        "group": null,
+        "room": "А3",
+        "fromOcr": true,
+        "ocrConfidence": 86,
+        "rawText": "основи ЕЛЕКТРОТЕХНИКЕ 2 -Б-",
+        "groups": [
+          "Б"
+        ],
+        "roomsByGroup": {
+          "Б": "А3"
+        }
+      },
+      {
+        "day": "petak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "УВОД У ЕЛЕКТРОНИКУ",
+        "group": null,
+        "room": "А4",
+        "fromOcr": false,
+        "rawText": "УВОД У ЕЛЕКТРОНИКУ -Ц-",
+        "groups": [
+          "Ц"
+        ],
+        "roomsByGroup": {
+          "Ц": "А4"
+        }
+      },
+      {
+        "day": "petak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 84,
+        "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -А-",
+        "groups": [
+          "А1",
+          "А2",
+          "А3"
+        ],
+        "roomsByGroup": {
+          "А1": "121",
+          "А2": "122",
+          "А3": "123"
+        }
+      },
+      {
+        "day": "petak",
+        "startsAt": "11:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "МАТЕМАТИКА 2",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 71,
+        "rawText": "матнутика 2 -Б-",
+        "groups": [
+          "Б1",
+          "Б2",
+          "Б3"
+        ],
+        "roomsByGroup": {
+          "Б1": "132",
+          "Б2": "133",
+          "Б3": "134"
+        }
+      },
+      {
+        "day": "petak",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "УВОД У ЕЛЕКТРОНИКУ",
+        "group": null,
+        "room": null,
+        "fromOcr": false,
+        "rawText": "УВОД У ЕЛЕКТРОНИКУ -Ц-",
+        "groups": [
+          "Ц1",
+          "Ц2",
+          "Ц3",
+          "Ц4"
+        ],
+        "roomsByGroup": {
+          "Ц1": "222",
+          "Ц2": "223",
+          "Ц3": "226",
+          "Ц4": "227"
+        }
+      },
+      {
+        "day": "petak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+        "group": null,
+        "room": null,
+        "fromOcr": true,
+        "ocrConfidence": 88,
+        "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2 -Ц-",
+        "groups": [
+          "Ц1",
+          "Ц2",
+          "Ц3",
+          "Ц4"
+        ],
+        "roomsByGroup": {
+          "Ц1": "222",
+          "Ц2": "223",
+          "Ц3": "226",
+          "Ц4": "227"
+        }
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+      "group": null,
+      "room": "А3",
+      "fromOcr": true,
+      "ocrConfidence": 89,
+      "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -Б-",
+      "groups": [
+        "Б"
+      ],
+      "roomsByGroup": {
+        "Б": "А3"
+      }
+    },
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "МАТЕМАТИКА 2",
+      "group": null,
+      "room": "А4",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "МАТЕМАТИКА 2 -Ц-",
+      "groups": [
+        "Ц"
+      ],
+      "roomsByGroup": {
+        "Ц": "А4"
+      }
+    },
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+      "group": null,
+      "room": "А2",
+      "fromOcr": true,
+      "ocrConfidence": 80,
+      "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2 -А-",
+      "groups": [
+        "А"
+      ],
+      "roomsByGroup": {
+        "А": "А2"
+      }
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "УВОД У ЕЛЕКТРОНИКУ",
+      "group": null,
+      "room": "А3",
+      "fromOcr": false,
+      "rawText": "УВОД У ЕЛЕКТРОНИКУ -Б-",
+      "groups": [
+        "Б"
+      ],
+      "roomsByGroup": {
+        "Б": "А3"
+      }
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 90,
+      "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -Ц-",
+      "groups": [
+        "Ц1",
+        "Ц2",
+        "Ц3",
+        "Ц4"
+      ],
+      "roomsByGroup": {
+        "Ц1": "222",
+        "Ц2": "223",
+        "Ц3": "226",
+        "Ц4": "227"
+      }
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "МАТЕМАТИКА 2",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 73,
+      "rawText": "МАТЕМАТИКА 2 ; -А-",
+      "groups": [
+        "А1",
+        "А2",
+        "А3"
+      ],
+      "roomsByGroup": {
+        "А1": "121",
+        "А2": "122",
+        "А3": "123"
+      }
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "УВОД У ЕЛЕКТРОНИКУ",
+      "group": null,
+      "room": null,
+      "fromOcr": false,
+      "rawText": "УВОД У ЕЛЕКТРОНИКУ -Б-",
+      "groups": [
+        "Б1",
+        "Б2",
+        "Б3"
+      ],
+      "roomsByGroup": {
+        "Б1": "132",
+        "Б2": "133",
+        "Б3": "134"
+      }
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 91,
+      "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2 -Б-",
+      "groups": [
+        "Б1",
+        "Б2",
+        "Б3"
+      ],
+      "roomsByGroup": {
+        "Б1": "132",
+        "Б2": "133",
+        "Б3": "134"
+      }
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": "А3",
+      "fromOcr": true,
+      "ocrConfidence": 91,
+      "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -Б-",
+      "groups": [
+        "Б"
+      ],
+      "roomsByGroup": {
+        "Б": "А3"
+      }
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "МАТЕМАТИКА 2",
+      "group": null,
+      "room": "А2",
+      "fromOcr": true,
+      "ocrConfidence": 83,
+      "rawText": "МАТЕМАТИКА 2 -А-",
+      "groups": [
+        "А"
+      ],
+      "roomsByGroup": {
+        "А": "А2"
+      }
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+      "group": null,
+      "room": "А4",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2 -Ц-",
+      "groups": [
+        "Ц"
+      ],
+      "roomsByGroup": {
+        "Ц": "А4"
+      }
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 79,
+      "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -А-",
+      "groups": [
+        "А1",
+        "А2",
+        "А3"
+      ],
+      "roomsByGroup": {
+        "А1": "121",
+        "А2": "122",
+        "А3": "123"
+      }
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 88,
+      "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -Б-",
+      "groups": [
+        "Б1",
+        "Б2",
+        "Б3"
+      ],
+      "roomsByGroup": {
+        "Б1": "132",
+        "Б2": "133",
+        "Б3": "134"
+      }
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "мапмика 2",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 69,
+      "rawText": "мапмика 2 -Ц-",
+      "groups": [
+        "Ц1",
+        "Ц2",
+        "Ц3",
+        "Ц4"
+      ],
+      "roomsByGroup": {
+        "Ц1": "222",
+        "Ц2": "223",
+        "Ц3": "226",
+        "Ц4": "227"
+      }
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": "А4",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -Ц-",
+      "groups": [
+        "Ц"
+      ],
+      "roomsByGroup": {
+        "Ц": "А4"
+      }
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+      "group": null,
+      "room": "А2",
+      "fromOcr": true,
+      "ocrConfidence": 80,
+      "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -А-",
+      "groups": [
+        "А"
+      ],
+      "roomsByGroup": {
+        "А": "А2"
+      }
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "МАТЕМАТИКА 2",
+      "group": null,
+      "room": "А3",
+      "fromOcr": true,
+      "ocrConfidence": 94,
+      "rawText": "МАТЕМАТИКА 2 -Б-",
+      "groups": [
+        "Б"
+      ],
+      "roomsByGroup": {
+        "Б": "А3"
+      }
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "УВОД У ЕЛЕКТРОНИКУ",
+      "group": null,
+      "room": "А2",
+      "fromOcr": false,
+      "rawText": "УВОД У ЕЛЕКТРОНИКУ -А-",
+      "groups": [
+        "А"
+      ],
+      "roomsByGroup": {
+        "А": "А2"
+      }
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 89,
+      "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -Б-",
+      "groups": [
+        "Б1",
+        "Б2",
+        "Б3"
+      ],
+      "roomsByGroup": {
+        "Б1": "132",
+        "Б2": "133",
+        "Б3": "134"
+      }
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -Ц-",
+      "groups": [
+        "Ц1",
+        "Ц2",
+        "Ц3",
+        "Ц4"
+      ],
+      "roomsByGroup": {
+        "Ц1": "222",
+        "Ц2": "223",
+        "Ц3": "226",
+        "Ц4": "227"
+      }
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "УВОД У ЕЛЕКТРОНИКУ",
+      "group": null,
+      "room": null,
+      "fromOcr": false,
+      "rawText": "УВОД У ЕЛЕКТРОНИКУ -А-",
+      "groups": [
+        "А1",
+        "А2",
+        "А3"
+      ],
+      "roomsByGroup": {
+        "А1": "121",
+        "А2": "122",
+        "А3": "123"
+      }
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 83,
+      "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2 -А-",
+      "groups": [
+        "А1",
+        "А2",
+        "А3"
+      ],
+      "roomsByGroup": {
+        "А1": "121",
+        "А2": "122",
+        "А3": "123"
+      }
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": "А2",
+      "fromOcr": true,
+      "ocrConfidence": 78,
+      "rawText": "АЛГОРИТМИ И ПРОГРАМИРАЊЕ -А-",
+      "groups": [
+        "А"
+      ],
+      "roomsByGroup": {
+        "А": "А2"
+      }
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+      "group": null,
+      "room": "А4",
+      "fromOcr": true,
+      "ocrConfidence": 91,
+      "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -Ц-",
+      "groups": [
+        "Ц"
+      ],
+      "roomsByGroup": {
+        "Ц": "А4"
+      }
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+      "group": null,
+      "room": "А3",
+      "fromOcr": true,
+      "ocrConfidence": 86,
+      "rawText": "основи ЕЛЕКТРОТЕХНИКЕ 2 -Б-",
+      "groups": [
+        "Б"
+      ],
+      "roomsByGroup": {
+        "Б": "А3"
+      }
+    },
+    {
+      "day": "petak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "УВОД У ЕЛЕКТРОНИКУ",
+      "group": null,
+      "room": "А4",
+      "fromOcr": false,
+      "rawText": "УВОД У ЕЛЕКТРОНИКУ -Ц-",
+      "groups": [
+        "Ц"
+      ],
+      "roomsByGroup": {
+        "Ц": "А4"
+      }
+    },
+    {
+      "day": "petak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 84,
+      "rawText": "ЕЛЕКТРОНСКЕ КОМПОНЕНТЕ -А-",
+      "groups": [
+        "А1",
+        "А2",
+        "А3"
+      ],
+      "roomsByGroup": {
+        "А1": "121",
+        "А2": "122",
+        "А3": "123"
+      }
+    },
+    {
+      "day": "petak",
+      "startsAt": "11:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "МАТЕМАТИКА 2",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 71,
+      "rawText": "матнутика 2 -Б-",
+      "groups": [
+        "Б1",
+        "Б2",
+        "Б3"
+      ],
+      "roomsByGroup": {
+        "Б1": "132",
+        "Б2": "133",
+        "Б3": "134"
+      }
+    },
+    {
+      "day": "petak",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "УВОД У ЕЛЕКТРОНИКУ",
+      "group": null,
+      "room": null,
+      "fromOcr": false,
+      "rawText": "УВОД У ЕЛЕКТРОНИКУ -Ц-",
+      "groups": [
+        "Ц1",
+        "Ц2",
+        "Ц3",
+        "Ц4"
+      ],
+      "roomsByGroup": {
+        "Ц1": "222",
+        "Ц2": "223",
+        "Ц3": "226",
+        "Ц4": "227"
+      }
+    },
+    {
+      "day": "petak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2",
+      "group": null,
+      "room": null,
+      "fromOcr": true,
+      "ocrConfidence": 88,
+      "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 2 -Ц-",
+      "groups": [
+        "Ц1",
+        "Ц2",
+        "Ц3",
+        "Ц4"
+      ],
+      "roomsByGroup": {
+        "Ц1": "222",
+        "Ц2": "223",
+        "Ц3": "226",
+        "Ц4": "227"
+      }
+    }
+  ]
+}

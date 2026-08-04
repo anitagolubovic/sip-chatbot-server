@@ -1,0 +1,660 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 5,
+  "studyYear": 3,
+  "semesterType": "zimski",
+  "module": "RII",
+  "submodule": null,
+  "moduleLabel": "РИИ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:05:25.624Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem5-rii-v2.pdf",
+    "pdfSha256": "8b5eee144a5b1efcecda42085a3393fdbd2cbb68029783a5d16cec46a0145820",
+    "linkText": "V"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 10 11",
+      "25",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 23,
+    "byClassType": {
+      "racunske_vezbe": 15,
+      "predavanje": 8
+    },
+    "ocrCells": 15,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ВЕБ ПРОГРАМИРАЊЕ",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 84,
+        "rawText": "ВЕБ ПРОГРАМИРАЊЕ -3– (531)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ОПЕРАТИВНИ СИСТЕМИ",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ОПЕРАТИВНИ СИСТЕМИ -1- (131)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКЕ МРЕЖЕ",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 85,
+        "rawText": "РАЧУНАРСКЕ МРЕЖЕ -2– (231)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ВЕБ ПРОГРАМИРАЊЕ",
+        "group": null,
+        "room": "А2",
+        "fromOcr": false,
+        "rawText": "ВЕБ ПРОГРАМИРАЊЕ (А2)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНФОРМАЦИОНИ СИСТЕМИ",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 94,
+        "rawText": "ИНФОРМАЦИОНИ СИСТЕМИ -1- (131)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ОПЕРАТИВНИ СИСТЕМИ",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 87,
+        "rawText": "ОПЕРАТИВНИ СИСТЕМИ -2– (231)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКЕ МРЕЖЕ",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 84,
+        "rawText": "РАЧУНАРСКЕ МРЕЖЕ -3– (531)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ИНФОРМАЦИОНИ СИСТЕМИ",
+        "group": null,
+        "room": "А2",
+        "fromOcr": false,
+        "rawText": "ИНФОРМАЦИОНИ СИСТЕМИ (А2)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ВЕБ ПРОГРАМИРАЊЕ",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 91,
+        "rawText": "ВЕБ ПРОГРАМИРАЊЕ -1- (131)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНФОРМАЦИОНИ СИСТЕМИ",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 76,
+        "rawText": "ИНФОРМАЦИОНИ СИСТЕМИ -2– (231)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ОПЕРАТИВНИ СИСТЕМИ",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 83,
+        "rawText": "ОПЕРАТИВНИ СИСТЕМИ -3- (531)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "РАЧУНАРСКЕ МРЕЖЕ",
+        "group": null,
+        "room": "А2",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКЕ МРЕЖЕ (А2)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ВЕБ ПРОГРАМИРАЊЕ",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 76,
+        "rawText": "ВЕБ ПРОГРАМИРАЊЕ -2– (231)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНФОРМАЦИОНИ СИСТЕМИ",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 83,
+        "rawText": "ИНФОРМАЦИОНИ СИСТЕМИ -3– (531)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКЕ МРЕЖЕ",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 94,
+        "rawText": "РАЧУНАРСКЕ МРЕЖЕ -1- (131)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ОПЕРАТИВНИ СИСТЕМИ",
+        "group": null,
+        "room": "А2",
+        "fromOcr": false,
+        "rawText": "ОПЕРАТИВНИ СИСТЕМИ (А2)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ОСНОВИ АНАЛИЗЕ СИГНАЛА И СИСТЕМА",
+        "group": null,
+        "room": "КЗ",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ОСНОВИ АНАЛИЗЕ СИГНАЛА И СИСТЕМА (КЗ)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ПРОЈЕКТОВАЊЕ И АНАЛИЗА АЛГОРИТАМА",
+        "group": null,
+        "room": "К4",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ПРОЈЕКТОВАЊЕ И АНАЛИЗА АЛГОРИТАМА (К4)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "УВОД У ТЕОРИЈУ ИГАРА",
+        "group": null,
+        "room": "221",
+        "fromOcr": true,
+        "ocrConfidence": 96,
+        "rawText": "УВОД У ТЕОРИЈУ ИГАРА (221)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВИ АНАЛИЗЕ СИГНАЛА И СИСТЕМА",
+        "group": null,
+        "room": "КЗ",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ОСНОВИ АНАЛИЗЕ СИГНАЛА И СИСТЕМА (КЗ)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОЈЕКТОВАЊЕ И АНАЛИЗА АЛГОРИТАМА",
+        "group": null,
+        "room": "К4",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ПРОЈЕКТОВАЊЕ И АНАЛИЗА АЛГОРИТАМА (К4)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "УВОД У ТЕОРИЈУ ИГАРА",
+        "group": null,
+        "room": "221",
+        "fromOcr": true,
+        "ocrConfidence": 96,
+        "rawText": "УВОД У ТЕОРИЈУ ИГАРА (221)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ЕНГЛЕСКИ ЈЕЗИК 1",
+        "group": null,
+        "room": "А3",
+        "fromOcr": false,
+        "rawText": "ЕНГЛЕСКИ ЈЕЗИК 1 (А3)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ВЕБ ПРОГРАМИРАЊЕ",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 84,
+      "rawText": "ВЕБ ПРОГРАМИРАЊЕ -3– (531)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ОПЕРАТИВНИ СИСТЕМИ",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ОПЕРАТИВНИ СИСТЕМИ -1- (131)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКЕ МРЕЖЕ",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 85,
+      "rawText": "РАЧУНАРСКЕ МРЕЖЕ -2– (231)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ВЕБ ПРОГРАМИРАЊЕ",
+      "group": null,
+      "room": "А2",
+      "fromOcr": false,
+      "rawText": "ВЕБ ПРОГРАМИРАЊЕ (А2)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНФОРМАЦИОНИ СИСТЕМИ",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 94,
+      "rawText": "ИНФОРМАЦИОНИ СИСТЕМИ -1- (131)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ОПЕРАТИВНИ СИСТЕМИ",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 87,
+      "rawText": "ОПЕРАТИВНИ СИСТЕМИ -2– (231)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКЕ МРЕЖЕ",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 84,
+      "rawText": "РАЧУНАРСКЕ МРЕЖЕ -3– (531)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ИНФОРМАЦИОНИ СИСТЕМИ",
+      "group": null,
+      "room": "А2",
+      "fromOcr": false,
+      "rawText": "ИНФОРМАЦИОНИ СИСТЕМИ (А2)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ВЕБ ПРОГРАМИРАЊЕ",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 91,
+      "rawText": "ВЕБ ПРОГРАМИРАЊЕ -1- (131)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНФОРМАЦИОНИ СИСТЕМИ",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 76,
+      "rawText": "ИНФОРМАЦИОНИ СИСТЕМИ -2– (231)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ОПЕРАТИВНИ СИСТЕМИ",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 83,
+      "rawText": "ОПЕРАТИВНИ СИСТЕМИ -3- (531)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "РАЧУНАРСКЕ МРЕЖЕ",
+      "group": null,
+      "room": "А2",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКЕ МРЕЖЕ (А2)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ВЕБ ПРОГРАМИРАЊЕ",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 76,
+      "rawText": "ВЕБ ПРОГРАМИРАЊЕ -2– (231)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНФОРМАЦИОНИ СИСТЕМИ",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 83,
+      "rawText": "ИНФОРМАЦИОНИ СИСТЕМИ -3– (531)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКЕ МРЕЖЕ",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 94,
+      "rawText": "РАЧУНАРСКЕ МРЕЖЕ -1- (131)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ОПЕРАТИВНИ СИСТЕМИ",
+      "group": null,
+      "room": "А2",
+      "fromOcr": false,
+      "rawText": "ОПЕРАТИВНИ СИСТЕМИ (А2)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ОСНОВИ АНАЛИЗЕ СИГНАЛА И СИСТЕМА",
+      "group": null,
+      "room": "КЗ",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ОСНОВИ АНАЛИЗЕ СИГНАЛА И СИСТЕМА (КЗ)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ПРОЈЕКТОВАЊЕ И АНАЛИЗА АЛГОРИТАМА",
+      "group": null,
+      "room": "К4",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ПРОЈЕКТОВАЊЕ И АНАЛИЗА АЛГОРИТАМА (К4)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "УВОД У ТЕОРИЈУ ИГАРА",
+      "group": null,
+      "room": "221",
+      "fromOcr": true,
+      "ocrConfidence": 96,
+      "rawText": "УВОД У ТЕОРИЈУ ИГАРА (221)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВИ АНАЛИЗЕ СИГНАЛА И СИСТЕМА",
+      "group": null,
+      "room": "КЗ",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ОСНОВИ АНАЛИЗЕ СИГНАЛА И СИСТЕМА (КЗ)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОЈЕКТОВАЊЕ И АНАЛИЗА АЛГОРИТАМА",
+      "group": null,
+      "room": "К4",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ПРОЈЕКТОВАЊЕ И АНАЛИЗА АЛГОРИТАМА (К4)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "УВОД У ТЕОРИЈУ ИГАРА",
+      "group": null,
+      "room": "221",
+      "fromOcr": true,
+      "ocrConfidence": 96,
+      "rawText": "УВОД У ТЕОРИЈУ ИГАРА (221)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ЕНГЛЕСКИ ЈЕЗИК 1",
+      "group": null,
+      "room": "А3",
+      "fromOcr": false,
+      "rawText": "ЕНГЛЕСКИ ЈЕЗИК 1 (А3)"
+    }
+  ]
+}

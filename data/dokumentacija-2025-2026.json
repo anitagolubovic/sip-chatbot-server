@@ -1,0 +1,1286 @@
+{
+  "schemaVersion": 1,
+  "category": "studentska_dokumentacija",
+  "language": "sr",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-08-02T16:46:27.944Z",
+  "records": [
+    {
+      "procedureTypes": [
+        "skolarina_ili_uplata",
+        "obrazac_ili_zahtev"
+      ],
+      "studyLevels": [
+        "SVI"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Подношење захтева за ослобађање плаћања трошкова школарине у пролећном семестру",
+      "summary": "Подношење захтева за ослобађање плаћања трошкова школарине у пролећном семестру школске 2025/2026. године",
+      "publishedAt": "2026-02-13",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/zahtev-oslobadjanje-skolarine-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Захтев са прописаном документацијом за ослобађање плаћања трошкова школарине може се предати од 23. 2. до 6. 3. 2026. године на шалтеру Службе за студентска питања.",
+          "Захтев за ослобађање плаћања трошкова можете преузети овде: захтев",
+          "Услови и начин ослобађања плаћања дела или комплетних трошкова школарине за студенте првог, другог и трећег степена за самофинансирајуће студенте и друге трошкове прописани су Правилником о условима и начину ослабађања плаћања трошкова и школарине студената Електронског факултета у Нишу, који можете преузети на сајту Факултета под Општа акта."
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": [
+        {
+          "label": "захтев",
+          "url": "https://sip.elfak.ni.ac.rs/article/obrasci/zahtev-za-oslobadjanje-skolarine"
+        }
+      ]
+    },
+    {
+      "procedureTypes": [
+        "skolarina_ili_uplata"
+      ],
+      "studyLevels": [
+        "OAS",
+        "MAS",
+        "DAS"
+      ],
+      "temporalScope": "kalendarska_godina",
+      "academicYear": null,
+      "calendarYear": 2026,
+      "title": "Mодели уплатница за плаћање трошкова издавања диплома",
+      "summary": "Mодели уплатница за плаћање трошкова издавања диплома на основним академским, мастер академским и докторским академским студијама за 2026. годину",
+      "publishedAt": "2025-12-31",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/modeli-uplatnica-diploma-2026",
+      "content": {
+        "paragraphs": [
+          "Овде можете да погледате примере правилно попуњених уплатница за плаћање трошкова издавања диплома на основним академским, мастер академским и докторским академским студијама за 2026. годину.",
+          "Издавање диплома на ОАС и МАС кошта 10.000 рсд, а на ДАС кошта 18.000 рсд.",
+          "Студенти петогодишњих студија не плаћају трошкове издавања диплома.",
+          "Такса је идентична у сва три случаја и износи 1.090 рсд.",
+          "Након плаћања, уплатнице обавезно доставити Служби за студентска питања ( предати на шалтеру или послати имејлом).",
+          "Уплатница за ОАС и МАС:",
+          "Уплатница за ДАС:",
+          "Уплатница за плаћање републичке администравне таксе за ОАС, МАС и ДАС:"
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "upis_godine"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Упис самофинансирајућих студената у II, III и IV годину основних академских студија",
+      "summary": "Упис самофинансирајућих студената у II, III и IV годину основних академских студија школске 2025/2026. године.",
+      "publishedAt": "2025-11-24",
+      "sourceCategory": "upis-naredne-godine-oas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/upis-samofinasiranje-2-3-4-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Упис студената у II, III и IV годину основних академских студија за школску 2025/2026. годину траје до 26. 11. 2025. године.",
+          "И ове школске године неће се вршити овера јесењег и упис пролећног семестра, због чега се при упису у школску годину плаћа семестрална уплата за оба семсетра.",
+          "За упис је потребна следећа документација:",
+          "Све ове обрасце можете преузети одавде и одштампати у А4 формату.",
+          "Листе изборних предмета за упис виших година ОАС могу се преузети овде: листе"
+        ],
+        "listItems": [
+          "индекс",
+          "пријавни лист за упис семестра",
+          "два примерка обрасца ШВ 20 (обавезно попунити сва поља)",
+          "студенти који уписују II годину попуњавају образац за избор модула",
+          "студенти II, III и IV године бирају изборне предмете за јесењи и пролећни семестар",
+          "семестрална уплата за оба семестра у износу од 2.000,00 динара - уплаћује се на жиро рачун Факултета 840-1721666-89 са позивом на број 92-9874-2025 (модел 97)",
+          "осигурање студената у износу од 98,23 динара – уплаћује се на жиро рачун Факултета 840-1721666-89",
+          "потврда о уплати прве рате школарине 11.125,00 динара (од укупно 8) на жиро рачун Факултета 840-1721666-89"
+        ]
+      },
+      "attachments": [],
+      "relatedRelevantPages": [
+        {
+          "label": "одавде",
+          "url": "https://sip.elfak.ni.ac.rs/article/obrasci/obrasci-upis-vise-godine-2025-2026"
+        },
+        {
+          "label": "листе",
+          "url": "https://sip.elfak.ni.ac.rs/article/obrasci/liste-izbornih-predmeta-oas-2025-2026"
+        }
+      ]
+    },
+    {
+      "procedureTypes": [
+        "upis_godine"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Упис студената који нису остварили довољан број ЕСПБ",
+      "summary": "Упис студената који у претходној години нису остварили довољан број ЕСПБ за прелазак у наредну годину студија",
+      "publishedAt": "2025-11-24",
+      "sourceCategory": "upis-naredne-godine-oas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/upis-nedovoljan-broj-espb-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Студенти који у претходној школској години нису остварили довољан број ЕСПБ за прелазак у наредну годину студија остају на истој години (уписују исту годину студија) као самофинансирајући студенти.",
+          "Упис траје до 26. 11. 2025. године.",
+          "Потребно је да попуне захтев којим се опредељују за полагање/слушање предмета у 2025/2026. школској години.",
+          "Студент се опредељује за најмање 37, а највише 72 ЕСПБ.",
+          "За ову школску годину не постоји обавезан редослед бирања нових предмета.",
+          "Вредност ЕСПБ је 1.000,00 динара за предмете које је студент слушао али није положио и 1.483,00 динара за предмете који се први пут слушају.",
+          "Студенти I године који су остварили мање од ЕСПБ предвиђених за прелазак у наредну годину студија могу се определити за одређени број предмете са II године.",
+          "Уколико се определе за модул Рачунарство и информатика, могу се уписати тек по завршетку уписа студената који су остварили услов за упис у наредну годину студија, a у зависности од броја преосталих места на том модулу и уколико су остварили услове уписа који постоје за овај модул. Приликом рангирања за евентуална преостала места користиће се исти критеријуми као и за студенте који су стекли услов за упис наредне године",
+          "За упис је потребна следећа документација:",
+          "Све ове обрасце можете преузети одавде и одштампати у А4 формату.",
+          "Листе изборних предмета за упис виших година ОАС могу се преузети овде: листе"
+        ],
+        "listItems": [
+          "индекс",
+          "пријавни лист за упис семестра",
+          "попуњен захтев у коме су наведени неположени испити",
+          "два примерка обрасца ШВ 20 (обавезно попунити сва поља)",
+          "семестрална уплата (за оба семестра)у износу од 2.000,00 динара - уплаћује се на жиро рачун Факултета 840-1721666-89 са позивом на број 92-9874-2025 (модел 97)",
+          "осигурање студената у износу од 98,23 динара – уплаћује се на жиро рачун Факултета 840-1721666-89",
+          "уплата прве рате школарине (од укупно 6) на жиро рачун Факултета 840-1721666-89 (висина школарине одређује се према Одлуци о накнадама Електронског факултета у Нишу, члан 5.)"
+        ]
+      },
+      "attachments": [],
+      "relatedRelevantPages": [
+        {
+          "label": "одавде",
+          "url": "https://sip.elfak.ni.ac.rs/article/obrasci/obrasci-upis-vise-godine-2025-2026"
+        },
+        {
+          "label": "листе",
+          "url": "https://sip.elfak.ni.ac.rs/article/obrasci/liste-izbornih-predmeta-oas-2025-2026"
+        }
+      ]
+    },
+    {
+      "procedureTypes": [
+        "upis_godine"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Услови уписа нове школске године на основу остварених ЕСПБ",
+      "summary": "Услови уписа нове школске 2025/2026. године на основу остварених ЕСПБ.",
+      "publishedAt": "2025-11-24",
+      "sourceCategory": "upis-naredne-godine-oas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/upis-espb-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Упис нове школске 2025/2026. године врши се на основу ЕСПБ остварених у школској 2024/2025. години по следећим критеријумима:",
+          "Упис у II годину",
+          "Као финансирани из буџета уписују се студенти који су остварили најмање 31 ЕСПБ.",
+          "Као самофинансирајући уписују се студенти који су остварили најмање 18 и највише 30 ЕСПБ.",
+          "Упис у III годину",
+          "Као финансирани из буџета уписују се студенти који су остварили најмање 42 ЕСПБ.",
+          "Као самофинансирајући уписују се студенти који су остварили најмање 30 и највише 41 ЕСПБ.",
+          "Упис у IV годину",
+          "Као финансирани из буџета уписују се студенти који су остварили најмање 48 ЕСПБ.",
+          "Као самофинансирајући уписују се студенти који су остварили најмање 30 и највише 47 ЕСПБ.",
+          "Обнова године",
+          "Студенти који су остварили мање ЕСПб од доње границе за упис у наредну годину на самофинансирању обнављају годину на којој су, уз услове уписа објављене на СИП-у."
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "upis_godine"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Продужен рок за упис нове школске године ОАС",
+      "summary": "Упис нове школске године основних академских студија се продужава до среде, 26. 11. 2025. године.",
+      "publishedAt": "2025-11-21",
+      "sourceCategory": "upis-naredne-godine-oas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/produzen-rok-upis-oas-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Упис нове школске године основних академских студија се продужава до среде, 26. 11. 2025. године."
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "zavrsni_rad"
+      ],
+      "studyLevels": [
+        "OAS",
+        "MAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Обавештење за студенте основних академских студија којима је остао само завршни / дипломски рад",
+      "summary": "Обавештење за студенте основних академских студија којима је остао само завршни / дипломски рад",
+      "publishedAt": "2025-11-19",
+      "sourceCategory": "upis-naredne-godine-oas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/obavestenje-studenti-ostao-diplomski-rad-19-11-2025",
+      "content": {
+        "paragraphs": [
+          "Студенти основних академских студија којима је остао само завршни / дипломски рад не морају уписати школску 2025/2026. годину уколико дипломирају до 5. 12. 2025. године када се завршава пријава на конкурс за упис на мастер академске студије у другом уписном року.",
+          "Уколико нису у могућности да дипломирају до наведеног рока, потребно је да се упишу у наредну школску годину најкасније до 5.12. 2025. без накнаде за закаснели упис."
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "izbor_predmeta_ili_modula"
+      ],
+      "studyLevels": [
+        "DAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Листе изборних предмета на Докторским академским студијама",
+      "summary": "Листе изборних предмета на Докторским академским студијама у школској 2025/26. години.",
+      "publishedAt": "2025-11-18",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/liste-izbornih-predmeta-das-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Листе изборних предмета на Докторским академским студијама у школској 2025/26. години.",
+          "Одговарајуће листе одштампајте на А4 папиру, попуните и предајте при упису семестра."
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "Електроника",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/das-elektronika-2025.pdf",
+          "fileName": "das-elektronika-2025.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Нанотехнологије и микросистеми",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/das-nim-2025.pdf",
+          "fileName": "das-nim-2025.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Примењена математика",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/das-pm-2025.pdf",
+          "fileName": "das-pm-2025.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Рачунарство и информатика",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/das-rii-2025.pdf",
+          "fileName": "das-rii-2025.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Телекомуникације",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/das-t-2025.pdf",
+          "fileName": "das-t-2025.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Управљање системима",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/das-us-2025.pdf",
+          "fileName": "das-us-2025.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "izbor_predmeta_ili_modula"
+      ],
+      "studyLevels": [
+        "MAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Листе изборних предмета на Мастер академским студијама",
+      "summary": "Листе изборних предмета на Мастер академским студијама у школској 2025/26. години.",
+      "publishedAt": "2025-11-18",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/liste-izbornih-predmeta-mas-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Листе изборних предмета на Мастер академским студијама у школској 2025/26. години.",
+          "Последња измена: 19. 11. 2025.",
+          "Одговарајуће листе одштампајте на А4 папиру, попуните и предајте при упису семестра."
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "Електроенергетика",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/mas-2025-2026/mas-2019-een.pdf",
+          "fileName": "mas-2019-een.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Електроника и микросистеми",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/mas-2025-2026/mas-2019-ems.pdf",
+          "fileName": "mas-2019-ems.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Рачунарство и информатика",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/mas-2025-2026/mas-2019-rii-v2.pdf",
+          "fileName": "mas-2019-rii-v2.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Комуникације и информационе технологије",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/mas-2025-2026/mas-2019-kit.pdf",
+          "fileName": "mas-2019-kit.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Управљање системима",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/mas-2025-2026/mas-2019-ups.pdf",
+          "fileName": "mas-2019-ups.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Вештачка интелигенција и машинско учење",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/mas-2025-2026/mas-2022-vimu-2.pdf",
+          "fileName": "mas-2022-vimu-2.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "upis_godine"
+      ],
+      "studyLevels": [
+        "MAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Поновни упис студената у I годину мастер академских студија",
+      "summary": "Поновни упис студената у I годину мастер академских студија у школској 2025/2026. години",
+      "publishedAt": "2025-11-13",
+      "sourceCategory": "mas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/mas/ponovni-upis-u-prvu-godinu-master-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Пријава студената који се поново уписују у I годину мастер академских студија у школској 2025/2026. години траје од 17. 11. до 5. 12. 2025. године.",
+          "Студенти којима је остао само мастер рад не морају да се уписују у наредну школску годину уколико одбране рад најкасније до 5. 12. 2025. године. У супротном, треба да регулишу статус закључно са наведеним датумом.",
+          "Право на поновни упис године имају сви студенти који су у школској 2024/2025. години имали статус студента на мастер академским студијама. Студенти којима је истекао двоструки број година студирања, поред доле наведене документације, треба да поднесу и захтев за продужење статуса.",
+          "Допис Министарства просвете којим се одобрава продужетак рока за завршетак студија студентима основних академских и академских студија.",
+          "И ове школске године неће се вршити овера јесењег и упис пролећног семестра, због чега се при упису у школску годину плаћа семестрална уплата за оба семсетра.",
+          "За упис је потребна следећа документација:"
+        ],
+        "listItems": [
+          "индекс",
+          "пријавни лист за упис семестра",
+          "два примерка обрасца ШВ 20 (обавезно попунити сва поља)",
+          "семестрална уплата за оба семестра у износу од 2.000,00 динара - уплаћује се на жиро рачун Факултета 840-1721666-89 са позивом на број 92-9874-2025 (модел 97)",
+          "осигурање студената у износу од 98,23 динара – уплаћује се на жиро рачун Факултета 840-1721666-89",
+          "потврда о уплати прве рате школарине (од укупно 6) на жиро рачун Факултета 840-1721666-89 (ЕСП бод износи 300 динара)",
+          "захтев којим се опредељују за полагање предмета из претходне школске године",
+          "уколико је остао само мастер рад, студент је такође дужан да регулише статус, најкасније до 5. 12. 2025. године (уколико не одбрани мастер рад до наведеног датума), али не плаћа школарину"
+        ]
+      },
+      "attachments": [
+        {
+          "label": "захтев за продужење статуса",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/opsti-zahtev-oas-mas.pdf",
+          "fileName": "opsti-zahtev-oas-mas.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Допис Министарства просвете",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/ostalo/dopis-ministarstva-za-vsu-preporuke-2025.pdf",
+          "fileName": "dopis-ministarstva-za-vsu-preporuke-2025.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "пријавни лист за упис семестра",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileName": "prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "обрасца ШВ 20",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/obrazac-sv20-2025-2026.pdf",
+          "fileName": "obrazac-sv20-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "захтев којим се опредељују за полагање предмета из претходне школске године",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/zahtev-za-izbor-nepolozenih-predmeta-mas-2025-2026.pdf",
+          "fileName": "zahtev-za-izbor-nepolozenih-predmeta-mas-2025-2026.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "upis_godine"
+      ],
+      "studyLevels": [
+        "DAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Поновни упис студената у III годину докторских академских студија у школској 2025/2026. години",
+      "summary": "Поновни упис студената у III годину докторских академских студија у школској 2025/2026. години",
+      "publishedAt": "2025-11-13",
+      "sourceCategory": "das",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/das/ponovni-upis-3-godina-das-13-11-2025",
+      "content": {
+        "paragraphs": [
+          "Пријава студената који се поново уписују у III годину докторских академских студија у школској 2025/2026. години траје од 17. 11. до 5. 12. 2025. године.",
+          "За упис је потребна следећа документација:• индекс• пријавни лист за упис семестра• два примерка обрасца ШВ 20 (обавезно попунити сва поља)• потврда о семестралној уплати у износу од 2.000,00 динара - уплаћује се на жиро рачун Факултета 840-1721666-89 са позивом на број 92-9874-2025 (модел 97)• потврда о уплати осигурања студената у износу од 98,23 динара – уплаћује се на жиро рачун Факултета 840-1721666-89• студенти који се сами финансирају и имају предмете које нису положили из претходних година (укључујући и СИР или НИР, али не и докторску дисертацију) прилажу потврда о уплати прве рате школарине (од укупно 6) на жиро рачун Факултета 840-1721666-89 (ЕСП бод износи 300 динара)• уколико је остала само докторска дисертација студенти не плаћају школарину• захтев којим се опредељују за полагање предмета из претходне школске године"
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "пријавни лист за упис семестра",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileName": "prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "обрасца ШВ 20",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/obrazac-sv20-2025-2026.pdf",
+          "fileName": "obrazac-sv20-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "захтев којим се опредељују за полагање предмета из претходне школске године",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/zahtev-za-nepolozenim-ispitima-das-2025-2026.pdf",
+          "fileName": "zahtev-za-nepolozenim-ispitima-das-2025-2026.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "status_studenta"
+      ],
+      "studyLevels": [
+        "OAS",
+        "DAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Продужење статуса на докторским академским студијама",
+      "summary": "Продужење статуса на докторским академским студијама у школској 2025/2026. години",
+      "publishedAt": "2025-11-13",
+      "sourceCategory": "das",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/das/produzenje-statusa-das-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Захтев за продужење статуса подносе сви студенти којима је истекао дупли број година студирања, а који су имали статус студента доктоских академских студија у школској 2024/2025. години.",
+          "Пријава траје од 17. 11 до 5. 12. 2025. године.",
+          "Допис Министарства просвете којим се одобрава продужетак рока за завршетак студија студентима основних академских и академских студија.",
+          "За упис је потребна следећа документација:"
+        ],
+        "listItems": [
+          "индекс",
+          "захтев за продужење статуса (општи захтев ДАС)",
+          "пријавни лист за упис семестра",
+          "два примерка обрасца ШВ 20 (обавезно попунити сва поља)",
+          "потврда о семестралној уплати у износу од 2.000,00 динара - уплаћује се на жиро рачун Факултета 840-1721666-89 са позивом на број 92-9874-2025 (модел 97)",
+          "потврда о уплати осигурања студената у износу од 98,23 динара – уплаћује се на жиро рачун Факултета 840-1721666-89",
+          "студенти који се сами финансирају и имају предмете које нису положили из претходних година (укључујући и СИР или НИР) прилажу потврду о уплати прве рате школарине (од укупно 6) на жиро рачун Факултета 840-1721666-89 (ЕСП бод износи 300 динара за студенте треће, односно 1000 динара за студенте прве и друге годин)",
+          "уколико је остала само докторска дисертација, студенти не плаћају школарину",
+          "захтев којим се опредељују за полагање предмета из претходне школске године (није потребан уколико је остала само докторска дисертација) линк"
+        ]
+      },
+      "attachments": [
+        {
+          "label": "Допис Министарства просвете",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/ostalo/dopis-ministarstva-za-vsu-preporuke-2025.pdf",
+          "fileName": "dopis-ministarstva-za-vsu-preporuke-2025.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "општи захтев ДАС",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/opsti-zahtev-das.pdf",
+          "fileName": "opsti-zahtev-das.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "пријавни лист за упис семестра",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileName": "prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "обрасца ШВ 20",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/obrazac-sv20-2025-2026.pdf",
+          "fileName": "obrazac-sv20-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "захтев којим се опредељују за полагање предмета из претходне школске године",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/zahtev-za-nepolozenim-ispitima-das-2025-2026.pdf",
+          "fileName": "zahtev-za-nepolozenim-ispitima-das-2025-2026.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "upis_godine"
+      ],
+      "studyLevels": [
+        "DAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Упис студената у II и III годину докторских академских студија",
+      "summary": "Упис студената у II и III годину докторских академских студија у школској 2025/2026. години",
+      "publishedAt": "2025-11-13",
+      "sourceCategory": "das",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/das/upis-2-3-godina-das-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Обавештавају се студенти докторских академских студија да је за упис у II и III годину потребно да остваре 50 ЕСП бодова за финасирање из буџета, односно 40 ЕСП бодова за самофинансирање.",
+          "Студенти који су положили испите, али нису доставили пријаве, треба хитно да се јаве студентској служби ради регулисања записника.",
+          "Упис студената у II и III годину докторских академских студија у школској 2024/2025. години траје од 17. 11. до 5. 12. 2025. године.",
+          "За упис је потребна следећа документација:"
+        ],
+        "listItems": [
+          "индекс",
+          "пријавни лист за упис семестра",
+          "два примерка обрасца ШВ 20 (обавезно попунити сва поља)",
+          "семестрална уплата у износу од 2.000,00 динара - уплаћује се на жиро рачун Факултета 840-1721666-89 са позивом на број 92-9874-2025 (модел 97)",
+          "осигурање студената у износу од 98,23 динара – уплаћује се на жиро рачун Факултета 840-1721666-89",
+          "за студенте који се сами финансирају потврда о уплати прве рате школарине (од укупно 8) на жиро рачун Факултета 840-1721666-89",
+          "списак изборних предмета за студенте II године",
+          "студенти који су остварили мање од 40 ЕСПБ бодова попуњавају захтев којим се опредељују за полагање предмета из претходне школске године и прилажу потврду о уплати прве рате школарине (од укупно 6) на жиро рачун Факултета 840-1721666-89 (ЕСП бод износи 1000 динара)",
+          "упитник за вредновање квалитета (попуњавају само студенти који први пут уписују III годину) линк"
+        ]
+      },
+      "attachments": [
+        {
+          "label": "пријавни лист за упис семестра",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileName": "prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "обрасца ШВ 20",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/obrazac-sv20-2025-2026.pdf",
+          "fileName": "obrazac-sv20-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "списак изборних предмета за студенте II године",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/izborni-predmeti-druga-godina-das-2025-2026.pdf",
+          "fileName": "izborni-predmeti-druga-godina-das-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "захтев којим се опредељују за полагање предмета из претходне школске године",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/zahtev-za-nepolozenim-ispitima-das-2025-2026.pdf",
+          "fileName": "zahtev-za-nepolozenim-ispitima-das-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "упитник за вредновање квалитета",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/das-2025-2026/anketa-3-godina-das.pdf",
+          "fileName": "anketa-3-godina-das.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "upis_godine"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Поновни упис студената у IV годину основних академских студија у школској 2025/2026. години",
+      "summary": "Самофинансирање",
+      "publishedAt": "2025-11-06",
+      "sourceCategory": "upis-naredne-godine-oas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/ponovni-upis-4-godina-samofinansiranje-6-11-2025",
+      "content": {
+        "paragraphs": [
+          "Студенти основних академских студија који поново уписују IV годину подносе прописану документацију наведену за упис виших година до 25. 11. 2025. године.",
+          "• индекс• пријавни лист за упис семестра• два примерка обрасца ШВ 20 (обавезно попунити сва поља)• захтев са наведеним неположеним испитима• семестрална уплата за оба семстра у износу од 2.000,00 динара - уплаћује се на жиро рачун Факултета 840-1721666-89 са позивом на број 92-9874-2025 (модел 97)• осигурање студената у износу од 98,23 динара – уплаћује се на жиро рачун Факултета 840-1721666-89• потврда о уплати прве рате школарине (од укупно 6) на жиро рачун Факултета 840-1721666-89 (ЕСП бод износи 300 динара).",
+          "Студенти који се сами финансирају, а до краја студија им је остао само Дипломски / Завршни рад, не плаћају школарину."
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "пријавни лист за упис семестра",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileName": "prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "обрасца ШВ 20",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/obrazac-sv20-2025-2026.pdf",
+          "fileName": "obrazac-sv20-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "захтев са наведеним неположеним испитима",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/zahtev-sa-navedenim-nepolozenim-ispitima-oas-2025.pdf",
+          "fileName": "zahtev-sa-navedenim-nepolozenim-ispitima-oas-2025.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "upis_godine",
+        "zavrsni_rad"
+      ],
+      "studyLevels": [
+        "OAS",
+        "MAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Рок за упис наредне године студената којима је остао само завршни - дипломски рад",
+      "summary": "Обавештење за студенте основних академских студија којима је остао само завршни / дипломски рад",
+      "publishedAt": "2025-11-06",
+      "sourceCategory": "upis-naredne-godine-oas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/rok-upis-studenti-ostao-diplomski-rad-6-11-2025",
+      "content": {
+        "paragraphs": [
+          "Студенти основних академских студија којима је остао само завршни / дипломски рад не морају уписати школску 2025/2026. годину уколико дипломирају до 25. 11. 2025. године када се завршава пријава на конкурс за упис на мастер академске студије у првом уписном року. Уколико нису у могућности да дипломирају до наведеног рока, потребно је да се упишу у наредну школску годину најкасније до 25.11. без накнаде за закаснели упис."
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "izbor_predmeta_ili_modula"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Листе изборних предмета за упис виших година ОАС",
+      "summary": "Листе изборних предмета за упис виших година ОАС школске 2025/2026. године",
+      "publishedAt": "2025-10-20",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/liste-izbornih-predmeta-oas-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Овде можете преузети листе изборних предмета потребне за упис јесењег семестра школске 2025/2026. године на Основним академским студијама.",
+          "Одговарајуће листе одштампајте на А4 папиру, попуните и при упису семестра предајте Студентској служби."
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "izborni-oas-2019-een-2.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-een-2.pdf",
+          "fileName": "izborni-oas-2019-een-2.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-een-3.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-een-3.pdf",
+          "fileName": "izborni-oas-2019-een-3.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-een-4.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-een-4.pdf",
+          "fileName": "izborni-oas-2019-een-4.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-ekm-2.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-ekm-2.pdf",
+          "fileName": "izborni-oas-2019-ekm-2.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-ekm-3.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-ekm-3.pdf",
+          "fileName": "izborni-oas-2019-ekm-3.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-ekm-4.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-ekm-4.pdf",
+          "fileName": "izborni-oas-2019-ekm-4.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-elk-2.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-elk-2.pdf",
+          "fileName": "izborni-oas-2019-elk-2.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-elk-3.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-elk-3.pdf",
+          "fileName": "izborni-oas-2019-elk-3.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-elk-4.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-elk-4.pdf",
+          "fileName": "izborni-oas-2019-elk-4.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-rii-2.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-rii-2.pdf",
+          "fileName": "izborni-oas-2019-rii-2.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-rii-3.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-rii-3.pdf",
+          "fileName": "izborni-oas-2019-rii-3.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-rii-4-v2.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-rii-4-v2.pdf",
+          "fileName": "izborni-oas-2019-rii-4-v2.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-kit-2.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-kit-2.pdf",
+          "fileName": "izborni-oas-2019-kit-2.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-kit-3.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-kit-3.pdf",
+          "fileName": "izborni-oas-2019-kit-3.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-kit-4.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-kit-4.pdf",
+          "fileName": "izborni-oas-2019-kit-4.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-ups-2.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-ups-2.pdf",
+          "fileName": "izborni-oas-2019-ups-2.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-ups-3.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-ups-3.pdf",
+          "fileName": "izborni-oas-2019-ups-3.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "izborni-oas-2019-ups-4.pdf",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izborni-oas-2019-ups-4.pdf",
+          "fileName": "izborni-oas-2019-ups-4.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "izbor_predmeta_ili_modula"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Обавештење за студенте прве године ОАС који бирају модул Рачунарство и информатика",
+      "summary": "Обавештење за студенте прве године ОАС који бирају модул Рачунарство и информатика",
+      "publishedAt": "2025-10-20",
+      "sourceCategory": "upis-naredne-godine-oas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/obavestenje-prva-godina-ri-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Студенти I године који су стекли услов за упис у II годину и опредељују се за модул Рачунарство и информатика треба да имају положене испите Увод у рачунарство и Алгоритми и програмирање."
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "obrazac_ili_zahtev"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Обрасци за упис на више године ОАС школске 2025/2026. године",
+      "summary": "Обрасци за упис на више године ОАС школске 2025/2026. године",
+      "publishedAt": "2025-10-20",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/obrasci-upis-vise-godine-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Обрасци потребни за упис у II, III и IV годину основних академских студија школске 2025/2026. године:",
+          "Захтев за слушање испита из наредне године са наведеним неположеним испитима на ОАС",
+          "Све ове обрасце студент може преузети одавде и одштампати у А4 формату."
+        ],
+        "listItems": [
+          "пријавни лист за упис семестра",
+          "образац за избор модула",
+          "статистички извештај о упису студента (образац ШВ-20)"
+        ]
+      },
+      "attachments": [
+        {
+          "label": "пријавни лист за упис семестра",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileName": "prijavni-list-za-upis-semestra-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "образац за избор модула",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/izbor-modula-druga-godina-oas-2025-2026.pdf",
+          "fileName": "izbor-modula-druga-godina-oas-2025-2026.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "статистички извештај о упису студента (образац ШВ-20)",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/obrazac-sv20-2025-2026.pdf",
+          "fileName": "obrazac-sv20-2025-2026.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": [
+        {
+          "label": "Захтев за слушање испита из наредне године са наведеним неположеним испитима на ОАС",
+          "url": "https://sip.elfak.ni.ac.rs/article/obrasci/zahtev-sa-navedenim-nepolozenim-ispitima-oas-2025-2026"
+        }
+      ]
+    },
+    {
+      "procedureTypes": [
+        "upis_godine"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Поновни упис студената у IV годину основних академских студија у школској 2025/2026. години",
+      "summary": "Поновни упис студената у IV годину основних академских студија у школској 2025/2026. години",
+      "publishedAt": "2025-10-20",
+      "sourceCategory": "upis-naredne-godine-oas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/ponovi-upis-4-godina-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Студенти основних академских студија који поново уписују IV годину, а који су задржали право да се финансирају из буџета најдуже годину дана по истеку редовног трајања студија, подносе прописану документацију наведену за упис виших година: документација",
+          "Упис почиње 21. 10. 2025. године."
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": [
+        {
+          "label": "документација",
+          "url": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/upis-vise-godine-oas-2025-2026"
+        }
+      ]
+    },
+    {
+      "procedureTypes": [
+        "upis_godine"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Упис студената у II, III и IV годину основних академских студија",
+      "summary": "Упис студената у II, III и IV годину основних академских студија за школску 2025/2026. годину.",
+      "publishedAt": "2025-10-20",
+      "sourceCategory": "upis-naredne-godine-oas",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/upis-naredne-godine-oas/upis-vise-godine-oas-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Упис студената који су у текућој школској години остварили услов за буџет почиње 21. 10. 2025. године.",
+          "И ове школске године неће се вршити овера јесењег и упис пролећног семестра, због чега се при упису у школску годину плаћа семестрална уплата за оба семсетра.",
+          "За упис је потребна следећа документација:",
+          "Све ове обрасце можете преузети одавде и одштампати у А4 формату.",
+          "Листе изборних предмета за упис виших година ОАС могу се преузети овде: листе"
+        ],
+        "listItems": [
+          "индекс",
+          "пријавни лист за упис семестра",
+          "два примерка обрасца ШВ 20 (обавезно попунити сва поља)",
+          "студенти који уписују II годину попуњавају образац за избор модула",
+          "студенти II, III и IV године бирају изборне предмете за јесењи и пролећни семестар",
+          "семестрална уплата за оба семстра у износу од 2.000,00 динара - уплаћује се на жиро рачун Факултета 840-1721666-89 са позивом на број 92-9874-2025 (модел 97)",
+          "осигурање студената у износу од 98,23 динара – уплаћује се на жиро рачун Факултета 840-1721666-89"
+        ]
+      },
+      "attachments": [],
+      "relatedRelevantPages": [
+        {
+          "label": "одавде",
+          "url": "https://sip.elfak.ni.ac.rs/article/obrasci/obrasci-upis-vise-godine-2025-2026"
+        },
+        {
+          "label": "листе",
+          "url": "https://sip.elfak.ni.ac.rs/article/obrasci/liste-izbornih-predmeta-oas-2025-2026"
+        }
+      ]
+    },
+    {
+      "procedureTypes": [
+        "strucna_praksa",
+        "obrazac_ili_zahtev"
+      ],
+      "studyLevels": [
+        "SVI"
+      ],
+      "temporalScope": "opste",
+      "academicYear": null,
+      "calendarYear": null,
+      "title": "Образац за упут на стручну праксу и потврда о реализованој стручној пракси",
+      "summary": "Образац за упут на стручну праксу и потврда о реализованој стручној пракси.",
+      "publishedAt": "2025-09-26",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/obrazac-strucna-praksa-uput-i-potvrda-2025",
+      "content": {
+        "paragraphs": [
+          "Образац за упут на стручну праксу и потврда о реализованој стручној пракси: образац"
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "образац",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/strucna-praksa-uput-i-potvrda-2025.pdf",
+          "fileName": "strucna-praksa-uput-i-potvrda-2025.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "obrazac_ili_zahtev"
+      ],
+      "studyLevels": [
+        "OAS"
+      ],
+      "temporalScope": "skolska_godina",
+      "academicYear": "2025/2026",
+      "calendarYear": null,
+      "title": "Захтев за слушање испита из наредне године са наведеним неположеним испитима на ОАС",
+      "summary": "Овде се може преузети захтев за слушање испита из наредне године са наведеним неположеним испитима на ОАС",
+      "publishedAt": "2022-09-08",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/zahtev-sa-navedenim-nepolozenim-ispitima-oas-2025-2026",
+      "content": {
+        "paragraphs": [
+          "Преузмите Захтев за слушање испита из наредне године са наведеним неположеним испитима на ОАС"
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "Захтев за слушање испита из наредне године са наведеним неположеним испитима на ОАС",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/oas-2025-2026/zahtev-sa-navedenim-nepolozenim-ispitima-oas-2025-2025.pdf",
+          "fileName": "zahtev-sa-navedenim-nepolozenim-ispitima-oas-2025-2025.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "zavrsni_rad"
+      ],
+      "studyLevels": [
+        "SVI"
+      ],
+      "temporalScope": "opste",
+      "academicYear": null,
+      "calendarYear": null,
+      "title": "Достављање електронске верзије завршног/дипломског/мастер рада",
+      "summary": "Важно обавештење у вези пријаве и предаје дипломских, завршних и мастер радова.",
+      "publishedAt": "2021-07-02",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/slanje-radova-na-email",
+      "content": {
+        "paragraphs": [
+          "Електронска верзија завршног рада у PDF формату предаје се Служби за студентска питања путем мејла diplomski@elfak.ni.ac.rs, пре предаје Захтева за одбрану на прописаном обрасцу и једног примерка завршног/дипломског/мастер рада. Наслов фајла треба да садржи име и презиме студента, број индекса и наслов рада."
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "status_studenta",
+        "obrazac_ili_zahtev"
+      ],
+      "studyLevels": [
+        "SVI"
+      ],
+      "temporalScope": "opste",
+      "academicYear": null,
+      "calendarYear": null,
+      "title": "Oстваривање мировања права и обавеза",
+      "summary": "на лични захтев",
+      "publishedAt": "2020-10-08",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/mirovanje-2020",
+      "content": {
+        "paragraphs": [
+          "Студенту се, на његов захтев, одобрава мировања права и обавеза, у случајевима наведеним у члану 97. Статута Електронског факултета у Нишу. Мировање права и обавеза студент остварује на претходни лични захтев који, заједно са потребном документацијом овереном од стране надлежне институције, подноси Служби за студентска питања Факултета.",
+          "Током одобреног мировања, студент не може да полаже испите или остварује предиспитне обавезе."
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "Статута Електронског факултета у Нишу",
+          "url": "https://www.elfak.ni.ac.rs/downloads/akta/statut-fakulteta-2019.pdf",
+          "fileName": "statut-fakulteta-2019.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": [
+        {
+          "label": "претходни лични захтев",
+          "url": "https://sip.elfak.ni.ac.rs/article/obrasci/opsti-obrasci"
+        }
+      ]
+    },
+    {
+      "procedureTypes": [
+        "prijava_ispita"
+      ],
+      "studyLevels": [
+        "DAS"
+      ],
+      "temporalScope": "opste",
+      "academicYear": null,
+      "calendarYear": null,
+      "title": "Пријава испита на докторским академским студијама",
+      "summary": "електронски путем након договора са предметним наставником",
+      "publishedAt": "2020-05-09",
+      "sourceCategory": "das",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/das/prijava-ispita-das-9-5-2020",
+      "content": {
+        "paragraphs": [
+          "Студенти докторских академских студија могу пријавити испите након договора са предметним наставником електронски путем на мејл ivana.spasic@elfak.ni.ac.rs",
+          "Тема мејла је Пријава испита на ДАС и он треба да садржи следеће податке: број индекса, име и презиме студента, називе предмета који се пријављују, име и презиме наставника код којих се полаже и датуми полагања испита",
+          "Пријаву (зелени картон) доносите предметном наставнику када дођете на испит.",
+          "Попуњену пријаву и записник предметни наставник доставља Служби за студентска питања.",
+          "Услов за пријаву испита је да у актуелној школској години имате статус студента и да сте до тог тренутка, уколико сте самофинансирајући студент, измирили одговарајући број рата школарине."
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "obrazac_ili_zahtev"
+      ],
+      "studyLevels": [
+        "OAS",
+        "MAS",
+        "DAS"
+      ],
+      "temporalScope": "opste",
+      "academicYear": null,
+      "calendarYear": null,
+      "title": "Општи обрасци за захтеве студената",
+      "summary": "Општи обрасци за захтеве студената ОАС, МАС и ДАС.",
+      "publishedAt": "2019-10-07",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/opsti-obrasci",
+      "content": {
+        "paragraphs": [
+          "Овде се могу преузети општи обрасци за разноразне захтеве студената основних академских, мастер академских и докторских академских студија.",
+          "Образац за студенте основних академских и мастер академских студија",
+          "Образац за студенте докторских академских студија",
+          "Обрасци су намењени за штампу у А4 формату."
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "Образац за студенте основних академских и мастер академских студија",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/opsti-zahtev-oas-mas.pdf",
+          "fileName": "opsti-zahtev-oas-mas.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "label": "Образац за студенте докторских академских студија",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/opsti-zahtev-das.pdf",
+          "fileName": "opsti-zahtev-das.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "ispis_sa_fakulteta",
+        "obrazac_ili_zahtev"
+      ],
+      "studyLevels": [
+        "OAS",
+        "MAS",
+        "DAS"
+      ],
+      "temporalScope": "opste",
+      "academicYear": null,
+      "calendarYear": null,
+      "title": "Документација потребна за испис са факултета",
+      "summary": "Овде се може наћи документација потребна за испис са факултета за све нивое студија.",
+      "publishedAt": "2019-09-27",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/dokumentacija-ispis-sa-fakulteta",
+      "content": {
+        "paragraphs": [
+          "За испис са факултета потребна је следећа документација:"
+        ],
+        "listItems": [
+          "Потпис и печат у индексу из Библиотеке Електронског факултета,",
+          "Попуњен Општи образац за захтев студената (преузети са следећег линка),",
+          "Уплата од 1.800,00 динара на жиро-рачун Факултета 840-32819845-55 ( за студенте са ОАС и МАС нивоа студија),",
+          "Уплата од 2.500,00 динара на жиро-рачун Факултета 840-32819845-55 (за студенте са ДАС нивоа студија)."
+        ]
+      },
+      "attachments": [],
+      "relatedRelevantPages": [
+        {
+          "label": "линка",
+          "url": "https://sip.elfak.ni.ac.rs/article/obrasci/opsti-obrasci"
+        }
+      ]
+    },
+    {
+      "procedureTypes": [
+        "obrazac_ili_zahtev"
+      ],
+      "studyLevels": [
+        "SVI"
+      ],
+      "temporalScope": "opste",
+      "academicYear": null,
+      "calendarYear": null,
+      "title": "Захтев за признавање периода мобилности",
+      "summary": "Преузмите образац захтева за академско признавање периода мобилности",
+      "publishedAt": "2019-01-21",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/zahtev-priznavanje-mobilnosti",
+      "content": {
+        "paragraphs": [
+          "Преузмите образац захтева за академско признавање периода мобилности: образац",
+          "Образац је намењен за штампу у А4 формату."
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "образац",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/zahtev-za-priznavanje-mobilnosti.pdf",
+          "fileName": "zahtev-za-priznavanje-mobilnosti.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    },
+    {
+      "procedureTypes": [
+        "skolarina_ili_uplata",
+        "obrazac_ili_zahtev"
+      ],
+      "studyLevels": [
+        "SVI"
+      ],
+      "temporalScope": "opste",
+      "academicYear": null,
+      "calendarYear": null,
+      "title": "Захтев за ослобађање од плаћања школарине",
+      "summary": "Захтев за ослобађање од плаћања дела или комплетних трошкова школарине.",
+      "publishedAt": "2019-01-11",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/zahtev-za-oslobadjanje-skolarine",
+      "content": {
+        "paragraphs": [
+          "Образац захтева за ослобађање од плаћања дела или комплетних трошкова школарине можете преузети овде: образац",
+          "Образац је намењен за штампу у А4 формату."
+        ],
+        "listItems": []
+      },
+      "attachments": [
+        {
+          "label": "образац",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/obrasci/zahtev-za-oslobadjanje-skolarine.pdf",
+          "fileName": "zahtev-za-oslobadjanje-skolarine.pdf",
+          "fileType": "pdf"
+        }
+      ],
+      "relatedRelevantPages": []
+    }
+  ]
+}

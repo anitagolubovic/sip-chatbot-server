@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 4,
+  "studyYear": 2,
+  "semesterType": "letnji",
+  "module": "UPS",
+  "submodule": null,
+  "moduleLabel": "УПС",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:50.088Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem4-ups-v2.pdf",
+    "pdfSha256": "da38b2b5e2928aff9a9b1efb8b47649fee3b2ea5cc3d64867f3e24ec94169aaa",
+    "linkText": "IV"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 09 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 12,
+    "byClassType": {
+      "predavanje": 6,
+      "racunske_vezbe": 6
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ДИГИТАЛНА ЕЛЕКТРОНИКА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "ДИГИТАЛНА ЕЛЕКТРОНИКА (552)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИГИТАЛНА ЕЛЕКТРОНИКА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "ДИГИТАЛНА ЕЛЕКТРОНИКА (552)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "predavanje",
+        "course": "ОРГАНИЗАЦИЈА РАЧУНАРСКИХ СИСТЕМА",
+        "group": null,
+        "room": "А4",
+        "fromOcr": false,
+        "rawText": "ОРГАНИЗАЦИЈА РАЧУНАРСКИХ СИСТЕМА (А4)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ОРГАНИЗАЦИЈА РАЧУНАРСКИХ СИСТЕМА",
+        "group": null,
+        "room": "А4",
+        "fromOcr": false,
+        "rawText": "ОРГАНИЗАЦИЈА РАЧУНАРСКИХ СИСТЕМА (А4)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "МЕХАТРОНИКА",
+        "group": null,
+        "room": "А4",
+        "fromOcr": false,
+        "rawText": "МЕХАТРОНИКА (А4)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "МЕХАТРОНИКА",
+        "group": null,
+        "room": "А4",
+        "fromOcr": false,
+        "rawText": "МЕХАТРОНИКА (А4)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "ЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА (552)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "ЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА (552)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "13:15",
+        "endsAt": "16:00",
+        "classType": "predavanje",
+        "course": "МАТЕМАТИЧКИ МЕТОДИ",
+        "group": null,
+        "room": "433",
+        "fromOcr": false,
+        "rawText": "МАТЕМАТИЧКИ МЕТОДИ (433)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "racunske_vezbe",
+        "course": "МАТЕМАТИЧКИ МЕТОДИ",
+        "group": null,
+        "room": "433",
+        "fromOcr": false,
+        "rawText": "МАТЕМАТИЧКИ МЕТОДИ (433)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "13:15",
+        "endsAt": "16:00",
+        "classType": "predavanje",
+        "course": "МАТЕМАТИЧКЕ ОСНОВЕ ТЕОРИЈЕ СИСТЕМА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "МАТЕМАТИЧКЕ ОСНОВЕ ТЕОРИЈЕ СИСТЕМА (552)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "racunske_vezbe",
+        "course": "МАТЕМАТИЧКЕ ОСНОВЕ ТЕОРИЈЕ СИСТЕМА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "МАТЕМАТИЧКЕ ОСНОВЕ ТЕОРИЈЕ СИСТЕМА (552)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ДИГИТАЛНА ЕЛЕКТРОНИКА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "ДИГИТАЛНА ЕЛЕКТРОНИКА (552)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИГИТАЛНА ЕЛЕКТРОНИКА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "ДИГИТАЛНА ЕЛЕКТРОНИКА (552)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "predavanje",
+      "course": "ОРГАНИЗАЦИЈА РАЧУНАРСКИХ СИСТЕМА",
+      "group": null,
+      "room": "А4",
+      "fromOcr": false,
+      "rawText": "ОРГАНИЗАЦИЈА РАЧУНАРСКИХ СИСТЕМА (А4)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ОРГАНИЗАЦИЈА РАЧУНАРСКИХ СИСТЕМА",
+      "group": null,
+      "room": "А4",
+      "fromOcr": false,
+      "rawText": "ОРГАНИЗАЦИЈА РАЧУНАРСКИХ СИСТЕМА (А4)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "МЕХАТРОНИКА",
+      "group": null,
+      "room": "А4",
+      "fromOcr": false,
+      "rawText": "МЕХАТРОНИКА (А4)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "МЕХАТРОНИКА",
+      "group": null,
+      "room": "А4",
+      "fromOcr": false,
+      "rawText": "МЕХАТРОНИКА (А4)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "ЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА (552)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "ЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА (552)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "13:15",
+      "endsAt": "16:00",
+      "classType": "predavanje",
+      "course": "МАТЕМАТИЧКИ МЕТОДИ",
+      "group": null,
+      "room": "433",
+      "fromOcr": false,
+      "rawText": "МАТЕМАТИЧКИ МЕТОДИ (433)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "racunske_vezbe",
+      "course": "МАТЕМАТИЧКИ МЕТОДИ",
+      "group": null,
+      "room": "433",
+      "fromOcr": false,
+      "rawText": "МАТЕМАТИЧКИ МЕТОДИ (433)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "13:15",
+      "endsAt": "16:00",
+      "classType": "predavanje",
+      "course": "МАТЕМАТИЧКЕ ОСНОВЕ ТЕОРИЈЕ СИСТЕМА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "МАТЕМАТИЧКЕ ОСНОВЕ ТЕОРИЈЕ СИСТЕМА (552)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "racunske_vezbe",
+      "course": "МАТЕМАТИЧКЕ ОСНОВЕ ТЕОРИЈЕ СИСТЕМА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "МАТЕМАТИЧКЕ ОСНОВЕ ТЕОРИЈЕ СИСТЕМА (552)"
+    }
+  ]
+}

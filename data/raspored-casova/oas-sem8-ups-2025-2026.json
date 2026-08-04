@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 8,
+  "studyYear": 4,
+  "semesterType": "letnji",
+  "module": "UPS",
+  "submodule": null,
+  "moduleLabel": "УПС",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:55.081Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem8-ups-v2.pdf",
+    "pdfSha256": "a50cc9abf70a9ad0c3b015bcc24ad7f8a995272a5865264da4bd2e6a8ac757a0",
+    "linkText": "VIII"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 09 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 12,
+    "byClassType": {
+      "predavanje": 6,
+      "racunske_vezbe": 6
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ТЕРМОВИЗИЈА",
+        "group": null,
+        "room": "431",
+        "fromOcr": false,
+        "rawText": "ТЕРМОВИЗИЈА (431)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ТЕРМОВИЗИЈА",
+        "group": null,
+        "room": "431",
+        "fromOcr": false,
+        "rawText": "ТЕРМОВИЗИЈА (431)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ИНТЕРНЕТ СТВАРИ",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ИНТЕРНЕТ СТВАРИ (221)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНТЕРНЕТ СТВАРИ",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ИНТЕРНЕТ СТВАРИ (221)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "SCADA СИСТЕМИ",
+        "group": null,
+        "room": "370",
+        "fromOcr": false,
+        "rawText": "SCADA СИСТЕМИ (370)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "SCADA СИСТЕМИ",
+        "group": null,
+        "room": "370",
+        "fromOcr": false,
+        "rawText": "SCADA СИСТЕМИ (370)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "МЕТОДЕ ВЕШТАЧКЕ ИНТЕЛИГЕНЦИЈЕ",
+        "group": null,
+        "room": "370",
+        "fromOcr": false,
+        "rawText": "МЕТОДЕ ВЕШТАЧКЕ ИНТЕЛИГЕНЦИЈЕ (370)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "МЕТОДЕ ВЕШТАЧКЕ ИНТЕЛИГЕНЦИЈЕ",
+        "group": null,
+        "room": "370",
+        "fromOcr": false,
+        "rawText": "МЕТОДЕ ВЕШТАЧКЕ ИНТЕЛИГЕНЦИЈЕ (370)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ОПТИЧКЕ КОМУНИКАЦИЈЕ",
+        "group": null,
+        "room": "223",
+        "fromOcr": false,
+        "rawText": "ОПТИЧКЕ КОМУНИКАЦИЈЕ (223)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ОПТИЧКЕ КОМУНИКАЦИЈЕ",
+        "group": null,
+        "room": "223",
+        "fromOcr": false,
+        "rawText": "ОПТИЧКЕ КОМУНИКАЦИЈЕ (223)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "ВЕРОВАТНОЋА И СТАТИСТИКА",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "ВЕРОВАТНОЋА И СТАТИСТИКА (А1)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "ВЕРОВАТНОЋА И СТАТИСТИКА",
+        "group": null,
+        "room": "122",
+        "fromOcr": false,
+        "rawText": "ВЕРОВАТНОЋА И СТАТИСТИКА (122)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ТЕРМОВИЗИЈА",
+      "group": null,
+      "room": "431",
+      "fromOcr": false,
+      "rawText": "ТЕРМОВИЗИЈА (431)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ТЕРМОВИЗИЈА",
+      "group": null,
+      "room": "431",
+      "fromOcr": false,
+      "rawText": "ТЕРМОВИЗИЈА (431)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ИНТЕРНЕТ СТВАРИ",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ИНТЕРНЕТ СТВАРИ (221)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНТЕРНЕТ СТВАРИ",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ИНТЕРНЕТ СТВАРИ (221)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "SCADA СИСТЕМИ",
+      "group": null,
+      "room": "370",
+      "fromOcr": false,
+      "rawText": "SCADA СИСТЕМИ (370)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "SCADA СИСТЕМИ",
+      "group": null,
+      "room": "370",
+      "fromOcr": false,
+      "rawText": "SCADA СИСТЕМИ (370)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "МЕТОДЕ ВЕШТАЧКЕ ИНТЕЛИГЕНЦИЈЕ",
+      "group": null,
+      "room": "370",
+      "fromOcr": false,
+      "rawText": "МЕТОДЕ ВЕШТАЧКЕ ИНТЕЛИГЕНЦИЈЕ (370)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "МЕТОДЕ ВЕШТАЧКЕ ИНТЕЛИГЕНЦИЈЕ",
+      "group": null,
+      "room": "370",
+      "fromOcr": false,
+      "rawText": "МЕТОДЕ ВЕШТАЧКЕ ИНТЕЛИГЕНЦИЈЕ (370)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ОПТИЧКЕ КОМУНИКАЦИЈЕ",
+      "group": null,
+      "room": "223",
+      "fromOcr": false,
+      "rawText": "ОПТИЧКЕ КОМУНИКАЦИЈЕ (223)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ОПТИЧКЕ КОМУНИКАЦИЈЕ",
+      "group": null,
+      "room": "223",
+      "fromOcr": false,
+      "rawText": "ОПТИЧКЕ КОМУНИКАЦИЈЕ (223)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "ВЕРОВАТНОЋА И СТАТИСТИКА",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "ВЕРОВАТНОЋА И СТАТИСТИКА (А1)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "ВЕРОВАТНОЋА И СТАТИСТИКА",
+      "group": null,
+      "room": "122",
+      "fromOcr": false,
+      "rawText": "ВЕРОВАТНОЋА И СТАТИСТИКА (122)"
+    }
+  ]
+}

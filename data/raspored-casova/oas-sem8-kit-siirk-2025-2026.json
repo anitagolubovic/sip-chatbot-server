@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 8,
+  "studyYear": 4,
+  "semesterType": "letnji",
+  "module": "KIT",
+  "submodule": "SIIRK",
+  "moduleLabel": "КИТ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:42.682Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem8-kit-siirk-v2.pdf",
+    "pdfSha256": "00268de8e212e19c9fcf0975a3884a2b24fd1b06b14ad0e4413bd3a3a73c61a8",
+    "linkText": "VIII"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 09 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 3,
+    "byClassType": {
+      "predavanje": 2,
+      "racunske_vezbe": 1
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT",
+        "group": null,
+        "room": "Л355",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT (Л355)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT ЛАБОРАТОРИЈСКИ РАД И ВЕШТИНЕ",
+        "group": null,
+        "room": "Л355",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT (Л355) ЛАБОРАТОРИЈСКИ РАД И ВЕШТИНЕ (Л355)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "13:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT ЛАБОРАТОРИЈСКИ РАД И ВЕШТИНЕ",
+        "group": null,
+        "room": "Л355",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT (Л355) ЛАБОРАТОРИЈСКИ РАД И ВЕШТИНЕ (Л355)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT",
+      "group": null,
+      "room": "Л355",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT (Л355)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT ЛАБОРАТОРИЈСКИ РАД И ВЕШТИНЕ",
+      "group": null,
+      "room": "Л355",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT (Л355) ЛАБОРАТОРИЈСКИ РАД И ВЕШТИНЕ (Л355)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "13:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT ЛАБОРАТОРИЈСКИ РАД И ВЕШТИНЕ",
+      "group": null,
+      "room": "Л355",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ МИКРОТАЛАСНИХ КОЛА ЗА IoT (Л355) ЛАБОРАТОРИЈСКИ РАД И ВЕШТИНЕ (Л355)"
+    }
+  ]
+}

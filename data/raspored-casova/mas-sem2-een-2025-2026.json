@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "master_akademske",
+  "studyLevelLabel": "Мастер академске студије",
+  "semester": 2,
+  "studyYear": 1,
+  "semesterType": "letnji",
+  "module": "EEN",
+  "submodule": null,
+  "moduleLabel": "ЕЛЕКТРОЕНЕРГЕТИКА",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:59.713Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-mas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-prolece/202526-mas2-een-v2.pdf",
+    "pdfSha256": "003b7615e84869852e003aa1065c972df1245ea52eb82dab290e84c65f57bf80",
+    "linkText": "II"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": false,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "Датум 16 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 4,
+    "byClassType": {
+      "predavanje": 2,
+      "racunske_vezbe": 2
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ОДАБРАНА ПОГЛАВЉА ИЗ АНАЛИЗЕ ЕЛЕКТРОЕНЕРГЕТСКИХ СИСТЕМА",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ОДАБРАНА ПОГЛАВЉА ИЗ АНАЛИЗЕ ЕЛЕКТРОЕНЕРГЕТСКИХ СИСТЕМА (221)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ОДАБРАНА ПОГЛАВЉА ИЗ АНАЛИЗЕ ЕЛЕКТРОЕНЕРГЕТСКИХ СИСТЕМА",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ОДАБРАНА ПОГЛАВЉА ИЗ АНАЛИЗЕ ЕЛЕКТРОЕНЕРГЕТСКИХ СИСТЕМА (221)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ТЕЛЕКОМУНИКАЦИЈЕ У ЕЛЕКТРОЕНЕРГЕТИЦИ",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ТЕЛЕКОМУНИКАЦИЈЕ У ЕЛЕКТРОЕНЕРГЕТИЦИ (221)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "ТЕЛЕКОМУНИКАЦИЈЕ У ЕЛЕКТРОЕНЕРГЕТИЦИ",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ТЕЛЕКОМУНИКАЦИЈЕ У ЕЛЕКТРОЕНЕРГЕТИЦИ (221)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ОДАБРАНА ПОГЛАВЉА ИЗ АНАЛИЗЕ ЕЛЕКТРОЕНЕРГЕТСКИХ СИСТЕМА",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ОДАБРАНА ПОГЛАВЉА ИЗ АНАЛИЗЕ ЕЛЕКТРОЕНЕРГЕТСКИХ СИСТЕМА (221)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ОДАБРАНА ПОГЛАВЉА ИЗ АНАЛИЗЕ ЕЛЕКТРОЕНЕРГЕТСКИХ СИСТЕМА",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ОДАБРАНА ПОГЛАВЉА ИЗ АНАЛИЗЕ ЕЛЕКТРОЕНЕРГЕТСКИХ СИСТЕМА (221)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ТЕЛЕКОМУНИКАЦИЈЕ У ЕЛЕКТРОЕНЕРГЕТИЦИ",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ТЕЛЕКОМУНИКАЦИЈЕ У ЕЛЕКТРОЕНЕРГЕТИЦИ (221)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "ТЕЛЕКОМУНИКАЦИЈЕ У ЕЛЕКТРОЕНЕРГЕТИЦИ",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ТЕЛЕКОМУНИКАЦИЈЕ У ЕЛЕКТРОЕНЕРГЕТИЦИ (221)"
+    }
+  ]
+}

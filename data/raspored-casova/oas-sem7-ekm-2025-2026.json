@@ -1,0 +1,572 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 7,
+  "studyYear": 4,
+  "semesterType": "zimski",
+  "module": "EKM",
+  "submodule": null,
+  "moduleLabel": "ЕКМ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:05:19.581Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem7-ekm-v1.pdf",
+    "pdfSha256": "af943bfaf929e51c52c271ef8ae8e48e59fe06d052c245661e81f9e1c8fe4a63",
+    "linkText": "VII"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 10 11",
+      "25",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 20,
+    "byClassType": {
+      "predavanje": 11,
+      "racunske_vezbe": 9
+    },
+    "ocrCells": 4,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ",
+        "group": null,
+        "room": "227",
+        "fromOcr": false,
+        "rawText": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ (227)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ",
+        "group": null,
+        "room": "227",
+        "fromOcr": false,
+        "rawText": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ (227)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "predavanje",
+        "course": "ПРОЈЕКТОВАЊЕ VLSI",
+        "group": null,
+        "room": "227",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ VLSI (227)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "13:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОЈЕКТОВАЊЕ VLSI",
+        "group": null,
+        "room": "227",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ VLSI (227)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ИНЖЕЊЕРСКО ПРЕДУЗЕТНИШТВО",
+        "group": null,
+        "room": "370",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ИНЖЕЊЕРСКО ПРЕДУЗЕТНИШТВО (370)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ПОСЛОВНЕ КОМУНИКАЦИЈЕ",
+        "group": null,
+        "room": "43",
+        "fromOcr": true,
+        "ocrConfidence": 84,
+        "rawText": "ПОСЛОВНЕ КОМУНИКАЦИЈЕ (43)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНЖЕЊЕРСКО ПРЕДУЗЕТНИШТВО",
+        "group": null,
+        "room": "370",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ИНЖЕЊЕРСКО ПРЕДУЗЕТНИШТВО (370)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "predavanje",
+        "course": "ИНЖЕЊЕРСКО ОБРАЗОВАЊЕ И ОДРЖИВИ РАЗВОЈ",
+        "group": null,
+        "room": "А3",
+        "fromOcr": false,
+        "rawText": "ИНЖЕЊЕРСКО ОБРАЗОВАЊЕ И ОДРЖИВИ РАЗВОЈ (А3)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ПРОЈЕКТОВАЊЕ МИКРОСИСТЕМА",
+        "group": null,
+        "room": "Л256",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ МИКРОСИСТЕМА (Л256)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОЈЕКТОВАЊЕ МИКРОСИСТЕМА",
+        "group": null,
+        "room": "Л256",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ МИКРОСИСТЕМА (Л256)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "ОПТОЕЛЕКТРОНИКА",
+        "group": null,
+        "room": "Л256",
+        "fromOcr": false,
+        "rawText": "ОПТОЕЛЕКТРОНИКА (Л256)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "ОПТОЕЛЕКТРОНИКА",
+        "group": null,
+        "room": "Л256",
+        "fromOcr": false,
+        "rawText": "ОПТОЕЛЕКТРОНИКА (Л256)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "09:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "АУТОЕЛЕКТРОНИКА",
+        "group": null,
+        "room": "Л59",
+        "fromOcr": false,
+        "rawText": "АУТОЕЛЕКТРОНИКА (Л59)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "АУТОЕЛЕКТРОНИКА",
+        "group": null,
+        "room": "Л59",
+        "fromOcr": false,
+        "rawText": "АУТОЕЛЕКТРОНИКА (Л59)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ПРОЈЕКТОВАЊЕ ПРОГРАМАБИЛНИХ КОМПОНЕНТИ",
+        "group": null,
+        "room": "1256",
+        "fromOcr": true,
+        "ocrConfidence": 87,
+        "rawText": "ПРОЈЕКТОВАЊЕ ПРОГРАМАБИЛНИХ КОМПОНЕНТИ (1256)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "УВОД У БАЗЕ ПОДАТАКА",
+        "group": null,
+        "room": "434",
+        "fromOcr": true,
+        "ocrConfidence": 95,
+        "rawText": "УВОД У БАЗЕ ПОДАТАКА (434)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОЈЕКТОВАЊЕ ПРОГРАМАБИЛНИХ КОМПОНЕНТИ",
+        "group": null,
+        "room": "1256",
+        "fromOcr": true,
+        "ocrConfidence": 87,
+        "rawText": "ПРОЈЕКТОВАЊЕ ПРОГРАМАБИЛНИХ КОМПОНЕНТИ (1256)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "predavanje",
+        "course": "УВОД У БАЗЕ ПОДАТАКА",
+        "group": null,
+        "room": "434",
+        "fromOcr": true,
+        "ocrConfidence": 95,
+        "rawText": "УВОД У БАЗЕ ПОДАТАКА (434)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ПРОЈЕКТОВАЊЕ ШТАМПАНИХ ПЛОЧА",
+        "group": null,
+        "room": "Л256",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ ШТАМПАНИХ ПЛОЧА (Л256)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОЈЕКТОВАЊЕ ШТАМПАНИХ ПЛОЧА",
+        "group": null,
+        "room": "Л256",
+        "fromOcr": false,
+        "rawText": "ПРОЈЕКТОВАЊЕ ШТАМПАНИХ ПЛОЧА (Л256)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ",
+      "group": null,
+      "room": "227",
+      "fromOcr": false,
+      "rawText": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ (227)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ",
+      "group": null,
+      "room": "227",
+      "fromOcr": false,
+      "rawText": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ (227)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "predavanje",
+      "course": "ПРОЈЕКТОВАЊЕ VLSI",
+      "group": null,
+      "room": "227",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ VLSI (227)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "13:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОЈЕКТОВАЊЕ VLSI",
+      "group": null,
+      "room": "227",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ VLSI (227)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ИНЖЕЊЕРСКО ПРЕДУЗЕТНИШТВО",
+      "group": null,
+      "room": "370",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ИНЖЕЊЕРСКО ПРЕДУЗЕТНИШТВО (370)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ПОСЛОВНЕ КОМУНИКАЦИЈЕ",
+      "group": null,
+      "room": "43",
+      "fromOcr": true,
+      "ocrConfidence": 84,
+      "rawText": "ПОСЛОВНЕ КОМУНИКАЦИЈЕ (43)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНЖЕЊЕРСКО ПРЕДУЗЕТНИШТВО",
+      "group": null,
+      "room": "370",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ИНЖЕЊЕРСКО ПРЕДУЗЕТНИШТВО (370)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "predavanje",
+      "course": "ИНЖЕЊЕРСКО ОБРАЗОВАЊЕ И ОДРЖИВИ РАЗВОЈ",
+      "group": null,
+      "room": "А3",
+      "fromOcr": false,
+      "rawText": "ИНЖЕЊЕРСКО ОБРАЗОВАЊЕ И ОДРЖИВИ РАЗВОЈ (А3)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ПРОЈЕКТОВАЊЕ МИКРОСИСТЕМА",
+      "group": null,
+      "room": "Л256",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ МИКРОСИСТЕМА (Л256)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОЈЕКТОВАЊЕ МИКРОСИСТЕМА",
+      "group": null,
+      "room": "Л256",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ МИКРОСИСТЕМА (Л256)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "ОПТОЕЛЕКТРОНИКА",
+      "group": null,
+      "room": "Л256",
+      "fromOcr": false,
+      "rawText": "ОПТОЕЛЕКТРОНИКА (Л256)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "ОПТОЕЛЕКТРОНИКА",
+      "group": null,
+      "room": "Л256",
+      "fromOcr": false,
+      "rawText": "ОПТОЕЛЕКТРОНИКА (Л256)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "09:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "АУТОЕЛЕКТРОНИКА",
+      "group": null,
+      "room": "Л59",
+      "fromOcr": false,
+      "rawText": "АУТОЕЛЕКТРОНИКА (Л59)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "АУТОЕЛЕКТРОНИКА",
+      "group": null,
+      "room": "Л59",
+      "fromOcr": false,
+      "rawText": "АУТОЕЛЕКТРОНИКА (Л59)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ПРОЈЕКТОВАЊЕ ПРОГРАМАБИЛНИХ КОМПОНЕНТИ",
+      "group": null,
+      "room": "1256",
+      "fromOcr": true,
+      "ocrConfidence": 87,
+      "rawText": "ПРОЈЕКТОВАЊЕ ПРОГРАМАБИЛНИХ КОМПОНЕНТИ (1256)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "УВОД У БАЗЕ ПОДАТАКА",
+      "group": null,
+      "room": "434",
+      "fromOcr": true,
+      "ocrConfidence": 95,
+      "rawText": "УВОД У БАЗЕ ПОДАТАКА (434)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОЈЕКТОВАЊЕ ПРОГРАМАБИЛНИХ КОМПОНЕНТИ",
+      "group": null,
+      "room": "1256",
+      "fromOcr": true,
+      "ocrConfidence": 87,
+      "rawText": "ПРОЈЕКТОВАЊЕ ПРОГРАМАБИЛНИХ КОМПОНЕНТИ (1256)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "predavanje",
+      "course": "УВОД У БАЗЕ ПОДАТАКА",
+      "group": null,
+      "room": "434",
+      "fromOcr": true,
+      "ocrConfidence": 95,
+      "rawText": "УВОД У БАЗЕ ПОДАТАКА (434)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ПРОЈЕКТОВАЊЕ ШТАМПАНИХ ПЛОЧА",
+      "group": null,
+      "room": "Л256",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ ШТАМПАНИХ ПЛОЧА (Л256)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОЈЕКТОВАЊЕ ШТАМПАНИХ ПЛОЧА",
+      "group": null,
+      "room": "Л256",
+      "fromOcr": false,
+      "rawText": "ПРОЈЕКТОВАЊЕ ШТАМПАНИХ ПЛОЧА (Л256)"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 6,
+  "studyYear": 3,
+  "semesterType": "letnji",
+  "module": "ELK",
+  "submodule": "EMT",
+  "moduleLabel": "ЕЛК",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:20.537Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem6-elk-emt-v3.pdf",
+    "pdfSha256": "f14919044a986d1b4c63ecaa76cc1525186d4e64df401596d6097cbe199dabef",
+    "linkText": "VI"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 09 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 11,
+    "byClassType": {
+      "predavanje": 6,
+      "racunske_vezbe": 5
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ВИДЕО ПРОДУКЦИЈА",
+        "group": null,
+        "room": "121",
+        "fromOcr": false,
+        "rawText": "ВИДЕО ПРОДУКЦИЈА (121)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "ВИДЕО ПРОДУКЦИЈА",
+        "group": null,
+        "room": "121",
+        "fromOcr": false,
+        "rawText": "ВИДЕО ПРОДУКЦИЈА (121)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ВЕБ ТЕХНОЛОГИЈЕ 1",
+        "group": null,
+        "room": "123",
+        "fromOcr": false,
+        "rawText": "ВЕБ ТЕХНОЛОГИЈЕ 1 (123)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "ВЕБ ТЕХНОЛОГИЈЕ 1",
+        "group": null,
+        "room": "123",
+        "fromOcr": false,
+        "rawText": "ВЕБ ТЕХНОЛОГИЈЕ 1 (123)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ЕЛЕКТРОНИКА ЗА МУЛТИМЕДИЈАЛНЕ СИСТЕМЕ",
+        "group": null,
+        "room": "Л204",
+        "fromOcr": false,
+        "rawText": "ЕЛЕКТРОНИКА ЗА МУЛТИМЕДИЈАЛНЕ СИСТЕМЕ (Л204)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ЕЛЕКТРОНИКА ЗА МУЛТИМЕДИЈАЛНЕ СИСТЕМЕ",
+        "group": null,
+        "room": "Л204",
+        "fromOcr": false,
+        "rawText": "ЕЛЕКТРОНИКА ЗА МУЛТИМЕДИЈАЛНЕ СИСТЕМЕ (Л204)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ФОТОГРАФИЈА",
+        "group": null,
+        "room": "223",
+        "fromOcr": false,
+        "rawText": "ФОТОГРАФИЈА (223)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "ФОТОГРАФИЈА",
+        "group": null,
+        "room": "223",
+        "fromOcr": false,
+        "rawText": "ФОТОГРАФИЈА (223)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "predavanje",
+        "course": "МИКРОКОНТРОЛЕРИ",
+        "group": null,
+        "room": "231",
+        "fromOcr": false,
+        "rawText": "МИКРОКОНТРОЛЕРИ (231)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "МИКРОКОНТРОЛЕРИ",
+        "group": null,
+        "room": "231",
+        "fromOcr": false,
+        "rawText": "МИКРОКОНТРОЛЕРИ (231)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ЕНГЛЕСКИ ЈЕЗИК 2",
+        "group": null,
+        "room": "A2",
+        "fromOcr": false,
+        "rawText": "ЕНГЛЕСКИ ЈЕЗИК 2 (A2)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ВИДЕО ПРОДУКЦИЈА",
+      "group": null,
+      "room": "121",
+      "fromOcr": false,
+      "rawText": "ВИДЕО ПРОДУКЦИЈА (121)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "ВИДЕО ПРОДУКЦИЈА",
+      "group": null,
+      "room": "121",
+      "fromOcr": false,
+      "rawText": "ВИДЕО ПРОДУКЦИЈА (121)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ВЕБ ТЕХНОЛОГИЈЕ 1",
+      "group": null,
+      "room": "123",
+      "fromOcr": false,
+      "rawText": "ВЕБ ТЕХНОЛОГИЈЕ 1 (123)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "ВЕБ ТЕХНОЛОГИЈЕ 1",
+      "group": null,
+      "room": "123",
+      "fromOcr": false,
+      "rawText": "ВЕБ ТЕХНОЛОГИЈЕ 1 (123)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ЕЛЕКТРОНИКА ЗА МУЛТИМЕДИЈАЛНЕ СИСТЕМЕ",
+      "group": null,
+      "room": "Л204",
+      "fromOcr": false,
+      "rawText": "ЕЛЕКТРОНИКА ЗА МУЛТИМЕДИЈАЛНЕ СИСТЕМЕ (Л204)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ЕЛЕКТРОНИКА ЗА МУЛТИМЕДИЈАЛНЕ СИСТЕМЕ",
+      "group": null,
+      "room": "Л204",
+      "fromOcr": false,
+      "rawText": "ЕЛЕКТРОНИКА ЗА МУЛТИМЕДИЈАЛНЕ СИСТЕМЕ (Л204)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ФОТОГРАФИЈА",
+      "group": null,
+      "room": "223",
+      "fromOcr": false,
+      "rawText": "ФОТОГРАФИЈА (223)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "ФОТОГРАФИЈА",
+      "group": null,
+      "room": "223",
+      "fromOcr": false,
+      "rawText": "ФОТОГРАФИЈА (223)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "predavanje",
+      "course": "МИКРОКОНТРОЛЕРИ",
+      "group": null,
+      "room": "231",
+      "fromOcr": false,
+      "rawText": "МИКРОКОНТРОЛЕРИ (231)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "МИКРОКОНТРОЛЕРИ",
+      "group": null,
+      "room": "231",
+      "fromOcr": false,
+      "rawText": "МИКРОКОНТРОЛЕРИ (231)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ЕНГЛЕСКИ ЈЕЗИК 2",
+      "group": null,
+      "room": "A2",
+      "fromOcr": false,
+      "rawText": "ЕНГЛЕСКИ ЈЕЗИК 2 (A2)"
+    }
+  ]
+}

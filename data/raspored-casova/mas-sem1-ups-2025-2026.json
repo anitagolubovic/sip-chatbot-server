@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "master_akademske",
+  "studyLevelLabel": "Мастер академске студије",
+  "semester": 1,
+  "studyYear": 1,
+  "semesterType": "zimski",
+  "module": "UPS",
+  "submodule": null,
+  "moduleLabel": null,
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:05.213Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-jesen-mas-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/202526-mas1-ups-v1.pdf",
+    "pdfSha256": "d6c437523b4eb13e71e1d6e696f43943d56293bb12f85bdb75201bca6ca340d1",
+    "linkText": "I"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": false,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "Датум 17 11",
+      "25",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 16,
+    "byClassType": {
+      "predavanje": 8,
+      "racunske_vezbe": 8
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ИНТЕЛИГЕНТНЕ МАШИНЕ",
+        "group": null,
+        "room": "133",
+        "fromOcr": false,
+        "rawText": "ИНТЕЛИГЕНТНЕ МАШИНЕ (133)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНТЕЛИГЕНТНЕ МАШИНЕ",
+        "group": null,
+        "room": "133",
+        "fromOcr": false,
+        "rawText": "ИНТЕЛИГЕНТНЕ МАШИНЕ (133)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "РАЧУНАРСКИ УПРАВЉАЧКИ СИСТЕМИ",
+        "group": null,
+        "room": "132",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКИ УПРАВЉАЧКИ СИСТЕМИ (132)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКИ УПРАВЉАЧКИ СИСТЕМИ",
+        "group": null,
+        "room": "132",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКИ УПРАВЉАЧКИ СИСТЕМИ (132)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "РАЧУНАРСКИ СИСТЕМИ ЗА МЕРЕЊЕ И КОНТРОЛУ",
+        "group": null,
+        "room": "123",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКИ СИСТЕМИ ЗА МЕРЕЊЕ И КОНТРОЛУ (123)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКИ СИСТЕМИ ЗА МЕРЕЊЕ И КОНТРОЛУ",
+        "group": null,
+        "room": "123",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКИ СИСТЕМИ ЗА МЕРЕЊЕ И КОНТРОЛУ (123)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "predavanje",
+        "course": "ИНТЕЛИГЕНТНИ СИСТЕМИ",
+        "group": null,
+        "room": "Л24",
+        "fromOcr": false,
+        "rawText": "ИНТЕЛИГЕНТНИ СИСТЕМИ (Л24)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ИНТЕЛИГЕНТНИ СИСТЕМИ",
+        "group": null,
+        "room": "Л24",
+        "fromOcr": false,
+        "rawText": "ИНТЕЛИГЕНТНИ СИСТЕМИ (Л24)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "ТЕЛЕМЕТРИЈА",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ТЕЛЕМЕТРИЈА (221)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ТЕЛЕМЕТРИЈА",
+        "group": null,
+        "room": "221",
+        "fromOcr": false,
+        "rawText": "ТЕЛЕМЕТРИЈА (221)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "predavanje",
+        "course": "РЕГУЛАЦИЈА ЕЛЕКТРОМОТОРНИХ ПОГОНА",
+        "group": null,
+        "room": "132",
+        "fromOcr": false,
+        "rawText": "РЕГУЛАЦИЈА ЕЛЕКТРОМОТОРНИХ ПОГОНА (132)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "racunske_vezbe",
+        "course": "РЕГУЛАЦИЈА ЕЛЕКТРОМОТОРНИХ ПОГОНА",
+        "group": null,
+        "room": "132",
+        "fromOcr": false,
+        "rawText": "РЕГУЛАЦИЈА ЕЛЕКТРОМОТОРНИХ ПОГОНА (132)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ЕМБЕДЕД СИСТЕМИ",
+        "group": null,
+        "room": "223",
+        "fromOcr": false,
+        "rawText": "ЕМБЕДЕД СИСТЕМИ (223)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ЕМБЕДЕД СИСТЕМИ",
+        "group": null,
+        "room": "223",
+        "fromOcr": false,
+        "rawText": "ЕМБЕДЕД СИСТЕМИ (223)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "predavanje",
+        "course": "ФЛЕКСИБИЛНИ ПРОИЗВОДНИ СИСТЕМИ",
+        "group": null,
+        "room": "223",
+        "fromOcr": false,
+        "rawText": "ФЛЕКСИБИЛНИ ПРОИЗВОДНИ СИСТЕМИ (223)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "racunske_vezbe",
+        "course": "ФЛЕКСИБИЛНИ ПРОИЗВОДНИ СИСТЕМИ",
+        "group": null,
+        "room": "223",
+        "fromOcr": false,
+        "rawText": "ФЛЕКСИБИЛНИ ПРОИЗВОДНИ СИСТЕМИ (223)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ИНТЕЛИГЕНТНЕ МАШИНЕ",
+      "group": null,
+      "room": "133",
+      "fromOcr": false,
+      "rawText": "ИНТЕЛИГЕНТНЕ МАШИНЕ (133)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНТЕЛИГЕНТНЕ МАШИНЕ",
+      "group": null,
+      "room": "133",
+      "fromOcr": false,
+      "rawText": "ИНТЕЛИГЕНТНЕ МАШИНЕ (133)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "РАЧУНАРСКИ УПРАВЉАЧКИ СИСТЕМИ",
+      "group": null,
+      "room": "132",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКИ УПРАВЉАЧКИ СИСТЕМИ (132)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКИ УПРАВЉАЧКИ СИСТЕМИ",
+      "group": null,
+      "room": "132",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКИ УПРАВЉАЧКИ СИСТЕМИ (132)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "РАЧУНАРСКИ СИСТЕМИ ЗА МЕРЕЊЕ И КОНТРОЛУ",
+      "group": null,
+      "room": "123",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКИ СИСТЕМИ ЗА МЕРЕЊЕ И КОНТРОЛУ (123)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКИ СИСТЕМИ ЗА МЕРЕЊЕ И КОНТРОЛУ",
+      "group": null,
+      "room": "123",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКИ СИСТЕМИ ЗА МЕРЕЊЕ И КОНТРОЛУ (123)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "predavanje",
+      "course": "ИНТЕЛИГЕНТНИ СИСТЕМИ",
+      "group": null,
+      "room": "Л24",
+      "fromOcr": false,
+      "rawText": "ИНТЕЛИГЕНТНИ СИСТЕМИ (Л24)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ИНТЕЛИГЕНТНИ СИСТЕМИ",
+      "group": null,
+      "room": "Л24",
+      "fromOcr": false,
+      "rawText": "ИНТЕЛИГЕНТНИ СИСТЕМИ (Л24)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "ТЕЛЕМЕТРИЈА",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ТЕЛЕМЕТРИЈА (221)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ТЕЛЕМЕТРИЈА",
+      "group": null,
+      "room": "221",
+      "fromOcr": false,
+      "rawText": "ТЕЛЕМЕТРИЈА (221)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "predavanje",
+      "course": "РЕГУЛАЦИЈА ЕЛЕКТРОМОТОРНИХ ПОГОНА",
+      "group": null,
+      "room": "132",
+      "fromOcr": false,
+      "rawText": "РЕГУЛАЦИЈА ЕЛЕКТРОМОТОРНИХ ПОГОНА (132)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "racunske_vezbe",
+      "course": "РЕГУЛАЦИЈА ЕЛЕКТРОМОТОРНИХ ПОГОНА",
+      "group": null,
+      "room": "132",
+      "fromOcr": false,
+      "rawText": "РЕГУЛАЦИЈА ЕЛЕКТРОМОТОРНИХ ПОГОНА (132)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ЕМБЕДЕД СИСТЕМИ",
+      "group": null,
+      "room": "223",
+      "fromOcr": false,
+      "rawText": "ЕМБЕДЕД СИСТЕМИ (223)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ЕМБЕДЕД СИСТЕМИ",
+      "group": null,
+      "room": "223",
+      "fromOcr": false,
+      "rawText": "ЕМБЕДЕД СИСТЕМИ (223)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "predavanje",
+      "course": "ФЛЕКСИБИЛНИ ПРОИЗВОДНИ СИСТЕМИ",
+      "group": null,
+      "room": "223",
+      "fromOcr": false,
+      "rawText": "ФЛЕКСИБИЛНИ ПРОИЗВОДНИ СИСТЕМИ (223)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "racunske_vezbe",
+      "course": "ФЛЕКСИБИЛНИ ПРОИЗВОДНИ СИСТЕМИ",
+      "group": null,
+      "room": "223",
+      "fromOcr": false,
+      "rawText": "ФЛЕКСИБИЛНИ ПРОИЗВОДНИ СИСТЕМИ (223)"
+    }
+  ]
+}

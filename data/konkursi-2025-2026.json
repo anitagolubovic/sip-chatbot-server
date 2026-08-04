@@ -1,0 +1,1522 @@
+{
+  "schemaVersion": 1,
+  "category": "konkursi_i_promovisane_aktivnosti",
+  "language": "sr",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-08-02T16:47:44.830Z",
+  "records": [
+    {
+      "activityTypes": [
+        "kamp"
+      ],
+      "title": "Летњи сајбер камп - HUB201",
+      "summary": "Од 10. до 14. августа у Београду, уживо.",
+      "publishedAt": "2026-07-27",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/letnji-sajber-kamp-hub20",
+      "content": {
+        "paragraphs": [
+          "Пријаве за Сајбер камп 2026 су отворене.",
+          "Пет дана, 30 места, без котизације. Од 10. до 14. августа у Београду, уживо.",
+          "Четири дана предавања и практичних задатака, пети дан завршни изазов: истрага инцидента у фиктивној компанији.",
+          "Шта радиш по данима:Дан 1: Дигитална форензика, читање трагова из фајлова и логоваДан 2: Мреже и мрежна безбедностДан 3: wеб рањивости, OWASP Top 10Дан 4: OSINT, Иновације у сајбер безбедностиДан 5: \"CyberCorp Incident\", завршни изазов",
+          "Шта одатле носиш:- Рад са алатима које индустрија стварно користи: Autopsy, Wireshark, nmap, Shodan- Искуство у CTF формату, истом у ком се одржавају такмичења и технички интервјуи- Јасну мапу за даље: платформе за вежбање, календар CTF такмичења, који сертификати вреде а који не- Увид у позиције на које овај пут води: SOC аналитичар, пенетратион тестер, дигитални форензичар, секјуритy инжењер- Контакте, менторе и екипу која ради исту ствар- Сертификат о учешћу.",
+          "За студенте друге и треће године. Предзнање није услов, крећемо од терминала.",
+          "Организују HUB201 и СајберЕду.",
+          "Пријава за камп: sajberkamp.sajberedu.rsИнфо дан, све о програму и пријави: https://luma.com/hnn0s5sk"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "sajberkamp.sajberedu.rs",
+          "url": "https://sajberkamp.sajberedu.rs/",
+          "kind": "spoljni_link"
+        },
+        {
+          "label": "https://luma.com/hnn0s5sk",
+          "url": "https://luma.com/hnn0s5sk",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "praksa"
+      ],
+      "title": "Позив за праксу у фирми \"Grammer Serbia\"",
+      "summary": "Компанија \"Grammer Serbia\" вас позива да код њих обавите студентску праксу",
+      "publishedAt": "2026-06-11",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/praksa-grammer-serbia-2026",
+      "content": {
+        "paragraphs": [
+          "Компанија \"Grammer Serbia\" вас позива да код њих обавите студентску праксу.",
+          "Job Title: IT Intern",
+          "Location: On-site (with potential hybrid flexibility)",
+          "Department: IT / Local IT Support",
+          "Position Overview",
+          "We are looking for a motivated IT Intern to join our local IT team and support daily IT operations for up to 200 employees. This internship offers hands-on experience in Microsoft environments, network infrastructure, hardware and software administration, and user support within a corporate setting.",
+          "The intern will gain practical exposure to IT service management, troubleshooting, and collaboration with both local users and Group IT teams.",
+          "Key Responsibilities",
+          "Required Skills & Knowledge",
+          "Learning Outcomes",
+          "Profile",
+          "What We Offer",
+          "Пријаве симултано послати на адресе: ana.stojiljkovic@grammer.com i sofija.dinic@grammer.com."
+        ],
+        "listItems": [
+          "Provide on-site IT support for employees (Microsoft applications, hardware, software, printers, and network issues)",
+          "Support Microsoft M365 / Office 365 environment (Teams, Outlook, SharePoint basics)",
+          "Assist in administration of local computers and user accounts",
+          "Support local LAN and WAN infrastructure",
+          "Work with active network equipment (e.g., Cisco Catalyst managed switches)",
+          "Assist in communication and troubleshooting with Internet Service Providers (ISPs)",
+          "Support MS Teams-based telephony systems",
+          "Maintain and troubleshoot office printers (HP, Konica Minolta AIO devices)",
+          "Assist with basic virtualization and cloud-related tasks",
+          "Provide WiFi and network connectivity troubleshooting",
+          "Document incidents and support tickets",
+          "Basic knowledge of Microsoft M365 / O365",
+          "Basic understanding of networking (LAN/WAN concepts)",
+          "Fundamentals of systems administration",
+          "Basic knowledge of virtualization and cloud concepts",
+          "Understanding of computer hardware and software administration",
+          "Familiarity with printing solutions and office IT equipment",
+          "Development of strong technical communication skills in Serbian and English",
+          "Experience collaborating with Group IT teams",
+          "Advanced troubleshooting and problem-solving skills",
+          "Practical exposure to enterprise IT infrastructure",
+          "Understanding of IT support in a multi-user corporate environment",
+          "Student or recent graduate in IT, Computer Science, Information Systems, or related field",
+          "Strong analytical and problem-solving mindset",
+          "Good communication skills",
+          "Proactive attitude and willingness to learn",
+          "Ability to work both independently and as part of a team",
+          "Hands-on experience in a structured corporate IT environment",
+          "Mentorship and guidance from experienced IT professionals",
+          "Opportunity to develop both technical and communication skills",
+          "Exposure to enterprise-level IT systems and processes"
+        ]
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "praksa"
+      ],
+      "title": "Студентска стручна пракса у компанији HTEC",
+      "summary": "У периоду од 6. јула до 31. јула 2026. године.",
+      "publishedAt": "2026-06-11",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/htec-studentska-praksa-2026",
+      "content": {
+        "paragraphs": [
+          "Компанија HTEC са задовољством позива студенте да се пријаве за учешће у стручној пракси за технологије: Java, React, ML/Data Engineering и .NET, која ће трајати четири недеље, у периоду од 6. јула до 31. јула 2026. године. Пракса ће бити реализована у HTEC канцеларији у Нишу.",
+          "Укупан број учесника ограничен је на 20 студената, распоређених по областима:• Frontend (React) – 5 студената• Backend (Java) – 5 студената• .NET – 4 студената• ML/Data Engineering – 6 студента",
+          "Информације о процесу селекције:• Трајање праксе: 6. 7. 2026. – 31. 7. 2026.• Рок за пријаву: 21. 6. 2026. до 23:59 часова• Селекциони тестови (на папиру, у просторијама HTEC-а у Нишу): 23. и 24. 6. 2026. (Кандидати ће о тачној сатници по технологијама бити накнадно обавештени)• Интервјуи са Talent Acquisition (ТА) тимом: 25. – 29. 6. 2026.• Финални интервју са менторима (уживо, HTEC канцеларија Ниш): 30. 6. 2026. до 2. 7. 2026.",
+          "Стручна пракса се организује са циљем јачања сарадње са академском заједницом и подршке развоју будућих ИТ професионалаца.",
+          "HTEC канцеларија у Нишу отворена је 2012. године и данас окупља више од 170 врхунских инжењера, дизајнера и других стручњака, који раде на развоју иновативних решења користећи најсавременије технологије.",
+          "Пријава за праксу врши се искључиво путем линка: (Internship | HTEC)",
+          "HTEC је глобална компанија за консалтинг, софтверско инжењерство и развој дигиталних производа, која подржава технолошку еволуцију организација – од иновативних стартапа до Фортуне 500 компанија. Основана је 2008. године у Београду, а са седиштем у Пало Алту (Калифорнија) данас запошљава око 3.000 стручњака у инжењерским центрима широм Централне и Југоисточне Европе. Поред инжењерских центара, HTEC има развијене тимове за консалтинг, иновације и дизајн производа у Силицијумској долини, Њујорку и Лондону.",
+          "Захваљујући високом нивоу експертизе и богатом искуству у областима као што су здравство, малопродаја, транспорт, логистика, финансијске технологије, зелена енергија, медији и deep tech, HTEC представља идеалног технолошког партнера за своје клијенте, док запосленима пружа изузетне могућности за професионални развој.",
+          "Више информација: https://htec.com/"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "Internship | HTEC",
+          "url": "https://htec.com/careers/internship/#nis-internship-cjEe",
+          "kind": "spoljni_link"
+        },
+        {
+          "label": "https://htec.com/",
+          "url": "https://htec.com/",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Трибина под називом: „Вештачка интелигенција у биологији и медицини: од истраживачких изазова до практичне примене“",
+      "summary": "Одржаће се 11. 6. 2026. у 17 часова у Амфитеатру Природно-математичког факултета Универзитета у Нишу",
+      "publishedAt": "2026-06-10",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/tribina-vestacka-inteligencija-u-biologiji-i-medicini-pmf-2026",
+      "content": {
+        "paragraphs": [
+          "Поштовани, позивамо вас да присуствујете трибини под називом: „Вештачка интелигенција у биологији и медицини: од истраживачких изазова до практичне примене“ која ће се одржати:",
+          "Датум: 11.06.2026. Време: 17.00 часова",
+          "Место: Амфитеатар Природно-математичког факултета Универзитета у Нишу",
+          "Трибина је намењена ученицима, студентима, наставницима, истраживачима и стручњацима заинтересованим за разумевање утицаја вештачке интелигенције на савремено образовање, научна истраживања и индустрију, као и за дискусију о изазовима и могућностима које развој ове области доноси.",
+          "Учесници и говорници Проф. др Драган Јанковић, редовни професор Електронског факултета, Универзитета у Нишу Проф. др Ђурађ Милошевић, редовни професор Природно-математичког факултета, Универзитета у Нишу Проф. др Милан Здравковић, редовни професор Машинског факултета Универзитета у Нишу Никола Петровић, Partner & CTO u SanLuca AI, CEO & Founder у Морена инжењеринг Ниш Проф. др Леонид Стоименов, редовни професор Електронског факултета, Универзитета у Нишу Ученици, студенти и професори средњих школа и факултета Универзитета у Нишу",
+          "Домаћин трибине Проф. др Бранимир Тодоровић, ванредни професор Природно-математичког факултета Универзитета у Нишу",
+          "Тематске целине трибине [1] Вештачка интелигенција у медицини и здравству – практични аспекти, уводни предавач Проф. др Драган Јанковић",
+          "[2] Разумевање биолошког језика: дубоко учење у геномици и еДНА,уводни предавач Проф. др Ђурађ Милошевић",
+          "После уводних предавања професора Драгана Јанковића и Ђурђа Милошевића, биће организована отворена дискусија са учесницима о изазовима научних истраживања и практичним применама решења заснованих на вештачкој интелигенцији у медицини и биологији.",
+          "Радујемо се вашем доласку и позивамо вас да активно учествујете у дискусији.",
+          "Срдачан поздрав, Проф. др Мића Станковић"
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Презентација компаније Schrack Technik",
+      "summary": "У четвртак, 11. 6. 2026. године, у термину од 11 до 13 и 30 часова",
+      "publishedAt": "2026-06-05",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/prezentacija-schrack-technik-2026",
+      "content": {
+        "paragraphs": [
+          "Позивамо Вас на стручну презентацију асортимана осветљења компаније Schrack Technik, која ће се одржати у четвртак, 11. 6. 2026. године, у термину од 11 до 13 и 30 часова, у сали 165 на Електронском факултету у Нишу.",
+          "Током презентације биће представљена решења из области:",
+          "• општег и амбијенталног осветљења• техничке и индустријске расвете• осветљења саобраћајница и паркова• светиљки за чисте собе• антивандал расветеКомпанија Schrack Technik постоји од 1920. године и тренутно је водећа аустријска компанија специјализована за електричну и енергетску опрему, системе података и мреже, решења за осветљење за индустрију, као и за грађевински и стамбени сектор. Предавачи Драшко Шорак и Дарко Ристовић."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "Schneider Go Green такмичење",
+      "summary": "Регистрација је отворена до 1. јуна.",
+      "publishedAt": "2026-06-04",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/schneider-go-green-student-competition-2026",
+      "content": {
+        "paragraphs": [
+          "Компанија Schneider Electric и ове године покреће Go Green такмичење. Овај глобални изазов је подржан је од стране Програма за образовање и предузетништво младих компаније Schneider Electric (Schneider Electric’s Youth Education & Entrepreneurship Program).",
+          "Мисија студената: Идентификовати специфичан изазов у вези са приступом енергији, ефикасношћу или поузданошћу са којим се суочава реална заједница и осмислити решење за чисту енергију које га директно решава. Ваше решење мора бити комерцијално исплативо, еколошки прихватљиво и направљено да траје.",
+          "Победнички тимови ће поделити наградни фонд од 10.000 евра (1. место: 6.000 евра; 2. место: 2.500 евра; 3. место: 1.500 евра).Сваки члан победничког тима добиће менторске сесије од стручњака компаније Schneider Electric.Пријаве су отворене до 28. августа.",
+          "Све додатне информације можете наћи на линку www.gogreencompetition.com"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "www.gogreencompetition.com",
+          "url": "http://www.gogreencompetition.com/",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "„China Daily Belt and Road Youth English Speaking Competition“",
+      "summary": "Осмо национално такмичење из енглеског језика",
+      "publishedAt": "2026-06-02",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/china-english-speaking-competition-2026",
+      "content": {
+        "paragraphs": [
+          "Институт за појас и пут са задовољством вас позива на Осмо национално такмичење младих у јавном говору на енглеском језику, под називом „China Daily Belt and Road Youth English Speaking Competition“, које је покренуто 2019. године под слоганом „Let the world hear your voice“.",
+          "Такмичење је отворено за пријаве ученика и студената српског држављанства (средње школе, факултети и академије), старости од 16 до 27 година.",
+          "Пријаве се достављају путем WeTransfer-а на имејл адресу: beltandroadyouth@bribelgrade.org",
+          "Рок за пријаву је понедељак, 31. август 2026. године.",
+          "Опширније овде."
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "овде",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/ostalo/2026/china-english-speaking-competition-2026.pdf",
+          "kind": "dokument"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija",
+        "studentski_program"
+      ],
+      "title": "Презентација Launcher акцелератор програма",
+      "summary": "Позивамо вас да присуствујете презентацији Launcher акцелератор програма, националног програма подршке стартапима у раној фази развоја, који развијају иновативна решења са тржишним потенцијалом.",
+      "publishedAt": "2026-05-29",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/launcher-akcelerator-program",
+      "content": {
+        "paragraphs": [],
+        "listItems": [
+          "условима и процесу пријаве,",
+          "фазама програма и начину реализације,",
+          "врстама подршке које програм пружа,",
+          "искуствима и бенефитима за стартап тимове."
+        ]
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "TRIDONIC CASE STUDY „Automated flicker measurement - Automatizovano merenje treperenja svetlosti“",
+      "summary": "Такмичење превасходно намењено студентима треће и четврте године са департмана Електроника и Микроелектроника.",
+      "publishedAt": "2026-05-20",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/tridonic-prezentacija-kompanije-najava-takmicenja-2026",
+      "content": {
+        "paragraphs": [
+          "Компанија TRIDONIC, у сарадњи са Електронским факултетом организује такмичење на тему „Аутоматед флицкер меасуремент – Аутоматизовано мерење треперења светлости“.",
+          "Такмичење је превасходно намењено студентима треће и четврте године са модула Електроника и модула Електронске компоненте и микросистеми.",
+          "Презентација компаније и студије случаја биће одржана 27. 5. од 13 сати у просторији 165 на Електронском факултету.",
+          "Упутство за пријаву и детаљније информације можете пронаћи овде."
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "овде",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/ostalo/2026/poster-tridonic-prezentacija-kompanije-najava-takmicenja-2026.pdf",
+          "kind": "dokument"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Конференција о свемирској науци и технологији у Србији",
+      "summary": "Mеђународна конференција коју заједнички организују Астрономска опсерваторија у Београду и њени партнери oдржаће се од 12. до 15. маја 2026. године у Нишу, у Србији.",
+      "publishedAt": "2026-05-12",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/konferencija-o-svemirskoj-nauci-i-tehnologiji",
+      "content": {
+        "paragraphs": [],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://space.aob.rs/1st-csst/",
+          "url": "https://space.aob.rs/1st-csst/",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "Пријаве за Bubble Cup",
+      "summary": "Позивамо све студенте који воле програмирање да се пријаве на бесплатно алгоритамско такмичење са дугогодишњом традицијом – Bubble Cup.",
+      "publishedAt": "2026-05-04",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/bubble-cup-2026",
+      "content": {
+        "paragraphs": [
+          "Позивамо све студенте који воле програмирање да се пријаве на бесплатно алгоритамско такмичење са дугогодишњом традицијом – Bubble Cup.",
+          "„Bubble Cup“ је тимско такмичење у решавању алгоритамских проблема, које подстиче логичко размишљање, креативност и сарадњу. Учесници се такмиче у тимовима од по максимум три члана и имају задатак да у ограниченом временском периоду (око 5 сати) реше што већи број проблемских задатака. Најуспешнији тимови се награђују вредним наградама.",
+          "Више информација:",
+          "Јавни позив за пријаву",
+          "Bubble Cup"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "Јавни позив за пријаву",
+          "url": "https://www.petlja.org/sr-Latn-RS/n/javni-poziv-za-prijavu-za-bubble-cup/104753",
+          "kind": "spoljni_link"
+        },
+        {
+          "label": "Bubble Cup",
+          "url": "https://www.bubblecup.org/",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "BIO4AI Hackathon",
+      "summary": "Нови изазов студентских тимова се одржава у Београду 9. и 10. јуна.",
+      "publishedAt": "2026-04-27",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/bio4ai-hackathon-2026",
+      "content": {
+        "paragraphs": [
+          "Како се биоинформатика и вештачка интелигенција могу најефикасније интегрисати у биодиверзитет, биотехнологију и биомедицину? То је главно питање које BIO4AI хакатон има за циљ да реши!",
+          "Нови изазов студентских тимова се одржава у оквиру BelBi 2026, 9. и 10. јуна 2026. године, у Metropol Palace хотелу у Београду.",
+          "Опширније на: линк",
+          "Пријава на: линк за пријаву"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "линк",
+          "url": "https://www.linkedin.com/posts/bio4-campus-belgrade_bio4campus-belbi2026-bioinformatics-activity-7450458955195047937-IF9n",
+          "kind": "spoljni_link"
+        },
+        {
+          "label": "линк за пријаву",
+          "url": "https://lnkd.in/dYK-JwXi",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Предавање “Интернет у 21. веку: изазови глобалног управљања и нове ере повезаности”",
+      "summary": "У петак 17. априла 2026. године у сали 165",
+      "publishedAt": "2026-04-14",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/predavanje-17-4-2026",
+      "content": {
+        "paragraphs": [
+          "У петак 17. априла 2026. године у сали 165 Електронског факултета, са почетком у 12 х биће одржано предавање под називом “Интернет у 21. веку: изазови глобалног управљања и нове ере повезаности”",
+          "Предавачи:",
+          "Јелена Ћосић, RIPE NCCКатарина Стефановић, Телеком Србија",
+          "Предавање је отворено за све заинтересоване.Кратак садржај предавања и биографије предавача су у наставку:",
+          "Биографије предавача:",
+          "Јелена Ћосић, RIPE NCC",
+          "Јелена Ћосић ради за RIPE NCC као саветник за сарадњу са техничким и академским заједницама у југоисточној Европи. У оквиру својих дужности, обавља и функцију координаторке RIPE Academic Cooperation Initiative (RACI) програма, где блиско сарађује са истраживачком заједницом.",
+          "Катарина Стефановић, Телеком Србија",
+          "Катарина Стефановић је инжењерка за оптимизацију бежичне приступне мреже у водећем оператору у Србији, Телекому Србија, са фокусом на оптимизацију перформанси мобилних мрежа свих генерација.Као двострука RIPE Fellow учесница, RIPE Atlas амбасадорка и чланица Програмског одбора RSNOG (Serbian Network Operators’ Group), активно доприноси заједници оператора кроз мерења Интернет перформанси употребом RIPE Atlas платформе, као и кроз анализу понашања мрежа у реалним условима и њихових политика рутирања.",
+          "Садржај предавања:",
+          "Иако Интернет данас изгледа свакодневно и познато, већина људи који га користе или њиме управљају ретко разуме како функционише „испод хаубе“: ко њиме управља, на којим принципима се заснива глобална координација ресурса и како се доносе кључне одлуке о развоју протокола, стандарда и нових технологија.",
+          "Уводно предавање ће обухватити увод у улогу техничких организација за управљање Интернет ресурсима укључујући RIPE NCC, њихову важност за глобалну стабилност Интернета и практичне савете како се активно укључити у рад највеће заједнице мрежних оператера у Европи.",
+          "У ери све веће потребе за глобалном повезаношћу, традиционална земаљска Интернет инфраструктура суочава се са ограничењима покривености, посебно у удаљеним и слабо насељеним регионима. Истовремено, развој сателитских система, посебно LEO констелација, отвара нова питања о перформансама, рутирању и поузданости Интернета у хибридним мрежним окружењима.",
+          "Приказујемо како се Интернет понаша када се прошири изван класичне земаљске инфраструктуре, кроз практична мерења спроведена коришћењем RIPE Atlas платформе. Посебан фокус је на разумевању како различите технологије приступа утичу на перформансе и доступност Интернета, као и на идентификацији изазова и прилика које доноси интеграција сателитских система у глобални Интернет екосистем."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "stipendija"
+      ],
+      "title": "Стипендије компаније Bending Spoons",
+      "summary": "Стипендија Bending Spoons за жене у рачунарским наукама",
+      "publishedAt": "2026-04-09",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/stipendije-kompanije-bending-spoons-2026",
+      "content": {
+        "paragraphs": [
+          "Компанија Bending Spoons је расписала конкурс за стипендије за 20 студенткиња у износу од по 5.000 еура.Стипендија Bending Spoons за жене у рачунарским наукама је прилика заснована на заслугама, осмишљена да подржи ваше студије и повеже вас са изузетним вршњацима широм Европе.Комплетан конкурс можете погледати овде - https://scholarship.bendingspoons.com/?utm_medium=message&utm_campaign=women_scholarship&utm_source=university>"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://scholarship.bendingspoons.com/?utm_medium=message&utm_campaign=women_scholarship&utm_source=university>",
+          "url": "https://scholarship.bendingspoons.com/?utm_medium=message&utm_campaign=women_scholarship&utm_source=university%3E",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "stipendija"
+      ],
+      "title": "Schneider Electric програм стипендија",
+      "summary": "Компанија Schneider Electric отворила је пријаве за нову генерацију стипендиста.",
+      "publishedAt": "2026-04-09",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/schneider-electric-stipendije-2026",
+      "content": {
+        "paragraphs": [
+          "Schneider Electric програм стипендија - Укључи СЕ!",
+          "Компанија Schneider Electric отворила је пријаве за нову генерацију стипендиста и позива студенте техничких факултета да се пријаве на програм намењен развоју младих инжењера.",
+          "Програм је усмерен ка студентима које интересују области електроенергетике, паметних мрежа, управљања енергијом и дигиталних технологија, са посебним фокусом на одржива и иновативна инжењерска решења.",
+          "Током трајања програма, стипендисти ће имати прилику да:",
+          "Програм је намењен студентима 3. и 4. године основних студија, као и студентима мастер студија техничких усмерења, који желе да стекну прво професионално искуство и развијају каријеру у области енергетике и напредних технологија.",
+          "Напомињемо да програм, поред рада на пројектима, подразумева и повремени долазак у компанију, па сматрамо да би информација била посебно релевантна за студенте који су већ у могућности да повремено долазе у Београд / Нови Сад или планирају даљи професионални ангажман у том правцу. Путни трошкови нису покривени у оквиру програма.",
+          "Опширније: линк"
+        ],
+        "listItems": [
+          "раде на реалним пројектима из праксе,",
+          "стекну увид у примену стечених знања у индустријском окружењу,",
+          "сарађују са искусним менторима,",
+          "буду део Schneider Electric Lab-а у Научно-технолошком парку у Новом Саду, простора намењеног учењу, развоју и размени знања."
+        ]
+      },
+      "resources": [
+        {
+          "label": "Schneider Electric",
+          "url": "https://careers.se.com/jobs/113859?lang=en-us&previousLocale=en-US",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "stipendija",
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "МЕXТ стипендије Владе Јапана – Отворена врата",
+      "summary": "Манифестација ће бити одржана у среду, 15. априла 2026. године",
+      "publishedAt": "2026-04-02",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/mext-stipendije-vlade-japana-2026",
+      "content": {
+        "paragraphs": [
+          "Обавештавамо вас да ће Амбасада Јапана у Републици Србији на Универзитету у Нишу представити програм MEXT стипендија за студенте основних и последипломских студија.Манифестација под називом \"МЕXТ стипендије Владе Јапана – Отворена врата\" биће одржана у среду, 15. априла 2026. године од 12:00-13:30 сати, у сали бр. 8 у приземљу зграде Универзитета у Нишу. Заинтересовани студенти ће након презентације програма стипендија имати прилику да добију све потребне информације од представника Амбасаде Јапана.Информација о организовању Отворених врата је објављена на сајту Универзитета и може се погледати на следећем линку:https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/najava-prezentacije-stipendija-vlade-japana."
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/najava-prezentacije-stipendija-vlade-japana",
+          "url": "https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/najava-prezentacije-stipendija-vlade-japana",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Студентски базар здравља",
+      "summary": "Превентивна акција која ће се одржати у суботу, 4. априла 2026. године",
+      "publishedAt": "2026-04-02",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/studentski-bazar-zdravlja-2026",
+      "content": {
+        "paragraphs": [
+          "Поводом обележавања Дана студената, Завод за здравствену заштиту студената Ниш организује превентивну акцију Студентски базар здравља - брига о здрављу на једном месту, која ће се одржати у суботу, 4. априла 2026. године, у периоду од 8 до 18 часова, у амбуланти на Булевару др Зорана Ђинђића 52а.",
+          "Циљ овог догађаја је подизање свести о значају превенције и очувања здравља међу студентима, кроз доступне и бесплатне прегледе и стручне савете."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "stipendija"
+      ],
+      "title": "Стипендирање талентованих студената из буџета града Ниша",
+      "summary": "Објављен је јавни позив за стипендирање талентованих ученика и студената из буџета града Ниша.",
+      "publishedAt": "2026-03-30",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/stipendije-nis-2026",
+      "content": {
+        "paragraphs": [
+          "Објављен је јавни позив за стипендирање талентованих ученика и студената из буџета града Ниша.",
+          "Све у вези са условима и критеријумима за доделу ових ступендија можете да прочитате и званичном документу: јавни позив"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "јавни позив",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/stipendije/gradske-stipendije-2026.pdf",
+          "kind": "dokument"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "stipendija"
+      ],
+      "title": "Јавни позив Министарства науке, технолошког развоја и иновација",
+      "summary": "за остваривање програмске активности стипендирања студената докторских академских студија и финансирања материјалних трошкова укључивања стипендиста министарства у рад акредитованих научноистраживачких организација",
+      "publishedAt": "2026-03-24",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/javni-poziv-mntri-2026",
+      "content": {
+        "paragraphs": [
+          "Јавни позив Министарства науке, технолошког развоја и иновација за остваривање програмске активности стипендирања студената докторских академских студија и финансирања материјалних трошкова укључивања стипендиста министарства у рад акредитованих научноистраживачких организацијаМинистарство науке, технолошког развоја и иновација, надлежно за научноистраживачку делатност, у 2026. години расписало је јавни позив за финансирање програмске активности:- стипендирање студената докторских академских студија и финансирање материјалних трошкова укључивања Стипендисте Министарства у рад акредитованих научноистраживачких организација.Рок за подношење пријава је 22.4.2026. године.Пријава на овај Јавни позив врши се подношењем одговарајућег захтева, на обрасцима Министарства, уз документацију која је наведена у њима.Обрасци одговарајућих захтева, услови на основу којих се одлучује о пристиглим пријавамa и остале информације од значаја за спровођење овог Јавног позива налазе се на веб-сајту Министарства: https://nitra.gov.rs/cir/nauka/stipendije.Непотпуне и неблаговремене пријаве неће бити разматране."
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://nitra.gov.rs/cir/nauka/stipendije",
+          "url": "https://nitra.gov.rs/cir/nauka/stipendije",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Најава гостујућег предавања Фабрике воде Роса и учешћа компаније Coca-Cola HBC Srbija на Elfak Open Day 2026",
+      "summary": "Електронски факултет Универзитета у Нишу угостиће представнике Фабрике воде Роса, која послује у оквиру компаније Coca-Cola HBC Srbija, на гостујућем предавању које ће бити одржано 27. марта 2026. године, у термину од 12.00 до 13.00 часова у Сали 165.",
+      "publishedAt": "2026-03-24",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/rosa-elfak-open-day-2026",
+      "content": {
+        "paragraphs": [
+          "Електронски факултет Универзитета у Нишу угостиће представнике Фабрике воде Роса, која послује у оквиру компаније Coca-Cola HBC Srbija, на гостујућем предавању које ће бити одржано 27. марта 2026. године, у термину од 12.00 до 13.00 часова у Сали 165.Студенти ће имати прилику да се упознају са технолошким процесима и инжењерским решењима примењеним у савременој производњи природне изворске воде, укључујући аутоматизацију, управљачке системе, одржавање и контролу квалитета.Ово предавање представља увод у догађај Elfak Open Day 2026, који ће се одржати 8. априла 2026. године. Циљ догађаја је да студентима, будућим бруцошима и заинтересованој јавности приближи студијске програме, сарадњу факултета са привредом, као и могућности професионалног развоја.Компанија Coca-Cola HBC Srbija биће један од учесника Open Day-а, где ће студенти имати прилику да посете штанд компаније, информишу се о програмима стручне праксе, савременим технологијама и могућностима запошљавања, као и да сазнају више о раду Фабрике воде Роса.Током догађаја биће организовани и speed dating интервјуи – кратки каријерни разговори са представницима компаније намењени студентима свих година студија. Учесници ће имати прилику да се представе, поставе питања и остваре директан контакт са послодавцем.За учешће у speed dating интервјуима неопходна је пријава путем следећег линка: Poseta Elektronskom Fakultetu - Rosa - ApplicationРок за пријаву је 5. април 2026. године.Позивамо све студенте да присуствују предавању 27. марта и да се пријаве за разговор са представницима компаније током догађаја Elfak Open Day 2026."
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "Poseta Elektronskom Fakultetu - Rosa - Application",
+          "url": "https://cchbc.avature.net/elektronskifakultet?projectId=23242",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "Формирање тимова за учешће на Електријади 2026",
+      "summary": "Списак наставника и сарадника одговорних за формирање и припрему тимова Електронског факултета у Нишу за учешће на такмичењима из науке на Електријади 2026.",
+      "publishedAt": "2026-03-17",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/formiranje-timova-elektrijada-2026",
+      "content": {
+        "paragraphs": [
+          "Списак наставника и сарадника одговорних за формирање и припрему тимова Електронског факултета у Нишу за учешће на такмичењима из науке на Електријади 2026.",
+          "Заинтересовани студенти треба да што пре контактирају наставнике или сараднике одговорне за предмет из којег би желели да се такмиче."
+        ],
+        "listItems": [
+          "Основи електротехнике – Ас. маст. инж. Наталија Ивковић (natalija.ivkovic@elfak.ni.ac.rs)",
+          "Физика – Проф. др Емилија Живановић (emilija.zivanovic@elfak.ni.ac.rs)",
+          "Математика 1 – Ас. маст. мат. Стефан Станков (stefan.stankov@elfak.ni.ac.rs)",
+          "Математика 2 – Ас. маст. мат. Јован Рајковић (jovan.rajkovic@elfak.ni.ac.rs)",
+          "Теорија електричних кола – Доц. др Биљана Стошић (biljana.stosic@elfak.ni.ac.rs)",
+          "Телекомуникације – Проф. др Горан Ђорђевић (goran.t.djordjevic@elfak.ni.ac.rs)",
+          "Електричне машине – Ас. мр Милан Радић (milan.radic@elfak.ni.ac.rs)",
+          "Аналогна електроника – Ас. маст. инж. Новак Радивојевић (novak.radivojevic@elfak.ni.ac.rs)",
+          "Дигитална електроника – Проф. др Горан Станчић (goran.stancic@elfak.ni.ac.rs)",
+          "Обновљиви извори енергије – Проф. др Сања Алексић (sanja.aleksic@elfak.ni.ac.rs)",
+          "Анализа електроенергетских система – Ас. мр Миодраг Стојановић (miodrag.stojanovic@elfak.ni.ac.rs)",
+          "Информатика – Ас. маст. инж. Александар Стојковић (aleksandar.stojkovic@elfak.ni.ac.rs)",
+          "Објектно оријентисано програмирање – Ас. мр Владан Михајловић (vladan.mihajlovic@elfak.ni.ac.rs)",
+          "Алгоритми и структуре података – Ас. маст. инж. Ђорђе Чикић (djordje.cikic@elfak.ni.ac.rs)",
+          "Аутоматика – Ас. маст. инж. Анђела Јовановић (andjela.jovanovic@elfak.ni.ac.rs)"
+        ]
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "razmena_ili_mobilnost",
+        "radionica"
+      ],
+      "title": "Ерасмус+ радионица за студенте Електронског и Машинског факултета",
+      "summary": "Ерасмус+ радионица ће бити одржана у чeтвртак 19. марта.",
+      "publishedAt": "2026-03-13",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/erasmus-plus-radionica-2026",
+      "content": {
+        "paragraphs": [
+          "Желиш да семестар или читаву годину проведеш на неком другом факултету?",
+          "Желиш да студираш или реализујеш праксу у иностранству?",
+          "Желиш да знаш у које све земље можеш да одеш током студирања?",
+          "Шта је све неопходно да урадиш пре пријаве на конкурс?",
+          "Која су документа неопходна?",
+          "Кога контактирати?",
+          "Уколико су ово само нека од питања на која желите да чујете одговоре и сазнате додатне појединости из конкурса за мобилност студената, дођите у четвртак 19. марта 2026. године од 14 сати на Ерасмус+ радионицу, која ће се одржати у Сали 165 на Електронском факултету.",
+          "О свим недоумицама, актуелном конкурсу и свему осталом говориће Институционални Ерасмус+ координатор Универзитета у Нишу проф. др Ивица Манић, академски и административни координатор Електронског факултета продекан проф. др Ненад Цветковић и Никола Михајловић, као и доц. др Милена Фртунић Глигоријевић. Са Машинског факултета, радионици ће присуствовати академски координатор проф. др Владислав Благојевић и административни координатор Марија Тасић."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "kurs"
+      ],
+      "title": "Ардуино курс",
+      "summary": "Први термин курса је понедељак, 23. 3. 2026. године",
+      "publishedAt": "2026-03-11",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/arduino-kurs-2026",
+      "content": {
+        "paragraphs": [
+          "Драги студенти, ове године традиционални Ардуино курс биће одржан по девети пут. Похађање овог курса ће вам омогућити да стекнете нова знања из области програмирања микроконтролера и практичне примене електронских компонената.",
+          "План је да први термин курса буде у понедељак, 23. 3. 2026. године од 13 до 15 сати у лабораторији 256 у новој ламели. За похађање овог курса није потребно никакво предзнање, већ само добра воља.",
+          "Додатне информације ће заинтересовани студенти добити мејлом. Ради што боље организације, формирања група и обезбеђивања адекватног простора и опреме, неопходно је да знамо број заинтересованих полазника, стога је потребно пријавити се мејлом професорки Емилији Живановић (emilija.zivanovic@elfak.ni.ac.rs) и доценту Милошу Марјановићу (milos.marjanovic@elfak.ni.ac.rs)."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Предавање компаније Електромрежа Србије",
+      "summary": "На Електронском факултету 19. марта од 12.30 сати",
+      "publishedAt": "2026-03-11",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/predavanje-elektromreza-srbije-2026",
+      "content": {
+        "paragraphs": [
+          "Предавање на тему \"Дизајнирај будућност: Smart grid и тржиште електричне енергије\" комапније Електромрежа Србије одржаће се на Електронском факултету 19. марта од 12.30 сати у сали 165."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "Пријава за такмичење из физике на Електријади",
+      "summary": "Студенти који су заинтересовани да учествују на такмичењу из физике на Електријади потребно је да се јаве професорки Емилији Живановић.",
+      "publishedAt": "2026-03-10",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/prijava-fizika-elektrijada-2026",
+      "content": {
+        "paragraphs": [
+          "Студенти који су заинтересовани да учествују на такмичењу из физике на Електријади потребно је да се јаве професорки Емилији Живановић мејлом на emilija.zivanovic@elfak.ni.ac.rs или лично (кабинет 324)."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "razmena_ili_mobilnost"
+      ],
+      "title": "Конкурс Универзитета у Нишу за одлазну мобилност студената у оквиру програма ЕRASMUS+ KA131",
+      "summary": "Конкурс је отворен до 2. априла 2026. године у 12:00",
+      "publishedAt": "2026-03-09",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/konkurs-erasmus-plus-ka131-2026",
+      "content": {
+        "paragraphs": [],
+        "listItems": [
+          "мобилност у сврху студирања (Student Mobility for Studies – SMS) у трајању од најмање 2, а највише 5 месеци током зимског или летњег семестра академске 2026/27. године за максимално 25 учесника",
+          "мобилност у сврху обављања студентске праксе (Student Mobility for Traineeships - SMT) у трајању од 2 до 3 месеца са почетком не раније од 25. маја 2026. године и завршетком најкасније до 18. јуна 2027. године за максимално 10 учесника."
+        ]
+      },
+      "resources": [
+        {
+          "label": "https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/erasmus/konkurs-univerziteta-u-nisu-za-odlaznu-mobilnost-studenata-u-okviru-programa-erasmus-ka131-202603090916",
+          "url": "https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/erasmus/konkurs-univerziteta-u-nisu-za-odlaznu-mobilnost-studenata-u-okviru-programa-erasmus-ka131-202603090916",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Предавање \"Примена вештачке интелигенције у продукцији визуелних ефеката\"",
+      "summary": "Предавање ће бити одржано у четвртак у 10 сати.",
+      "publishedAt": "2026-03-09",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/predavanje-primena-vi-u-produkciji-viyuelnih-efekata",
+      "content": {
+        "paragraphs": [
+          "У четвртак у 10 сати у сали 165 на Електронском факултету у Нишу биће одржано предавање под насловом",
+          "\"Примена вештацке интелигенције у продукцији визуелних ефеката\".",
+          "Предавање ће одржати алумниста Електронског факултета у Нишу, маст. инж. Златко Милојичић (https://zlamil.com), предавач из поља уметности на Београдској академији пословних и уметничких струковних студија на Одсеку за уметност и дизајн, ужа област: Анимација и визуелни ефекти."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Предавање представника компаније КупујемПродајем на Електронском факултету",
+      "summary": "Тема предавања: Софтверско инжeњерство у доба АИ",
+      "publishedAt": "2026-03-05",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/predavanje-kupujemprodajem-2026",
+      "content": {
+        "paragraphs": [
+          "Компанија КупујемПродајем ће одржати предавање у среду 11. 3. од 14 сати у амфитеатру А1 на Електронском факукрету у Нишу.",
+          "Тема предавања: Софтверско инжeњерство у доба АИ",
+          "Опис:",
+          "На предавању ћемо говорити о томе како се софтверско инжењерство развијало кроз време и зашто вештачка интелигенција представља природан наставак тог развоја. Осврнућемо се на промене које АИ доноси у процес развоја софтвера, али и на принципе који остају непромењени.",
+          "Посебан фокус биће на практичној примени АИ алата у развоју. Разговараћемо о томе које нове вештине су данас потребне, како дазадржимо висок квалитет кода и на који начин да обезбедимо стабилност и испоручивост производа у АИ окружењу.",
+          "Предавање је намењено студентима који желе да боље разумеју савремене токове у индустрији и припреме се за реалне изазове у раду на софтверским пројектима.",
+          "О предавачу:",
+          "мр Матеја Опачић је софтверски инжењер са више од 20 година искуства у развоју софтвера. Током каријере радио је на пројектима из различитих индустрија – медицине, гаминг-а, образовања и других области. Последњих осам година део је тима компаније КупујемПродајем, где активно доприноси развоју и унапређењу једног од највећих домаћих дигиталних производа."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "Позив за такмичење Serbian Cybersecurity Challenge 2026 (SCC2026)",
+      "summary": "Квалификације ће се одржати онлајн у периоду од 21. до 28. марта 2026. године",
+      "publishedAt": "2026-02-26",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/serbian-cybersecurity-challenge-2026",
+      "content": {
+        "paragraphs": [
+          "Позивамо све ученике средњих школа и студенте заинтересоване за сајбер безбедност да се пријаве за Serbian Cybersecurity Challenge 2026 (SCC2026), национално CTF такмичење које представља пут ка избору тима за European Cybersecurity Challenge (ECSC2026), чије ће финале бити одржано у Немачкој у октобру 2026. године. Квалификације ће се одржати онлајн, индивидуално, у периоду од 21. до 28. марта 2026. године, док ће 80 најбољих такмичара учествовати у тимском финалу у Београду 12. и 13. маја 2026. године. Тренинг материјали су доступни на https://sajberheroj.rs/trening-materijali/ Показна, уводна радионица са практичним примерима биће одржана на Електронском факултету у Нишу у среду, 4. марта у 17 часова. Пријава је могућа путем QR кода."
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://sajberheroj.rs/trening-materijali/",
+          "url": "https://sajberheroj.rs/trening-materijali/%20",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "studentski_program"
+      ],
+      "title": "Schneider Global Student Experience програм",
+      "summary": "Кроз низ e-learning модула, имате прилику да истражите индустрију и завирите „иза кулиса” Schneider Electrica као глобалног лидера.",
+      "publishedAt": "2026-02-26",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/schneider-global-student-experience-program-2026",
+      "content": {
+        "paragraphs": [
+          "Кроз низ e-learning модула, имаћете прилику да истражите нашу индустрију и завирите „иза кулиса” Schneider Electrica као глобалног лидера. Програм нуди пет области учења: продаја и маркетинг, сервиси, ланац снабдевања, дигиталне каријере и одрживост у бизнису.",
+          "Schneider Global Student Experience је одлична прилика да истражите потенцијалне каријерне правце, развијете личне и професионалне вештине и направите свој први корак ка Schneider Electricu – уз практична знања која можете искористити за следећи пројекат, интервју или праксу.",
+          "Ова искуствена обука је идеална за вас који:",
+          "Кључне информације о програму:",
+          "У наставку се налазе корисне информације:"
+        ],
+        "listItems": [
+          "Тренутно похађате факултет, високу школу, мастер студије или технички факултет",
+          "Желите да учите од лидера у индустрији који развија технологије за одрживу енергетску будућност",
+          "Добро познајете енглески, јер је сав материјал дат на енглеском језику",
+          "Пријаве: Отворене 24. фебруара 2026. и биће доступне до краја године.",
+          "Сертификати: Након завршетка сваког e-learninga, добијате сертификат који можете поделити на друштвеним мрежама или додати у свој CV. Могуће је одабрати један или више модула.",
+          "Време потребно за учење: 8 -10 сати, индивидуалним темпом",
+          "Начин извођења: 100% online",
+          "Пријава: Global Student Experience 2026 Registration",
+          "У року од 48 сати од пријаве добијате email са инструкцијама за приступ Schneider University платформи и избор своје области учења.",
+          "Изаберите свој learning track и започните програм!",
+          "Завршите e-learning module и преузмите сертификат о успешно завршеном програму.",
+          "Поделите свој успех!"
+        ]
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "razmena_ili_mobilnost",
+        "zaposlenje"
+      ],
+      "title": "Електромрежа Србије расписала конкурс за више инжењерских позиција",
+      "summary": "у области тржишта, балансирања, прекограничне размене и квалитета електричне енергије.",
+      "publishedAt": "2026-02-18",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/elektromreza-srbije-konkurs-inzenjeri-2026",
+      "content": {
+        "paragraphs": [
+          "Електромрежа Србије а.д., као оператор преносног система Републике Србије и кључни учесник регионалног и европског тржишта електричне енергије, у циљу јачања капацитета Дирекције за тржиште, расписује конкурс за више инжењерских позиција у области тржишта, балансирања, прекограничне размене и квалитета електричне енергије.",
+          "Студенти завршних година који још увек нису дипломирали, а којима је остало неколико испита до завршетка студија, такође се позивају да доставе своју биографију (CV).",
+          "Опширније - https://poslovi.infostud.com/posao/elektroinzenjer-u-direkciji-za-trziste-elektricne-energije/elektromreza-srbije-ad/715101?utm_source=podelite&utm_campaign=podeli-oglas&utm_medium=link"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://poslovi.infostud.com/posao/elektroinzenjer-u-direkciji-za-trziste-elektricne-energije/elektromreza-srbije-ad/715101?utm_source=podelite&utm_campaign=podeli-oglas&utm_medium=link",
+          "url": "https://poslovi.infostud.com/posao/elektroinzenjer-u-direkciji-za-trziste-elektricne-energije/elektromreza-srbije-ad/715101?utm_source=podelite&utm_campaign=podeli-oglas&utm_medium=link",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "Data Science Hackathon",
+      "summary": "Пријаве су могуће индивидуално или тимски у периоду од 4. до 23. фебруара.",
+      "publishedAt": "2026-02-06",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/data-science-hackathon-2026",
+      "content": {
+        "paragraphs": [
+          "На Математичком факултету у Београду организује се Data Science Hackathon 28. и 29. марта, а позив за учешће студената је отворен.",
+          "Пријаве су могуће индивидуално или тимски у периоду од 4. до 23. фебруара.",
+          "Data Science Hackathon је едукативни и такмичарски догађај намењен студентима заинтересованим за науку о подацима, анализу података и машинско учење. Хакатон ће трајати 24 сата и одржаће се 28. и 29. марта 2026. године у просторијама Математичког факултета у Београду. Учесници ће радити на проблему из стварног света из осигуравајуће индустрије, са циљем примене академског знања у практичном пословном контексту.",
+          "Пријава - https://docs.google.com/forms/d/e/1FAIpQLScFNdD-cldb_pMkvsVxOshr0eSXg-xO3WbDgusgwpmY-pPnBA/viewform"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://docs.google.com/forms/d/e/1FAIpQLScFNdD-cldb_pMkvsVxOshr0eSXg-xO3WbDgusgwpmY-pPnBA/viewform",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScFNdD-cldb_pMkvsVxOshr0eSXg-xO3WbDgusgwpmY-pPnBA/viewform",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Предавање \"Астрономска опсерваторија и астрономска истраживања у Србији\"",
+      "summary": "Предавање \"Астрономска опсерваторија и астрономска истраживања у Србији\" одржаће се у четвртак, 5. 2. 2026. у 12 ч.",
+      "publishedAt": "2026-02-03",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/predavanje-astonomija-2026",
+      "content": {
+        "paragraphs": [
+          "У четвртак, 5. фебруара 2026. године, у 12 ч у сали 165 на Електронском факултету у Нишу биће одржано предавање:",
+          "\"Астрономска опсерваторија и астрономска истраживања у Србији\"",
+          "Предавачи:",
+          "У предавању ће бити дат историјски осврт на развој астрономије у Србији, која озбиљније почиње да се развија оснивањем Астрономске опсерваторије 1887. године.",
+          "Биће дат преглед истраживања и пројеката који се изводе на Астрономској опсерваторији са посебним освртом на могућности које пружа АС Видојевица.",
+          "Биће представљене и могућности ангажовања студената докторских студија у области природно-математичких наука и електротехничког и рачунарског инжењерства, а у оквиру развоја космичких истраживања и технологија у нашој земљи.",
+          "Предавање је отворено за све заинтересоване."
+        ],
+        "listItems": [
+          "проф. др Лука Поповић, директор Астрономске опсерваторије Београд",
+          "др Бранислав Вукотић, управник Астрономске станице (АС) Видојевица Астрономске опсерваторије Београд"
+        ]
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "Hub201 - Хакатон у области сајбер безбедности",
+      "summary": "201:Go! Hackathon ће бити одржан 21. и 22. фебруара у кући еУправе",
+      "publishedAt": "2026-02-03",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/vizual-201gohackathon-2026",
+      "content": {
+        "paragraphs": [
+          "201:Go! Hackathon ће бити одржан 21. и 22. фебруара у кући еУправе, са циљем да окупи иноваторе и пружи им структурирану подршку у развоју решења за конкретне и актуелне изазове у области сајбер безбедности.",
+          "Пријаве су отворене до 11. фебруара и подносе се попуњавањем пријавне форме на сајту Hub201.",
+          "На актуелни позив могу конкурисати студенти завршних година, мастер и докторских студија, стартап тимови, као и професионалци и тимови из индустрије.",
+          "Идеја је да тимови до почетка хакатона осмисле идеју и концепт као одговор на један од изазова из следећих тема:",
+          "Одабране тимове очекује интензиван рад са експертима из индустрије са којим ће радити на развоју својих иновативних решења, а најбоље очекују вредне награде и директан пролаз у Hub201 програм акцелерације."
+        ],
+        "listItems": [
+          "Phishing Detection for local-language E-mails",
+          "Shadow IT & SaaS Risk Mapper for SMEs",
+          "BEC Payment Workflow Guard",
+          "Post-Offboarding Access & OAuth Gap Monitor"
+        ]
+      },
+      "resources": [
+        {
+          "label": "Hub201",
+          "url": "https://hub-201.com/",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "kurs"
+      ],
+      "title": "Нови бесплатни курс Red Hat академије",
+      "summary": "Red Hat OpenShift Development I: Introduction to Containers with Podman 4.18",
+      "publishedAt": "2026-01-30",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/kurs-red-hat-2026",
+      "content": {
+        "paragraphs": [
+          "Поштоване колегинице и колеге,Након скоро годину дана паузе, Red Hat академија наставља са радом.У овом семестру на располагању је курс DO188 - Red Hat OpenShift Development I: Introduction to Containers with Podman 4.18, који ће бити доступан у периоду од 01.02.2026. године до 31.03.2026. године.Курс ће бити организован online, self-paced. Сви материјали, виртуелне машине и кубернетес кластер хостовани су за потребе Електронског факултета на инфраструктури компаније Red Hat.Сви курсеви Red Hat академије су потпуно бесплатни, сертификовани од стране Red Hat компаније и доступни свим студентима Електронског факултета у Нишу. Након завршетка курса, свим кандидатима који успешно савладају курс биће издат званични сертификат компаније Red Hat о одслушаном курсу.Сви заинтересовани се могу обратити проф. др Милошу Богдановићу за приступ курсу и додатне информације.Добродошли!"
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "kurs",
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Презентација Cisco курсева и Академије",
+      "summary": "Презентација ће бити одржана у четвртак, 29. јануара 2026. године",
+      "publishedAt": "2026-01-26",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/prezentacija-cisco-2026",
+      "content": {
+        "paragraphs": [],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "http://ca.elfak.ni.ac.rs/?page_id=511",
+          "url": "http://ca.elfak.ni.ac.rs/?page_id=511&fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExUzc0dnlvNzBWaUFqOU5jNXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5_9eDF-TQDLKg8piD3ScwJ_Dai9cDO7-XaqJRDfVAM6jfz6lthsrgcuoM3aA_aem_4srr-775TnlMVKEaXzpUhQ",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "stipendija",
+        "takmicenje_ili_hakaton",
+        "studentski_program"
+      ],
+      "title": "Програм за унапређење студената рачунарства (CSSAP)",
+      "summary": "Отворено такмичење за трогодишње стипендије у оквиру „Програма за унапређење студената рачунарства(CSSAP)“",
+      "publishedAt": "2026-01-09",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/cssap",
+      "content": {
+        "paragraphs": [
+          "Одељење за рачунарство, Универзитет Рајс, Хјустон, Тексас, САД,Одељење за рачунарство и инжењерство, Универзитет Тексас A&M, Колиџ Стејшн, Тексас, САД,у сарадњи са Електротехничким факултетом, Универзитет у Београду, Факултетом техничких наука, Универзитет у Новом Саду,Електронским факултетом, Универзитет у Нишу и Српско-америчком трговинском комором у Хјустону објављују следеће",
+          "Отворено такмичењеза трогодишње стипендије у оквиру„Програма унапређења студената рачунарства (CSSAP)“",
+          "1. Стипендије",
+          "● Индивидуалне стипендије покривају све трошкове путовања, смештаја и исхране запериод од 90 дана на Одељењу за рачунарство на Универзитету Рајс и Одељењу зарачунарство и инжењерство на Универзитету Тексас A&M, под менторствомпрофесора са Универзитета Рајс или Универзитета Тексас A&M",
+          "● Стипендије ће бити додељене за период отприлике од почетка јула до крајасептембра",
+          "● Нема ограничења у броју додељених стипендија, главни критеријуми суквалификације кандидата и усклађеност између истраживачких интереса кандидата ипрофесора2. Услови",
+          "● Пријављени морају бити студенти треће или четврте године основних студија у добромстању или прве године мастер програма на свом факултету у Србији",
+          "● Потребан је минимални просек оцена од 9.0/10",
+          "● Потребно је показати течно знање енглеског језика, како у говору, тако и уписању",
+          "● Минимум 2 препоруке од професора или сарадника у области рачунарства",
+          "● Остали пратећи материјали, као што су документи који сведоче о чланству унаучним организацијама, студентским организацијама, објављеним радовима, итд.су добродошли, али нису обавезни3. Пријаве",
+          "● Актуелни ЦВ са списком публикација, просек оцена, курикулума и ваншколскихактивности, академског и радног искуства и постигнућа● Актуелни транскрипти● 2 препоручена писма● Писмо од пријављеног у којем описује своја научна интересовања, заједно саистраживачким групама на Рајсу или A&M које би могле бити од интереса (видетиhttp://www.cs.rice.edu/research/ иhttps://engineering.tamu.edu/cse/research/areas/)● Сви додатни материјалиСве пријаве треба послати у електронској форми професору Зорану Будимлићу, zoran@rice.edu или zoran@tamu.edu.Сва питања о програму могу се поставити професору Зорану Будимлићу(zoran@rice.edu, zoran@tamu.edu) или професору Јелици Протић (jeca@sezampro.rs) на ЕТФ-у, професору Бранку Милосављевићу(branko.milosavljevic@gmail.com) на ФТН-у, или професору Леониду Стоименову (leonid.stoimenov@elfak.ni.ac.rs) на ЕЛФАК-у.Рок за подношење пријава је 8. фебруар 2025. године.",
+          "-------------------------------------------------------------------------------------------------------------------------------------------------------",
+          "Computer Science Department, Rice University, Houston, Texas, U.S.A.Computer Science and Engineering DepartmentTexas A&M University, College Station, Texas, U.S.A.in collaboration withSchool of Electrical Engineering, University of BelgradeFaculty of Technical Sciences, University of Novi SadFaculty of Electronic Engineering, University of NišandThe Serbian American Chamber of Commerce of Houstonare announcing the followingOpen CompetitionFor three-month fellowship awards as part of the“Computer Science Student Advancement Program (CSSAP)”1. Fellowships● Individual fellowships include all the expenses for travel, room and board for aperiod of 90 days at the Computer Science Department at Rice University and theComputer Science and Engineering Department at Texas A&M University, under thementorship of a Rice University or Texas A&M University faculty member● Awards will be granted for approximately beginning of July to end of Septemberperiod● There is no limit on the number fellowships awarded, the main criteria are thecandidate’s qualifications and a match between candidate’s and faculty’s researchinterests2. Conditions● Applicants must be 3rd or 4th year undergraduate students in good standing or 1styear in the Masters program at their respective school in Serbia● Minimum GPA of 9.0/10 is required● Fluency in spoken and written English must be demonstrated● Minimum of 2 references from faculty or collaborators in the field of ComputerScience● Other supporting materials, such as documents witnessing memberships in scienceorganizations, student organizations, published papers, e.t.c. are encouraged but notrequired3. Applications● Current CV with a list of publications, GPA, curricular and extra-curricular activities,academic and work experience and achievements● Current transcripts● 2 reference letters● A letter from the applicant describing his/her scientific interests, along researchgroups at Rice or A&M that may be of interest (seehttp://www.cs.rice.edu/research/ andhttps://engineering.tamu.edu/cse/research/areas/)● Any supplemental materialsAll applications should be submitted in electronic form to Prof. Zoran Budimlić,zoran@rice.edu or zoran@tamu.edu .All questions about the program can be directed to Prof. Zoran Budimlić (zoran@rice.edu,zoran@tamu.edu) or Prof. Jelica Protić (jeca@sezampro.rs) at ETF, Prof. BrankoMilosavljević (branko.milosavljevic@gmail.com) at FTN, or Prof. Leonid Stoimenov(leonid.stoimenov@elfak.ni.ac.rs) at ELFAK.The deadline for submitting the applications is February 8th, 2026."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "praksa"
+      ],
+      "title": "Конкурс за обављање стручне праксе у државним и другим органима у академској 2025/2026. години",
+      "summary": "Универзитет У Нишу објављује Конкурс за обављање студентске стручне праксе у државним и другим органима за студенте факултета Универзитета у Нишу за академску 2025/26. годину",
+      "publishedAt": "2025-12-19",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/konkurs-strucna-praksa-drzavne-i-druge-organizacije",
+      "content": {
+        "paragraphs": [
+          "Универзитет У Нишу објављује Конкурс за обављање студентске стручне праксе у државним и другим органима за студенте факултета Универзитета у Нишу за академску 2025/26. годину.",
+          "За пријаву на конкурс је потребно попунити образац и послати на назначену имејл адресу најкасније до среде, 21. 1 . 2026. године, до 15 часова.",
+          "Конкурс можете преузети овде конкурс"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "образац",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/ostalo/2025/prijava-strucna-praksa-uprava-2026.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "конкурс",
+          "url": "https://sip.elfak.ni.ac.rs/downloads//Konkurs-Univerziteta-u-Nisu-za-studentsku-strucnu-praksu-2025-26.pdf",
+          "kind": "dokument"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Презентација компаније Zijin Copper Serbia",
+      "summary": "Уторак 23. децембар од 13 сати у просторији 165.",
+      "publishedAt": "2025-12-19",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/zi-jin-prezentacija-2025",
+      "content": {
+        "paragraphs": [
+          "Представници компаније Zijin Copper Serbia одржаће презентацију за студенте Електронског факултета у уторак 23. децембра од 13 сати у просторији 165."
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "zi-jin-prezentacija-2025.jpg",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/ostalo/2025/zi-jin-prezentacija-2025.jpg",
+          "kind": "sip_stranica"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "stipendija"
+      ],
+      "title": "Стипендије компаније HBIS GROUP СРБИЈА",
+      "summary": "HBIS GROUP Србија нуди стипендије студентима Електронског факултета у Нишу за школску 2025/26. годину.",
+      "publishedAt": "2025-12-16",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/hbis-group-stipendije",
+      "content": {
+        "paragraphs": [],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Unlockit konferencija",
+      "summary": "Међународна tech сцена стиже у Београд овог фебруара на Unlockit.",
+      "publishedAt": "2025-12-11",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/unlockit-konferencija-2026",
+      "content": {
+        "paragraphs": [
+          "Међународна tech сцена стиже у Београд овог фебруара на Unlockit и, погоди шта, ти можеш бити део тога!",
+          "Inspiration track unlockit конференције организују студенти за студенте, што значи: без досадних говора, без зевања – само идеје и добра атмосфера.",
+          "Ево шта те чека:",
+          "Нека од имена која ће се придружити су: Андреј Бенчић (Tenderly), Душан Комар (Ominimo), Александра Митревска (Native Teams), Nick Velkovski (HeyReach) и још много њих",
+          "Учешће је ексклузивно – студенти пролазе кроз процес селекције, а места ће бити резервисана за најамбициозније, најрадозналијe и најиновативније!",
+          "Не пропусти прилику да откључаш нове идеје, контакте и инспирацију!",
+          "Пријави се до 30. децембра: пријава",
+          "Датум: 19. фебруар",
+          "Локација: Београд, Сава Центар",
+          "Регистрација: регистрација",
+          "За више информација посети званични сајт: unlockit"
+        ],
+        "listItems": [
+          "Инспиративни лидери из света технологије и иновација који откривају тајне које би волели да су знали као студенти",
+          "Дељење знања о најновијим трендовима",
+          "Умрежавање са студентима и младим професионалцима из региона и Европе"
+        ]
+      },
+      "resources": [
+        {
+          "label": "пријава",
+          "url": "https://forms.gle/Kmdy1MtfhBdoN7y7A",
+          "kind": "spoljni_link"
+        },
+        {
+          "label": "unlockit",
+          "url": "https://unlockit.org/",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "stipendija"
+      ],
+      "title": "Компанија Zumtobel Group расписује конкурс за доделу студентских стипендија за 2026. годину",
+      "summary": "Пријаве са документацијом слати до 26.12.2025.",
+      "publishedAt": "2025-12-09",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/zumtobel-group-stipendije-9-12-2025",
+      "content": {
+        "paragraphs": [
+          "Компанија Zumtobel Group расписује конкурс за доделу студентских стипендија за 2026. годину.",
+          "На конкурс се можеш пријавити уколико испуњаваш следеће услове:- ако си држављанин Републике Србије и ако си редован студент треће или четврте године студија на Електронском или Машинском факултету,- ако си редован студент са положеним испитима из претходних година студија са укупном просечном оценом једнаком или већом од 7.50,- ако поседујеш активно знање енглеског језика и напредно знање коришћења МС Оффице пакета,- ако у тренутку подношења захтева ниси обновио/ла више од једне године студија.",
+          "Твоја обавеза је:- да активно учествујеш у додељеним пројектима, - да редовно упишеш наредну годину студија и да редовно полажеш испите и достављаш доказ о положеним испитима,- да по завршетку студирања наставиш рад код послодавца у временском периоду који је најмање једнак периоду стипендирања.",
+          "Документација коју достављаш:- уверење о држављанству,- кратка биографија (ЦВ) са фотографијом на енглеском језику- доказ о уписаној години студија са списком положених предмета и просечном оценом у току студирања. * Опционо: сертификати о додатним курсевима (енглески, МС Оффице).",
+          "Зумтобел Гроуп а се бави стварањем иновативних решења за осветљење, производњом компонената осветљења, производњом осветљења и пружањем опсежне понуде услуга (дигитализација, сервис …. ) .У Србији послује у саставу двеју компанија: „ZG Lighting Srb doo“ и „Tridonic Srb doo“ , такође има и GBC (Globalni Business Centar са локацијама у Нишу и Београду). Упошљава све врсте инжењера машинства, електронике и архитектуре, административних, продајних и других функција. Zumtobel Group у Нишу има вишегодишње искуство сарадње са Универзитетом у Нишу, највише са Машинским, Економским и Електронским факултетом, где већ осму годину реализује студентске праксе и стипендије. Детаљи стипендирања биће уређени посебним уговором између стипендисте и послодавца.Појединачна стипендија износи 20.000 РСД месечно у 10 једнаких месечних рата по години студирања.",
+          "Пријаве са документацијом слати на имејл адресу dijana.aleksicpanajotov@zumtobelgroup.com до 26.12.2025."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "zaposlenje"
+      ],
+      "title": "Посао у Coca-Cola компанији",
+      "summary": "Компанија Coca-Cola HBC Србија има отворене позиције за посао.",
+      "publishedAt": "2025-12-02",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/posao-coca-cola-2025",
+      "content": {
+        "paragraphs": [
+          "Компанија Coca-Cola HBC Србија, са којом Електронски факултет сарађује већ дуги низ година, има отворене позиције за посао.",
+          "Више информација можете добити на њиховом сајту: конкурс"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "конкурс",
+          "url": "https://careers.coca-colahellenic.com/sr_RS/careers/ProjectDetail/Rosa-Otvorena-Prijava/20636",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "praksa"
+      ],
+      "title": "Зимска пракса у ELSYS Eastern Europe",
+      "summary": "Пријави се до 1. децембра 2025. године",
+      "publishedAt": "2025-11-19",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/zimska-praksa-elsys-estern-europe-2025",
+      "content": {
+        "paragraphs": [
+          "Започни своју инжењерску каријеру у ELSYS Eastern Europe компанији!Придружи се интернационалној француској компанији са 1100 инжењера у преко 14 дизајн центара у Србији, Француској, Португалу и Америци.Први корак ка жељеној каријери је сам одабир програма праксе који је у нашој компанији менторски вођен и плаћен. Отворене су позиције у следећим доменима: Digital Design Verification,Analog Mixed Signal Verification, Analog Custom IC LayoutСазнај више о доступним програмима праксе и аплицирај сада!https://www.elsys-eastern.com/career/internships/"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://www.elsys-eastern.com/career/internships/",
+          "url": "https://www.elsys-eastern.com/career/internships/",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "stipendija"
+      ],
+      "title": "Промоција конкурса Министарства одбране за доделу студентских стипендија на Електронском факултету",
+      "summary": "Данас, 14. новембра 2025. године у 12 сати, у сали 165 Електронског факултета у Нишу одржаће се промоција јавног конкурса за стипендирање и запошљавање у Војнотехничком институту у Београду.",
+      "publishedAt": "2025-11-14",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/promocija-ministarstvo-odbrane",
+      "content": {
+        "paragraphs": [
+          "Данас, 14. новембра 2025. године у 12 сати, у сали 165 Електронског факултета у Нишу одржаће се промоција јавног конкурса за стипендирање и запошљавање у Војнотехничком институту у Београду."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "stipendija"
+      ],
+      "title": "Стипендије Електромрежа Србије",
+      "summary": "Електромрежа Србије расписала је Конкурс за стипендије студената 4. године.",
+      "publishedAt": "2025-11-14",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/stipendije-elektromreza-srbije",
+      "content": {
+        "paragraphs": [],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://ems.rs/konkurs-za-stipendiranje-studenata-4/",
+          "url": "https://ems.rs/konkurs-za-stipendiranje-studenata-4/",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Дан отворених врата модула Комуникације и информационе технологије",
+      "summary": "У понедељак 3. 11. 2025. године у периоду од 12 до 14 часова.",
+      "publishedAt": "2025-10-28",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/dan-otvorenih-vrata-kit-28-11-2025",
+      "content": {
+        "paragraphs": [],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "predavanje_tribina_ili_konferencija"
+      ],
+      "title": "Презентација компаније HERMI",
+      "summary": "Компанија HERMI одржаће презентацију за студенте 19. новембра у 12 сати у сали 165",
+      "publishedAt": "2025-10-28",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/prezentacija-hermi-28-10-2025",
+      "content": {
+        "paragraphs": [
+          "У склопу сарадње са Електронским факултетом компанија HERMI одржаће презентацију за студенте 19. новембра у 12 сати у сали 165 и том приликом представити свој рад, као и могућност стипендирања."
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://hermi.co.rs/neprimetni-gromobrani/",
+          "url": "https://hermi.co.rs/neprimetni-gromobrani/",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "praksa",
+        "zaposlenje"
+      ],
+      "title": "Компанија Компанија HTEC Гроуп има отворен конкурс за практиканте 2025/2026 Гроуп има отворен конкурс за практиканте 2025/2026",
+      "summary": "Компанија HTEC Гроуп нуди плаћене праксе у трајању од 3 до 6 месеци, са флексибилним датумима почетка. Позиције су доступне у нашим развојним центрима у Београду, Новом Саду, Нишу, Бањој Луци и Сарајеву.",
+      "publishedAt": "2025-10-21",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/otvoren-konkurs-za-praktikante-htec-2025-26",
+      "content": {
+        "paragraphs": [
+          "Компанија HTEC Гроуп има отворен конкурс за практиканте 2025/2026",
+          "У питању су плаћене праксе у трајању од 3 до 6 месеци, са флексибилним датумима почетка. Позиције су доступне у нашим развојним центрима у Београду, Новом Саду, Нишу, Бањој Луци и Сарајеву.",
+          "Добродошли су студенти завршне године основних или мастер студија из области рачунарства и сродних дисциплина.",
+          "На чему ћеш радити",
+          "Наши тимови развијају програмске преводиоце (класичне и оне засноване на вештачкој интелигенцији и машинском учењу), алате за дебаговање, софтвер за GPU, као и алате за статичку и динамичку анализу у циљу откривања грешака и безбедносних рањивости.",
+          "Као практикант, имаћеш прилику да радиш на различитим областима – од дизајна језика високог нивоа до оптимизације на ниском нивоу, од дебаговања на нивоу кернела до инфраструктуре за вештачку интелигенцију. Сарађиваћеш са инжењерским тимовима и опен-соурце заједницама на решавању изазовних проблема из стварног света.",
+          "Квалификације",
+          "Израда завршног рада",
+          "Током праксе, можеш радити на свом завршном (дипломском или мастер) раду уз менторство како академских, тако и техничких саветника из HTEC-a. Пружамо подршку студентима кроз све фазе – од идеје до имплементације.",
+          "За студенте чији студијски програм не подразумева израду завршног рада, нудимо еквивалентне пројектне задатке који одговарају обиму и сложености типичног рада из области рачунарства.",
+          "Више информација можеш пронаћи на нашој Career страници и пријавити се путем линка."
+        ],
+        "listItems": [
+          "Одлично познавање C/C++ језика",
+          "Добро разумевање оперативних система и системског софтвера",
+          "Ентузијазам за системско програмирање и развој софтвера на ниском нивоу",
+          "Предност је познавање Clang-a, LLVM-a, анализе програма или GPU програмирања"
+        ]
+      },
+      "resources": [
+        {
+          "label": "линка",
+          "url": "https://htec.com/careers/internship/#software-engineering-internships-ai-compilers-system-software-HPM",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "razmena_ili_mobilnost"
+      ],
+      "title": "Конкурс Универзитета у Нишу за одлазну мобилност студената у оквиру програма ЕRASMUS+ КА171",
+      "summary": "Конкурс за мобилност једног студента у сврху студирања на Универзитету Црне Горе у Подгорици у току летњег семестра 2025/26. године.",
+      "publishedAt": "2025-10-16",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/konkurs-mobilnost-studenata-crna-gora-2025",
+      "content": {
+        "paragraphs": [
+          "У складу са уговором о додели наменских бесповратних средстава број 2024-1-RS01-KA171-HED-000226306 потписаним између Универзитета у Нишу и националне Фондације Темпус, Универзитет у Нишу објављује:",
+          "Конкурс за мобилност једног (1) студента у сврху студирања на Универзитету Црне Горе у Подгорици, Црна Гора у току летњег семестра 2025/26. године.",
+          "Конкурс је отворен до 13. новембра 2025. године у 12 сати, а могу се пријавити студенти факултета Универзитета у Нишу у областима електротехнике, енергетике, аутоматике, електронике, рачунарства и економских наука.",
+          "Детаљније информације потражите на сајту Универзитета."
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "на сајту Универзитета",
+          "url": "https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/erasmus/konkurs-univerziteta-u-nisu-za-odlaznu-mobilnost-studenata-u-okviru-programa-erasmus-ka171",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "kurs"
+      ],
+      "title": "Курс Елементарне физике за бруцоше",
+      "summary": "У оквиру припремне наставе за наступајућу школску 2025/26. годину, Електронски факултет организује курс Елементарне физике за бруцоше.",
+      "publishedAt": "2025-10-16",
+      "sourceCategory": "kursevi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/kursevi/kurs-fizike-2025",
+      "content": {
+        "paragraphs": [
+          "Материјали везани за одређену област биће објављивани овде, након завршеног предавања планираног за тај дан.",
+          "Како се пријавити?",
+          "Да би се пријавили, молимо Вас да попуните формулар."
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "Уводни час. Физичке величине и јединице. Векторске и скаларне величине у физици.",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/kurs/kurs-fizike-1-2025.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "Кинематика. Праволинијско и криволинијско кретање. Кружно кретање. Брзина и убрзање код равномерног кретања. Брзина и убрзање код равномерно променљивог кретања.",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/kurs/kurs-fizike-2-2025.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "Динамика. Сила и маса. Импулс. Тежина тела. Сила трења.",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/kurs/kurs-fizike-3-2025.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "Рад, снага и енергија. Закон одржања импулса и енергије. Динамика ротационог кретања.",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/kurs/kurs-fizike-4-2025.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "Механика флуида. Архимедов закон. Једначина континуитета.",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/kurs/kurs-fizike-5-2025.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "Топлота и температура. Ширење тела при загревању. Закони идеалних гасова. Калориметрија.",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/kurs/kurs-fizike-6-2025.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "Осцилаторно кретање. Брзина, убрзање и енергија код простог хармонијског кретања. Таласно кретање и акустика. Брзина простирања таласа. Звучни извори.",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/kurs/kurs-fizike-7-2025.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "Геометријска оптика. Одбијање и преламање светлости. Тотална рефлексија. Сочива и једначина сочива.",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/kurs/kurs-fizike-8-2025.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "Структура атома. Дефект масе и енергија везе. Радиоактивно зрачење. Закон радиоактивног распада.",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/kurs/kurs-fizike-9-2025.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "формулар",
+          "url": "https://forms.gle/KPPHL3JJWvZGSmmh8",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "stipendija"
+      ],
+      "title": "Промоција конкурса Министарства одбране за доделу студентских стипендија на Електронском факултету",
+      "summary": "Конкурс Министарства одбране за доделу студентских стипендија за школску 2025/2026. годину",
+      "publishedAt": "2025-10-15",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/konkurs-ministarstva-odbrane-stipendije-2025",
+      "content": {
+        "paragraphs": [
+          "У петак 14. новембра 2025. године у 12 сати у сали 165 Електронског факултета у Нишу одржаће се промоција јавног конкурса за стипендирање и запошљавање у Војнотехничком институту у Београду.",
+          "Министарство одбране Републике Србије расписује конкурс за стипендирање студената за потребе рада у Војнотехничком институту у Београду."
+        ],
+        "listItems": []
+      },
+      "resources": []
+    },
+    {
+      "activityTypes": [
+        "praksa"
+      ],
+      "title": "Сајам послова и пракси - Career Days Niš",
+      "summary": "Сајам послова и пракси, Career Days Niš, одржава се 15. и 16. октобра у Научно-технолошком парку у Нишу.",
+      "publishedAt": "2025-10-08",
+      "sourceCategory": "ostalo",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/ostalo/career-days-nis-2025",
+      "content": {
+        "paragraphs": [
+          "У Научно-технолошком парку у Нишу 15. и 16. октобра одржава се сајам послова и пракси, намењен пре свега младима.",
+          "Организован је од стране чланова студентске организације AIESEC у Нишу.",
+          "На сајму ћете имати прилику да се упознате са компанијама које су у потрази за младим талентима, учествујете на радионицама, предавањима и кратким регрутационим интервјуима.",
+          "Компаније са којима ћете моћи да разговарате ове године су Johnson Electric, Zumtobel Group i Tridonic, Logik, Elixir Group, INTEGRATED MICRO-ELECTRONICS, BizLink, Grammer Bussines Center, Wersirius, BMM Logistics, HORISEN Technology, Vizija Računovodstvo, Elrad Group.",
+          "На сајам се можете пријавити путем следећег линка: пријава"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "пријава",
+          "url": "http://podio.com/webforms/28886746/2338054",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "razmena_ili_mobilnost"
+      ],
+      "title": "Конкурс Универзитета у Нишу за одлазну мобилност студената у оквиру програма ЕRASMUS+ KA131",
+      "summary": "Конкурс је отворен до 3. новембра 2025. године",
+      "publishedAt": "2025-10-07",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/erasmus-plus-ka131-7-10-2025",
+      "content": {
+        "paragraphs": [],
+        "listItems": [
+          "мобилност у сврху студирања (Student Mobility for Studies – SMS) у трајању од најмање 2, а највише 5 месеци у току летњег семестра академске 2025/26. године за максимално 20 учесника",
+          "мобилност у сврху обављања студентске праксе (Student Mobility for Traineeships - SMT) у трајању од најмање 2 месеца, а највише 3 месеца у току летњег семестра академске 2025/26. године за максимално 10 учесника"
+        ]
+      },
+      "resources": [
+        {
+          "label": "https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/erasmus/konkurs-univerziteta-u-nisu-za-odlaznu-mobilnost-studenata-u-okviru-programa-erasmus-ka131-202510070853",
+          "url": "https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/erasmus/konkurs-univerziteta-u-nisu-za-odlaznu-mobilnost-studenata-u-okviru-programa-erasmus-ka131-202510070853",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "praksa"
+      ],
+      "title": "Отворен конкурс за програм плаћене стручне праксе у Johnson Electric-u",
+      "summary": "Пријава траје до 10. октобра 2025.",
+      "publishedAt": "2025-10-01",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/strucna-praksa-johnson-electric-2025",
+      "content": {
+        "paragraphs": [
+          "Почела је пријава за Програм плаћене стручне праксе у Johnson Electric-u за студенте који ове јесени први пут уписују мастер студије или завршну годину основних студија Електронског факултета у Нишу.",
+          "За учешће у програму могу конкурисати студенти са смерова Електроенергетика, Електроника и микросистеми и Управљање системима, са просеком оцена 8 или већим.",
+          "Пријава траје до 10. октобра 2025.",
+          "Можете се пријавити скенирањем QR кода из огласа или преко следећег линка (https://forms.office.com/r/EET8GSgguB)"
+        ],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://forms.office.com/r/EET8GSgguB",
+          "url": "https://forms.office.com/r/EET8GSgguB",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "stipendija"
+      ],
+      "title": "Конкурс Министарства одбране за доделу студентских стипендија за школску 2025/2026. годину",
+      "summary": "Конкурс Министарства одбране за доделу студентских стипендија за школску 2025/2026. годину",
+      "publishedAt": "2025-09-09",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/konkurs-mup-2025-26",
+      "content": {
+        "paragraphs": [],
+        "listItems": []
+      },
+      "resources": [
+        {
+          "label": "https://www.mod.gov.rs/lat/22401/konkurs-za-dodelu-studentskih-stipendija-za-skolsku-2025-2026-godinu",
+          "url": "https://www.mod.gov.rs/lat/22401/konkurs-za-dodelu-studentskih-stipendija-za-skolsku-2025-2026-godinu",
+          "kind": "spoljni_link"
+        }
+      ]
+    },
+    {
+      "activityTypes": [
+        "praksa",
+        "razmena_ili_mobilnost"
+      ],
+      "title": "Конкурс Универзитета у Нишу за одлазну мобилност студената у оквиру програма ЕRASMUS+ KA131",
+      "summary": "Универзитет у Нишу, у оквиру програма мобилности Erasmus+ КА131, објавио је конкурс за мобилност студената у сврху студирања и обављања праксе у току зимског или летњег семестра 2025/26.",
+      "publishedAt": "2025-02-28",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/konkurs-mobilnost-erasmus-ka131",
+      "content": {
+        "paragraphs": [
+          "Конкурс за мобилност студената у сврху студирања и обављања студентске праксе у земљама ЕУ и трећим земљама придруженим програму Erasmus+",
+          "Конкурс је отворен до 28. марта 2025. године у 12:00, а могу се пријавити студенти свих нивоа студија свих факултета Универзитета у Нишу, и то за",
+          "Детаљније информације потражите на сајту Универзитета - https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/erasmus/27-02-25-konkurs-univerziteta-u-nisu-za-odlaznu-mobilnost-studenata-u-okviru-programa-erasmus-ka131-202502271124"
+        ],
+        "listItems": [
+          "мобилност у сврху студирања (Student Mobility for Studies – SMS) у трајању од најмање 2, а највише 5 месеци током зимског или летњег семестра академске 2025/26. године",
+          "мобилност у сврху обављања студентске праксе (Student Mobility for Traineeships - SMT) у трајању од 2 до 3 месеца са почетком не раније од 26. маја 2025. године и завршетком најкасније до 20. јуна 2026. године."
+        ]
+      },
+      "resources": [
+        {
+          "label": "https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/erasmus/27-02-25-konkurs-univerziteta-u-nisu-za-odlaznu-mobilnost-studenata-u-okviru-programa-erasmus-ka131-202502271124",
+          "url": "https://www.ni.ac.rs/novosti-i-dogadjaji/stipendije-i-konkursi/erasmus/27-02-25-konkurs-univerziteta-u-nisu-za-odlaznu-mobilnost-studenata-u-okviru-programa-erasmus-ka131-202502271124",
+          "kind": "spoljni_link"
+        }
+      ]
+    }
+  ]
+}

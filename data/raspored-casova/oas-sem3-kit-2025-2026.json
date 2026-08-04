@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 3,
+  "studyYear": 2,
+  "semesterType": "zimski",
+  "module": "KIT",
+  "submodule": null,
+  "moduleLabel": "КИТ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:05:31.722Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem3-kit-v2.pdf",
+    "pdfSha256": "20029bb6f83a4653069644996eb6d83350a8036e919fbfe0f7b9d1744e5b144f",
+    "linkText": "III"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 10 11",
+      "25",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 12,
+    "byClassType": {
+      "racunske_vezbe": 6,
+      "predavanje": 6
+    },
+    "ocrCells": 2,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВИ ТЕЛЕКОМУНИКАЦИЈА",
+        "group": null,
+        "room": "123",
+        "fromOcr": false,
+        "rawText": "ОСНОВИ ТЕЛЕКОМУНИКАЦИЈА (123)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "predavanje",
+        "course": "ОСНОВИ ТЕЛЕКОМУНИКАЦИЈА",
+        "group": null,
+        "room": "123",
+        "fromOcr": false,
+        "rawText": "ОСНОВИ ТЕЛЕКОМУНИКАЦИЈА (123)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "СОФТВЕРСКИ",
+        "group": null,
+        "room": null,
+        "fromOcr": false,
+        "rawText": "СОФТВЕРСКИ"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "11:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "АЛАТИ",
+        "group": null,
+        "room": "Л334",
+        "fromOcr": false,
+        "rawText": "АЛАТИ (Л334)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА",
+        "group": null,
+        "room": "525",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА (АЗ) (525)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВИ ЕЛЕКТРОНИКЕ",
+        "group": null,
+        "room": "433",
+        "fromOcr": true,
+        "ocrConfidence": 96,
+        "rawText": "ОСНОВИ ЕЛЕКТРОНИКЕ (433)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА",
+        "group": null,
+        "room": "525",
+        "fromOcr": true,
+        "ocrConfidence": 93,
+        "rawText": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА (АЗ) (525)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "ОСНОВИ ЕЛЕКТРОНИКЕ",
+        "group": null,
+        "room": "433",
+        "fromOcr": true,
+        "ocrConfidence": 96,
+        "rawText": "ОСНОВИ ЕЛЕКТРОНИКЕ (433)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ЕЛЕКТРИЧНА КОЛА И СИГНАЛ",
+        "group": null,
+        "room": "Л334",
+        "fromOcr": false,
+        "rawText": "ЕЛЕКТРИЧНА КОЛА И СИГНАЛ (Л334)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ЕЛЕКТРИЧНА КОЛА И СИГНАЛИ",
+        "group": null,
+        "room": "Л334",
+        "fromOcr": false,
+        "rawText": "ЕЛЕКТРИЧНА КОЛА И СИГНАЛИ (Л334)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "МАТЕМАТИКА 3",
+        "group": null,
+        "room": "434",
+        "fromOcr": false,
+        "rawText": "МАТЕМАТИКА 3 (434)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "13:15",
+        "endsAt": "16:00",
+        "classType": "predavanje",
+        "course": "МАТЕМАТИКА 3",
+        "group": null,
+        "room": "434",
+        "fromOcr": false,
+        "rawText": "МАТЕМАТИКА 3 (434)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВИ ТЕЛЕКОМУНИКАЦИЈА",
+      "group": null,
+      "room": "123",
+      "fromOcr": false,
+      "rawText": "ОСНОВИ ТЕЛЕКОМУНИКАЦИЈА (123)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "predavanje",
+      "course": "ОСНОВИ ТЕЛЕКОМУНИКАЦИЈА",
+      "group": null,
+      "room": "123",
+      "fromOcr": false,
+      "rawText": "ОСНОВИ ТЕЛЕКОМУНИКАЦИЈА (123)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "СОФТВЕРСКИ",
+      "group": null,
+      "room": null,
+      "fromOcr": false,
+      "rawText": "СОФТВЕРСКИ"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "11:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "АЛАТИ",
+      "group": null,
+      "room": "Л334",
+      "fromOcr": false,
+      "rawText": "АЛАТИ (Л334)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА",
+      "group": null,
+      "room": "525",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА (АЗ) (525)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВИ ЕЛЕКТРОНИКЕ",
+      "group": null,
+      "room": "433",
+      "fromOcr": true,
+      "ocrConfidence": 96,
+      "rawText": "ОСНОВИ ЕЛЕКТРОНИКЕ (433)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА",
+      "group": null,
+      "room": "525",
+      "fromOcr": true,
+      "ocrConfidence": 93,
+      "rawText": "ОСНОВЕ ОБЈЕКТНО-ОРЈЕНТИСАНОГ ПРОГРАМИРАЊА (АЗ) (525)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "ОСНОВИ ЕЛЕКТРОНИКЕ",
+      "group": null,
+      "room": "433",
+      "fromOcr": true,
+      "ocrConfidence": 96,
+      "rawText": "ОСНОВИ ЕЛЕКТРОНИКЕ (433)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ЕЛЕКТРИЧНА КОЛА И СИГНАЛ",
+      "group": null,
+      "room": "Л334",
+      "fromOcr": false,
+      "rawText": "ЕЛЕКТРИЧНА КОЛА И СИГНАЛ (Л334)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ЕЛЕКТРИЧНА КОЛА И СИГНАЛИ",
+      "group": null,
+      "room": "Л334",
+      "fromOcr": false,
+      "rawText": "ЕЛЕКТРИЧНА КОЛА И СИГНАЛИ (Л334)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "МАТЕМАТИКА 3",
+      "group": null,
+      "room": "434",
+      "fromOcr": false,
+      "rawText": "МАТЕМАТИКА 3 (434)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "13:15",
+      "endsAt": "16:00",
+      "classType": "predavanje",
+      "course": "МАТЕМАТИКА 3",
+      "group": null,
+      "room": "434",
+      "fromOcr": false,
+      "rawText": "МАТЕМАТИКА 3 (434)"
+    }
+  ]
+}

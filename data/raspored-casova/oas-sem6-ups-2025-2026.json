@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 6,
+  "studyYear": 3,
+  "semesterType": "letnji",
+  "module": "UPS",
+  "submodule": null,
+  "moduleLabel": "УПС",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:06:52.944Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem6-ups-v3.pdf",
+    "pdfSha256": "f963d30c44e7a9f9f73c6f1496a22dc04a429b8412e485704db703cb5b1044a4",
+    "linkText": "VI"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 09 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 23,
+    "byClassType": {
+      "predavanje": 12,
+      "racunske_vezbe": 11
+    },
+    "ocrCells": 5,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "СЕНЗОРИ, ПРЕТВАРАЧИ И АКТУАТОРИ",
+        "group": null,
+        "room": "134",
+        "fromOcr": true,
+        "ocrConfidence": 92,
+        "rawText": "СЕНЗОРИ, ПРЕТВАРАЧИ И АКТУАТОРИ (134)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+        "group": null,
+        "room": "А1",
+        "fromOcr": true,
+        "ocrConfidence": 89,
+        "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО (531) (А1)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ТЕОРИЈА ИНФОРМАЦИЈА И ПРИМЕНЕ",
+        "group": null,
+        "room": "232",
+        "fromOcr": true,
+        "ocrConfidence": 96,
+        "rawText": "ТЕОРИЈА ИНФОРМАЦИЈА И ПРИМЕНА (232)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "СЕНЗОРИ, ПРЕТВАРАЧИ И АКТУАТОРИ",
+        "group": null,
+        "room": "134",
+        "fromOcr": true,
+        "ocrConfidence": 92,
+        "rawText": "СЕНЗОРИ, ПРЕТВАРАЧИ И АКТУАТОРИ (134)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+        "group": null,
+        "room": "А1",
+        "fromOcr": true,
+        "ocrConfidence": 89,
+        "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО (531) (А1)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "14:15",
+        "endsAt": "16:00",
+        "classType": "racunske_vezbe",
+        "course": "ТЕОРИЈА ИНФОРМАЦИЈА И ПРИМЕНЕ",
+        "group": null,
+        "room": "232",
+        "fromOcr": true,
+        "ocrConfidence": 96,
+        "rawText": "ТЕОРИЈА ИНФОРМАЦИЈА И ПРИМЕНА (232)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "predavanje",
+        "course": "ЕЛЕКТРОНСКА МЕРЕЊА",
+        "group": null,
+        "room": "370",
+        "fromOcr": true,
+        "ocrConfidence": 96,
+        "rawText": "ЕЛЕКТРОНСКА МЕРЕЊА (370)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "16:15",
+        "endsAt": "18:00",
+        "classType": "predavanje",
+        "course": "МЕРЕЊЕ НЕЕЛЕКТРИЧНИХ, ВЕЛИЧИНА",
+        "group": null,
+        "room": "121",
+        "fromOcr": true,
+        "ocrConfidence": 72,
+        "rawText": "МЕРЕЊЕ НЕЕЛЕКТРИЧНИХ, ВЕЛИЧИНА (121)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "18:15",
+        "endsAt": "19:00",
+        "classType": "racunske_vezbe",
+        "course": "ЕЛЕКТРОНСКА МЕРЕЊА",
+        "group": null,
+        "room": "370",
+        "fromOcr": true,
+        "ocrConfidence": 96,
+        "rawText": "ЕЛЕКТРОНСКА МЕРЕЊА (370)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "18:15",
+        "endsAt": "19:00",
+        "classType": "racunske_vezbe",
+        "course": "МЕРЕЊЕ НЕЕЛЕКТРИЧНИХ, ВЕЛИЧИНА",
+        "group": null,
+        "room": "121",
+        "fromOcr": true,
+        "ocrConfidence": 72,
+        "rawText": "МЕРЕЊЕ НЕЕЛЕКТРИЧНИХ, ВЕЛИЧИНА (121)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ДИНАМИКА МЕХАНИЗАМА И МАШИНА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "ДИНАМИКА МЕХАНИЗАМА И МАШИНА (552)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИНАМИКА МЕХАНИЗАМА И МАШИНА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "ДИНАМИКА МЕХАНИЗАМА И МАШИНА (552)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "УПРАВЉАЊЕ ПРОЦЕСИМА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "УПРАВЉАЊЕ ПРОЦЕСИМА (552)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "УПРАВЉАЊЕ ПРОЦЕСИМА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "УПРАВЉАЊЕ ПРОЦЕСИМА (552)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ЕЛЕКТРИЧНЕ ИНСТАЛАЦИЈЕ И ОСВЕТЉЕЊЕ",
+        "group": null,
+        "room": "432",
+        "fromOcr": false,
+        "rawText": "ЕЛЕКТРИЧНЕ ИНСТАЛАЦИЈЕ И ОСВЕТЉЕЊЕ (432)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "predavanje",
+        "course": "НЕЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "НЕЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА (552)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "НЕЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "НЕЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА (552)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "КАБЛОВСКИ И ОПТИЧКИ КОМУНИКАЦИОНИ СИСТЕМИ",
+        "group": null,
+        "room": "Л205",
+        "fromOcr": false,
+        "rawText": "КАБЛОВСКИ И ОПТИЧКИ КОМУНИКАЦИОНИ СИСТЕМИ (Л205)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "КАБЛОВСКИ И ОПТИЧКИ КОМУНИКАЦИОНИ СИСТЕМИ",
+        "group": null,
+        "room": "Л205",
+        "fromOcr": false,
+        "rawText": "КАБЛОВСКИ И ОПТИЧКИ КОМУНИКАЦИОНИ СИСТЕМИ (Л205)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ЕЛЕКТРИЧНЕ ИНСТАЛАЦИЈЕ И ОСВЕТЉЕЊЕ",
+        "group": null,
+        "room": "432",
+        "fromOcr": false,
+        "rawText": "ЕЛЕКТРИЧНЕ ИНСТАЛАЦИЈЕ И ОСВЕТЉЕЊЕ (432)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "ДИГИТАЛНА ОБРАДА СИГНАЛА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "ДИГИТАЛНА ОБРАДА СИГНАЛА (552)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "racunske_vezbe",
+        "course": "ДИГИТАЛНА ОБРАДА СИГНАЛА",
+        "group": null,
+        "room": "552",
+        "fromOcr": false,
+        "rawText": "ДИГИТАЛНА ОБРАДА СИГНАЛА (552)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ЕНГЛЕСКИ ЈЕЗИК 2",
+        "group": null,
+        "room": "А2",
+        "fromOcr": false,
+        "rawText": "ЕНГЛЕСКИ ЈЕЗИК 2 (А2)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "СЕНЗОРИ, ПРЕТВАРАЧИ И АКТУАТОРИ",
+      "group": null,
+      "room": "134",
+      "fromOcr": true,
+      "ocrConfidence": 92,
+      "rawText": "СЕНЗОРИ, ПРЕТВАРАЧИ И АКТУАТОРИ (134)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+      "group": null,
+      "room": "А1",
+      "fromOcr": true,
+      "ocrConfidence": 89,
+      "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО (531) (А1)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ТЕОРИЈА ИНФОРМАЦИЈА И ПРИМЕНЕ",
+      "group": null,
+      "room": "232",
+      "fromOcr": true,
+      "ocrConfidence": 96,
+      "rawText": "ТЕОРИЈА ИНФОРМАЦИЈА И ПРИМЕНА (232)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "СЕНЗОРИ, ПРЕТВАРАЧИ И АКТУАТОРИ",
+      "group": null,
+      "room": "134",
+      "fromOcr": true,
+      "ocrConfidence": 92,
+      "rawText": "СЕНЗОРИ, ПРЕТВАРАЧИ И АКТУАТОРИ (134)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "СОФТВЕРСКО ИНЖЕЊЕРСТВО",
+      "group": null,
+      "room": "А1",
+      "fromOcr": true,
+      "ocrConfidence": 89,
+      "rawText": "СОФТВЕРСКО ИНЖЕЊЕРСТВО (531) (А1)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "14:15",
+      "endsAt": "16:00",
+      "classType": "racunske_vezbe",
+      "course": "ТЕОРИЈА ИНФОРМАЦИЈА И ПРИМЕНЕ",
+      "group": null,
+      "room": "232",
+      "fromOcr": true,
+      "ocrConfidence": 96,
+      "rawText": "ТЕОРИЈА ИНФОРМАЦИЈА И ПРИМЕНА (232)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "predavanje",
+      "course": "ЕЛЕКТРОНСКА МЕРЕЊА",
+      "group": null,
+      "room": "370",
+      "fromOcr": true,
+      "ocrConfidence": 96,
+      "rawText": "ЕЛЕКТРОНСКА МЕРЕЊА (370)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "16:15",
+      "endsAt": "18:00",
+      "classType": "predavanje",
+      "course": "МЕРЕЊЕ НЕЕЛЕКТРИЧНИХ, ВЕЛИЧИНА",
+      "group": null,
+      "room": "121",
+      "fromOcr": true,
+      "ocrConfidence": 72,
+      "rawText": "МЕРЕЊЕ НЕЕЛЕКТРИЧНИХ, ВЕЛИЧИНА (121)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "18:15",
+      "endsAt": "19:00",
+      "classType": "racunske_vezbe",
+      "course": "ЕЛЕКТРОНСКА МЕРЕЊА",
+      "group": null,
+      "room": "370",
+      "fromOcr": true,
+      "ocrConfidence": 96,
+      "rawText": "ЕЛЕКТРОНСКА МЕРЕЊА (370)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "18:15",
+      "endsAt": "19:00",
+      "classType": "racunske_vezbe",
+      "course": "МЕРЕЊЕ НЕЕЛЕКТРИЧНИХ, ВЕЛИЧИНА",
+      "group": null,
+      "room": "121",
+      "fromOcr": true,
+      "ocrConfidence": 72,
+      "rawText": "МЕРЕЊЕ НЕЕЛЕКТРИЧНИХ, ВЕЛИЧИНА (121)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ДИНАМИКА МЕХАНИЗАМА И МАШИНА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "ДИНАМИКА МЕХАНИЗАМА И МАШИНА (552)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИНАМИКА МЕХАНИЗАМА И МАШИНА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "ДИНАМИКА МЕХАНИЗАМА И МАШИНА (552)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "УПРАВЉАЊЕ ПРОЦЕСИМА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "УПРАВЉАЊЕ ПРОЦЕСИМА (552)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "УПРАВЉАЊЕ ПРОЦЕСИМА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "УПРАВЉАЊЕ ПРОЦЕСИМА (552)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ЕЛЕКТРИЧНЕ ИНСТАЛАЦИЈЕ И ОСВЕТЉЕЊЕ",
+      "group": null,
+      "room": "432",
+      "fromOcr": false,
+      "rawText": "ЕЛЕКТРИЧНЕ ИНСТАЛАЦИЈЕ И ОСВЕТЉЕЊЕ (432)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "predavanje",
+      "course": "НЕЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "НЕЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА (552)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "НЕЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "НЕЛИНЕАРНИ СИСТЕМИ АУТОМАТСКОГ УПРАВЉАЊА (552)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "КАБЛОВСКИ И ОПТИЧКИ КОМУНИКАЦИОНИ СИСТЕМИ",
+      "group": null,
+      "room": "Л205",
+      "fromOcr": false,
+      "rawText": "КАБЛОВСКИ И ОПТИЧКИ КОМУНИКАЦИОНИ СИСТЕМИ (Л205)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "КАБЛОВСКИ И ОПТИЧКИ КОМУНИКАЦИОНИ СИСТЕМИ",
+      "group": null,
+      "room": "Л205",
+      "fromOcr": false,
+      "rawText": "КАБЛОВСКИ И ОПТИЧКИ КОМУНИКАЦИОНИ СИСТЕМИ (Л205)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ЕЛЕКТРИЧНЕ ИНСТАЛАЦИЈЕ И ОСВЕТЉЕЊЕ",
+      "group": null,
+      "room": "432",
+      "fromOcr": false,
+      "rawText": "ЕЛЕКТРИЧНЕ ИНСТАЛАЦИЈЕ И ОСВЕТЉЕЊЕ (432)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "ДИГИТАЛНА ОБРАДА СИГНАЛА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "ДИГИТАЛНА ОБРАДА СИГНАЛА (552)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "racunske_vezbe",
+      "course": "ДИГИТАЛНА ОБРАДА СИГНАЛА",
+      "group": null,
+      "room": "552",
+      "fromOcr": false,
+      "rawText": "ДИГИТАЛНА ОБРАДА СИГНАЛА (552)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ЕНГЛЕСКИ ЈЕЗИК 2",
+      "group": null,
+      "room": "А2",
+      "fromOcr": false,
+      "rawText": "ЕНГЛЕСКИ ЈЕЗИК 2 (А2)"
+    }
+  ]
+}

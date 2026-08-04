@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "master_akademske",
+  "studyLevelLabel": "Мастер академске студије",
+  "semester": 1,
+  "studyYear": 1,
+  "semesterType": "zimski",
+  "module": "VIM",
+  "submodule": null,
+  "moduleLabel": null,
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:05:56.787Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-jesen-mas-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/202526-mas1-vim-v1.pdf",
+    "pdfSha256": "2c1f90f222d8bbba410f4dd5485dc7979805371a97e1ace973bb5853e3ed0e06",
+    "linkText": "I"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": false,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "Датум 17 11",
+      "25",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 12,
+    "byClassType": {
+      "racunske_vezbe": 5,
+      "predavanje": 7
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "11:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРИКУПЉАЊЕ И ПРЕДОБРАДА ПОДАТАКА ЗА МАШИСКО УЧЕЊЕ МАТЕМАТИЧКИ МЕТОДИ ЗА МАШИНСКО УЧЕЊЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ПРИКУПЉАЊЕ И ПРЕДОБРАДА ПОДАТАКА ЗА МАШИСКО УЧЕЊЕ (82) МАТЕМАТИЧКИ МЕТОДИ ЗА МАШИНСКО УЧЕЊЕ (82)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "09:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "МАШИНСКО УЧЕЊЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "МАШИНСКО УЧЕЊЕ (82)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ТЕХНИКЕ И МЕТОДЕ АНАЛИЗЕ ПОДАТАКА",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ТЕХНИКЕ И МЕТОДЕ АНАЛИЗЕ ПОДАТАКА (82)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "13:00",
+        "classType": "racunske_vezbe",
+        "course": "ТЕХНИКЕ И МЕТОДЕ АНАЛИЗЕ ПОДАТАКА",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ТЕХНИКЕ И МЕТОДЕ АНАЛИЗЕ ПОДАТАКА (82)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "МАШИНСКО УЧЕЊЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "МАШИНСКО УЧЕЊЕ (82)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "09:15",
+        "endsAt": "11:00",
+        "classType": "predavanje",
+        "course": "МАТЕМАТИЧКИ МЕТОДИ ЗА МАШИНСКО УЧЕЊЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "МАТЕМАТИЧКИ МЕТОДИ ЗА МАШИНСКО УЧЕЊЕ (82)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "predavanje",
+        "course": "УПРАВЉАЊЕ И АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "УПРАВЉАЊЕ И АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА (82)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "13:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "УПРАВЉАЊЕ И АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "УПРАВЉАЊЕ И АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА (82)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ИНТЕЛИГЕНТНИ СИСТЕМИ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ИНТЕЛИГЕНТНИ СИСТЕМИ (82)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "ПРИКУПЉАЊЕ И ПРЕДОБРАДА ПОДАТАКА ЗА МАШИСКО УЧЕЊЕ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ПРИКУПЉАЊЕ И ПРЕДОБРАДА ПОДАТАКА ЗА МАШИСКО УЧЕЊЕ (82)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ВЕБ МАЈНИНГ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ВЕБ МАЈНИНГ (82)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
+        "course": "ВЕБ МАЈНИНГ",
+        "group": null,
+        "room": "82",
+        "fromOcr": false,
+        "rawText": "ВЕБ МАЈНИНГ (82)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "11:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРИКУПЉАЊЕ И ПРЕДОБРАДА ПОДАТАКА ЗА МАШИСКО УЧЕЊЕ МАТЕМАТИЧКИ МЕТОДИ ЗА МАШИНСКО УЧЕЊЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ПРИКУПЉАЊЕ И ПРЕДОБРАДА ПОДАТАКА ЗА МАШИСКО УЧЕЊЕ (82) МАТЕМАТИЧКИ МЕТОДИ ЗА МАШИНСКО УЧЕЊЕ (82)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "09:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "МАШИНСКО УЧЕЊЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "МАШИНСКО УЧЕЊЕ (82)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ТЕХНИКЕ И МЕТОДЕ АНАЛИЗЕ ПОДАТАКА",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ТЕХНИКЕ И МЕТОДЕ АНАЛИЗЕ ПОДАТАКА (82)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "13:00",
+      "classType": "racunske_vezbe",
+      "course": "ТЕХНИКЕ И МЕТОДЕ АНАЛИЗЕ ПОДАТАКА",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ТЕХНИКЕ И МЕТОДЕ АНАЛИЗЕ ПОДАТАКА (82)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "МАШИНСКО УЧЕЊЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "МАШИНСКО УЧЕЊЕ (82)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "09:15",
+      "endsAt": "11:00",
+      "classType": "predavanje",
+      "course": "МАТЕМАТИЧКИ МЕТОДИ ЗА МАШИНСКО УЧЕЊЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "МАТЕМАТИЧКИ МЕТОДИ ЗА МАШИНСКО УЧЕЊЕ (82)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "predavanje",
+      "course": "УПРАВЉАЊЕ И АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "УПРАВЉАЊЕ И АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА (82)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "13:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "УПРАВЉАЊЕ И АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "УПРАВЉАЊЕ И АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА (82)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ИНТЕЛИГЕНТНИ СИСТЕМИ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ИНТЕЛИГЕНТНИ СИСТЕМИ (82)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "ПРИКУПЉАЊЕ И ПРЕДОБРАДА ПОДАТАКА ЗА МАШИСКО УЧЕЊЕ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ПРИКУПЉАЊЕ И ПРЕДОБРАДА ПОДАТАКА ЗА МАШИСКО УЧЕЊЕ (82)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ВЕБ МАЈНИНГ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ВЕБ МАЈНИНГ (82)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
+      "course": "ВЕБ МАЈНИНГ",
+      "group": null,
+      "room": "82",
+      "fromOcr": false,
+      "rawText": "ВЕБ МАЈНИНГ (82)"
+    }
+  ]
+}

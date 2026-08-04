@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "master_akademske",
+  "studyLevelLabel": "Мастер академске студије",
+  "semester": 2,
+  "studyYear": 1,
+  "semesterType": "letnji",
+  "module": "KIT",
+  "submodule": "SIRK",
+  "moduleLabel": "СИРК",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:07:06.023Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-mas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-prolece/202526-mas2-kit-sirk-v2.pdf",
+    "pdfSha256": "96dc2bf29f1b072bbab1020952a190d7303e4b1d78ef04f77221162346d5936a",
+    "linkText": "II"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": false,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "Датум 16 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 5,
+    "byClassType": {
+      "predavanje": 3,
+      "racunske_vezbe": 2
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ",
+        "group": null,
+        "room": "Л355",
+        "fromOcr": false,
+        "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "11:15",
+        "endsAt": "13:00",
+        "classType": "predavanje",
+        "course": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
+        "group": null,
+        "room": "Л355",
+        "fromOcr": false,
+        "rawText": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "13:15",
+        "endsAt": "14:00",
+        "classType": "racunske_vezbe",
+        "course": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
+        "group": null,
+        "room": "Л355",
+        "fromOcr": false,
+        "rawText": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "РАЧУНАРСКЕ КОМУНИКАЦИЈЕ",
+        "group": null,
+        "room": "227",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКЕ КОМУНИКАЦИЈЕ (227)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКЕ КОМУНИКАЦИЈЕ",
+        "group": null,
+        "room": "227",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКЕ КОМУНИКАЦИЈЕ (227)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ",
+      "group": null,
+      "room": "Л355",
+      "fromOcr": false,
+      "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "11:15",
+      "endsAt": "13:00",
+      "classType": "predavanje",
+      "course": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
+      "group": null,
+      "room": "Л355",
+      "fromOcr": false,
+      "rawText": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "13:15",
+      "endsAt": "14:00",
+      "classType": "racunske_vezbe",
+      "course": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
+      "group": null,
+      "room": "Л355",
+      "fromOcr": false,
+      "rawText": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "РАЧУНАРСКЕ КОМУНИКАЦИЈЕ",
+      "group": null,
+      "room": "227",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКЕ КОМУНИКАЦИЈЕ (227)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКЕ КОМУНИКАЦИЈЕ",
+      "group": null,
+      "room": "227",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКЕ КОМУНИКАЦИЈЕ (227)"
+    }
+  ]
+}

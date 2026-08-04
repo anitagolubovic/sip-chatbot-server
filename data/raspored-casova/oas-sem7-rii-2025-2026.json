@@ -1,0 +1,716 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "osnovne_akademske",
+  "studyLevelLabel": "Основне академске студије",
+  "semester": 7,
+  "studyYear": 4,
+  "semesterType": "zimski",
+  "module": "RII",
+  "submodule": null,
+  "moduleLabel": "РИИ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:05:29.782Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem7-rii-v3.pdf",
+    "pdfSha256": "8c872ff380fc89857e38b7ed30c2dd3a439fd2c1d31f93cdf89787afde6bbed9",
+    "linkText": "VII"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": true,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "ЛАБОРАТОРИЈСКЕ",
+      "ВЕЖБЕ",
+      "Датум 10 11",
+      "25",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 26,
+    "byClassType": {
+      "racunske_vezbe": 16,
+      "predavanje": 10
+    },
+    "ocrCells": 11,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "ponedeljak": [
+      {
+        "day": "ponedeljak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "ТЕХНОЛОГИЈЕ ЗА ПОДРШКУ УЧЕЊУ",
+        "group": null,
+        "room": "434",
+        "fromOcr": false,
+        "rawText": "ТЕХНОЛОГИЈЕ ЗА ПОДРШКУ УЧЕЊУ (434)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ТЕХНОЛОГИЈЕ ЗА ПОДРШКУ УЧЕЊУ",
+        "group": null,
+        "room": "434",
+        "fromOcr": false,
+        "rawText": "ТЕХНОЛОГИЈЕ ЗА ПОДРШКУ УЧЕЊУ (434)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "ПРОГРАМСКИ ПРЕВОДИОЦИ",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "ПРОГРАМСКИ ПРЕВОДИОЦИ (А1)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 86,
+        "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА -3– (531)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОГРАМСКИ ПРЕВОДИОЦИ",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 92,
+        "rawText": "ПРОГРАМСКИ ПРЕВОДИОЦИ -1- (131)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКА ГРАФИКА",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 88,
+        "rawText": "РАЧУНАРСКА ГРАФИКА -2– (231)"
+      }
+    ],
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "НАПРЕДНЕ БАЗЕ ПОДАТАКА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "НАПРЕДНЕ БАЗЕ ПОДАТАКА (451)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "НАПРЕДНЕ БАЗЕ ПОДАТАКА",
+        "group": null,
+        "room": "451",
+        "fromOcr": false,
+        "rawText": "НАПРЕДНЕ БАЗЕ ПОДАТАКА (451)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА (А1)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 84,
+        "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА -2– (231)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОГРАМСКИ ПРЕВОДИОЦИ",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 74,
+        "rawText": "ПРОГРАМСКИ ПРЕВОДИОЦИ -3- (531)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКА ГРАФИКА",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 92,
+        "rawText": "РАЧУНАРСКА ГРАФИКА -1- (131)"
+      }
+    ],
+    "sreda": [
+      {
+        "day": "sreda",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "ТЕСТИРАЊЕ И КВАЛИТЕТ СОФТВЕРА",
+        "group": null,
+        "room": "132",
+        "fromOcr": false,
+        "rawText": "ТЕСТИРАЊЕ И КВАЛИТЕТ СОФТВЕРА (132)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ТЕСТИРАЊЕ И КВАЛИТЕТ СОФТВЕРА",
+        "group": null,
+        "room": "132",
+        "fromOcr": false,
+        "rawText": "ТЕСТИРАЊЕ И КВАЛИТЕТ СОФТВЕРА (132)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "12:15",
+        "endsAt": "14:00",
+        "classType": "predavanje",
+        "course": "РАЧУНАРСКА ГРАФИКА",
+        "group": null,
+        "room": "А1",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКА ГРАФИКА (А1)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА",
+        "group": "1",
+        "room": "131",
+        "fromOcr": true,
+        "ocrConfidence": 90,
+        "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА -1- (131)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "ПРОГРАМСКИ ПРЕВОДИОЦИ",
+        "group": "2",
+        "room": "231",
+        "fromOcr": true,
+        "ocrConfidence": 84,
+        "rawText": "ПРОГРАМСКИ ПРЕВОДИОЦИ -2– (231)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКА ГРАФИКА",
+        "group": "3",
+        "room": "531",
+        "fromOcr": true,
+        "ocrConfidence": 92,
+        "rawText": "РАЧУНАРСКА ГРАФИКА -3- (531)"
+      }
+    ],
+    "cetvrtak": [
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "АРХИТЕКТУРА И ПРОЈЕКТОВАЊЕ СОФТВЕРА",
+        "group": null,
+        "room": "227",
+        "fromOcr": true,
+        "ocrConfidence": 95,
+        "rawText": "АРХИТЕКТУРА И ПРОЈЕКТОВАЊЕ СОФТВЕРА (227)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "racunske_vezbe",
+        "course": "ОСНОВИ УПРАВЉАЊА СИСТЕМИМА",
+        "group": null,
+        "room": "221",
+        "fromOcr": true,
+        "ocrConfidence": 96,
+        "rawText": "ОСНОВИ УПРАВЉАЊА СИСТЕМИМА (221)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "АРХИТЕКТУРА И ПРОЈЕКТОВАЊЕ СОФТВЕРА",
+        "group": null,
+        "room": "227",
+        "fromOcr": true,
+        "ocrConfidence": 95,
+        "rawText": "АРХИТЕКТУРА И ПРОЈЕКТОВАЊЕ СОФТВЕРА (227)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "10:15",
+        "endsAt": "12:00",
+        "classType": "predavanje",
+        "course": "ОСНОВИ УПРАВЉАЊА СИСТЕМИМА",
+        "group": null,
+        "room": "221",
+        "fromOcr": true,
+        "ocrConfidence": 96,
+        "rawText": "ОСНОВИ УПРАВЉАЊА СИСТЕМИМА (221)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "РАЧУНАРСКИ ВИД",
+        "group": null,
+        "room": "А4",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКИ ВИД (А4)"
+      },
+      {
+        "day": "cetvrtak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "РАЧУНАРСКИ ВИД",
+        "group": null,
+        "room": "А4",
+        "fromOcr": false,
+        "rawText": "РАЧУНАРСКИ ВИД (А4)"
+      }
+    ],
+    "petak": [
+      {
+        "day": "petak",
+        "startsAt": "13:15",
+        "endsAt": "15:00",
+        "classType": "predavanje",
+        "course": "ЗАШТИТА ИНФОРМАЦИЈА",
+        "group": null,
+        "room": "А2",
+        "fromOcr": false,
+        "rawText": "ЗАШТИТА ИНФОРМАЦИЈА (А2)"
+      },
+      {
+        "day": "petak",
+        "startsAt": "15:15",
+        "endsAt": "17:00",
+        "classType": "racunske_vezbe",
+        "course": "ЗАШТИТА ИНФОРМАЦИЈА",
+        "group": null,
+        "room": "А2",
+        "fromOcr": false,
+        "rawText": "ЗАШТИТА ИНФОРМАЦИЈА (А2)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "ponedeljak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "ТЕХНОЛОГИЈЕ ЗА ПОДРШКУ УЧЕЊУ",
+      "group": null,
+      "room": "434",
+      "fromOcr": false,
+      "rawText": "ТЕХНОЛОГИЈЕ ЗА ПОДРШКУ УЧЕЊУ (434)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ТЕХНОЛОГИЈЕ ЗА ПОДРШКУ УЧЕЊУ",
+      "group": null,
+      "room": "434",
+      "fromOcr": false,
+      "rawText": "ТЕХНОЛОГИЈЕ ЗА ПОДРШКУ УЧЕЊУ (434)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "ПРОГРАМСКИ ПРЕВОДИОЦИ",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "ПРОГРАМСКИ ПРЕВОДИОЦИ (А1)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 86,
+      "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА -3– (531)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОГРАМСКИ ПРЕВОДИОЦИ",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 92,
+      "rawText": "ПРОГРАМСКИ ПРЕВОДИОЦИ -1- (131)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКА ГРАФИКА",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 88,
+      "rawText": "РАЧУНАРСКА ГРАФИКА -2– (231)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "НАПРЕДНЕ БАЗЕ ПОДАТАКА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "НАПРЕДНЕ БАЗЕ ПОДАТАКА (451)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "НАПРЕДНЕ БАЗЕ ПОДАТАКА",
+      "group": null,
+      "room": "451",
+      "fromOcr": false,
+      "rawText": "НАПРЕДНЕ БАЗЕ ПОДАТАКА (451)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА (А1)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 84,
+      "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА -2– (231)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОГРАМСКИ ПРЕВОДИОЦИ",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 74,
+      "rawText": "ПРОГРАМСКИ ПРЕВОДИОЦИ -3- (531)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКА ГРАФИКА",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 92,
+      "rawText": "РАЧУНАРСКА ГРАФИКА -1- (131)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "ТЕСТИРАЊЕ И КВАЛИТЕТ СОФТВЕРА",
+      "group": null,
+      "room": "132",
+      "fromOcr": false,
+      "rawText": "ТЕСТИРАЊЕ И КВАЛИТЕТ СОФТВЕРА (132)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ТЕСТИРАЊЕ И КВАЛИТЕТ СОФТВЕРА",
+      "group": null,
+      "room": "132",
+      "fromOcr": false,
+      "rawText": "ТЕСТИРАЊЕ И КВАЛИТЕТ СОФТВЕРА (132)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "12:15",
+      "endsAt": "14:00",
+      "classType": "predavanje",
+      "course": "РАЧУНАРСКА ГРАФИКА",
+      "group": null,
+      "room": "А1",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКА ГРАФИКА (А1)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА",
+      "group": "1",
+      "room": "131",
+      "fromOcr": true,
+      "ocrConfidence": 90,
+      "rawText": "ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА -1- (131)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "ПРОГРАМСКИ ПРЕВОДИОЦИ",
+      "group": "2",
+      "room": "231",
+      "fromOcr": true,
+      "ocrConfidence": 84,
+      "rawText": "ПРОГРАМСКИ ПРЕВОДИОЦИ -2– (231)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКА ГРАФИКА",
+      "group": "3",
+      "room": "531",
+      "fromOcr": true,
+      "ocrConfidence": 92,
+      "rawText": "РАЧУНАРСКА ГРАФИКА -3- (531)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "АРХИТЕКТУРА И ПРОЈЕКТОВАЊЕ СОФТВЕРА",
+      "group": null,
+      "room": "227",
+      "fromOcr": true,
+      "ocrConfidence": 95,
+      "rawText": "АРХИТЕКТУРА И ПРОЈЕКТОВАЊЕ СОФТВЕРА (227)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "racunske_vezbe",
+      "course": "ОСНОВИ УПРАВЉАЊА СИСТЕМИМА",
+      "group": null,
+      "room": "221",
+      "fromOcr": true,
+      "ocrConfidence": 96,
+      "rawText": "ОСНОВИ УПРАВЉАЊА СИСТЕМИМА (221)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "АРХИТЕКТУРА И ПРОЈЕКТОВАЊЕ СОФТВЕРА",
+      "group": null,
+      "room": "227",
+      "fromOcr": true,
+      "ocrConfidence": 95,
+      "rawText": "АРХИТЕКТУРА И ПРОЈЕКТОВАЊЕ СОФТВЕРА (227)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "10:15",
+      "endsAt": "12:00",
+      "classType": "predavanje",
+      "course": "ОСНОВИ УПРАВЉАЊА СИСТЕМИМА",
+      "group": null,
+      "room": "221",
+      "fromOcr": true,
+      "ocrConfidence": 96,
+      "rawText": "ОСНОВИ УПРАВЉАЊА СИСТЕМИМА (221)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "РАЧУНАРСКИ ВИД",
+      "group": null,
+      "room": "А4",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКИ ВИД (А4)"
+    },
+    {
+      "day": "cetvrtak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "РАЧУНАРСКИ ВИД",
+      "group": null,
+      "room": "А4",
+      "fromOcr": false,
+      "rawText": "РАЧУНАРСКИ ВИД (А4)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "13:15",
+      "endsAt": "15:00",
+      "classType": "predavanje",
+      "course": "ЗАШТИТА ИНФОРМАЦИЈА",
+      "group": null,
+      "room": "А2",
+      "fromOcr": false,
+      "rawText": "ЗАШТИТА ИНФОРМАЦИЈА (А2)"
+    },
+    {
+      "day": "petak",
+      "startsAt": "15:15",
+      "endsAt": "17:00",
+      "classType": "racunske_vezbe",
+      "course": "ЗАШТИТА ИНФОРМАЦИЈА",
+      "group": null,
+      "room": "А2",
+      "fromOcr": false,
+      "rawText": "ЗАШТИТА ИНФОРМАЦИЈА (А2)"
+    }
+  ]
+}

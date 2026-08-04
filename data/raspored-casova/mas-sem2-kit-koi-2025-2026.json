@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "category": "raspored_casova",
+  "language": "sr-Cyrl",
+  "studyLevel": "master_akademske",
+  "studyLevelLabel": "Мастер академске студије",
+  "semester": 2,
+  "studyYear": 1,
+  "semesterType": "letnji",
+  "module": "KIT",
+  "submodule": "KOI",
+  "moduleLabel": "КОИ",
+  "academicYear": "2025/2026",
+  "generatedAt": "2026-07-26T19:07:04.252Z",
+  "source": {
+    "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-mas-prolece-2025-2026",
+    "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-prolece/202526-mas2-kit-koi-v2.pdf",
+    "pdfSha256": "b0689638709cc2bef046d5ee8b148a4bec86e3320d094b813faf094280cb2b8c",
+    "linkText": "II"
+  },
+  "legend": {
+    "lectureFill": "#c7c9cb",
+    "hasLabEntry": false,
+    "labels": [
+      "ПРЕДАВАЊА",
+      "РАЧУНСКЕ ВЕЖБЕ",
+      "Датум 16 03",
+      "26",
+      ":",
+      ".",
+      ".20"
+    ]
+  },
+  "timeRows": [
+    {
+      "fromTime": "08:15",
+      "toTime": "09:00"
+    },
+    {
+      "fromTime": "09:15",
+      "toTime": "10:00"
+    },
+    {
+      "fromTime": "10:15",
+      "toTime": "11:00"
+    },
+    {
+      "fromTime": "11:15",
+      "toTime": "12:00"
+    },
+    {
+      "fromTime": "12:15",
+      "toTime": "13:00"
+    },
+    {
+      "fromTime": "13:15",
+      "toTime": "14:00"
+    },
+    {
+      "fromTime": "14:15",
+      "toTime": "15:00"
+    },
+    {
+      "fromTime": "15:15",
+      "toTime": "16:00"
+    },
+    {
+      "fromTime": "16:15",
+      "toTime": "17:00"
+    },
+    {
+      "fromTime": "17:15",
+      "toTime": "18:00"
+    },
+    {
+      "fromTime": "18:15",
+      "toTime": "19:00"
+    },
+    {
+      "fromTime": "19:15",
+      "toTime": "20:00"
+    },
+    {
+      "fromTime": "20:15",
+      "toTime": "21:00"
+    },
+    {
+      "fromTime": "21:15",
+      "toTime": "22:00"
+    }
+  ],
+  "counts": {
+    "entries": 2,
+    "byClassType": {
+      "predavanje": 1,
+      "racunske_vezbe": 1
+    },
+    "ocrCells": 0,
+    "lowConfidenceCells": 0
+  },
+  "warnings": [],
+  "scheduleByDay": {
+    "utorak": [
+      {
+        "day": "utorak",
+        "startsAt": "08:15",
+        "endsAt": "10:00",
+        "classType": "predavanje",
+        "course": "АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА",
+        "group": null,
+        "room": "Л334",
+        "fromOcr": false,
+        "rawText": "АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА (Л334)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА",
+        "group": null,
+        "room": "Л334",
+        "fromOcr": false,
+        "rawText": "АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА (Л334)"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "day": "utorak",
+      "startsAt": "08:15",
+      "endsAt": "10:00",
+      "classType": "predavanje",
+      "course": "АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА",
+      "group": null,
+      "room": "Л334",
+      "fromOcr": false,
+      "rawText": "АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА (Л334)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА",
+      "group": null,
+      "room": "Л334",
+      "fromOcr": false,
+      "rawText": "АНАЛИЗА ВЕЛИКИХ СКУПОВА ПОДАТАКА (Л334)"
+    }
+  ]
+}
