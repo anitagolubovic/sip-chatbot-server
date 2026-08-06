@@ -30,6 +30,31 @@ Klijent šalje događaj `askQuestion` sa poljima `question`,
 `conversationHistory` i opcionim `context`. Odgovor stiže kroz
 `questionResponse`.
 
+## Baza podataka (RAG)
+
+PostgreSQL 16 sa ekstenzijama `pgvector`, `pg_trgm` i `unaccent`. Ista baza
+opslužuje obe grane RAG sistema: vektorsku/leksičku pretragu nad tekstualnim
+sadržajem (dokumentacija, konkursi) i determinističke SQL upite nad
+strukturiranim podacima (raspored ispita, raspored časova, kalendar).
+
+```text
+npm run db:up        # podiže Postgres u Dockeru
+npm run db:migrate   # primenjuje migracije iz db/migrations
+npm run db:check     # provera ekstenzija, tabela i pgvector operatora
+npm run db:down      # gasi kontejner (podaci ostaju u volumenu)
+```
+
+Podešavanja se čitaju iz `.env` (šablon je `.env.example`); `DATABASE_URL` je
+obavezan. Migracije su numerisani `.sql` fajlovi u `db/migrations/`, primenjuju
+se redom, svaka u svojoj transakciji, a primenjene se pamte u tabeli
+`schema_migrations` zajedno sa SHA-256 otiskom sadržaja — izmena već primenjene
+migracije je greška, umesto toga se dodaje nova.
+
+Strukturirani podaci se namerno **ne** embeduju: raspored ispita ima blizu
+12.000 termina koji su tabela, a ne proza, pa se nad njima izvršava SQL sa
+filterima umesto vektorske pretrage. Time se dobija tačan odgovor uz bitno
+manju potrošnju tokena.
+
 ## Ručno ažuriranje podataka
 
 ```text
@@ -84,6 +109,8 @@ Scheduler sam određuje tekuću školsku godinu.
 
 ```text
 src/server.ts                 Socket.IO server i health endpoint
+src/db/                       konekcija, migracije i provera baze
+db/migrations/                SQL migracije
 src/events/                   WebSocket događaji
 src/services/                 OpenAI servis
 src/prompts/                  sistemski i korisnički prompt

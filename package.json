@@ -5,6 +5,11 @@
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:logs": "docker compose logs -f db",
+    "db:migrate": "ts-node src/db/migrate.ts",
+    "db:check": "ts-node src/db/check.ts",
     "update:exams": "ts-node src/scraper/scrapeExamSchedule.ts",
     "update:kalendar": "ts-node src/scraper/scrapeActivityCalendar.ts",
     "update:raspored-casova": "ts-node src/scraper/scrapeClassSchedules.ts",
@@ -31,6 +36,7 @@
     "openai": "^6.48.0",
     "pdf-parse": "^2.4.5",
     "pdfjs-dist": "^6.1.200",
+    "pg": "^8.22.0",
     "socket.io": "^4.8.3",
     "tesseract.js": "^7.0.0"
   },
@@ -38,6 +44,7 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^26.1.1",
+    "@types/pg": "^8.20.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
