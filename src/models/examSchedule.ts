@@ -1,4 +1,5 @@
 import type { DataDocument } from "./common";
+import { Maybe } from "./types";
 
 export type ExamEntry = {
   studyLevel: string;
@@ -7,12 +8,12 @@ export type ExamEntry = {
   module: string;
   courseCode: string;
   courseName: string;
-  date: string | null;
-  time: string | null;
+  date: Maybe<string>;
+  time: Maybe<string>;
 };
 
-export type RokResult = {
-  rok: string;
+export type ExamPeriodResult = {
+  name: string;
   label: string;
   pdfUrl: string;
   exams: ExamEntry[];
@@ -20,5 +21,6 @@ export type RokResult = {
 
 export type ExamScheduleDocument = DataDocument<"polaganje_ispita"> & {
   sourceUrl: string;
-  rokovi: RokResult[];
+  generatedAt: string;
+  examPeriods: ExamPeriodResult[];
 };

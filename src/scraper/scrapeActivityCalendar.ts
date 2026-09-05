@@ -12,8 +12,8 @@ import {
 } from "./lib/scraperRuntime";
 import type {
   ActivityCalendarDocument,
-  IspitniRok,
-  Kalendar,
+  Calendar,
+  ExamPeriod,
   Period,
 } from "../models/calendar";
 
@@ -41,15 +41,15 @@ const RANGE =
 function periodIn(line: string): Period {
   const match = RANGE.exec(latinSearchText(line));
   if (match) {
-    const [od, doDatuma] = [match[1], match[2]].map(
+    const [from, to] = [match[1], match[2]].map(
       (date) => numericDatesIn(`${date}.`)[0],
     );
-    return { od: od ?? null, do: doDatuma ?? null, raw: line };
+    return { from: from ?? null, to: to ?? null, raw: line };
   }
   const dates = numericDatesIn(line);
   return {
-    od: dates[0] ?? null,
-    do: dates[dates.length - 1] ?? null,
+    from: dates[0] ?? null,
+    to: dates[dates.length - 1] ?? null,
     raw: line,
   };
 }
@@ -77,132 +77,132 @@ function findPdfUrl($: cheerio.CheerioAPI): string | null {
   );
 }
 
-function parseKalendar(source: Source, $: cheerio.CheerioAPI): Kalendar {
+function parseCalendar(source: Source, $: cheerio.CheerioAPI): Calendar {
   const lines = toLines($);
 
-  const kalendar: Kalendar = {
+  const calendar: Calendar = {
     studyLevel: source.studyLevel,
     label: source.label,
     sourceUrl: source.url,
     pdfUrl: findPdfUrl($),
-    semestri: { jesenji: null, prolecni: null },
-    raspust: null,
-    overaSemestra: null,
-    radniDani: [],
-    neradniDaniIPraznici: [],
-    ispitniRokovi: [],
-    napomene: [],
+    semesters: { autumn: null, spring: null },
+    vacation: null,
+    semesterValidation: null,
+    workingDays: [],
+    nonWorkingDaysAndHolidays: [],
+    examPeriods: [],
+    notes: [],
     rawText: lines.join("\n"),
   };
 
-  let uPraznicima = false;
-  let rok: IspitniRok | null = null;
+  let inHolidays = false;
+  let examPeriod: ExamPeriod | null = null;
 
   for (const line of lines) {
     const n = latinSearchText(line);
 
     if (/jesenji semestar/.test(n) && /pocinje/.test(n)) {
-      kalendar.semestri.jesenji = periodIn(line);
+      calendar.semesters.autumn = periodIn(line);
       continue;
     }
 
     if (/prolecni semestar/.test(n) && /pocinje/.test(n)) {
-      kalendar.semestri.prolecni = periodIn(line);
+      calendar.semesters.spring = periodIn(line);
       continue;
     }
 
     if (/raspust/.test(n)) {
-      kalendar.raspust = periodIn(line);
+      calendar.vacation = periodIn(line);
       continue;
     }
 
     if (/^overa/.test(n)) {
-      kalendar.overaSemestra = line;
+      calendar.semesterValidation = line;
       continue;
     }
 
     if (/je radna/.test(n)) {
-      uPraznicima = false;
-      kalendar.radniDani.push({
-        datumi: numericDatesIn(line),
-        napomena: noteInParens(line),
+      inHolidays = false;
+      calendar.workingDays.push({
+        dates: numericDatesIn(line),
+        note: noteInParens(line),
         raw: line,
       });
       continue;
     }
 
     if (/drzavni praznici i neradni dani/.test(n)) {
-      uPraznicima = true;
+      inHolidays = true;
       continue;
     }
 
     if (/^\S+\s+ispitni rok odrzava se\s/.test(n)) {
-      uPraznicima = false;
-      const labela = line.split(/\s+/)[0];
-      rok = {
-        naziv: slugify(labela),
-        labela,
-        odrzavanje: periodIn(line),
-        prijavaIspita: null,
-        polaganja: [],
+      inHolidays = false;
+      const label = line.split(/\s+/)[0];
+      examPeriod = {
+        name: slugify(label),
+        label,
+        held: periodIn(line),
+        examRegistration: null,
+        sittings: [],
       };
-      kalendar.ispitniRokovi.push(rok);
+      calendar.examPeriods.push(examPeriod);
       continue;
     }
 
-    if (rok && /^(prvo|drugo) polaganje/.test(n)) {
-      rok.polaganja.push({
+    if (examPeriod && /^(prvo|drugo) polaganje/.test(n)) {
+      examPeriod.sittings.push({
         ...periodIn(line),
-        naziv: n.startsWith("prvo") ? "prvo_polaganje" : "drugo_polaganje",
-        prijavaIspita: null,
+        name: n.startsWith("prvo") ? "prvo_polaganje" : "drugo_polaganje",
+        examRegistration: null,
       });
       continue;
     }
 
-    if (rok && /prijava ispita/.test(n)) {
-      const poslednjePolaganje = rok.polaganja[rok.polaganja.length - 1];
-      if (poslednjePolaganje) {
-        poslednjePolaganje.prijavaIspita = periodIn(line);
+    if (examPeriod && /prijava ispita/.test(n)) {
+      const lastSitting = examPeriod.sittings[examPeriod.sittings.length - 1];
+      if (lastSitting) {
+        lastSitting.examRegistration = periodIn(line);
       } else {
-        rok.prijavaIspita = periodIn(line);
+        examPeriod.examRegistration = periodIn(line);
       }
       continue;
     }
 
-    if (uPraznicima && /^\d/.test(line)) {
-      kalendar.neradniDaniIPraznici.push({
-        datumi: numericDatesIn(line),
-        napomena: line,
+    if (inHolidays && /^\d/.test(line)) {
+      calendar.nonWorkingDaysAndHolidays.push({
+        dates: numericDatesIn(line),
+        note: line,
         raw: line,
       });
       continue;
     }
 
     if (
-      !rok &&
+      !examPeriod &&
       /(dodela indeksa|pocetak nastave|upis godine|organizuje se nastava|svecana dodela)/.test(
         n,
       )
     ) {
-      kalendar.napomene.push(line);
+      calendar.notes.push(line);
     }
   }
 
-  return kalendar;
+  return calendar;
 }
 
-function assertParsed(kalendar: Kalendar): void {
+function assertParsed(calendar: Calendar): void {
   const missing = [
-    kalendar.ispitniRokovi.length === 0 && "ispitni rokovi",
-    !kalendar.semestri.jesenji && !kalendar.semestri.prolecni && "semestri",
-    kalendar.neradniDaniIPraznici.length === 0 && "neradni dani/praznici",
+    calendar.examPeriods.length === 0 && "ispitni rokovi",
+    !calendar.semesters.autumn && !calendar.semesters.spring && "semestri",
+    calendar.nonWorkingDaysAndHolidays.length === 0 && "neradni dani/praznici",
   ].filter((item): item is string => typeof item === "string");
 
   if (missing.length > 0) {
     throw new Error(
-      `${kalendar.label}: nije prepoznato (${missing.join(", ")}) na ` +
-        `${kalendar.sourceUrl}. Stranica je verovatno promenila format - ` +
-        `proveri kljucne reci u parseKalendar.`,
+      `${calendar.label}: nije prepoznato (${missing.join(", ")}) na ` +
+        `${calendar.sourceUrl}. Stranica je verovatno promenila format - ` +
+        `proveri kljucne reci u parseCalendar.`,
     );
   }
 }
@@ -211,15 +211,15 @@ export async function scrapeActivityCalendar(
   requestedYear?: string,
 ): Promise<void> {
   const academicYear = requireAcademicYear(requestedYear, "update:kalendar");
-  const levels: Kalendar[] = [];
+  const levels: Calendar[] = [];
 
   for (const source of sourcesFor(academicYear)) {
-    const kalendar = parseKalendar(
+    const calendar = parseCalendar(
       source,
       cheerio.load(await fetchHtml(source.url)),
     );
-    assertParsed(kalendar);
-    levels.push(kalendar);
+    assertParsed(calendar);
+    levels.push(calendar);
   }
 
   const output: ActivityCalendarDocument = {

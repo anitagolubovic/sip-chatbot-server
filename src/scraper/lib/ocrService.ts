@@ -2,6 +2,7 @@
 
 import type { Canvas } from "@napi-rs/canvas";
 import { createWorker, type Worker } from "tesseract.js";
+import { levenshtein } from "../../preprocessing/courseNames";
 
 export type OcrResult = {
   text: string;
@@ -119,23 +120,6 @@ export function unifyCourseNames<
     }
   }
   return changed;
-}
-
-function levenshtein(a: string, b: string): number {
-  const previous = Array.from({ length: b.length + 1 }, (_, i) => i);
-  for (let i = 1; i <= a.length; i += 1) {
-    let diagonal = previous[0];
-    previous[0] = i;
-    for (let j = 1; j <= b.length; j += 1) {
-      const current = previous[j];
-      previous[j] =
-        a[i - 1] === b[j - 1]
-          ? diagonal
-          : 1 + Math.min(diagonal, previous[j], previous[j - 1]);
-      diagonal = current;
-    }
-  }
-  return previous[b.length];
 }
 
 export function snapToLexicon(

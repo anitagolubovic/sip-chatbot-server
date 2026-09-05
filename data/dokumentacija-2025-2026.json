@@ -3,8 +3,39 @@
   "category": "studentska_dokumentacija",
   "language": "sr",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-08-02T16:46:27.944Z",
+  "generatedAt": "2026-09-04T16:26:26.118Z",
   "records": [
+    {
+      "procedureTypes": [
+        "zavrsni_rad"
+      ],
+      "studyLevels": [
+        "SVI"
+      ],
+      "temporalScope": "opste",
+      "academicYear": null,
+      "calendarYear": null,
+      "title": "Достављање електронске верзије завршног/дипломског/мастер рада",
+      "summary": "Важно обавештење у вези пријаве и предаје дипломских, завршних и мастер радова.",
+      "publishedAt": "2026-09-01",
+      "sourceCategory": "obrasci",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/slanje-radova-na-email",
+      "content": {
+        "paragraphs": [
+          "Електронска верзија завршног рада у PDF формату предаје се Служби за студентска питања путем мејла diplomski@elfak.ni.ac.rs, пре предаје Захтева за одбрану и пре предаје једног примерка завршног/дипломског/мастер рада.",
+          "Назив PDF фајла треба да садржи ознаку врсте рада, презиме и име студента и назив теме, у следећем формату:",
+          "diplomski-rad-prezime-ime-tema.pdf",
+          "zavrsni-rad-prezime-ime-tema.pdf",
+          "master-rad-prezime-ime-tema.pdf",
+          "У називу PDF фајла су дозвољена искључиво мала слова енглеског алфабета (a–z), бројеви (0–9) и знак минус (-), без размака и других специјалних карактера, приликом чега се слова српске ћирилице и латинице транслитерују одговарајућим словима енглеског алфабета.",
+          "Пример:",
+          "diplomski-rad-urosevic-jovan-prototip-uredjaja-za-testiranje-fotootpornika-koriscenjem-mikrokontrolera-stm32f103.pdf"
+        ],
+        "listItems": []
+      },
+      "attachments": [],
+      "relatedRelevantPages": []
+    },
     {
       "procedureTypes": [
         "skolarina_ili_uplata",
@@ -59,7 +90,7 @@
           "Овде можете да погледате примере правилно попуњених уплатница за плаћање трошкова издавања диплома на основним академским, мастер академским и докторским академским студијама за 2026. годину.",
           "Издавање диплома на ОАС и МАС кошта 10.000 рсд, а на ДАС кошта 18.000 рсд.",
           "Студенти петогодишњих студија не плаћају трошкове издавања диплома.",
-          "Такса је идентична у сва три случаја и износи 1.090 рсд.",
+          "Такса је идентична у сва три случаја и износи 1.130 рсд.",
           "Након плаћања, уплатнице обавезно доставити Служби за студентска питања ( предати на шалтеру или послати имејлом).",
           "Уплатница за ОАС и МАС:",
           "Уплатница за ДАС:",
@@ -1046,30 +1077,6 @@
           "fileType": "pdf"
         }
       ],
-      "relatedRelevantPages": []
-    },
-    {
-      "procedureTypes": [
-        "zavrsni_rad"
-      ],
-      "studyLevels": [
-        "SVI"
-      ],
-      "temporalScope": "opste",
-      "academicYear": null,
-      "calendarYear": null,
-      "title": "Достављање електронске верзије завршног/дипломског/мастер рада",
-      "summary": "Важно обавештење у вези пријаве и предаје дипломских, завршних и мастер радова.",
-      "publishedAt": "2021-07-02",
-      "sourceCategory": "obrasci",
-      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/obrasci/slanje-radova-na-email",
-      "content": {
-        "paragraphs": [
-          "Електронска верзија завршног рада у PDF формату предаје се Служби за студентска питања путем мејла diplomski@elfak.ni.ac.rs, пре предаје Захтева за одбрану на прописаном обрасцу и једног примерка завршног/дипломског/мастер рада. Наслов фајла треба да садржи име и презиме студента, број индекса и наслов рада."
-        ],
-        "listItems": []
-      },
-      "attachments": [],
       "relatedRelevantPages": []
     },
     {

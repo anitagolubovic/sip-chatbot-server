@@ -2,7 +2,6 @@
 
 CREATE EXTENSION IF NOT EXISTS vector;
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
-CREATE EXTENSION IF NOT EXISTS unaccent;
 
 
 CREATE TABLE source_files (
@@ -64,24 +63,24 @@ CREATE INDEX chunks_embedding_idx ON chunks
 
 
 CREATE TABLE exams (
-  id             BIGSERIAL PRIMARY KEY,
-  academic_year  TEXT NOT NULL,
-  rok            TEXT NOT NULL,       
-  rok_label      TEXT,
-  pdf_url        TEXT,
-  study_level    TEXT NOT NULL,        
-  accreditation  TEXT,
-  semester       TEXT,
-  module         TEXT,
-  course_code    TEXT,
-  course_name    TEXT NOT NULL,
-  course_name_norm TEXT NOT NULL,      
-  exam_date      DATE,
-  exam_time      TIME
+  id                BIGSERIAL PRIMARY KEY,
+  academic_year     TEXT NOT NULL,
+  exam_period       TEXT NOT NULL,
+  exam_period_label TEXT,
+  pdf_url           TEXT,
+  study_level       TEXT NOT NULL,
+  accreditation     TEXT,
+  semester          TEXT,
+  module            TEXT,
+  course_code       TEXT,
+  course_name       TEXT NOT NULL,
+  course_name_norm  TEXT NOT NULL,
+  exam_date         DATE,
+  exam_time         TIME
 );
 
 CREATE INDEX exams_lookup_idx      ON exams (academic_year, study_level, semester, module);
-CREATE INDEX exams_rok_idx         ON exams (rok);
+CREATE INDEX exams_exam_period_idx ON exams (exam_period);
 CREATE INDEX exams_code_idx        ON exams (course_code);
 CREATE INDEX exams_date_idx        ON exams (exam_date);
 CREATE INDEX exams_course_trgm_idx ON exams USING gin (course_name_norm gin_trgm_ops);
@@ -145,31 +144,31 @@ CREATE INDEX index_groups_range_idx ON index_groups (academic_year, index_from, 
 
 
 CREATE TABLE calendar_levels (
-  id             BIGSERIAL PRIMARY KEY,
-  academic_year  TEXT NOT NULL,
-  study_level    TEXT NOT NULL,
-  label          TEXT,
-  source_url     TEXT,
-  pdf_url        TEXT,
-  semesters      JSONB NOT NULL DEFAULT '{}'::jsonb,   
-  raspust        JSONB,
-  overa_semestra TEXT,
-  raw            JSONB NOT NULL,
+  id                  BIGSERIAL PRIMARY KEY,
+  academic_year       TEXT NOT NULL,
+  study_level         TEXT NOT NULL,
+  label               TEXT,
+  source_url          TEXT,
+  pdf_url             TEXT,
+  semesters           JSONB NOT NULL DEFAULT '{}'::jsonb,
+  vacation            JSONB,
+  semester_validation TEXT,
+  raw                 JSONB NOT NULL,
   UNIQUE (academic_year, study_level)
 );
 
 CREATE TABLE calendar_exam_periods (
-  id           BIGSERIAL PRIMARY KEY,
-  level_id     BIGINT NOT NULL REFERENCES calendar_levels (id) ON DELETE CASCADE,
-  naziv        TEXT NOT NULL,        
-  labela       TEXT,
-  held_from    DATE,
-  held_to      DATE,
-  held_raw     TEXT,
-  apply_from   DATE,                   
-  apply_to     DATE,                  
-  apply_raw    TEXT,
-  UNIQUE (level_id, naziv)
+  id         BIGSERIAL PRIMARY KEY,
+  level_id   BIGINT NOT NULL REFERENCES calendar_levels (id) ON DELETE CASCADE,
+  name       TEXT NOT NULL,
+  label      TEXT,
+  held_from  DATE,
+  held_to    DATE,
+  held_raw   TEXT,
+  apply_from DATE,
+  apply_to   DATE,
+  apply_raw  TEXT,
+  UNIQUE (level_id, name)
 );
 
 CREATE INDEX calendar_exam_periods_dates_idx ON calendar_exam_periods (held_from, held_to);

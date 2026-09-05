@@ -7,7 +7,7 @@ async function check(): Promise<void> {
 
   const extensions = await query<{ extname: string; extversion: string }>(
     "SELECT extname, extversion FROM pg_extension WHERE extname = ANY($1)",
-    [["vector", "pg_trgm", "unaccent"]],
+    [["vector", "pg_trgm"]],
   );
   console.log(
     "Extensions:",

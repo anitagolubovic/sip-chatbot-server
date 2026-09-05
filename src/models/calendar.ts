@@ -3,39 +3,39 @@ import type { DataDocument } from "./common";
 
 export type { StudyLevel };
 
-export type Period = { od: string | null; do: string | null; raw: string };
+export type Period = { from: string | null; to: string | null; raw: string };
 
-export type Dan = { datumi: string[]; napomena: string; raw: string };
+export type DayNote = { dates: string[]; note: string; raw: string };
 
-export type Polaganje = Period & {
-  naziv: string;
-  prijavaIspita: Period | null;
+export type ExamSitting = Period & {
+  name: string;
+  examRegistration: Period | null;
 };
 
-export type IspitniRok = {
-  naziv: string;
-  labela: string;
-  odrzavanje: Period;
-  prijavaIspita: Period | null;
-  polaganja: Polaganje[];
+export type ExamPeriod = {
+  name: string;
+  label: string;
+  held: Period;
+  examRegistration: Period | null;
+  sittings: ExamSitting[];
 };
 
-export type Kalendar = {
+export type Calendar = {
   studyLevel: StudyLevel;
   label: string;
   sourceUrl: string;
   pdfUrl: string | null;
-  semestri: { jesenji: Period | null; prolecni: Period | null };
-  raspust: Period | null;
-  overaSemestra: string | null;
-  radniDani: Dan[];
-  neradniDaniIPraznici: Dan[];
-  ispitniRokovi: IspitniRok[];
-  napomene: string[];
+  semesters: { autumn: Period | null; spring: Period | null };
+  vacation: Period | null;
+  semesterValidation: string | null;
+  workingDays: DayNote[];
+  nonWorkingDaysAndHolidays: DayNote[];
+  examPeriods: ExamPeriod[];
+  notes: string[];
   rawText: string;
 };
 
 
 export type ActivityCalendarDocument = DataDocument<"kalendar_aktivnosti"> & {
-  levels: Kalendar[];
+  levels: Calendar[];
 };

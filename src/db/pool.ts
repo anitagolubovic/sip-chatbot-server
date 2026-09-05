@@ -1,7 +1,12 @@
 import "dotenv/config";
-import { Pool, type PoolClient, type QueryResultRow } from "pg";
+import { Pool, types, type PoolClient, type QueryResultRow } from "pg";
 import { isDefined, isNotDefined } from "../helper";
 import { Maybe } from "../models/types";
+
+// DATE i TIME se citaju kao string. Podrazumevano ih pg pretvara u JS Date u
+// lokalnoj zoni, pa datum ispita ispadne dan ranije kad se formatira preko UTC-a.
+types.setTypeParser(types.builtins.DATE, (value) => value);
+types.setTypeParser(types.builtins.TIME, (value) => value.slice(0, 5));
 
 let pool: Maybe<Pool> = null;
 

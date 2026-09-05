@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": "СВИ",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-07-26T19:05:00.221Z",
+  "generatedAt": "2026-09-04T16:25:29.404Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem1.pdf",
@@ -201,7 +201,9 @@
         "fromOcr": true,
         "ocrConfidence": 87,
         "rawText": "МАТЕМАТИКА 1 -А-",
-        "groups": ["А"],
+        "groups": [
+          "А"
+        ],
         "roomsByGroup": {
           "А": "А2"
         }
@@ -217,7 +219,9 @@
         "fromOcr": true,
         "ocrConfidence": 88,
         "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -Б-",
-        "groups": ["Б"],
+        "groups": [
+          "Б"
+        ],
         "roomsByGroup": {
           "Б": "А3"
         }
@@ -233,7 +237,9 @@
         "fromOcr": true,
         "ocrConfidence": 93,
         "rawText": "ФИЗИКА -Ц-",
-        "groups": ["Ц"],
+        "groups": [
+          "Ц"
+        ],
         "roomsByGroup": {
           "Ц": "А4"
         }
@@ -264,7 +270,9 @@
         "fromOcr": true,
         "ocrConfidence": 93,
         "rawText": "МАТЕМАТИКА 1 -Ц-",
-        "groups": ["Ц"],
+        "groups": [
+          "Ц"
+        ],
         "roomsByGroup": {
           "Ц": "А4"
         }
@@ -280,7 +288,9 @@
         "fromOcr": true,
         "ocrConfidence": 89,
         "rawText": "УВОД У ИНЖЕЊЕРСТВО -Б-",
-        "groups": ["Б"],
+        "groups": [
+          "Б"
+        ],
         "roomsByGroup": {
           "Б": "А3"
         }
@@ -296,7 +306,9 @@
         "fromOcr": true,
         "ocrConfidence": 87,
         "rawText": "УВОД У РАЧУНАРСТВО -А-",
-        "groups": ["А"],
+        "groups": [
+          "А"
+        ],
         "roomsByGroup": {
           "А": "А2"
         }
@@ -307,12 +319,16 @@
         "endsAt": "14:00",
         "classType": "racunske_vezbe",
         "course": "МАТЕМАТИКА 1",
-        "group": "А1,А2, АЗ",
+        "group": "АТ,А2, АЗ",
         "room": null,
         "fromOcr": true,
         "ocrConfidence": 84,
-        "rawText": "МАТЕМАТИКА 1 -А1,А2, А3-",
-        "groups": ["А1", "А2", "А3"],
+        "rawText": "МАТЕМАТИКА 1 -АТ,А2, АЗ-",
+        "groups": [
+          "А1",
+          "А2",
+          "А3"
+        ],
         "roomsByGroup": {
           "А1": "121",
           "А2": "122",
@@ -330,7 +346,11 @@
         "fromOcr": true,
         "ocrConfidence": 79,
         "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -Б1, Б2, Б3-",
-        "groups": ["Б1", "Б2", "Б3"],
+        "groups": [
+          "Б1",
+          "Б2",
+          "Б3"
+        ],
         "roomsByGroup": {
           "Б1": "132",
           "Б2": "133",
@@ -347,8 +367,13 @@
         "room": null,
         "fromOcr": true,
         "ocrConfidence": 48,
-        "rawText": "ФИЗИКА Ц1, ц2, Цз, Ц4",
-        "groups": ["Ц1", "Ц2", "Ц3", "Ц4"],
+        "rawText": "ФИЗИКА ЦТ, ц2, Цз, Ц4",
+        "groups": [
+          "Ц1",
+          "Ц2",
+          "Ц3",
+          "Ц4"
+        ],
         "roomsByGroup": {
           "Ц1": "222",
           "Ц2": "223",
@@ -369,7 +394,9 @@
         "fromOcr": true,
         "ocrConfidence": 77,
         "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -А-",
-        "groups": ["А"],
+        "groups": [
+          "А"
+        ],
         "roomsByGroup": {
           "А": "А2"
         }
@@ -385,7 +412,9 @@
         "fromOcr": true,
         "ocrConfidence": 92,
         "rawText": "УВОД У РАЧУНАРСТВО -Ц-",
-        "groups": ["Ц"],
+        "groups": [
+          "Ц"
+        ],
         "roomsByGroup": {
           "Ц": "А4"
         }
@@ -401,7 +430,9 @@
         "fromOcr": true,
         "ocrConfidence": 90,
         "rawText": "ФИЗИКА -Б-",
-        "groups": ["Б"],
+        "groups": [
+          "Б"
+        ],
         "roomsByGroup": {
           "Б": "А3"
         }
@@ -417,7 +448,12 @@
         "fromOcr": true,
         "ocrConfidence": 68,
         "rawText": "МАТЕМАТИКА 1 -Ц1, Ц2, Цз, Ц4-",
-        "groups": ["Ц1", "Ц2", "Ц3", "Ц4"],
+        "groups": [
+          "Ц1",
+          "Ц2",
+          "Ц3",
+          "Ц4"
+        ],
         "roomsByGroup": {
           "Ц1": "222",
           "Ц2": "223",
@@ -431,12 +467,16 @@
         "endsAt": "14:00",
         "classType": "racunske_vezbe",
         "course": "УВОД У РАЧУНАРСТВО",
-        "group": "Б1, Б2, Б3",
+        "group": "51, Б2, Б3",
         "room": null,
         "fromOcr": true,
         "ocrConfidence": 78,
-        "rawText": "УВОД У РАЧУНАРСТВО -Б1, Б2, Б3-",
-        "groups": ["Б1", "Б2", "Б3"],
+        "rawText": "УВОД У РАЧУНАРСТВО -51, Б2, Б3-",
+        "groups": [
+          "Б1",
+          "Б2",
+          "Б3"
+        ],
         "roomsByGroup": {
           "Б1": "132",
           "Б2": "133",
@@ -449,12 +489,16 @@
         "endsAt": "14:00",
         "classType": "racunske_vezbe",
         "course": "ФИЗИКА",
-        "group": "А1,А2, А3",
+        "group": "АТ, А2, АЗ",
         "room": null,
         "fromOcr": true,
         "ocrConfidence": 80,
-        "rawText": "ФИЗИКА -А1, А2, А3-",
-        "groups": ["А1", "А2", "А3"],
+        "rawText": "ФИЗИКА -АТ, А2, АЗ-",
+        "groups": [
+          "А1",
+          "А2",
+          "А3"
+        ],
         "roomsByGroup": {
           "А1": "121",
           "А2": "122",
@@ -474,7 +518,9 @@
         "fromOcr": true,
         "ocrConfidence": 94,
         "rawText": "МАТЕМАТИКА 1 -Б-",
-        "groups": ["Б"],
+        "groups": [
+          "Б"
+        ],
         "roomsByGroup": {
           "Б": "А3"
         }
@@ -490,7 +536,9 @@
         "fromOcr": true,
         "ocrConfidence": 93,
         "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -Ц-",
-        "groups": ["Ц"],
+        "groups": [
+          "Ц"
+        ],
         "roomsByGroup": {
           "Ц": "А4"
         }
@@ -506,7 +554,9 @@
         "fromOcr": true,
         "ocrConfidence": 83,
         "rawText": "УВОД У ИНЖЕЊЕРСТВО --А-",
-        "groups": ["А"],
+        "groups": [
+          "А"
+        ],
         "roomsByGroup": {
           "А": "А2"
         }
@@ -517,12 +567,16 @@
         "endsAt": "14:00",
         "classType": "racunske_vezbe",
         "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1",
-        "group": "А1,А2, А3",
+        "group": "АТ, А2, АЗ",
         "room": null,
         "fromOcr": true,
         "ocrConfidence": 86,
-        "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -А1, А2, А3-",
-        "groups": ["А1", "А2", "А3"],
+        "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -АТ, А2, АЗ-",
+        "groups": [
+          "А1",
+          "А2",
+          "А3"
+        ],
         "roomsByGroup": {
           "А1": "121",
           "А2": "122",
@@ -539,8 +593,13 @@
         "room": null,
         "fromOcr": true,
         "ocrConfidence": 76,
-        "rawText": "УВОД У РАЧУНАРСТВО Ц1, Ц2, Ц3, Ц4",
-        "groups": ["Ц1", "Ц2", "Ц3", "Ц4"],
+        "rawText": "УВОД У РАЧУНАРСТВО ЦТ, Ц2, Ц3, Ц4",
+        "groups": [
+          "Ц1",
+          "Ц2",
+          "Ц3",
+          "Ц4"
+        ],
         "roomsByGroup": {
           "Ц1": "222",
           "Ц2": "223",
@@ -559,7 +618,11 @@
         "fromOcr": true,
         "ocrConfidence": 78,
         "rawText": "ФИЗИКА -Б1, Б2, Б3-",
-        "groups": ["Б1", "Б2", "Б3"],
+        "groups": [
+          "Б1",
+          "Б2",
+          "Б3"
+        ],
         "roomsByGroup": {
           "Б1": "132",
           "Б2": "133",
@@ -579,7 +642,9 @@
         "fromOcr": true,
         "ocrConfidence": 93,
         "rawText": "УВОД У ИНЖЕЊЕРСТВО -Ц-",
-        "groups": ["Ц"],
+        "groups": [
+          "Ц"
+        ],
         "roomsByGroup": {
           "Ц": "А4"
         }
@@ -595,7 +660,9 @@
         "fromOcr": true,
         "ocrConfidence": 93,
         "rawText": "УВОД У РАЧУНАРСТВО -Б-",
-        "groups": ["Б"],
+        "groups": [
+          "Б"
+        ],
         "roomsByGroup": {
           "Б": "А3"
         }
@@ -611,7 +678,9 @@
         "fromOcr": true,
         "ocrConfidence": 74,
         "rawText": "ФИЗИКА --А-",
-        "groups": ["А"],
+        "groups": [
+          "А"
+        ],
         "roomsByGroup": {
           "А": "А2"
         }
@@ -622,12 +691,16 @@
         "endsAt": "14:00",
         "classType": "racunske_vezbe",
         "course": "МАТЕМАТИКА 1",
-        "group": "Б1, Б2, Б3",
+        "group": "61, Б2, Б3",
         "room": null,
         "fromOcr": true,
         "ocrConfidence": 73,
-        "rawText": "МАТЕМАТИКА 1 -Б1, Б2, Б3-",
-        "groups": ["Б1", "Б2", "Б3"],
+        "rawText": "МАТЕМАТИКА 1 -61, Б2, Б3-",
+        "groups": [
+          "Б1",
+          "Б2",
+          "Б3"
+        ],
         "roomsByGroup": {
           "Б1": "132",
           "Б2": "133",
@@ -645,7 +718,12 @@
         "fromOcr": true,
         "ocrConfidence": 64,
         "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -Ц1, Ц2, ЦЗ, Ц4-",
-        "groups": ["Ц1", "Ц2", "Ц3", "Ц4"],
+        "groups": [
+          "Ц1",
+          "Ц2",
+          "Ц3",
+          "Ц4"
+        ],
         "roomsByGroup": {
           "Ц1": "222",
           "Ц2": "223",
@@ -659,12 +737,16 @@
         "endsAt": "14:00",
         "classType": "racunske_vezbe",
         "course": "УВОД У РАЧУНАРСТВО",
-        "group": "А1,А2, А3",
+        "group": "АТ, А2, АЗ",
         "room": null,
         "fromOcr": true,
         "ocrConfidence": 90,
-        "rawText": "УВОД У РАЧУНАРСТВО -А1, А2, А3-",
-        "groups": ["А1", "А2", "А3"],
+        "rawText": "УВОД У РАЧУНАРСТВО -АТ, А2, АЗ-",
+        "groups": [
+          "А1",
+          "А2",
+          "А3"
+        ],
         "roomsByGroup": {
           "А1": "121",
           "А2": "122",
@@ -685,7 +767,9 @@
       "fromOcr": true,
       "ocrConfidence": 87,
       "rawText": "МАТЕМАТИКА 1 -А-",
-      "groups": ["А"],
+      "groups": [
+        "А"
+      ],
       "roomsByGroup": {
         "А": "А2"
       }
@@ -701,7 +785,9 @@
       "fromOcr": true,
       "ocrConfidence": 88,
       "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -Б-",
-      "groups": ["Б"],
+      "groups": [
+        "Б"
+      ],
       "roomsByGroup": {
         "Б": "А3"
       }
@@ -717,7 +803,9 @@
       "fromOcr": true,
       "ocrConfidence": 93,
       "rawText": "ФИЗИКА -Ц-",
-      "groups": ["Ц"],
+      "groups": [
+        "Ц"
+      ],
       "roomsByGroup": {
         "Ц": "А4"
       }
@@ -746,7 +834,9 @@
       "fromOcr": true,
       "ocrConfidence": 93,
       "rawText": "МАТЕМАТИКА 1 -Ц-",
-      "groups": ["Ц"],
+      "groups": [
+        "Ц"
+      ],
       "roomsByGroup": {
         "Ц": "А4"
       }
@@ -762,7 +852,9 @@
       "fromOcr": true,
       "ocrConfidence": 89,
       "rawText": "УВОД У ИНЖЕЊЕРСТВО -Б-",
-      "groups": ["Б"],
+      "groups": [
+        "Б"
+      ],
       "roomsByGroup": {
         "Б": "А3"
       }
@@ -778,7 +870,9 @@
       "fromOcr": true,
       "ocrConfidence": 87,
       "rawText": "УВОД У РАЧУНАРСТВО -А-",
-      "groups": ["А"],
+      "groups": [
+        "А"
+      ],
       "roomsByGroup": {
         "А": "А2"
       }
@@ -789,12 +883,16 @@
       "endsAt": "14:00",
       "classType": "racunske_vezbe",
       "course": "МАТЕМАТИКА 1",
-      "group": "А1,А2, А3",
+      "group": "АТ,А2, АЗ",
       "room": null,
       "fromOcr": true,
       "ocrConfidence": 84,
-      "rawText": "МАТЕМАТИКА 1 -А1,А2, А3-",
-      "groups": ["А1", "А2", "А3"],
+      "rawText": "МАТЕМАТИКА 1 -АТ,А2, АЗ-",
+      "groups": [
+        "А1",
+        "А2",
+        "А3"
+      ],
       "roomsByGroup": {
         "А1": "121",
         "А2": "122",
@@ -812,7 +910,11 @@
       "fromOcr": true,
       "ocrConfidence": 79,
       "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -Б1, Б2, Б3-",
-      "groups": ["Б1", "Б2", "Б3"],
+      "groups": [
+        "Б1",
+        "Б2",
+        "Б3"
+      ],
       "roomsByGroup": {
         "Б1": "132",
         "Б2": "133",
@@ -829,8 +931,13 @@
       "room": null,
       "fromOcr": true,
       "ocrConfidence": 48,
-      "rawText": "ФИЗИКА Ц1, Ц2, Ц3, Ц4",
-      "groups": ["Ц1", "Ц2", "Ц3", "Ц4"],
+      "rawText": "ФИЗИКА ЦТ, ц2, Цз, Ц4",
+      "groups": [
+        "Ц1",
+        "Ц2",
+        "Ц3",
+        "Ц4"
+      ],
       "roomsByGroup": {
         "Ц1": "222",
         "Ц2": "223",
@@ -849,7 +956,9 @@
       "fromOcr": true,
       "ocrConfidence": 77,
       "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -А-",
-      "groups": ["А"],
+      "groups": [
+        "А"
+      ],
       "roomsByGroup": {
         "А": "А2"
       }
@@ -865,7 +974,9 @@
       "fromOcr": true,
       "ocrConfidence": 92,
       "rawText": "УВОД У РАЧУНАРСТВО -Ц-",
-      "groups": ["Ц"],
+      "groups": [
+        "Ц"
+      ],
       "roomsByGroup": {
         "Ц": "А4"
       }
@@ -881,7 +992,9 @@
       "fromOcr": true,
       "ocrConfidence": 90,
       "rawText": "ФИЗИКА -Б-",
-      "groups": ["Б"],
+      "groups": [
+        "Б"
+      ],
       "roomsByGroup": {
         "Б": "А3"
       }
@@ -892,12 +1005,17 @@
       "endsAt": "14:00",
       "classType": "racunske_vezbe",
       "course": "МАТЕМАТИКА 1",
-      "group": "Ц1, Ц2, Ц3, Ц4",
+      "group": "Ц1, Ц2, Цз, Ц4",
       "room": null,
       "fromOcr": true,
       "ocrConfidence": 68,
       "rawText": "МАТЕМАТИКА 1 -Ц1, Ц2, Цз, Ц4-",
-      "groups": ["Ц1", "Ц2", "Ц3", "Ц4"],
+      "groups": [
+        "Ц1",
+        "Ц2",
+        "Ц3",
+        "Ц4"
+      ],
       "roomsByGroup": {
         "Ц1": "222",
         "Ц2": "223",
@@ -911,12 +1029,16 @@
       "endsAt": "14:00",
       "classType": "racunske_vezbe",
       "course": "УВОД У РАЧУНАРСТВО",
-      "group": "Б1, Б2, Б3",
+      "group": "51, Б2, Б3",
       "room": null,
       "fromOcr": true,
       "ocrConfidence": 78,
-      "rawText": "УВОД У РАЧУНАРСТВО -Б1, Б2, Б3-",
-      "groups": ["Б1", "Б2", "Б3"],
+      "rawText": "УВОД У РАЧУНАРСТВО -51, Б2, Б3-",
+      "groups": [
+        "Б1",
+        "Б2",
+        "Б3"
+      ],
       "roomsByGroup": {
         "Б1": "132",
         "Б2": "133",
@@ -929,12 +1051,16 @@
       "endsAt": "14:00",
       "classType": "racunske_vezbe",
       "course": "ФИЗИКА",
-      "group": "А1,А2, А3",
+      "group": "АТ, А2, АЗ",
       "room": null,
       "fromOcr": true,
       "ocrConfidence": 80,
-      "rawText": "ФИЗИКА -А1, А2, А3-",
-      "groups": ["А1", "А2", "А3"],
+      "rawText": "ФИЗИКА -АТ, А2, АЗ-",
+      "groups": [
+        "А1",
+        "А2",
+        "А3"
+      ],
       "roomsByGroup": {
         "А1": "121",
         "А2": "122",
@@ -952,7 +1078,9 @@
       "fromOcr": true,
       "ocrConfidence": 94,
       "rawText": "МАТЕМАТИКА 1 -Б-",
-      "groups": ["Б"],
+      "groups": [
+        "Б"
+      ],
       "roomsByGroup": {
         "Б": "А3"
       }
@@ -968,7 +1096,9 @@
       "fromOcr": true,
       "ocrConfidence": 93,
       "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -Ц-",
-      "groups": ["Ц"],
+      "groups": [
+        "Ц"
+      ],
       "roomsByGroup": {
         "Ц": "А4"
       }
@@ -984,7 +1114,9 @@
       "fromOcr": true,
       "ocrConfidence": 83,
       "rawText": "УВОД У ИНЖЕЊЕРСТВО --А-",
-      "groups": ["А"],
+      "groups": [
+        "А"
+      ],
       "roomsByGroup": {
         "А": "А2"
       }
@@ -995,12 +1127,16 @@
       "endsAt": "14:00",
       "classType": "racunske_vezbe",
       "course": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1",
-      "group": "А1,А2, А3",
+      "group": "АТ, А2, АЗ",
       "room": null,
       "fromOcr": true,
       "ocrConfidence": 86,
-      "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -А1, А2, А3-",
-      "groups": ["А1", "А2", "А3"],
+      "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -АТ, А2, АЗ-",
+      "groups": [
+        "А1",
+        "А2",
+        "А3"
+      ],
       "roomsByGroup": {
         "А1": "121",
         "А2": "122",
@@ -1017,8 +1153,13 @@
       "room": null,
       "fromOcr": true,
       "ocrConfidence": 76,
-      "rawText": "УВОД У РАЧУНАРСТВО Ц1, Ц2, Ц3, Ц4",
-      "groups": ["Ц1", "Ц2", "Ц3", "Ц4"],
+      "rawText": "УВОД У РАЧУНАРСТВО ЦТ, Ц2, Ц3, Ц4",
+      "groups": [
+        "Ц1",
+        "Ц2",
+        "Ц3",
+        "Ц4"
+      ],
       "roomsByGroup": {
         "Ц1": "222",
         "Ц2": "223",
@@ -1037,7 +1178,11 @@
       "fromOcr": true,
       "ocrConfidence": 78,
       "rawText": "ФИЗИКА -Б1, Б2, Б3-",
-      "groups": ["Б1", "Б2", "Б3"],
+      "groups": [
+        "Б1",
+        "Б2",
+        "Б3"
+      ],
       "roomsByGroup": {
         "Б1": "132",
         "Б2": "133",
@@ -1055,7 +1200,9 @@
       "fromOcr": true,
       "ocrConfidence": 93,
       "rawText": "УВОД У ИНЖЕЊЕРСТВО -Ц-",
-      "groups": ["Ц"],
+      "groups": [
+        "Ц"
+      ],
       "roomsByGroup": {
         "Ц": "А4"
       }
@@ -1071,7 +1218,9 @@
       "fromOcr": true,
       "ocrConfidence": 93,
       "rawText": "УВОД У РАЧУНАРСТВО -Б-",
-      "groups": ["Б"],
+      "groups": [
+        "Б"
+      ],
       "roomsByGroup": {
         "Б": "А3"
       }
@@ -1087,7 +1236,9 @@
       "fromOcr": true,
       "ocrConfidence": 74,
       "rawText": "ФИЗИКА --А-",
-      "groups": ["А"],
+      "groups": [
+        "А"
+      ],
       "roomsByGroup": {
         "А": "А2"
       }
@@ -1098,12 +1249,16 @@
       "endsAt": "14:00",
       "classType": "racunske_vezbe",
       "course": "МАТЕМАТИКА 1",
-      "group": "Б1, Б2, Б3",
+      "group": "61, Б2, Б3",
       "room": null,
       "fromOcr": true,
       "ocrConfidence": 73,
-      "rawText": "МАТЕМАТИКА 1 -Б1, Б2, Б3-",
-      "groups": ["Б1", "Б2", "Б3"],
+      "rawText": "МАТЕМАТИКА 1 -61, Б2, Б3-",
+      "groups": [
+        "Б1",
+        "Б2",
+        "Б3"
+      ],
       "roomsByGroup": {
         "Б1": "132",
         "Б2": "133",
@@ -1121,7 +1276,12 @@
       "fromOcr": true,
       "ocrConfidence": 64,
       "rawText": "ОСНОВИ ЕЛЕКТРОТЕХНИКЕ 1 -Ц1, Ц2, ЦЗ, Ц4-",
-      "groups": ["Ц1", "Ц2", "Ц3", "Ц4"],
+      "groups": [
+        "Ц1",
+        "Ц2",
+        "Ц3",
+        "Ц4"
+      ],
       "roomsByGroup": {
         "Ц1": "222",
         "Ц2": "223",
@@ -1135,12 +1295,16 @@
       "endsAt": "14:00",
       "classType": "racunske_vezbe",
       "course": "УВОД У РАЧУНАРСТВО",
-      "group": "А1,А2, А3",
+      "group": "АТ, А2, АЗ",
       "room": null,
       "fromOcr": true,
       "ocrConfidence": 90,
-      "rawText": "УВОД У РАЧУНАРСТВО -А1, А2, А3-",
-      "groups": ["А1", "А2", "А3"],
+      "rawText": "УВОД У РАЧУНАРСТВО -АТ, А2, АЗ-",
+      "groups": [
+        "А1",
+        "А2",
+        "А3"
+      ],
       "roomsByGroup": {
         "А1": "121",
         "А2": "122",

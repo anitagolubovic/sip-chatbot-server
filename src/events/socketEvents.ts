@@ -1,3 +1,4 @@
+import { isEmpty } from "../helper";
 import ChatbotService, { ChatMessage } from "../services/chatbot.service";
 import type { Server, Socket } from "socket.io";
 
@@ -5,6 +6,7 @@ interface SendMessageData {
   question: string;
   conversationHistory?: ChatMessage[];
   context?: string;
+  category?: string;
 }
 
 const chatbotService = new ChatbotService();
@@ -21,9 +23,9 @@ export function initializeSocketEvents(io: Server): void {
 
     socket.on("sendMessage", async (data: SendMessageData) => {
       try {
-        const { question, conversationHistory, context } = data;
+        const { question, conversationHistory, context, category } = data;
 
-        if (!question || question.trim().length === 0) {
+        if (isEmpty(question)) {
           socket.emit("error", {
             message: "Question cannot be empty",
             timestamp: new Date().toISOString(),
@@ -41,6 +43,7 @@ export function initializeSocketEvents(io: Server): void {
           question,
           conversationHistory,
           context,
+          category,
         );
 
         socket.emit("botTyping", {

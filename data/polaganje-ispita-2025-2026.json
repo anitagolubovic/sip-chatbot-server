@@ -4,10 +4,10 @@
   "language": "sr",
   "academicYear": "2025/2026",
   "sourceUrl": "https://sip.elfak.ni.ac.rs/article/polaganje-ispita/rasporedi-ispita-2025-2026",
-  "generatedAt": "2026-08-02T16:45:11.585Z",
-  "rokovi": [
+  "generatedAt": "2026-09-04T16:26:03.740Z",
+  "examPeriods": [
     {
-      "rok": "decembarski",
+      "name": "decembarski",
       "label": "Децембарски",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-ispita/2025-2026/raspored-ispita-decembar-2025-2026-v2.pdf",
       "exams": [
@@ -16924,7 +16924,7 @@
       ]
     },
     {
-      "rok": "januarski",
+      "name": "januarski",
       "label": "Јануарски",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-ispita/2025-2026/raspored-ispita-januar-2025-2026-v2.pdf",
       "exams": [
@@ -33841,7 +33841,7 @@
       ]
     },
     {
-      "rok": "aprilski",
+      "name": "aprilski",
       "label": "Априлски",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-ispita/2025-2026/raspored-ispita-april-2025-2026-v2.pdf",
       "exams": [
@@ -50758,7 +50758,7 @@
       ]
     },
     {
-      "rok": "junski",
+      "name": "junski",
       "label": "Јунски",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-ispita/2025-2026/raspored-ispita-jun-2025-2026-v4.pdf",
       "exams": [
@@ -67675,7 +67675,7 @@
       ]
     },
     {
-      "rok": "dodatni-junski",
+      "name": "dodatni-junski",
       "label": "Додатни јунски",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-ispita/2025-2026/raspored-ispita-jun-dva-2025-2026-v2.pdf",
       "exams": [
@@ -84592,7 +84592,7 @@
       ]
     },
     {
-      "rok": "septembarski",
+      "name": "septembarski",
       "label": "Септембарски",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-ispita/2025-2026/raspored-ispita-septembar-2025-2026.pdf",
       "exams": [
@@ -101509,7 +101509,7 @@
       ]
     },
     {
-      "rok": "oktobarski",
+      "name": "oktobarski",
       "label": "Октобарски",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-ispita/2025-2026/raspored-ispita-oktobar-2025-2026.pdf",
       "exams": [

@@ -1,6 +1,6 @@
 import * as cheerio from "cheerio";
-import { PDFParse } from "pdf-parse";
 import { fetchHtml, fetchPdf, SITE_ORIGIN } from "./lib/httpClient";
+import { extractPdfText } from "./lib/pdfParseIsolated";
 import { pdfLinks, type PdfLink } from "./lib/pdfLinks";
 import { parseTextualDate } from "./lib/serbianDates";
 import { latinSearchText, slugify } from "./lib/textNormalization";
@@ -13,9 +13,11 @@ import {
 } from "./lib/scraperRuntime";
 import type {
   ExamEntry,
+  ExamPeriodResult,
   ExamScheduleDocument,
-  RokResult,
 } from "../models/examSchedule";
+import { isNotDefined } from "../helper";
+import { Maybe } from "../models/types";
 
 function sourceUrlFor(academicYear: string): string {
   return `${SITE_ORIGIN}/article/polaganje-ispita/rasporedi-ispita-${academicYearSlug(academicYear)}`;
@@ -27,20 +29,34 @@ const STUDY_LEVEL_BY_LABEL: { [label: string]: string } = {
 };
 
 const LEVEL = "ОАС|МАС|OAS|MAS";
-const DAY_NAMES =
-  "понедељак|уторак|среда|четвртак|петак|субота|недеља|" +
-  "ponedeljak|utorak|sreda|cetvrtak|petak|subota|nedelja|" +
-  "četvrtak|nedjelja";
+const DAY_NAMES: readonly string[] = [
+  "понедељак",
+  "уторак",
+  "среда",
+  "четвртак",
+  "петак",
+  "субота",
+  "недеља",
+  "ponedeljak",
+  "utorak",
+  "sreda",
+  "cetvrtak",
+  "petak",
+  "subota",
+  "nedelja",
+];
+
+const DAY_PATTERN = DAY_NAMES.join("|");
 
 const EXAM_ROW_REGEX = new RegExp(
   `^(?:\\d+\\s+)?(${LEVEL})\\s+(\\d{4})\\s+(\\S+)\\s+(\\S+)\\s+(\\S+)\\s+(.+?)\\s+` +
-    `((?:${DAY_NAMES}),\\s*\\d{1,2}\\.\\s*\\S+\\s*\\d{4}\\.)\\s*` +
+    `((?:${DAY_PATTERN}),\\s*\\d{1,2}\\.\\s*\\S+\\s*\\d{4}\\.)\\s*` +
     `(\\d{1,2}:\\d{2}(?::\\d{2})?)?\\s*$`,
   "iu",
 );
 
-function parseTime(rawTime?: string): string | null {
-  if (!rawTime) {
+function parseTime(rawTime?: string): Maybe<string> {
+  if (isNotDefined(rawTime)) {
     return null;
   }
   const [hours, minutes] = rawTime.split(":");
@@ -77,8 +93,7 @@ function parseExamRows(pdfText: string): ExamEntry[] {
     ] = match;
 
     exams.push({
-      studyLevel:
-        STUDY_LEVEL_BY_LABEL[latinSearchText(levelLabel)] || levelLabel,
+      studyLevel: STUDY_LEVEL_BY_LABEL[latinSearchText(levelLabel)],
       accreditation,
       semester,
       module,
@@ -94,9 +109,8 @@ function parseExamRows(pdfText: string): ExamEntry[] {
 
 async function parsePdf(pdfUrl: string): Promise<ExamEntry[]> {
   const buffer = await fetchPdf(pdfUrl);
-  const parser = new PDFParse({ data: buffer });
-  const result = await parser.getText();
-  return parseExamRows(result.text);
+  const text = await extractPdfText(buffer);
+  return parseExamRows(text);
 }
 
 export async function scrapeExamSchedule(
@@ -105,23 +119,24 @@ export async function scrapeExamSchedule(
   const academicYear = requireAcademicYear(requestedYear, "update:exams");
   const sourceUrl = sourceUrlFor(academicYear);
 
-  console.log(`Preuzimam spisak rokova sa: ${sourceUrl}`);
   const links = await fetchExamPeriodLinks(sourceUrl);
 
   if (links.length === 0) {
     throw new Error(
-      "Nije pronadjen nijedan PDF link na stranici - proveriti da li se struktura stranice promenila.",
+      "No exam period links found on the source page. The page format may have changed.",
     );
   }
 
-  console.log(`Pronadjeno rokova: ${links.length}`);
-
-  const rokovi: RokResult[] = [];
+  const examPeriods: ExamPeriodResult[] = [];
   for (const { label, url } of links) {
-    console.log(`Obradjujem rok "${label}" (${url})...`);
     const exams = await parsePdf(url);
-    console.log(`  -> izvuceno ${exams.length} ispita`);
-    rokovi.push({ rok: slugify(label), label, pdfUrl: url, exams });
+    if (exams.length === 0) {
+      throw new Error(
+        `No exam rows recognized in "${label}" (${url}). ` +
+          "The PDF format may have changed.",
+      );
+    }
+    examPeriods.push({ name: slugify(label), label, pdfUrl: url, exams });
   }
 
   const output: ExamScheduleDocument = {
@@ -131,19 +146,18 @@ export async function scrapeExamSchedule(
     academicYear,
     sourceUrl,
     generatedAt: new Date().toISOString(),
-    rokovi,
+    examPeriods,
   };
 
   const destination = dataFile(
     `polaganje-ispita-${academicYearSlug(academicYear)}.json`,
   );
   writeJson(destination, output);
-  console.log(`Sacuvano u: ${destination}`);
 }
 
 if (require.main === module) {
   runCli(
     () => scrapeExamSchedule(process.argv[2]),
-    "Greska prilikom scrape-ovanja rasporeda ispita:",
+    "Error while scraping exam schedule. The page format may have changed.",
   );
 }
