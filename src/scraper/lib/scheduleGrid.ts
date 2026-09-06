@@ -1,4 +1,6 @@
+import { isDefined, isNotDefined } from "../../helper";
 import type { Shape, TextItem } from "./pdfPageLoader";
+import { cleanText } from "./textNormalization";
 
 export type Day =
   | "ponedeljak"
@@ -46,7 +48,7 @@ const DAY_HEADERS: { pattern: RegExp; day: Day }[] = [
 ];
 
 export function isDayName(text: string): boolean {
-  const normalized = text.replace(/ /g, " ").replace(/\s+/g, " ").trim();
+  const normalized = cleanText(text);
   return DAY_HEADERS.some((candidate) => candidate.pattern.test(normalized));
 }
 
@@ -77,15 +79,11 @@ function clusterValues(values: number[], tolerance: number): number[] {
   );
 }
 
-function normalize(text: string): string {
-  return text.replace(/ /g, " ").replace(/\s+/g, " ").trim();
-}
-
 export function findTableBox(shapes: Shape[]): TableBox {
-  const verticals = shapes.filter(isVerticalLine);
-  const horizontals = shapes.filter(isHorizontalLine);
+  const verticals: Shape[] = shapes.filter(isVerticalLine);
+  const horizontals: Shape[] = shapes.filter(isHorizontalLine);
   if (verticals.length === 0 || horizontals.length === 0) {
-    throw new Error("U PDF-u nisu pronadjene linije tabele.");
+    throw new Error("PDF does not contain table lines.");
   }
 
   const maxWidth = Math.max(...horizontals.map((shape) => shape.x1 - shape.x0));
@@ -123,23 +121,21 @@ function buildDayColumns(
   );
 
   if (boundaries.length < 3) {
-    throw new Error(
-      `Prepoznato je samo ${boundaries.length} vertikalnih granica kolona.`,
-    );
+    return [];
   }
 
   const headers = textItems
     .map((item) => {
-      const text = normalize(item.text);
+      const text = cleanText(item.text);
       const match = DAY_HEADERS.find((candidate) =>
         candidate.pattern.test(text),
       );
       return match ? { day: match.day, center: (item.x0 + item.x1) / 2 } : null;
     })
-    .filter((value): value is { day: Day; center: number } => value !== null);
+    .filter((value): value is { day: Day; center: number } => isDefined(value));
 
   if (headers.length === 0) {
-    throw new Error("U zaglavlju tabele nije prepoznat nijedan dan u nedelji.");
+    throw new Error("No day-of-week headers could be found in the table.");
   }
 
   const candidates = new Map<Day, number[]>();
@@ -168,13 +164,13 @@ function buildDayColumns(
   let previousIndex = -1;
   for (const { day } of DAY_HEADERS) {
     const list = candidates.get(day);
-    if (!list) {
+    if (isNotDefined(list)) {
       continue;
     }
     const chosen = [...list]
       .sort((a, b) => a - b)
       .find((index) => index > previousIndex);
-    if (chosen === undefined) {
+    if (isNotDefined(chosen)) {
       continue;
     }
     previousIndex = chosen;
@@ -187,7 +183,7 @@ function buildDayColumns(
 
   if (columns.length === 0) {
     throw new Error(
-      "Nijedan dan u nedelji nije mogao da se veze za kolonu tabele.",
+      "No day of the week could be associated with a table column.",
     );
   }
 
@@ -220,7 +216,7 @@ function buildTimeRows(
 
   if (boundaries.length < 5) {
     throw new Error(
-      `Prepoznato je samo ${boundaries.length} horizontalnih granica redova.`,
+      `From the time column, only ${boundaries.length - 1} row boundaries were read.`,
     );
   }
 
@@ -228,7 +224,7 @@ function buildTimeRows(
     (item) =>
       item.x0 >= table.x0 - 2 &&
       item.x1 <= timeColumnX1 + 2 &&
-      /^\d{1,2}$/.test(normalize(item.text)),
+      /^\d{1,2}$/.test(cleanText(item.text)),
   );
 
   const rows: TimeRow[] = [];
@@ -241,7 +237,7 @@ function buildTimeRows(
         return center > y0 && center < y1;
       })
       .sort((a, b) => a.x0 - b.x0)
-      .map((item) => normalize(item.text));
+      .map((item) => cleanText(item.text));
 
     if (parts.length !== 4) {
       continue;
@@ -267,7 +263,7 @@ function buildTimeRows(
 }
 
 export function buildGrid(shapes: Shape[], textItems: TextItem[]): Grid {
-  const table = findTableBox(shapes);
+  const table: TableBox = findTableBox(shapes);
   const dayColumns = buildDayColumns(shapes, textItems, table);
   const timeColumnX1 = dayColumns[0].x0;
   const timeRows = buildTimeRows(shapes, textItems, table, timeColumnX1);
@@ -281,7 +277,7 @@ export function assertGeometryIsConsistent(
 ): void {
   for (const column of grid.dayColumns) {
     const headers = textItems.filter((item) => {
-      const text = normalize(item.text);
+      const text = cleanText(item.text);
       const match = DAY_HEADERS.find((candidate) =>
         candidate.pattern.test(text),
       );
@@ -296,9 +292,7 @@ export function assertGeometryIsConsistent(
       return center >= column.x0 && center <= column.x1;
     });
     if (matching.length === 0) {
-      throw new Error(
-        `Geometrija teksta i linija se ne poklapa za kolonu "${column.day}".`,
-      );
+      throw new Error(`No matching header found for column "${column.day}".`);
     }
     if (
       matching.every(
@@ -306,7 +300,7 @@ export function assertGeometryIsConsistent(
       )
     ) {
       throw new Error(
-        `Zaglavlje "${column.day}" je izvan okvira tabele - koordinatni sistemi se razlikuju.`,
+        `Header "${column.day}" is outside the table bounds - the coordinate systems differ.`,
       );
     }
   }

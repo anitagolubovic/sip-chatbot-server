@@ -3,8 +3,6 @@ import { Pool, types, type PoolClient, type QueryResultRow } from "pg";
 import { isDefined, isNotDefined } from "../helper";
 import { Maybe } from "../models/types";
 
-// DATE i TIME se citaju kao string. Podrazumevano ih pg pretvara u JS Date u
-// lokalnoj zoni, pa datum ispita ispadne dan ranije kad se formatira preko UTC-a.
 types.setTypeParser(types.builtins.DATE, (value) => value);
 types.setTypeParser(types.builtins.TIME, (value) => value.slice(0, 5));
 
@@ -25,7 +23,7 @@ export function getPool(): Pool {
     pool = new Pool({
       connectionString: getConnectionString(),
       max: Number(process.env.PGPOOL_MAX ?? 10),
-      idleTimeoutMillis: 30_000,
+      idleTimeoutMillis: 30000,
     });
     pool.on("error", (error) => {
       console.error("Connection error", error);

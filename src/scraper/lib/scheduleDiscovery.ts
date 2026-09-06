@@ -1,5 +1,7 @@
 import * as cheerio from "cheerio";
-import { absoluteUrl, fetchHtml } from "./httpClient";
+import { getAbsoluteUrl, fetchHtml } from "./httpClient";
+import { isNotDefined } from "../../helper";
+import { Maybe } from "../../models/types";
 
 export type StudyLevel = "osnovne_akademske" | "master_akademske";
 export type SemesterType = "zimski" | "letnji";
@@ -9,8 +11,8 @@ export type ScheduleSource = {
   semester: number;
   studyYear: number;
   semesterType: SemesterType;
-  module: string | null;
-  submodule: string | null;
+  module: Maybe<string>;
+  submodule: Maybe<string>;
   academicYear: string;
   pageUrl: string;
   pdfUrl: string;
@@ -51,11 +53,11 @@ export const INDEX_PAGES: IndexPage[] = [
   },
 ];
 
-function parseFileName(pdfUrl: string): {
+function parseFileName(pdfUrl: string): Maybe<{
   semester: number;
-  module: string | null;
-  submodule: string | null;
-} | null {
+  module: Maybe<string>;
+  submodule: Maybe<string>;
+}> {
   const fileName = pdfUrl.split("/").pop() ?? "";
   const match = /^\d+-(?:sem|mas)(\d+)((?:-[a-z0-9]+)*?)(?:-v\d+)?\.pdf$/i.exec(
     fileName,
@@ -84,19 +86,19 @@ export async function discoverSources(
 
     $("a[href]").each((_, element) => {
       const href = $(element).attr("href");
-      if (!href || !/\.pdf(?:$|\?)/i.test(href)) {
+      if (isNotDefined(href) || !/\.pdf(?:$|\?)/i.test(href)) {
         return;
       }
 
-      const pdfUrl = absoluteUrl(href);
-      if (!pdfUrl || seen.has(pdfUrl)) {
+      const pdfUrl = getAbsoluteUrl(href);
+      if (isNotDefined(pdfUrl) || seen.has(pdfUrl)) {
         return;
       }
       seen.add(pdfUrl);
 
       const parsed = parseFileName(pdfUrl);
-      if (!parsed) {
-        console.warn(`  Preskacem link nepoznatog oblika: ${pdfUrl}`);
+      if (isNotDefined(parsed)) {
+        console.warn(`Skipping link with unknown format: ${pdfUrl}`);
         return;
       }
 

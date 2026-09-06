@@ -11,7 +11,7 @@
   "submodule": "KOI",
   "moduleLabel": "КОИ",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:52.462Z",
+  "generatedAt": "2026-09-05T17:12:58.862Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-mas-prolece-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-prolece/202526-mas2-kit-koi-v2.pdf",
@@ -91,10 +91,6 @@
   ],
   "counts": {
     "entries": 2,
-    "byClassType": {
-      "predavanje": 1,
-      "racunske_vezbe": 1
-    },
     "ocrCells": 0,
     "lowConfidenceCells": 0
   },

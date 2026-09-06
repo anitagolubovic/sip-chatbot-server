@@ -11,7 +11,7 @@
   "submodule": "SIRK",
   "moduleLabel": "СИРК",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:52.566Z",
+  "generatedAt": "2026-09-05T17:12:59.040Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-mas-prolece-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-prolece/202526-mas2-kit-sirk-v2.pdf",
@@ -90,11 +90,7 @@
     }
   ],
   "counts": {
-    "entries": 5,
-    "byClassType": {
-      "predavanje": 3,
-      "racunske_vezbe": 2
-    },
+    "entries": 6,
     "ocrCells": 0,
     "lowConfidenceCells": 0
   },
@@ -106,33 +102,44 @@
         "startsAt": "08:15",
         "endsAt": "10:00",
         "classType": "predavanje",
-        "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ",
+        "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
         "group": null,
         "room": "Л355",
         "fromOcr": false,
-        "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355)"
+        "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355) АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
+      },
+      {
+        "day": "sreda",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
+        "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
+        "group": null,
+        "room": "Л355",
+        "fromOcr": false,
+        "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355) АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
       },
       {
         "day": "sreda",
         "startsAt": "11:15",
         "endsAt": "13:00",
         "classType": "predavanje",
-        "course": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
+        "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
         "group": null,
         "room": "Л355",
         "fromOcr": false,
-        "rawText": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
+        "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355) АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
       },
       {
         "day": "sreda",
         "startsAt": "13:15",
         "endsAt": "14:00",
         "classType": "racunske_vezbe",
-        "course": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
+        "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
         "group": null,
         "room": "Л355",
         "fromOcr": false,
-        "rawText": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
+        "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355) АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
       }
     ],
     "cetvrtak": [
@@ -166,33 +173,44 @@
       "startsAt": "08:15",
       "endsAt": "10:00",
       "classType": "predavanje",
-      "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ",
+      "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
       "group": null,
       "room": "Л355",
       "fromOcr": false,
-      "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355)"
+      "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355) АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
+    },
+    {
+      "day": "sreda",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
+      "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
+      "group": null,
+      "room": "Л355",
+      "fromOcr": false,
+      "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355) АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
     },
     {
       "day": "sreda",
       "startsAt": "11:15",
       "endsAt": "13:00",
       "classType": "predavanje",
-      "course": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
+      "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
       "group": null,
       "room": "Л355",
       "fromOcr": false,
-      "rawText": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
+      "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355) АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
     },
     {
       "day": "sreda",
       "startsAt": "13:15",
       "endsAt": "14:00",
       "classType": "racunske_vezbe",
-      "course": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
+      "course": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ",
       "group": null,
       "room": "Л355",
       "fromOcr": false,
-      "rawText": "АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
+      "rawText": "САТЕЛИТСКИ СЕРВИСИ И СИСТЕМИ (Л355) АДАПТИВНЕ АНТЕНЕ И МИМО СИСТЕМИ (Л355)"
     },
     {
       "day": "cetvrtak",

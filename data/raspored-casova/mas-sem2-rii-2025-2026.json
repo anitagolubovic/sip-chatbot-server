@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": null,
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:51.708Z",
+  "generatedAt": "2026-09-05T17:12:57.506Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-mas-prolece-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-prolece/202526-mas2-rii-v2.pdf",
@@ -91,10 +91,6 @@
   ],
   "counts": {
     "entries": 16,
-    "byClassType": {
-      "predavanje": 8,
-      "racunske_vezbe": 8
-    },
     "ocrCells": 0,
     "lowConfidenceCells": 0
   },

@@ -11,6 +11,7 @@ import type { ScheduleEntry } from "../scraper/lib/scheduleEntryExtractor";
 import type { Day } from "../scraper/lib/scheduleGrid";
 import type { ClassType } from "../scraper/lib/scheduleLegend";
 import type { DataDocument } from "./common";
+import { Maybe } from "./types";
 
 export type {
   ClassType,
@@ -40,7 +41,6 @@ export type ScheduleSourceRef = {
 
 export type ScheduleCounts = {
   entries: number;
-  byClassType: Record<string, number>;
   ocrCells: number;
   lowConfidenceCells: number;
 };
@@ -51,9 +51,9 @@ export type ClassScheduleDocument = DataDocument<"raspored_casova"> & {
   semester: number;
   studyYear: number;
   semesterType: SemesterType;
-  module: string | null;
-  submodule: string | null;
-  moduleLabel: string | null;
+  module: Maybe<string>;
+  submodule: Maybe<string>;
+  moduleLabel: Maybe<string>;
   source: ScheduleSourceRef;
   legend: ScheduleLegendInfo;
   timeRows: ScheduleTimeRow[];
@@ -70,8 +70,8 @@ export type ClassScheduleIndexEntry = {
   semester: number;
   studyYear: number;
   semesterType: SemesterType;
-  module: string | null;
-  submodule: string | null;
+  module: Maybe<string>;
+  submodule: Maybe<string>;
   academicYear: string;
   pdfUrl: string;
   file: string;

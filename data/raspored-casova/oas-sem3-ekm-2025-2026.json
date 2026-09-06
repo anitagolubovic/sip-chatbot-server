@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": "ЕКМ",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:31.094Z",
+  "generatedAt": "2026-09-05T17:12:26.311Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem3-ekm-v2.pdf",
@@ -92,11 +92,7 @@
     }
   ],
   "counts": {
-    "entries": 9,
-    "byClassType": {
-      "predavanje": 5,
-      "racunske_vezbe": 4
-    },
+    "entries": 10,
     "ocrCells": 0,
     "lowConfidenceCells": 0
   },
@@ -132,6 +128,17 @@
         "startsAt": "12:15",
         "endsAt": "14:00",
         "classType": "predavanje",
+        "course": "МЕТРОЛОГИЈА ЕЛЕКТРИЧНИХ ВЕЛИЧИНА",
+        "group": null,
+        "room": "A4",
+        "fromOcr": false,
+        "rawText": "МЕТРОЛОГИЈА ЕЛЕКТРИЧНИХ ВЕЛИЧИНА (A4)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "14:15",
+        "endsAt": "15:00",
+        "classType": "racunske_vezbe",
         "course": "МЕТРОЛОГИЈА ЕЛЕКТРИЧНИХ ВЕЛИЧИНА",
         "group": null,
         "room": "A4",
@@ -240,6 +247,17 @@
       "startsAt": "12:15",
       "endsAt": "14:00",
       "classType": "predavanje",
+      "course": "МЕТРОЛОГИЈА ЕЛЕКТРИЧНИХ ВЕЛИЧИНА",
+      "group": null,
+      "room": "A4",
+      "fromOcr": false,
+      "rawText": "МЕТРОЛОГИЈА ЕЛЕКТРИЧНИХ ВЕЛИЧИНА (A4)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "14:15",
+      "endsAt": "15:00",
+      "classType": "racunske_vezbe",
       "course": "МЕТРОЛОГИЈА ЕЛЕКТРИЧНИХ ВЕЛИЧИНА",
       "group": null,
       "room": "A4",

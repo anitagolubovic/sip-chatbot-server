@@ -7,7 +7,6 @@ import { isDefined } from "../helper";
 import { DATA_DIR } from "../scraper/lib/scraperRuntime";
 
 export type SourceFile<T> = {
-  /** Putanja relativna u odnosu na data/, kljuc u tabeli source_files. */
   path: string;
   document: T;
   contentHash: string;
@@ -22,7 +21,6 @@ export function readSourceFile<T>(file: string): SourceFile<T> {
   };
 }
 
-/** Tacan zbir heseva vise fajlova, da se skup rasporeda prati kao jedna celina. */
 export function combinedHash(hashes: readonly string[]): string {
   return createHash("sha256")
     .update([...hashes].sort().join("\n"))
@@ -57,11 +55,6 @@ export async function recordSourceFile(
   );
 }
 
-/** Postgres dopusta najvise 65535 parametara po upitu. */
-export function rowsPerBatch(columnCount: number): number {
-  return Math.floor(65535 / columnCount / 2);
-}
-
 export async function insertRows(
   client: PoolClient,
   table: string,
@@ -89,6 +82,10 @@ export async function insertRows(
       batch.flat(),
     );
   }
+}
+
+export function rowsPerBatch(columnCount: number): number {
+  return Math.floor(65535 / columnCount / 2);
 }
 
 export type IngestOptions = { force?: boolean };

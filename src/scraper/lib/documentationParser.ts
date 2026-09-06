@@ -1,6 +1,6 @@
 import * as cheerio from "cheerio";
 import { extractArticle } from "./articleExtractor";
-import { absoluteUrl, SITE_ORIGIN } from "./httpClient";
+import { getAbsoluteUrl, SITE_ORIGIN } from "./httpClient";
 import { parseTextualDate } from "./serbianDates";
 import { cleanText, latinSearchText } from "./textNormalization";
 
@@ -101,7 +101,7 @@ export function parseListing(html: string): ListingItem[] {
       ? heading.find("a[href]").first()
       : item.find("a[href]").first();
     const title = cleanText(heading.text()) || cleanText(link.text());
-    const url = absoluteUrl(link.attr("href"));
+    const url = getAbsoluteUrl(link.attr("href"));
     const publication = publicationDateIn($, item);
     if (!title || !url || !publication) return;
 

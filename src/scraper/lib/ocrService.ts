@@ -2,26 +2,16 @@
 
 import type { Canvas } from "@napi-rs/canvas";
 import { createWorker, type Worker } from "tesseract.js";
-import { levenshtein } from "../../preprocessing/courseNames";
+import { levenshteinDistance } from "../../preprocessing/courseNames";
+import { Maybe } from "../../models/types";
+import { isNotDefined } from "../../helper";
 
 export type OcrResult = {
   text: string;
   confidence: number;
 };
 
-let workerPromise: Promise<Worker> | null = null;
-
-async function getWorker(): Promise<Worker> {
-  if (!workerPromise) {
-    workerPromise = (async () => {
-      const worker = await createWorker("srp", 1, { logger: () => undefined });
-
-      await worker.setParameters({ tessedit_pageseg_mode: "6" as never });
-      return worker;
-    })();
-  }
-  return workerPromise;
-}
+let workerPromise: Maybe<Promise<Worker>> = null;
 
 export async function terminateOcr(): Promise<void> {
   if (workerPromise) {
@@ -70,6 +60,18 @@ export async function recognizeRotatedRegion(
   };
 }
 
+async function getWorker(): Promise<Worker> {
+  if (isNotDefined(workerPromise)) {
+    workerPromise = (async () => {
+      const worker = await createWorker("srp", 1, { logger: () => undefined });
+
+      await worker.setParameters({ tessedit_pageseg_mode: "6" as never });
+      return worker;
+    })();
+  }
+  return workerPromise;
+}
+
 function cleanRecognizedText(raw: string): string {
   return raw
     .replace(/\s+/g, " ")
@@ -104,7 +106,7 @@ export function unifyCourseNames<
         continue;
       }
       const tolerance = Math.max(2, Math.floor(candidate.length * 0.25));
-      if (levenshtein(folded, candidate.toUpperCase()) <= tolerance) {
+      if (levenshteinDistance(folded, candidate.toUpperCase()) <= tolerance) {
         chosen = candidate;
       }
     }
@@ -129,7 +131,7 @@ export function snapToLexicon(
   const folded = name.toUpperCase();
   const digits = (value: string): string => value.replace(/\D/g, "");
 
-  let best: string | null = null;
+  let best: Maybe<string> = null;
   let bestDistance = Number.POSITIVE_INFINITY;
 
   for (const candidate of lexicon) {
@@ -139,7 +141,7 @@ export function snapToLexicon(
     if (candidate.toUpperCase() === folded) {
       return { name: candidate, corrected: candidate !== name };
     }
-    const distance = levenshtein(folded, candidate.toUpperCase());
+    const distance = levenshteinDistance(folded, candidate.toUpperCase());
     if (distance < bestDistance) {
       bestDistance = distance;
       best = candidate;

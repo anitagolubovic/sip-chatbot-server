@@ -42,9 +42,6 @@ async function run(): Promise<void> {
 
     console.log(`[SIP scraper] Updating data for ${academicYear}.`);
 
-    // Svaki upis u bazu ide odmah posle svog scrapera, u istoj petlji: ako
-    // scraper ne uspe, JSON fajl ostaje kakav je bio, a upis ga ponovo
-    // proveri i preskoci (hes se nije promenio) umesto da pukne.
     const tasks: Array<[ScraperTask, () => Promise<void>]> = [
       [ScraperTask.ClassSchedules, () => scrapeClassSchedules()],
       [ScraperTask.IngestSchedules, () => ingestSchedules(academicYear)],

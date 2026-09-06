@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": "СВИ",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:45.500Z",
+  "generatedAt": "2026-09-05T17:12:46.353Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem2-v2.pdf",
@@ -93,10 +93,6 @@
   ],
   "counts": {
     "entries": 30,
-    "byClassType": {
-      "predavanje": 15,
-      "racunske_vezbe": 15
-    },
     "ocrCells": 24,
     "lowConfidenceCells": 0
   },

@@ -1,11 +1,14 @@
+import { isNotDefined } from "../../helper";
+import { Maybe } from "../../models/types";
 import type { TextItem } from "./pdfPageLoader";
 import type { TableBox } from "./scheduleGrid";
+import { cleanText } from "./textNormalization";
 
 export type PdfHeader = {
-  academicYear: string | null;
-  moduleLabel: string | null;
-  semester: number | null;
-  programLabel: string | null;
+  academicYear: Maybe<string>;
+  moduleLabel: Maybe<string>;
+  semester: Maybe<number>;
+  programLabel: Maybe<string>;
 };
 
 const ROMAN: Record<string, number> = {
@@ -18,10 +21,6 @@ const ROMAN: Record<string, number> = {
   VII: 7,
   VIII: 8,
 };
-
-function normalize(text: string): string {
-  return text.replace(/ /g, " ").replace(/\s+/g, " ").trim();
-}
 
 export function parseHeader(textItems: TextItem[], table: TableBox): PdfHeader {
   const above = textItems.filter((item) => item.y0 > table.y1);
@@ -39,7 +38,7 @@ export function parseHeader(textItems: TextItem[], table: TableBox): PdfHeader {
   }
 
   const lines = rows.map((row) =>
-    normalize(
+    cleanText(
       [...row]
         .sort((a, b) => a.x0 - b.x0)
         .map((item) => item.text)
@@ -47,23 +46,23 @@ export function parseHeader(textItems: TextItem[], table: TableBox): PdfHeader {
     ),
   );
 
-  let academicYear: string | null = null;
-  let moduleLabel: string | null = null;
-  let semester: number | null = null;
+  let academicYear: Maybe<string> = null;
+  let moduleLabel: Maybe<string> = null;
+  let semester: Maybe<number> = null;
 
   for (const line of lines) {
     const year = /(\d{4}\s*\/\s*\d{4})/.exec(line);
-    if (year && !academicYear) {
+    if (year && isNotDefined(academicYear)) {
       academicYear = year[1].replace(/\s+/g, "");
     }
 
     const moduleMatch = /Модул\s*:?\s*(.+)$/i.exec(line);
-    if (moduleMatch && !moduleLabel) {
-      moduleLabel = normalize(moduleMatch[1]);
+    if (moduleMatch && isNotDefined(moduleLabel)) {
+      moduleLabel = cleanText(moduleMatch[1]);
     }
 
     const semesterMatch = /Семестар\s*:?\s*([IVX]+)\b/i.exec(line);
-    if (semesterMatch && semester === null) {
+    if (semesterMatch && isNotDefined(semester)) {
       semester = ROMAN[semesterMatch[1].toUpperCase()] ?? null;
     }
   }
@@ -84,3 +83,4 @@ export function parseHeader(textItems: TextItem[], table: TableBox): PdfHeader {
     programLabel,
   };
 }
+

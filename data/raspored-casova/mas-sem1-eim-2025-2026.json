@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": null,
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:42.482Z",
+  "generatedAt": "2026-09-05T17:12:42.479Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-jesen-mas-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/202526-mas1-eim-v2.pdf",
@@ -90,11 +90,7 @@
     }
   ],
   "counts": {
-    "entries": 31,
-    "byClassType": {
-      "predavanje": 16,
-      "racunske_vezbe": 15
-    },
+    "entries": 32,
     "ocrCells": 11,
     "lowConfidenceCells": 0
   },
@@ -202,6 +198,17 @@
         "startsAt": "08:15",
         "endsAt": "10:00",
         "classType": "predavanje",
+        "course": "СОЛАРНЕ ТЕХНОЛОГИЈЕ И КОМПОНЕНТЕ",
+        "group": null,
+        "room": "132",
+        "fromOcr": false,
+        "rawText": "СОЛАРНЕ ТЕХНОЛОГИЈЕ И КОМПОНЕНТЕ (132)"
+      },
+      {
+        "day": "utorak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
         "course": "СОЛАРНЕ ТЕХНОЛОГИЈЕ И КОМПОНЕНТЕ",
         "group": null,
         "room": "132",
@@ -574,6 +581,17 @@
       "startsAt": "08:15",
       "endsAt": "10:00",
       "classType": "predavanje",
+      "course": "СОЛАРНЕ ТЕХНОЛОГИЈЕ И КОМПОНЕНТЕ",
+      "group": null,
+      "room": "132",
+      "fromOcr": false,
+      "rawText": "СОЛАРНЕ ТЕХНОЛОГИЈЕ И КОМПОНЕНТЕ (132)"
+    },
+    {
+      "day": "utorak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
       "course": "СОЛАРНЕ ТЕХНОЛОГИЈЕ И КОМПОНЕНТЕ",
       "group": null,
       "room": "132",

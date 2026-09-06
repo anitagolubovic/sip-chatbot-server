@@ -11,7 +11,7 @@
   "submodule": "EMT",
   "moduleLabel": "ЕЛК",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:46.723Z",
+  "generatedAt": "2026-09-05T17:12:49.006Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-prolece-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem6-elk-emt-v3.pdf",
@@ -93,10 +93,6 @@
   ],
   "counts": {
     "entries": 11,
-    "byClassType": {
-      "predavanje": 6,
-      "racunske_vezbe": 5
-    },
     "ocrCells": 0,
     "lowConfidenceCells": 0
   },

@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": "ЕКМ",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:31.764Z",
+  "generatedAt": "2026-09-05T17:12:27.586Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem7-ekm-v1.pdf",
@@ -93,10 +93,6 @@
   ],
   "counts": {
     "entries": 20,
-    "byClassType": {
-      "predavanje": 11,
-      "racunske_vezbe": 9
-    },
     "ocrCells": 4,
     "lowConfidenceCells": 0
   },

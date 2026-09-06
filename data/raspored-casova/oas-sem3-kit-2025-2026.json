@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": "КИТ",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:36.528Z",
+  "generatedAt": "2026-09-05T17:12:33.902Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem3-kit-v2.pdf",
@@ -93,10 +93,6 @@
   ],
   "counts": {
     "entries": 12,
-    "byClassType": {
-      "racunske_vezbe": 6,
-      "predavanje": 6
-    },
     "ocrCells": 2,
     "lowConfidenceCells": 0
   },
@@ -132,22 +128,22 @@
         "startsAt": "09:15",
         "endsAt": "11:00",
         "classType": "predavanje",
-        "course": "СОФТВЕРСКИ",
+        "course": "СОФТВЕРСКИ АЛАТИ",
         "group": null,
-        "room": null,
+        "room": "Л334",
         "fromOcr": false,
-        "rawText": "СОФТВЕРСКИ"
+        "rawText": "СОФТВЕРСКИ АЛАТИ (Л334)"
       },
       {
         "day": "utorak",
         "startsAt": "11:15",
         "endsAt": "12:00",
         "classType": "racunske_vezbe",
-        "course": "АЛАТИ",
+        "course": "СОФТВЕРСКИ АЛАТИ",
         "group": null,
         "room": "Л334",
         "fromOcr": false,
-        "rawText": "АЛАТИ (Л334)"
+        "rawText": "СОФТВЕРСКИ АЛАТИ (Л334)"
       }
     ],
     "sreda": [
@@ -277,22 +273,22 @@
       "startsAt": "09:15",
       "endsAt": "11:00",
       "classType": "predavanje",
-      "course": "СОФТВЕРСКИ",
+      "course": "СОФТВЕРСКИ АЛАТИ",
       "group": null,
-      "room": null,
+      "room": "Л334",
       "fromOcr": false,
-      "rawText": "СОФТВЕРСКИ"
+      "rawText": "СОФТВЕРСКИ АЛАТИ (Л334)"
     },
     {
       "day": "utorak",
       "startsAt": "11:15",
       "endsAt": "12:00",
       "classType": "racunske_vezbe",
-      "course": "АЛАТИ",
+      "course": "СОФТВЕРСКИ АЛАТИ",
       "group": null,
       "room": "Л334",
       "fromOcr": false,
-      "rawText": "АЛАТИ (Л334)"
+      "rawText": "СОФТВЕРСКИ АЛАТИ (Л334)"
     },
     {
       "day": "sreda",

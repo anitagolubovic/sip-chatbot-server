@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T16:25:52.568Z",
+  "generatedAt": "2026-09-05T17:12:59.043Z",
   "indexPages": [
     {
       "url": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
@@ -124,7 +124,7 @@
       "academicYear": "2025/2026",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem3-ekm-v2.pdf",
       "file": "oas-sem3-ekm-2025-2026.json",
-      "entries": 9,
+      "entries": 10,
       "ocrCells": 0,
       "lowConfidenceCells": 0
     },
@@ -278,7 +278,7 @@
       "academicYear": "2025/2026",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem3-een-v2.pdf",
       "file": "oas-sem3-een-2025-2026.json",
-      "entries": 11,
+      "entries": 12,
       "ocrCells": 2,
       "lowConfidenceCells": 0
     },
@@ -320,7 +320,7 @@
       "academicYear": "2025/2026",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem3-ups-v2.pdf",
       "file": "oas-sem3-ups-2025-2026.json",
-      "entries": 9,
+      "entries": 10,
       "ocrCells": 0,
       "lowConfidenceCells": 0
     },
@@ -348,7 +348,7 @@
       "academicYear": "2025/2026",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem7-ups-v1.pdf",
       "file": "oas-sem7-ups-2025-2026.json",
-      "entries": 26,
+      "entries": 27,
       "ocrCells": 10,
       "lowConfidenceCells": 0
     },
@@ -362,7 +362,7 @@
       "academicYear": "2025/2026",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/202526-mas1-vim-v1.pdf",
       "file": "mas-sem1-vim-2025-2026.json",
-      "entries": 12,
+      "entries": 13,
       "ocrCells": 0,
       "lowConfidenceCells": 0
     },
@@ -376,8 +376,8 @@
       "academicYear": "2025/2026",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/202526-mas1-rii-v2.pdf",
       "file": "mas-sem1-rii-2025-2026.json",
-      "entries": 41,
-      "ocrCells": 11,
+      "entries": 42,
+      "ocrCells": 10,
       "lowConfidenceCells": 0
     },
     {
@@ -404,7 +404,7 @@
       "academicYear": "2025/2026",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/202526-mas1-eim-v2.pdf",
       "file": "mas-sem1-eim-2025-2026.json",
-      "entries": 31,
+      "entries": 32,
       "ocrCells": 11,
       "lowConfidenceCells": 0
     },
@@ -432,7 +432,7 @@
       "academicYear": "2025/2026",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/202526-mas1-kit-v2.pdf",
       "file": "mas-sem1-kit-2025-2026.json",
-      "entries": 14,
+      "entries": 15,
       "ocrCells": 0,
       "lowConfidenceCells": 0
     },
@@ -586,7 +586,7 @@
       "academicYear": "2025/2026",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-prolece/202526-sem4-rii-v2.pdf",
       "file": "oas-sem4-rii-2025-2026.json",
-      "entries": 28,
+      "entries": 30,
       "ocrCells": 12,
       "lowConfidenceCells": 0
     },
@@ -880,7 +880,7 @@
       "academicYear": "2025/2026",
       "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-prolece/202526-mas2-kit-sirk-v2.pdf",
       "file": "mas-sem2-kit-sirk-2025-2026.json",
-      "entries": 5,
+      "entries": 6,
       "ocrCells": 0,
       "lowConfidenceCells": 0
     }

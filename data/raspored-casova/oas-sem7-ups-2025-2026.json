@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": "УПС",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:39.554Z",
+  "generatedAt": "2026-09-05T17:12:38.129Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem7-ups-v1.pdf",
@@ -92,12 +92,7 @@
     }
   ],
   "counts": {
-    "entries": 26,
-    "byClassType": {
-      "predavanje": 15,
-      "racunske_vezbe": 10,
-      "laboratorijske_vezbe": 1
-    },
+    "entries": 27,
     "ocrCells": 10,
     "lowConfidenceCells": 0
   },
@@ -109,6 +104,17 @@
         "startsAt": "08:15",
         "endsAt": "10:00",
         "classType": "predavanje",
+        "course": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ",
+        "group": null,
+        "room": "227",
+        "fromOcr": false,
+        "rawText": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ (227)"
+      },
+      {
+        "day": "ponedeljak",
+        "startsAt": "10:15",
+        "endsAt": "11:00",
+        "classType": "racunske_vezbe",
         "course": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ",
         "group": null,
         "room": "227",
@@ -421,6 +427,17 @@
       "startsAt": "08:15",
       "endsAt": "10:00",
       "classType": "predavanje",
+      "course": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ",
+      "group": null,
+      "room": "227",
+      "fromOcr": false,
+      "rawText": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ (227)"
+    },
+    {
+      "day": "ponedeljak",
+      "startsAt": "10:15",
+      "endsAt": "11:00",
+      "classType": "racunske_vezbe",
       "course": "СОЛАРНЕ КОМПОНЕНТЕ И СИСТЕМИ",
       "group": null,
       "room": "227",

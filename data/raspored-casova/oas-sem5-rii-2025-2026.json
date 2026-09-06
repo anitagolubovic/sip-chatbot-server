@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": "РИИ",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:34.653Z",
+  "generatedAt": "2026-09-05T17:12:31.573Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/nastava/raspored-casova-oas-jesen-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/raspored-casova/2025-2026-jesen/202526-sem5-rii-v2.pdf",
@@ -93,10 +93,6 @@
   ],
   "counts": {
     "entries": 23,
-    "byClassType": {
-      "racunske_vezbe": 15,
-      "predavanje": 8
-    },
     "ocrCells": 15,
     "lowConfidenceCells": 0
   },

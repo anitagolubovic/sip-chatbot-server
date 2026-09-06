@@ -15,7 +15,7 @@ export { normalizeParagraphs, splitGluedText, splitSentences } from "./segment";
 export { countTokens, encodingForModel } from "./tokens";
 export {
   canonicalCourseNames,
-  levenshtein,
+  levenshteinDistance,
   ordinalKey,
   MAX_NAME_DISTANCE,
 } from "./courseNames";

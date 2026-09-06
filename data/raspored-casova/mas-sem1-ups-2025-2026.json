@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": null,
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:42.632Z",
+  "generatedAt": "2026-09-05T17:12:42.824Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-jesen-mas-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/202526-mas1-ups-v1.pdf",
@@ -91,10 +91,6 @@
   ],
   "counts": {
     "entries": 16,
-    "byClassType": {
-      "predavanje": 8,
-      "racunske_vezbe": 8
-    },
     "ocrCells": 0,
     "lowConfidenceCells": 0
   },

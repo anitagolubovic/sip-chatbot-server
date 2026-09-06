@@ -1,5 +1,9 @@
 import { pathToFileURL } from "url";
 import type { Canvas } from "@napi-rs/canvas";
+import { Maybe } from "../../models/types";
+import { isDefined, isNotDefined } from "../../helper";
+import { PageViewport, PDFDocumentProxy, PDFPageProxy } from "pdfjs-dist";
+import { PDFOperatorList } from "pdfjs-dist/types/src/display/api";
 
 export type TextItem = {
   text: string;
@@ -7,7 +11,6 @@ export type TextItem = {
   x1: number;
   y0: number;
   y1: number;
-  angleDeg: number;
 };
 
 export type Shape = {
@@ -24,23 +27,24 @@ export type LoadedPage = {
   textItems: TextItem[];
   shapes: Shape[];
   render(scale: number): Promise<Canvas>;
+  destroy(): Promise<void>;
 };
 
 type PdfjsModule = typeof import("pdfjs-dist/legacy/build/pdf.mjs");
 
-let pdfjsPromise: Promise<PdfjsModule> | null = null;
-
-const importEsm = new Function("specifier", "return import(specifier);") as (
-  specifier: string,
-) => Promise<PdfjsModule>;
+let pdfjsPromise: Maybe<Promise<PdfjsModule>> = null;
 
 function loadPdfjs(): Promise<PdfjsModule> {
-  if (!pdfjsPromise) {
+  if (isNotDefined(pdfjsPromise)) {
     const entry = require.resolve("pdfjs-dist/legacy/build/pdf.mjs");
-    pdfjsPromise = importEsm(pathToFileURL(entry).href);
+    pdfjsPromise = importESM(pathToFileURL(entry).href);
   }
   return pdfjsPromise;
 }
+
+const importESM = new Function("specifier", "return import(specifier);") as (
+  specifier: string,
+) => Promise<PdfjsModule>;
 
 function normalizeMatrix(value: unknown): number[] {
   return Array.from(value as ArrayLike<number>, Number).slice(0, 6);
@@ -88,7 +92,7 @@ function collectSubpathPoints(
     for (let offset = 0; offset < coordinateCount; offset += 2) {
       const x = values[index + 1 + offset];
       const y = values[index + 2 + offset];
-      if (x === undefined || y === undefined) {
+      if (isNotDefined(x) || isNotDefined(y)) {
         break;
       }
       const point = applyMatrix(ctm, x, y);
@@ -99,14 +103,15 @@ function collectSubpathPoints(
   }
 }
 
-export async function loadPage(pdf: Buffer): Promise<LoadedPage> {
+export async function loadPdfPage(pdf: Buffer): Promise<LoadedPage> {
   const pdfjs = await loadPdfjs();
-  const document = await pdfjs.getDocument({
+  const loadingTask = pdfjs.getDocument({
     data: new Uint8Array(pdf),
     useSystemFonts: true,
-  }).promise;
-  const page = await document.getPage(1);
-  const viewport = page.getViewport({ scale: 1 });
+  });
+  const document: PDFDocumentProxy = await loadingTask.promise;
+  const page: PDFPageProxy = await document.getPage(1);
+  const viewport: PageViewport = page.getViewport({ scale: 1 });
 
   const textContent = await page.getTextContent();
   const textItems: TextItem[] = [];
@@ -123,11 +128,10 @@ export async function loadPage(pdf: Buffer): Promise<LoadedPage> {
       x1: x + item.width,
       y0: y,
       y1: y + item.height,
-      angleDeg: (Math.atan2(transform[1], transform[0]) * 180) / Math.PI,
     });
   }
 
-  const operators = await page.getOperatorList();
+  const operators: PDFOperatorList = await page.getOperatorList();
   const opNames: Record<number, string> = {};
   for (const [name, code] of Object.entries(pdfjs.OPS)) {
     opNames[code as number] = name;
@@ -146,7 +150,7 @@ export async function loadPage(pdf: Buffer): Promise<LoadedPage> {
       stack.push({ fill, ctm });
     } else if (operator === "restore") {
       const restored = stack.pop();
-      if (restored) {
+      if (isDefined(restored)) {
         fill = restored.fill;
         ctm = restored.ctm;
       }
@@ -196,6 +200,10 @@ export async function loadPage(pdf: Buffer): Promise<LoadedPage> {
         intent: "print",
       } as unknown as Parameters<typeof page.render>[0]).promise;
       return canvas;
+    },
+    async destroy(): Promise<void> {
+      page.cleanup();
+      await loadingTask.destroy();
     },
   };
 }

@@ -16,6 +16,8 @@ import {
   snapToLexicon,
   unifyCourseNames,
 } from "./ocrService";
+import { Maybe } from "../../models/types";
+import { isDefined, isNotDefined } from "../../helper";
 
 export type Region = {
   x0: number;
@@ -32,8 +34,8 @@ export type ScheduleEntry = {
   endsAt: string;
   classType: ClassType;
   course: string;
-  group: string | null;
-  room: string | null;
+  group: Maybe<string>;
+  room: Maybe<string>;
   fromOcr: boolean;
   ocrConfidence?: number;
   rawText: string;
@@ -62,7 +64,7 @@ function normalize(text: string): string {
   return text.replace(/ /g, " ").replace(/\s+/g, " ").trim();
 }
 
-function overlaps(a0: number, a1: number, b0: number, b1: number): number {
+function overlapLength(a0: number, a1: number, b0: number, b1: number): number {
   return Math.max(0, Math.min(a1, b1) - Math.max(a0, b0));
 }
 
@@ -76,7 +78,7 @@ export function composeLine(items: TextItem[]): string {
   const originX = sorted[0].x0;
 
   const buffer: string[] = [];
-  let previous: TextItem | null = null;
+  let previous: Maybe<TextItem> = null;
 
   for (const item of sorted) {
     if (previous && item.x0 < previous.x1 - 0.5) {
@@ -107,33 +109,6 @@ export function composeLine(items: TextItem[]): string {
   return normalize(buffer.map((character) => character ?? " ").join(""));
 }
 
-function contains(
-  region: { x0: number; x1: number; y0: number; y1: number },
-  x: number,
-  y: number,
-): boolean {
-  return (
-    x >= region.x0 - 1 && x <= region.x1 + 1 && y >= region.y0 && y <= region.y1
-  );
-}
-
-function regionAt(regions: Region[], x: number, y: number): number {
-  let best = -1;
-  for (let index = 0; index < regions.length; index += 1) {
-    if (!contains(regions[index], x, y)) {
-      continue;
-    }
-    if (
-      best === -1 ||
-      regions[index].x1 - regions[index].x0 <
-        regions[best].x1 - regions[best].x0
-    ) {
-      best = index;
-    }
-  }
-  return best;
-}
-
 export function composeTextLines(items: TextItem[]): string[] {
   const groups: TextItem[][] = [];
 
@@ -142,7 +117,7 @@ export function composeTextLines(items: TextItem[]): string[] {
       candidate.some(
         (member) =>
           Math.abs(member.y0 - item.y0) < 4 &&
-          overlaps(member.y0, member.y1, item.y0, item.y1) > 0,
+          overlapLength(member.y0, member.y1, item.y0, item.y1) > 0,
       ),
     );
     if (group) {
@@ -153,41 +128,6 @@ export function composeTextLines(items: TextItem[]): string[] {
   }
 
   return groups.map((group) => composeLine(group)).filter(Boolean);
-}
-
-function buildLines(items: TextItem[], regions: Region[]): Line[] {
-  const groups: { slot: number; items: TextItem[] }[] = [];
-
-  for (const item of [...items].sort((a, b) => b.y0 - a.y0)) {
-    const slot = regionAt(
-      regions,
-      (item.x0 + item.x1) / 2,
-      (item.y0 + item.y1) / 2,
-    );
-    const group = groups.find(
-      (candidate) =>
-        candidate.slot === slot &&
-        candidate.items.some(
-          (member) =>
-            Math.abs(member.y0 - item.y0) < 4 &&
-            overlaps(member.y0, member.y1, item.y0, item.y1) > 0,
-        ),
-    );
-    if (group) {
-      group.items.push(item);
-    } else {
-      groups.push({ slot, items: [item] });
-    }
-  }
-
-  return groups.map(({ slot, items: group }) => ({
-    text: composeLine(group),
-    x0: Math.min(...group.map((item) => item.x0)),
-    x1: Math.max(...group.map((item) => item.x1)),
-    y0: Math.min(...group.map((item) => item.y0)),
-    y1: Math.max(...group.map((item) => item.y1)),
-    slot,
-  }));
 }
 
 function hasDashedBorder(
@@ -205,50 +145,10 @@ function hasDashedBorder(
   return segments.length >= 3;
 }
 
-function findRegions(
-  shapes: Shape[],
-  blackShapes: Shape[],
-  grid: Grid,
-  column: DayColumn,
-): Region[] {
-  return shapes
-    .filter(
-      (shape) =>
-        shape.fill !== "#000000" &&
-        shape.x1 - shape.x0 > MIN_REGION_SIZE &&
-        shape.y1 - shape.y0 > MIN_REGION_SIZE &&
-        shape.y0 >= grid.table.y0 - 2 &&
-        shape.y1 <= grid.table.y1 + 2 &&
-        overlaps(shape.x0, shape.x1, column.x0, column.x1) >
-          (shape.x1 - shape.x0) * 0.5,
-    )
-    .map((shape) => ({
-      x0: shape.x0,
-      x1: shape.x1,
-      y0: shape.y0,
-      y1: shape.y1,
-      fill: shape.fill,
-      dashed: hasDashedBorder(shape, blackShapes),
-    }));
-}
-
-function classifyRegion(region: Region, legend: Legend): ClassType {
-  if (region.fill === legend.lectureFill) {
-    return "predavanje";
-  }
-  if (region.dashed && legend.hasLabEntry) {
-    return "laboratorijske_vezbe";
-  }
-  if (isBackgroundFill(region.fill)) {
-    return "racunske_vezbe";
-  }
-  return "ostali_casovi";
-}
-
 export function parseCellText(lines: string[]): {
   course: string;
-  group: string | null;
-  room: string | null;
+  group: Maybe<string>;
+  room: Maybe<string>;
 } {
   const text = normalize(lines.join(" "));
 
@@ -266,7 +166,7 @@ export function parseCellText(lines: string[]): {
   const groupMatch = groupPattern.exec(text);
   const groupToken = groupMatch ? normalize(groupMatch[1]) : null;
   const isGroupList =
-    groupToken !== null &&
+    isDefined(groupToken) &&
     /^[\p{L}\d]{1,3}(\s*,\s*[\p{L}\d]{1,3})+$/u.test(groupToken);
   const group =
     groupToken && (/^\d{1,2}$/.test(groupToken) || isGroupList)
@@ -294,7 +194,7 @@ function rowsForCell(
     let best: Region | null = null;
     let bestOverlap = 0;
     for (const region of regions) {
-      const amount = overlaps(region.y0, region.y1, row.y0, row.y1);
+      const amount = overlapLength(region.y0, region.y1, row.y0, row.y1);
       if (amount > bestOverlap) {
         bestOverlap = amount;
         best = region;
@@ -313,168 +213,6 @@ type Cell = {
   lines: Line[];
 };
 
-function buildBlocks(lines: Line[]): Line[][] {
-  const parent = lines.map((_, index) => index);
-  const find = (index: number): number => {
-    let root = index;
-    while (parent[root] !== root) {
-      root = parent[root];
-    }
-    return root;
-  };
-
-  for (let a = 0; a < lines.length; a += 1) {
-    for (let b = a + 1; b < lines.length; b += 1) {
-      const first = lines[a];
-      const second = lines[b];
-      const shared = overlaps(first.x0, first.x1, second.x0, second.x1);
-      const narrower = Math.min(first.x1 - first.x0, second.x1 - second.x0);
-      const spacing = Math.max(first.y1 - first.y0, second.y1 - second.y0);
-      if (
-        shared > narrower * 0.3 &&
-        Math.abs(first.y0 - second.y0) <= spacing * 1.9
-      ) {
-        parent[find(a)] = find(b);
-      }
-    }
-  }
-
-  const blocks = new Map<number, Line[]>();
-  lines.forEach((line, index) => {
-    const root = find(index);
-    const block = blocks.get(root);
-    if (block) {
-      block.push(line);
-    } else {
-      blocks.set(root, [line]);
-    }
-  });
-
-  return [...blocks.values()];
-}
-
-function buildCells(
-  regions: Region[],
-  lines: Line[],
-  glyphShapes: Shape[],
-): Cell[] {
-  const parent = regions.map((_, index) => index);
-  const find = (index: number): number => {
-    let root = index;
-    while (parent[root] !== root) {
-      root = parent[root];
-    }
-    return root;
-  };
-
-  const blocks = buildBlocks(lines);
-
-  for (let a = 0; a < regions.length; a += 1) {
-    for (let b = a + 1; b < regions.length; b += 1) {
-      const first = regions[a];
-      const second = regions[b];
-      const sameWidth =
-        Math.abs(first.x0 - second.x0) < 2 &&
-        Math.abs(first.x1 - second.x1) < 2;
-      if (!sameWidth) {
-        continue;
-      }
-
-      const touchesAt =
-        Math.abs(first.y0 - second.y1) < 2
-          ? first.y0
-          : Math.abs(first.y1 - second.y0) < 2
-            ? first.y1
-            : null;
-      if (touchesAt === null) {
-        continue;
-      }
-
-      const withinWidth = (x0: number, x1: number): boolean => {
-        const centerX = (x0 + x1) / 2;
-        return centerX >= first.x0 - 1 && centerX <= first.x1 + 1;
-      };
-
-      const courseIn = (region: Region): string =>
-        parseCellText(
-          lines
-            .filter((line) =>
-              contains(
-                region,
-                (line.x0 + line.x1) / 2,
-                (line.y0 + line.y1) / 2,
-              ),
-            )
-            .sort((a, b) => b.y0 - a.y0)
-            .map((line) => line.text),
-        ).course;
-
-      const courseAbove = courseIn(first.y0 > second.y0 ? first : second);
-      const courseBelow = courseIn(first.y0 > second.y0 ? second : first);
-      if (courseAbove && courseAbove === courseBelow) {
-        continue;
-      }
-
-      const blockCrosses = blocks.some((block) => {
-        const centers = block
-          .filter((line) => withinWidth(line.x0, line.x1))
-          .map((line) => (line.y0 + line.y1) / 2);
-        return (
-          centers.some((center) => center > touchesAt) &&
-          centers.some((center) => center < touchesAt)
-        );
-      });
-
-      const glyphCrosses = glyphShapes.some(
-        (shape) =>
-          shape.y0 < touchesAt - 0.2 &&
-          shape.y1 > touchesAt + 0.2 &&
-          withinWidth(shape.x0, shape.x1),
-      );
-
-      if (blockCrosses || glyphCrosses) {
-        parent[find(a)] = find(b);
-      }
-    }
-  }
-
-  const cells = new Map<number, Cell>();
-  regions.forEach((region, index) => {
-    const root = find(index);
-    const cell = cells.get(root) ?? { regions: [], lines: [] };
-    cell.regions.push(region);
-    cells.set(root, cell);
-  });
-
-  for (const line of lines) {
-    const centerX = (line.x0 + line.x1) / 2;
-    const centerY = (line.y0 + line.y1) / 2;
-    let index = regionAt(regions, centerX, centerY);
-    if (index === -1) {
-      let bestOverlap = 0;
-      regions.forEach((region, candidate) => {
-        if (centerX < region.x0 - 1 || centerX > region.x1 + 1) {
-          return;
-        }
-        const amount = overlaps(region.y0, region.y1, line.y0, line.y1);
-        if (amount > bestOverlap) {
-          bestOverlap = amount;
-          index = candidate;
-        }
-      });
-    }
-    if (index !== -1) {
-      cells.get(find(index))?.lines.push(line);
-    }
-  }
-
-  for (const cell of cells.values()) {
-    cell.lines.sort((a, b) => b.y0 - a.y0);
-  }
-
-  return [...cells.values()];
-}
-
 export type ExtractOptions = {
   grid: Grid;
   shapes: Shape[];
@@ -492,6 +230,13 @@ export type ExtractResult = {
   unknownFills: string[];
 };
 
+type PendingCell = {
+  column: DayColumn;
+  rows: { row: TimeRow; region: Region }[];
+  lines: string[];
+  bounds: { x0: number; x1: number; y0: number; y1: number };
+};
+
 export async function extractEntries(
   options: ExtractOptions,
 ): Promise<ExtractResult> {
@@ -499,7 +244,7 @@ export async function extractEntries(
     options;
 
   const blackShapes = shapes.filter((shape) => shape.fill === "#000000");
-  const glyphShapes = blackShapes.filter(
+  const glyphCandidates = blackShapes.filter(
     (shape) =>
       shape.x1 - shape.x0 < GLYPH_MAX_SIZE &&
       shape.y1 - shape.y0 < GLYPH_MAX_SIZE &&
@@ -507,17 +252,10 @@ export async function extractEntries(
       shape.y1 - shape.y0 > GLYPH_MIN_SIZE,
   );
 
-  type PendingCell = {
-    column: DayColumn;
-    rows: { row: TimeRow; region: Region }[];
-    lines: string[];
-    bounds: { x0: number; x1: number; y0: number; y1: number };
-  };
-
   const pending: PendingCell[] = [];
 
   for (const column of grid.dayColumns) {
-    const regions = findRegions(shapes, blackShapes, grid, column);
+    const regions: Region[] = findRegions(shapes, blackShapes, grid, column);
     const contentTop = grid.timeRows[0].y1;
     const columnText = textItems.filter((item) => {
       const centerX = (item.x0 + item.x1) / 2;
@@ -532,7 +270,7 @@ export async function extractEntries(
 
     const lines = buildLines(columnText, regions);
 
-    for (const cell of buildCells(regions, lines, glyphShapes)) {
+    for (const cell of buildCells(regions, lines, glyphCandidates)) {
       const rows = rowsForCell(cell.regions, grid.timeRows);
       if (rows.length === 0) {
         continue;
@@ -547,7 +285,7 @@ export async function extractEntries(
       const cellLines = cell.lines.map((line) => line.text).filter(Boolean);
 
       if (cellLines.length === 0) {
-        const glyphCount = glyphShapes.filter(
+        const glyphCount = glyphCandidates.filter(
           (shape) =>
             shape.x0 > bounds.x0 + 1 &&
             shape.x1 < bounds.x1 - 1 &&
@@ -575,7 +313,7 @@ export async function extractEntries(
   for (const cell of pending) {
     let lines = cell.lines;
     let fromOcr = false;
-    let ocrConfidence: number | undefined;
+    let ocrConfidence: Maybe<number> = null;
 
     if (lines.length === 0) {
       const recognized = await recognizeRotatedRegion(
@@ -631,7 +369,7 @@ export async function extractEntries(
         group: parsed.group,
         room: parsed.room,
         fromOcr,
-        ...(ocrConfidence === undefined
+        ...(isNotDefined(ocrConfidence)
           ? {}
           : { ocrConfidence: Math.round(ocrConfidence) }),
         rawText,
@@ -666,4 +404,288 @@ export async function extractEntries(
   );
 
   return { entries, ocrCells, lowConfidenceCells, unknownFills };
+}
+
+function classifyRegion(region: Region, legend: Legend): ClassType {
+  if (region.fill === legend.lectureFill) {
+    return "predavanje";
+  }
+  if (region.dashed && legend.hasLabEntry) {
+    return "laboratorijske_vezbe";
+  }
+  if (isBackgroundFill(region.fill)) {
+    return "racunske_vezbe";
+  }
+  return "ostali_casovi";
+}
+
+function findRegions(
+  shapes: Shape[],
+  blackShapes: Shape[],
+  grid: Grid,
+  column: DayColumn,
+): Region[] {
+  return shapes
+    .filter(
+      (shape) =>
+        shape.fill !== "#000000" &&
+        shape.x1 - shape.x0 > MIN_REGION_SIZE &&
+        shape.y1 - shape.y0 > MIN_REGION_SIZE &&
+        shape.y0 >= grid.table.y0 - 2 &&
+        shape.y1 <= grid.table.y1 + 2 &&
+        overlapLength(shape.x0, shape.x1, column.x0, column.x1) >
+          (shape.x1 - shape.x0) * 0.5,
+    )
+    .map((shape) => ({
+      x0: shape.x0,
+      x1: shape.x1,
+      y0: shape.y0,
+      y1: shape.y1,
+      fill: shape.fill,
+      dashed: hasDashedBorder(shape, blackShapes),
+    }));
+}
+
+function buildLines(items: TextItem[], regions: Region[]): Line[] {
+  const groups: { slot: number; items: TextItem[] }[] = [];
+
+  for (const item of [...items].sort((a, b) => b.y0 - a.y0)) {
+    const slot = regionAt(
+      regions,
+      (item.x0 + item.x1) / 2,
+      (item.y0 + item.y1) / 2,
+    );
+    const group = groups.find(
+      (candidate) =>
+        candidate.slot === slot &&
+        candidate.items.some(
+          (member) =>
+            Math.abs(member.y0 - item.y0) < 4 &&
+            overlapLength(member.y0, member.y1, item.y0, item.y1) > 0,
+        ),
+    );
+    if (group) {
+      group.items.push(item);
+    } else {
+      groups.push({ slot, items: [item] });
+    }
+  }
+
+  return groups.map(({ slot, items: group }) => ({
+    text: composeLine(group),
+    x0: Math.min(...group.map((item) => item.x0)),
+    x1: Math.max(...group.map((item) => item.x1)),
+    y0: Math.min(...group.map((item) => item.y0)),
+    y1: Math.max(...group.map((item) => item.y1)),
+    slot,
+  }));
+}
+
+function regionAt(regions: Region[], x: number, y: number): number {
+  let best = -1;
+  for (let index = 0; index < regions.length; index += 1) {
+    if (!containsPoint(regions[index], x, y)) {
+      continue;
+    }
+    if (
+      best === -1 ||
+      regions[index].x1 - regions[index].x0 <
+        regions[best].x1 - regions[best].x0
+    ) {
+      best = index;
+    }
+  }
+  return best;
+}
+
+function containsPoint(
+  region: { x0: number; x1: number; y0: number; y1: number },
+  x: number,
+  y: number,
+): boolean {
+  return (
+    x >= region.x0 - 1 && x <= region.x1 + 1 && y >= region.y0 && y <= region.y1
+  );
+}
+
+function buildCells(
+  regions: Region[],
+  lines: Line[],
+  glyphCandidates: Shape[],
+): Cell[] {
+  const parent = regions.map((_, index) => index);
+  const find = (index: number): number => {
+    let root = index;
+    while (parent[root] !== root) {
+      root = parent[root];
+    }
+    return root;
+  };
+
+  const blocks = buildBlocks(lines);
+
+  const hasContent = (region: Region): boolean => {
+    const hasTextLine: boolean = lines.some((line) =>
+      containsPoint(region, (line.x0 + line.x1) / 2, (line.y0 + line.y1) / 2),
+    );
+    if (hasTextLine) {
+      return true;
+    }
+    const glyphCount = glyphCandidates.filter(
+      (shape) =>
+        shape.x0 > region.x0 + 1 &&
+        shape.x1 < region.x1 - 1 &&
+        shape.y0 > region.y0 + 1 &&
+        shape.y1 < region.y1 - 1,
+    ).length;
+    return glyphCount >= MIN_GLYPHS_FOR_TEXT;
+  };
+
+  for (let a = 0; a < regions.length; a += 1) {
+    for (let b = a + 1; b < regions.length; b += 1) {
+      const first = regions[a];
+      const second = regions[b];
+      const sameWidth =
+        Math.abs(first.x0 - second.x0) < 2 &&
+        Math.abs(first.x1 - second.x1) < 2;
+      if (!sameWidth) {
+        continue;
+      }
+
+      const touchesAt =
+        Math.abs(first.y0 - second.y1) < 2
+          ? first.y0
+          : Math.abs(first.y1 - second.y0) < 2
+            ? first.y1
+            : null;
+      if (isNotDefined(touchesAt)) {
+        continue;
+      }
+
+      const withinWidth = (x0: number, x1: number): boolean => {
+        const centerX = (x0 + x1) / 2;
+        return centerX >= first.x0 - 1 && centerX <= first.x1 + 1;
+      };
+
+      const courseIn = (region: Region): string =>
+        parseCellText(
+          lines
+            .filter((line) =>
+              containsPoint(
+                region,
+                (line.x0 + line.x1) / 2,
+                (line.y0 + line.y1) / 2,
+              ),
+            )
+            .sort((a, b) => b.y0 - a.y0)
+            .map((line) => line.text),
+        ).course;
+
+      const courseAbove = courseIn(first.y0 > second.y0 ? first : second);
+      const courseBelow = courseIn(first.y0 > second.y0 ? second : first);
+      if (courseAbove && courseAbove === courseBelow) {
+        continue;
+      }
+
+      const blockCrosses = blocks.some((block) => {
+        const centers = block
+          .filter((line) => withinWidth(line.x0, line.x1))
+          .map((line) => (line.y0 + line.y1) / 2);
+        return (
+          centers.some((center) => center > touchesAt) &&
+          centers.some((center) => center < touchesAt)
+        );
+      });
+
+      const glyphCrosses = glyphCandidates.some(
+        (shape) =>
+          shape.y0 < touchesAt - 0.2 &&
+          shape.y1 > touchesAt + 0.2 &&
+          withinWidth(shape.x0, shape.x1),
+      );
+
+      const emptyContinuation =
+        first.fill !== second.fill && hasContent(first) !== hasContent(second);
+
+      if (blockCrosses || glyphCrosses || emptyContinuation) {
+        parent[find(a)] = find(b);
+      }
+    }
+  }
+
+  const cells = new Map<number, Cell>();
+  regions.forEach((region, index) => {
+    const root = find(index);
+    const cell = cells.get(root) ?? { regions: [], lines: [] };
+    cell.regions.push(region);
+    cells.set(root, cell);
+  });
+
+  for (const line of lines) {
+    const centerX = (line.x0 + line.x1) / 2;
+    const centerY = (line.y0 + line.y1) / 2;
+    let index = regionAt(regions, centerX, centerY);
+    if (index === -1) {
+      let bestOverlap = 0;
+      regions.forEach((region, candidate) => {
+        if (centerX < region.x0 - 1 || centerX > region.x1 + 1) {
+          return;
+        }
+        const amount = overlapLength(region.y0, region.y1, line.y0, line.y1);
+        if (amount > bestOverlap) {
+          bestOverlap = amount;
+          index = candidate;
+        }
+      });
+    }
+    if (index !== -1) {
+      cells.get(find(index))?.lines.push(line);
+    }
+  }
+
+  for (const cell of cells.values()) {
+    cell.lines.sort((a, b) => b.y0 - a.y0);
+  }
+
+  return [...cells.values()];
+}
+
+function buildBlocks(lines: Line[]): Line[][] {
+  const parent = lines.map((_, index) => index);
+  const find = (index: number): number => {
+    let root = index;
+    while (parent[root] !== root) {
+      root = parent[root];
+    }
+    return root;
+  };
+
+  for (let a = 0; a < lines.length; a += 1) {
+    for (let b = a + 1; b < lines.length; b += 1) {
+      const first = lines[a];
+      const second = lines[b];
+      const shared = overlapLength(first.x0, first.x1, second.x0, second.x1);
+      const narrower = Math.min(first.x1 - first.x0, second.x1 - second.x0);
+      const spacing = Math.max(first.y1 - first.y0, second.y1 - second.y0);
+      if (
+        shared > narrower * 0.3 &&
+        Math.abs(first.y0 - second.y0) <= spacing * 1.9
+      ) {
+        parent[find(a)] = find(b);
+      }
+    }
+  }
+
+  const blocks = new Map<number, Line[]>();
+  lines.forEach((line, index) => {
+    const root = find(index);
+    const block = blocks.get(root);
+    if (block) {
+      block.push(line);
+    } else {
+      blocks.set(root, [line]);
+    }
+  });
+
+  return [...blocks.values()];
 }

@@ -11,7 +11,7 @@
   "submodule": null,
   "moduleLabel": "ЕЛЕКТРОЕНЕРГЕТИКА",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:25:41.107Z",
+  "generatedAt": "2026-09-05T17:12:40.675Z",
   "source": {
     "pageUrl": "https://sip.elfak.ni.ac.rs/article/mas/raspored-casova-jesen-mas-2025-2026",
     "pdfUrl": "https://sip.elfak.ni.ac.rs/downloads/master/2025-2026-jesen/202526-mas1-een-v2.pdf",
@@ -91,10 +91,6 @@
   ],
   "counts": {
     "entries": 14,
-    "byClassType": {
-      "predavanje": 7,
-      "racunske_vezbe": 7
-    },
     "ocrCells": 0,
     "lowConfidenceCells": 0
   },

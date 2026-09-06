@@ -6,6 +6,9 @@ import type { ScheduleEntry } from "./scheduleEntryExtractor";
 import type { Grid } from "./scheduleGrid";
 import type { TextItem } from "./pdfPageLoader";
 import { fetchHtml } from "./httpClient";
+import { cleanText } from "./textNormalization";
+import { Maybe } from "../../models/types";
+import { isNotDefined } from "../../helper";
 
 export const GROUPS_PAGE_URL =
   "https://sip.elfak.ni.ac.rs/article/nastava/oas-grupe-2025";
@@ -21,10 +24,6 @@ export type IndexGroupRange = {
   lectureGroup: string;
   exerciseGroup: string;
 };
-
-function normalize(text: string): string {
-  return text.replace(/ /g, " ").replace(/\s+/g, " ").trim();
-}
 
 export function isFirstYearOas(studyLevel: string, semester: number): boolean {
   return (
@@ -45,10 +44,10 @@ export function parseGroupRooms(textItems: TextItem[], grid: Grid): GroupRooms {
 
   const lectures: Record<string, string> = {};
   const exercises: Record<string, string> = {};
-  let section: "lectures" | "exercises" | null = null;
+  let section: Maybe<"lectures" | "exercises"> = null;
 
   for (const line of composeTextLines(noteItems)) {
-    const text = normalize(line);
+    const text = cleanText(line);
 
     if (/сале\s+за\s+предавања/i.test(text)) {
       section = "lectures";
@@ -60,12 +59,12 @@ export function parseGroupRooms(textItems: TextItem[], grid: Grid): GroupRooms {
     }
 
     const match = /група\s+([^\s-]{1,3})\s*[-–—]\s*(\S{1,10})\s*$/i.exec(text);
-    if (!match || section === null) {
+    if (!match || isNotDefined(section)) {
       continue;
     }
 
-    const group = normalize(match[1]);
-    const room = normalize(match[2]);
+    const group = cleanText(match[1]);
+    const room = cleanText(match[2]);
     if (section === "lectures") {
       lectures[group] = room;
     } else {
@@ -76,11 +75,17 @@ export function parseGroupRooms(textItems: TextItem[], grid: Grid): GroupRooms {
   return { lectures, exercises };
 }
 
+export async function fetchIndexGroups(
+  url: string = GROUPS_PAGE_URL,
+): Promise<IndexGroupRange[]> {
+  return parseIndexGroups(await fetchHtml(url));
+}
+
 export function parseIndexGroups(html: string): IndexGroupRange[] {
   const $ = cheerio.load(html);
   const table = $("table")
     .filter((_, element) =>
-      normalize($(element).text()).includes("Од броја индекса"),
+      cleanText($(element).text()).includes("Од броја индекса"),
     )
     .first();
 
@@ -96,7 +101,7 @@ export function parseIndexGroups(html: string): IndexGroupRange[] {
   table.find("tr").each((_, row) => {
     const cells = $(row)
       .find("td")
-      .map((__, cell) => normalize($(cell).text()))
+      .map((__, cell) => cleanText($(cell).text()))
       .get();
 
     const indexFrom = Number.parseInt(cells[0] ?? "", 10);
@@ -126,12 +131,6 @@ export function parseIndexGroups(html: string): IndexGroupRange[] {
   return ranges;
 }
 
-export async function fetchIndexGroups(
-  url: string = GROUPS_PAGE_URL,
-): Promise<IndexGroupRange[]> {
-  return parseIndexGroups(await fetchHtml(url));
-}
-
 const LOOKALIKE: Record<string, string> = {
   Т: "1",
   Г: "1",
@@ -156,9 +155,9 @@ function canonicalGroup(token: string): string {
 const EXPLICIT_ROOM =
   /(амфитеатар|сала|учионица|лаб(?:ораторија)?)\s*[.:]?\s*([\p{L}0-9]{1,6})/iu;
 
-export function findExplicitRoom(rawText: string): string | null {
+export function findExplicitRoom(rawText: string): Maybe<string> {
   const match = EXPLICIT_ROOM.exec(rawText);
-  return match ? normalize(`${match[1]} ${match[2]}`) : null;
+  return match ? cleanText(`${match[1]} ${match[2]}`) : null;
 }
 
 export function resolveGroups(
@@ -213,7 +212,7 @@ export function resolveGroups(
 
 function stripGroups(course: string, groups: string[]): string {
   if (groups.length === 0) {
-    return normalize(course.replace(/[\s]*[-–—]+[\s]*$/, ""));
+    return cleanText(course.replace(/[\s]*[-–—]+[\s]*$/, ""));
   }
 
   const canonical = new Set(groups.map(canonicalGroup));
@@ -225,7 +224,7 @@ function stripGroups(course: string, groups: string[]): string {
     })
     .join(" ");
 
-  return normalize(kept.replace(/[\s]*[-–—]+[\s]*$/, "").replace(/,\s*$/, ""));
+  return cleanText(kept.replace(/[\s]*[-–—]+[\s]*$/, "").replace(/,\s*$/, ""));
 }
 
 export type FirstYearEntry = ScheduleEntry & {
@@ -240,7 +239,7 @@ export function enrichFirstYearEntries(
   let withoutGroup = 0;
 
   const enriched = entries.map((entry) => {
-    const explicitRoom = findExplicitRoom(entry.rawText);
+    const explicitRoom: Maybe<string> = findExplicitRoom(entry.rawText);
     const groups = resolveGroups(entry.rawText, entry.classType, rooms);
     const table =
       entry.classType === "predavanje" ? rooms.lectures : rooms.exercises;

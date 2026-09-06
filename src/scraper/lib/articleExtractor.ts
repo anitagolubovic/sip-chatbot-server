@@ -1,6 +1,6 @@
 import * as cheerio from "cheerio";
 import type { AnyNode } from "domhandler";
-import { absoluteUrl } from "./httpClient";
+import { getAbsoluteUrl } from "./httpClient";
 import { cleanText, latinSearchText } from "./textNormalization";
 
 export type ArticleLink = { label: string; url: string };
@@ -20,7 +20,12 @@ function contentScore($: cheerio.CheerioAPI, element: AnyNode): number {
   const nestedContainers = candidate.find("div, section, article, main").length;
 
   if (contentBlocks === 0 || textLength < 80) return Number.NEGATIVE_INFINITY;
-  return textLength + contentBlocks * 120 - linkTextLength * 0.5 - nestedContainers * 25;
+  return (
+    textLength +
+    contentBlocks * 120 -
+    linkTextLength * 0.5 -
+    nestedContainers * 25
+  );
 }
 
 /** Finds the article by document semantics, then by content density. */
@@ -51,10 +56,7 @@ function isPublicationTimestamp(text: string): boolean {
   );
 }
 
-export function extractArticle(
-  html: string,
-  pageUrl: string,
-): ArticleContent {
+export function extractArticle(html: string, pageUrl: string): ArticleContent {
   const $ = cheerio.load(html);
   $("script, style, nav, header, footer").remove();
   const scope = findArticleScope($);
@@ -68,7 +70,7 @@ export function extractArticle(
   const links: ArticleLink[] = [];
   const seen = new Set<string>();
   scope.find("a[href]").each((_, element) => {
-    const url = absoluteUrl($(element).attr("href"), pageUrl);
+    const url = getAbsoluteUrl($(element).attr("href"), pageUrl);
     if (!url) return;
     if (seen.has(url)) return;
     seen.add(url);

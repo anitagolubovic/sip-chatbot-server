@@ -16,6 +16,8 @@ import {
 import { toSearchForm } from "../preprocessing";
 import type { ClassScheduleDocument } from "../models/classSchedule";
 import { currentAcademicYear, dataFile } from "../scraper/lib/scraperRuntime";
+import { Maybe } from "../models/types";
+import { isDefined, isNotDefined } from "../helper";
 
 const SCHEDULES_DIR = dataFile("raspored-casova");
 const INDEX_FILE = "index.json";
@@ -45,27 +47,6 @@ const INDEX_GROUP_COLUMNS = [
   "exercise_group",
 ] as const;
 
-function loadSchedules(
-  academicYear: string,
-): SourceFile<ClassScheduleDocument>[] {
-  return readdirSync(SCHEDULES_DIR)
-    .filter((name) => name.endsWith(".json") && name !== INDEX_FILE)
-    .sort()
-    .map((name) =>
-      readSourceFile<ClassScheduleDocument>(path.join(SCHEDULES_DIR, name)),
-    )
-    .filter((source) => source.document.academicYear === academicYear);
-}
-
-/** Polje `group` nosi jednu ili vise grupa razdvojenih zarezom ("А1,А2"). */
-function splitGroups(group: string | null): string[] {
-  if (!group) return [];
-  return group
-    .split(",")
-    .map((part) => part.trim())
-    .filter((part) => part.length > 0);
-}
-
 export async function ingestSchedules(
   requestedYear?: string,
   options: IngestOptions = {},
@@ -80,12 +61,14 @@ export async function ingestSchedules(
     );
   }
 
-  // Rasporedi su desetine fajlova, pa se prate kao jedna celina preko zbirnog
-  // hesa; promena bilo kog fajla pokrece ponovni upis svih.
   const sourcePath = `raspored-casova/*-${academicYear.replace("/", "-")}.json`;
   const contentHash = combinedHash(sources.map((item) => item.contentHash));
 
-  if (!options.force && (await isUnchanged(sourcePath, contentHash))) {
+  if (
+    isDefined(options.force) &&
+    options.force &&
+    (await isUnchanged(sourcePath, contentHash))
+  ) {
     console.log(`${sourcePath} is unchanged since the last ingest, skipping.`);
     return;
   }
@@ -149,8 +132,6 @@ export async function ingestSchedules(
 
       const ranges = document.indexGroups?.ranges ?? [];
       if (ranges.length > 0) {
-        // Isti raspon indeksa se ponavlja u rasporedima prve godine, pa se
-        // broje samo redovi koji su zaista upisani.
         for (const range of ranges) {
           const stored = await client.query(
             `INSERT INTO index_groups
@@ -187,4 +168,27 @@ if (require.main === module) {
     () => ingestSchedules(academicYear, options),
     "Class schedule ingest failed:",
   );
+}
+
+function loadSchedules(
+  academicYear: string,
+): SourceFile<ClassScheduleDocument>[] {
+  return readdirSync(SCHEDULES_DIR)
+    .filter((name) => name.endsWith(".json") && name !== INDEX_FILE)
+    .sort()
+    .map((name) =>
+      readSourceFile<ClassScheduleDocument>(path.join(SCHEDULES_DIR, name)),
+    )
+    .filter((source) => source.document.academicYear === academicYear);
+}
+
+function splitGroups(group: Maybe<string>): string[] {
+  if (isNotDefined(group)) {
+    return [];
+  }
+
+  return group
+    .split(",")
+    .map((part) => part.trim())
+    .filter((part) => part.length > 0);
 }
