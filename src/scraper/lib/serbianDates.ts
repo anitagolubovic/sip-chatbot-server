@@ -1,3 +1,4 @@
+import { Maybe } from "../../models/types";
 import { latinSearchText } from "./textNormalization";
 
 const MONTH_BY_PREFIX: { [prefix: string]: number } = {
@@ -26,7 +27,7 @@ export function monthNumber(name: string): number | null {
 const TEXTUAL_DATE = /(\d{1,2})\.\s*(\p{L}+)[,.]?\s*(20\d{2})/u;
 const NUMERIC_DATE = /(\d{1,2})\.(\d{1,2})\.(\d{4})\./g;
 
-export function parseTextualDate(text: string): string | null {
+export function parseTextualDate(text: string): Maybe<string> {
   const match = TEXTUAL_DATE.exec(text);
   if (!match) {
     return null;

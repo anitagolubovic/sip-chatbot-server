@@ -19,10 +19,6 @@ import {
 
 const MAX_PAGES = 40;
 
-function outputFile(academicYear: string): string {
-  return dataFile(`konkursi-${academicYearSlug(academicYear)}.json`);
-}
-
 export async function scrapeOpportunities(
   requestedYear?: string,
 ): Promise<void> {
@@ -43,13 +39,13 @@ export async function scrapeOpportunities(
     for (let page = 1; page <= MAX_PAGES; page += 1) {
       const html = await fetchHtml(paginatedUrl(source.url, page));
       const items = parseListing(html);
-      if (!items.length) break;
+      if (items.length === 0) break;
       for (const item of items) {
         if (seen.has(item.url)) continue;
         seen.add(item.url);
         if (!belongsToAcademicYear(item, academicYear)) continue;
         const activityTypes = classifyActivity(item.title, item.summary);
-        if (!activityTypes.length) continue;
+        if (activityTypes.length === 0) continue;
         candidates.push({
           ...item,
           sourceCategory: source.slug,
@@ -64,9 +60,9 @@ export async function scrapeOpportunities(
     }
   }
 
-  if (!candidates.length) {
+  if (candidates.length === 0) {
     throw new Error(
-      "Nije pronadjena nijedna relevantna aktivnost; postojeci JSON nije zamenjen.",
+      "Not found any relevant activities for the requested academic year.",
     );
   }
 
@@ -108,14 +104,15 @@ export async function scrapeOpportunities(
 
   const destination = outputFile(academicYear);
   writeJson(destination, output);
-  console.log(
-    `Sacuvano ${records.length} relevantnih aktivnosti u ${destination}`,
-  );
+}
+
+function outputFile(academicYear: string): string {
+  return dataFile(`konkursi-${academicYearSlug(academicYear)}.json`);
 }
 
 if (require.main === module) {
   runCli(
     () => scrapeOpportunities(process.argv[2]),
-    "Greska pri preuzimanju konkursa i aktivnosti:",
+    "Error while scraping opportunities.",
   );
 }

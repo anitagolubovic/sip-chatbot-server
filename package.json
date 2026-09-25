@@ -20,6 +20,7 @@
     "test:preprocessing": "ts-node --transpile-only src/preprocessing/preprocessing.test.ts",
     "test:conversation": "ts-node --transpile-only src/services/conversation.test.ts",
     "update:exams": "ts-node src/scraper/scrapeExamSchedule.ts",
+    "update:satnica": "ts-node src/scraper/scrapeExamSlots.ts",
     "update:kalendar": "ts-node src/scraper/scrapeActivityCalendar.ts",
     "update:raspored-casova": "ts-node src/scraper/scrapeClassSchedules.ts",
     "update:konkursi": "ts-node src/scraper/scrapeOpportunities.ts",

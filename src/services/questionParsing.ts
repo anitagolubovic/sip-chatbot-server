@@ -7,7 +7,6 @@ export const STUDY_LEVEL_LABELS: { [level: string]: string } = {
   master_akademske: "мастер академске студије",
 };
 
-/** Danasnji datum u lokalnoj zoni; toISOString bi kod nas vratio prethodni dan. */
 export function today(): string {
   const now = new Date();
   const pad = (value: number) => String(value).padStart(2, "0");
@@ -26,12 +25,32 @@ export function detectStudyLevel(
   return null;
 }
 
+// Pitanje trazi odredjenu vrstu nastave: vraca tipove koji se prikazuju, ili
+// null kada vrsta nije pomenuta pa treba prikazati ceo raspored predmeta.
+export function detectClassTypes(
+  normalizedQuestion: string,
+): Maybe<string[]> {
+  if (/racunsk\w*\s*vezb|\brv\b/.test(normalizedQuestion)) {
+    return ["racunske_vezbe"];
+  }
+  if (/laborator\w*\s*vezb|\blab\b|\blv\b/.test(normalizedQuestion)) {
+    return ["laboratorijske_vezbe"];
+  }
+  if (/predavanj/.test(normalizedQuestion)) {
+    return ["predavanje"];
+  }
+  // Same "vezbe" ne razlikuju racunske od laboratorijskih.
+  if (/vezb/.test(normalizedQuestion)) {
+    return ["racunske_vezbe", "laboratorijske_vezbe"];
+  }
+  return null;
+}
+
 export function formatDate(isoDate: string): string {
   const [year, month, day] = isoDate.split("-");
   return `${Number(day)}.${Number(month)}.${year}.`;
 }
 
-/** "od 3.11.2025. do 13.2.2026." — izostavlja polovinu koje nema. */
 export function formatRange(
   from: Maybe<string>,
   to: Maybe<string>,

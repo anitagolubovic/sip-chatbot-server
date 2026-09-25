@@ -2,20 +2,16 @@ import "dotenv/config";
 import OpenAI from "openai";
 import { query, withTransaction } from "./pool";
 import { parseIngestArguments, runIngestCli } from "./ingestRuntime";
-import { toSearchForm } from "../preprocessing";
 
 export const EMBEDDING_MODEL =
   process.env.OPENAI_EMBEDDING_MODEL ?? "text-embedding-3-small";
 
-/** Mora da odgovara VECTOR(1536) iz sheme. */
 export const EMBEDDING_DIMENSIONS = 1536;
 
-// Jedan zahtev nosi vise delova; granica je konzervativna zbog duzine ulaza.
 const BATCH_SIZE = 64;
 
 type PendingChunk = { id: number; heading: string; text: string };
 
-/** Naslov nosi kategoriju, naziv zapisa i godinu, pa ulazi u vektor uz telo. */
 function embeddingInput(chunk: PendingChunk): string {
   return `${chunk.heading}\n${chunk.text}`;
 }

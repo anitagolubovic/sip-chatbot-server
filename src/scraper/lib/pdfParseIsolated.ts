@@ -4,18 +4,11 @@ import path from "path";
 const CHILD_SCRIPT = path.join(__dirname, "pdfParseChild.ts");
 const REGISTER_HOOK = require.resolve("ts-node/register/transpile-only");
 
-/**
- * Izvlaci tekst iz PDF-a preko pdf-parse, pokrenutog u odvojenom Node procesu.
- * Vidi pdfParseChild.ts za razlog: pdf-parse ne sme da se ucita u isti proces
- * u kom radi scrapeClassSchedules (koji koristi pdfjs-dist direktno).
- */
 export function extractPdfText(pdf: Buffer): Promise<string> {
   return new Promise((resolve, reject) => {
-    const child = spawn(
-      process.execPath,
-      ["-r", REGISTER_HOOK, CHILD_SCRIPT],
-      { stdio: ["pipe", "pipe", "pipe"] },
-    );
+    const child = spawn(process.execPath, ["-r", REGISTER_HOOK, CHILD_SCRIPT], {
+      stdio: ["pipe", "pipe", "pipe"],
+    });
 
     const stdout: Buffer[] = [];
     const stderr: Buffer[] = [];

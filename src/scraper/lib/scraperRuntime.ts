@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { normalizeAcademicYear } from "./documentationParser";
+import { Maybe } from "../../models/types";
 
 export const DATA_DIR = path.join(__dirname, "..", "..", "..", "data");
 
@@ -13,18 +14,18 @@ export function academicYearSlug(academicYear: string): string {
 }
 
 export function requireAcademicYear(
-  value: string | undefined,
+  value: Maybe<string>,
   command: string,
 ): string {
   if (!value) {
     throw new Error(
-      `Skolska godina je obavezna. Primer: npm run ${command} -- "2025/2026".`,
+      `School year is required. Example: npm run ${command} -- "2025/2026".`,
     );
   }
   const academicYear = normalizeAcademicYear(value);
   if (!academicYear) {
     throw new Error(
-      `Neispravna skolska godina "${value}". Ocekivan oblik je 2025/2026.`,
+      `Invalid school year "${value}". Expected format is 2025/2026.`,
     );
   }
   return academicYear;

@@ -33,7 +33,6 @@ const EXAM_PERIOD_COLUMNS = [
 type Counts = { levels: number; examPeriods: number; days: number };
 
 function dayRows(levelId: number, level: Calendar): unknown[][] {
-  // Jedan red po datumu: napomena u kalendaru zna da pokrije vise dana odjednom.
   return [
     ...level.workingDays.map((day) => ["radni", day] as const),
     ...level.nonWorkingDaysAndHolidays.map((day) => ["neradni", day] as const),
@@ -70,7 +69,6 @@ export async function ingestCalendar(
   const counts: Counts = { levels: 0, examPeriods: 0, days: 0 };
 
   await withTransaction(async (client) => {
-    // Brisanje nivoa kaskadno uklanja i rokove i dane tog nivoa.
     await client.query("DELETE FROM calendar_levels WHERE academic_year = $1", [
       academicYear,
     ]);

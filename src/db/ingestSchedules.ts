@@ -14,10 +14,13 @@ import {
   type SourceFile,
 } from "./ingestRuntime";
 import { toSearchForm } from "../preprocessing";
-import type { ClassScheduleDocument } from "../models/classSchedule";
+import type {
+  ClassScheduleDocument,
+  ScheduleDocumentEntry,
+} from "../models/classSchedule";
 import { currentAcademicYear, dataFile } from "../scraper/lib/scraperRuntime";
 import { Maybe } from "../models/types";
-import { isDefined, isNotDefined } from "../helper";
+import { isDefined, isEmpty, isNotDefined } from "../helper";
 
 const SCHEDULES_DIR = dataFile("raspored-casova");
 const INDEX_FILE = "index.json";
@@ -64,11 +67,7 @@ export async function ingestSchedules(
   const sourcePath = `raspored-casova/*-${academicYear.replace("/", "-")}.json`;
   const contentHash = combinedHash(sources.map((item) => item.contentHash));
 
-  if (
-    isDefined(options.force) &&
-    options.force &&
-    (await isUnchanged(sourcePath, contentHash))
-  ) {
+  if (!options.force && (await isUnchanged(sourcePath, contentHash))) {
     console.log(`${sourcePath} is unchanged since the last ingest, skipping.`);
     return;
   }
@@ -119,9 +118,9 @@ export async function ingestSchedules(
         entry.classType,
         entry.course,
         toSearchForm(entry.course),
-        splitGroups(entry.group),
+        entryGroups(entry),
         entry.room,
-        "{}",
+        JSON.stringify(entry.roomsByGroup ?? {}),
         entry.fromOcr,
         entry.ocrConfidence ?? null,
         entry.rawText,
@@ -180,6 +179,15 @@ function loadSchedules(
       readSourceFile<ClassScheduleDocument>(path.join(SCHEDULES_DIR, name)),
     )
     .filter((source) => source.document.academicYear === academicYear);
+}
+
+// Grupe razresene prema recniku iz PDF-a imaju prednost nad sirovim "group",
+// koji je OCR tekst i za prvu godinu ume da bude ostecen ("61" umesto "Б1").
+// Rasporedi vise godina nemaju razresene grupe, pa za njih ostaje "group".
+function entryGroups(entry: ScheduleDocumentEntry): string[] {
+  return isDefined(entry.groups) && !isEmpty(entry.groups)
+    ? entry.groups
+    : splitGroups(entry.group);
 }
 
 function splitGroups(group: Maybe<string>): string[] {

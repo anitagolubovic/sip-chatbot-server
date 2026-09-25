@@ -3,8 +3,60 @@
   "category": "konkursi_i_promovisane_aktivnosti",
   "language": "sr",
   "academicYear": "2025/2026",
-  "generatedAt": "2026-09-04T16:26:26.096Z",
+  "generatedAt": "2026-09-11T06:47:36.580Z",
   "records": [
+    {
+      "activityTypes": [
+        "takmicenje_ili_hakaton"
+      ],
+      "title": "China International College Students’ Innovation Competition 2026",
+      "summary": "Позив за учешће – регионално такмичење у оквиру China International College Students’ Innovation Competition 2026",
+      "publishedAt": "2026-09-07",
+      "sourceCategory": "konkursi",
+      "sourceUrl": "https://sip.elfak.ni.ac.rs/article/konkursi/introduction-serbia-china-competition-2026",
+      "content": {
+        "paragraphs": [],
+        "listItems": [
+          "технолошких иновација;",
+          "вештачке интелигенције (AI+);",
+          "дигиталне економије;",
+          "зеленог развоја;",
+          "паметне пољопривреде;",
+          "биомедицине;",
+          "јавног интереса и руралног развоја;",
+          "других области у којима се иновативним идејама и технологијом решавају конкретни изазови.",
+          "учесници морају бити млађи од 35 година;",
+          "могу учествовати тренутно уписани студенти високошколских установа, као и лица која су дипломирала у претходних пет година;",
+          "тимови могу бити састављени од 2 до 15 чланова;",
+          "у оквиру овог регионалног такмичења предвиђене су категорије за основне и постдипломске студије, у складу са условима конкурса.",
+          "Информација о регионалном такмичењу, са детаљима о условима учешћа, начину пријаве, роковима и контактима;",
+          "Образац за пријаву/припрему такмичарских пројеката",
+          "Упутство за регистрацију путем система за пријаву"
+        ]
+      },
+      "resources": [
+        {
+          "label": "https://srb.pilcchina.org/home",
+          "url": "https://srb.pilcchina.org/home",
+          "kind": "spoljni_link"
+        },
+        {
+          "label": "Информација о регионалном такмичењу, са детаљима о условима учешћа, начину пријаве, роковима и контактима",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/ostalo/2026/ptt-template-introduction-serbia-china-competition-2026.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "Образац за пријаву/припрему такмичарских пројеката",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/ostalo/2026/introduction-serbia-china-competition-2026.pdf",
+          "kind": "dokument"
+        },
+        {
+          "label": "Упутство за регистрацију путем система за пријаву",
+          "url": "https://sip.elfak.ni.ac.rs/downloads/ostalo/2026/registration-guide-introduction-serbia-china-competition-2026.pdf",
+          "kind": "dokument"
+        }
+      ]
+    },
     {
       "activityTypes": [
         "takmicenje_ili_hakaton"

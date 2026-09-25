@@ -5,6 +5,7 @@ import type {
   StudyLevel,
 } from "../scraper/lib/documentationParser";
 import type { DataDocument } from "./common";
+import { Maybe } from "./types";
 
 export type { Attachment, Procedure, SourceSlug };
 export type { StudyLevel as DocumentationStudyLevel };
@@ -17,8 +18,8 @@ export type DocumentationRecord = {
   procedureTypes: Procedure[];
   studyLevels: StudyLevel[];
   temporalScope: TemporalScope;
-  academicYear: string | null;
-  calendarYear: number | null;
+  academicYear: Maybe<string>;
+  calendarYear: Maybe<number>;
   title: string;
   summary: string;
   publishedAt: string;

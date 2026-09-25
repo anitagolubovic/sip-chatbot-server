@@ -28,34 +28,6 @@ function contentScore($: cheerio.CheerioAPI, element: AnyNode): number {
   );
 }
 
-/** Finds the article by document semantics, then by content density. */
-function findArticleScope($: cheerio.CheerioAPI): cheerio.Cheerio<AnyNode> {
-  const bestCandidate = (selector: string) => {
-    const candidates = $(selector).toArray();
-    if (!candidates.length) return null;
-    return candidates.reduce((best, candidate) =>
-      contentScore($, candidate) > contentScore($, best) ? candidate : best,
-    );
-  };
-
-  const semantic = bestCandidate('article, main, [role="main"]');
-  if (semantic && Number.isFinite(contentScore($, semantic))) {
-    return $(semantic);
-  }
-
-  const denseContent = bestCandidate("section, div");
-  return denseContent && Number.isFinite(contentScore($, denseContent))
-    ? $(denseContent)
-    : $("body");
-}
-
-function isPublicationTimestamp(text: string): boolean {
-  const value = latinSearchText(text);
-  return /^(?:(?:pon|uto|sre|cet|pet|sub|ned),?\s+)?\d{1,2}\.\s+\S+,?\s+20\d{2}\.?\s+(?:u\s+)?\d{1,2}:\d{2}$/.test(
-    value,
-  );
-}
-
 export function extractArticle(html: string, pageUrl: string): ArticleContent {
   const $ = cheerio.load(html);
   $("script, style, nav, header, footer").remove();
@@ -93,4 +65,31 @@ export function extractArticle(html: string, pageUrl: string): ArticleContent {
     listItems: textFrom("li"),
     links,
   };
+}
+
+function findArticleScope($: cheerio.CheerioAPI): cheerio.Cheerio<AnyNode> {
+  const bestCandidate = (selector: string) => {
+    const candidates = $(selector).toArray();
+    if (candidates.length === 0) return null;
+    return candidates.reduce((best, candidate) =>
+      contentScore($, candidate) > contentScore($, best) ? candidate : best,
+    );
+  };
+
+  const semantic = bestCandidate('article, main, [role="main"]');
+  if (semantic && Number.isFinite(contentScore($, semantic))) {
+    return $(semantic);
+  }
+
+  const denseContent = bestCandidate("section, div");
+  return denseContent && Number.isFinite(contentScore($, denseContent))
+    ? $(denseContent)
+    : $("body");
+}
+
+function isPublicationTimestamp(text: string): boolean {
+  const value = latinSearchText(text);
+  return /^(?:(?:pon|uto|sre|cet|pet|sub|ned),?\s+)?\d{1,2}\.\s+\S+,?\s+20\d{2}\.?\s+(?:u\s+)?\d{1,2}:\d{2}$/.test(
+    value,
+  );
 }

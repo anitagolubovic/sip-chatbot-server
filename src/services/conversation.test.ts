@@ -4,6 +4,7 @@ import { countTokens } from "../preprocessing";
 import {
   buildRetrievalQuery,
   ChatMessage,
+  dropRepeatedQuestion,
   HISTORY_TURNS,
   MAX_HISTORY_TOKENS,
   MAX_MESSAGE_TOKENS,
@@ -110,4 +111,33 @@ test("leaves a self-contained question alone", () => {
 
   assert.equal(buildRetrievalQuery(question, history, MODEL), question);
   assert.equal(buildRetrievalQuery(question, [], MODEL), question);
+});
+
+test("ignores the current question echoed at the end of the history", () => {
+  const question = "do kada traje?";
+  // Onako kako front slaze bafer: tekuce pitanje je poslednje u listi.
+  const history: ChatMessage[] = [
+    { role: "user", content: "Kada pocinje jesenji semestar na master studijama?" },
+    { role: "assistant", content: "Pocinje 17. novembra 2025. godine." },
+    { role: "user", content: question },
+  ];
+
+  const kept = dropRepeatedQuestion(history, question);
+
+  assert.equal(kept.length, 2);
+  assert.equal(kept[kept.length - 1].role, "assistant");
+  assert.equal(
+    buildRetrievalQuery(question, trimHistory(kept, MODEL), MODEL),
+    "Kada pocinje jesenji semestar na master studijama? do kada traje?",
+  );
+});
+
+test("keeps a history that does not end with the current question", () => {
+  const history: ChatMessage[] = [
+    { role: "user", content: "kada je ispit iz Matematike 1" },
+    { role: "assistant", content: "U januarskom roku." },
+  ];
+
+  assert.deepEqual(dropRepeatedQuestion(history, "a u junu?"), history);
+  assert.deepEqual(dropRepeatedQuestion(null, "a u junu?"), []);
 });

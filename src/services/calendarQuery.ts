@@ -10,7 +10,6 @@ import {
   type StudyLevelFilter,
 } from "./questionParsing";
 
-/** O cemu se pita u kalendaru. Jedno pitanje moze da pogodi vise tema. */
 export enum CalendarTopic {
   Semester = "semestar",
   Vacation = "raspust",
@@ -58,8 +57,6 @@ export type CalendarDay = {
   note: Maybe<string>;
 };
 
-// "Overa semestra" sadrzi rec "semestra", pa bi inace povukla i pocetak i kraj
-// oba semestra. Tema semestra ostaje samo ako se pita o njegovom trajanju.
 const SEMESTER_DURATION = /pocin|pocet|zavrs|traj|kada je nastava/;
 
 export function detectCalendarTopics(
@@ -105,7 +102,6 @@ export async function findCalendarExamPeriods(
   studyLevel: Maybe<StudyLevelFilter>,
   normalizedQuestion: string,
 ): Promise<CalendarExamPeriod[]> {
-  // Ako je u pitanju imenovan rok, vracaju se samo njegovi datumi.
   return query<CalendarExamPeriod>(
     `SELECT l.study_level AS "studyLevel", p.name, p.label,
             p.held_from AS "heldFrom", p.held_to AS "heldTo",
@@ -129,8 +125,6 @@ export async function findCalendarDays(
   academicYear: string,
   studyLevel: Maybe<StudyLevelFilter>,
 ): Promise<CalendarDay[]> {
-  // Jedna napomena u kalendaru pokriva vise datuma (npr. cetiri uskrsnja dana) i
-  // vec ih sve nabraja u tekstu, pa se redovi spajaju po napomeni.
   return query<CalendarDay>(
     `SELECT d.kind, min(d.day) AS "firstDay",
             count(DISTINCT d.day)::int AS days, d.note
@@ -226,10 +220,6 @@ function describeDays(days: CalendarDay[]): string[] {
   ];
 }
 
-/**
- * Ceo put od pitanja do konteksta za kalendar aktivnosti. Vraca samo teme koje
- * su prepoznate u pitanju, da se ne bi slao ceo kalendar za jedno pitanje.
- */
 export async function lookupCalendar(
   question: string,
   academicYear = currentAcademicYear(),

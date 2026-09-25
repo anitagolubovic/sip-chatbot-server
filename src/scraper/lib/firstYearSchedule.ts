@@ -91,7 +91,7 @@ export function parseIndexGroups(html: string): IndexGroupRange[] {
 
   if (table.length === 0) {
     throw new Error(
-      "Na stranici sa grupama nije pronadjena tabela sa indeksima.",
+      "No table with index groups found on the page. The page structure may have changed.",
     );
   }
 
@@ -125,7 +125,7 @@ export function parseIndexGroups(html: string): IndexGroupRange[] {
 
   if (ranges.length === 0) {
     throw new Error(
-      "Iz tabele sa grupama nije procitan nijedan raspon indeksa.",
+      "Table does not have any valid index group ranges. The page structure may have changed.",
     );
   }
   return ranges;
@@ -259,6 +259,10 @@ export function enrichFirstYearEntries(
     return {
       ...entry,
       course: stripGroups(entry.course, groups),
+      // OCR na oznakama duzine dva znaka nema jezicki kontekst, pa cita "Б1"
+      // kao "61" i "А1" kao "АТ". Posle razresavanja prema recniku grupa iz
+      // PDF-a jedina tacna vrednost je ona iz resolveGroups().
+      group: groups.length > 0 ? groups.join(", ") : null,
       groups,
       roomsByGroup,
       room:

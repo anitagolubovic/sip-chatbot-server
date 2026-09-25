@@ -3,6 +3,9 @@ import { extractArticle } from "./articleExtractor";
 import { getAbsoluteUrl, SITE_ORIGIN } from "./httpClient";
 import { parseTextualDate } from "./serbianDates";
 import { cleanText, latinSearchText } from "./textNormalization";
+import { Maybe } from "../../models/types";
+import { isDefined } from "../../helper";
+import { Element } from "domhandler";
 
 export { SITE_ORIGIN };
 
@@ -58,7 +61,7 @@ const ACADEMIC_YEAR = /(20\d{2})\s*[\/\-–]\s*(20\d{2}|\d{2})/g;
 function publicationDateIn(
   $: cheerio.CheerioAPI,
   item: cheerio.Cheerio<import("domhandler").AnyNode>,
-): { date: string; element: import("domhandler").AnyNode | null } | null {
+): Maybe<{ date: string; element: import("domhandler").AnyNode }> {
   for (const element of item.find("time[datetime]").toArray()) {
     const datetime = $(element).attr("datetime") ?? "";
     const iso = /^(20\d{2}-\d{2}-\d{2})/.exec(datetime)?.[1];
@@ -81,8 +84,8 @@ function publicationDateIn(
     });
 
   for (const candidate of candidates) {
-    const date = parseTextualDate(cleanText(candidate.text));
-    if (date) return { date, element: candidate.element };
+    const date: Maybe<string> = parseTextualDate(cleanText(candidate.text));
+    if (isDefined(date)) return { date, element: candidate.element };
   }
   return null;
 }
@@ -108,7 +111,7 @@ export function parseListing(html: string): ListingItem[] {
     if (seen.has(url)) return;
     seen.add(url);
 
-    const summaryElement = item
+    const summaryElement: Maybe<Element> = item
       .find("p")
       .toArray()
       .find(
@@ -122,7 +125,9 @@ export function parseListing(html: string): ListingItem[] {
       );
     result.push({
       title,
-      summary: summaryElement ? cleanText($(summaryElement).text()) : "",
+      summary: isDefined(summaryElement)
+        ? cleanText($(summaryElement).text())
+        : "",
       url,
       publishedAt: publication.date,
     });
@@ -250,10 +255,6 @@ const PROCEDURES: Array<{ procedure: Procedure; patterns: RegExp[] }> = [
   },
 ];
 
-/**
- * Namerno klasifikuje samo naslov i kratak opis sa liste. Telo clanka moze da
- * pominje raspored, upis ili druge teme usput i zato ne sme da odredi namenu.
- */
 export function classifyRelevant(title: string, summary: string): Procedure[] {
   const searchable = latinSearchText(`${title} ${summary}`);
   if (HARD_EXCLUSIONS.some((pattern) => pattern.test(searchable))) return [];
@@ -280,8 +281,6 @@ export function inferStudyLevels(
 }
 
 export function parseArticle(html: string, pageUrl: string): ParsedArticle {
-  // Datum objave je metapodatak sa listinga. Ne sme da ucini trajni obrazac
-  // godisnjim dokumentom samo zato sto je objavljen, na primer, 2019. godine.
   const article = extractArticle(html, pageUrl);
   const attachments: Attachment[] = [];
   const internalLinks: Array<{ label: string; url: string }> = [];

@@ -19,10 +19,6 @@ import type {
 import { isNotDefined } from "../helper";
 import { Maybe } from "../models/types";
 
-function sourceUrlFor(academicYear: string): string {
-  return `${SITE_ORIGIN}/article/polaganje-ispita/rasporedi-ispita-${academicYearSlug(academicYear)}`;
-}
-
 const STUDY_LEVEL_BY_LABEL: { [label: string]: string } = {
   oas: "osnovne_akademske",
   mas: "master_akademske",
@@ -55,16 +51,60 @@ const EXAM_ROW_REGEX = new RegExp(
   "iu",
 );
 
-function parseTime(rawTime?: string): Maybe<string> {
-  if (isNotDefined(rawTime)) {
-    return null;
+export async function scrapeExamSchedule(
+  requestedYear?: string,
+): Promise<void> {
+  const academicYear = requireAcademicYear(requestedYear, "update:exams");
+  const sourceUrl = sourceUrlFor(academicYear);
+
+  const links = await fetchExamPeriodLinks(sourceUrl);
+
+  if (links.length === 0) {
+    throw new Error(
+      "No exam period links found on the source page. The page format may have changed.",
+    );
   }
-  const [hours, minutes] = rawTime.split(":");
-  return `${hours.padStart(2, "0")}:${minutes}`;
+
+  const examPeriods: ExamPeriodResult[] = [];
+  for (const { label, url } of links) {
+    const exams = await parsePdf(url);
+    if (exams.length === 0) {
+      throw new Error(
+        `No exam rows recognized in "${label}" (${url}). ` +
+          "The PDF format may have changed.",
+      );
+    }
+    examPeriods.push({ name: slugify(label), label, pdfUrl: url, exams });
+  }
+
+  const output: ExamScheduleDocument = {
+    schemaVersion: 1,
+    category: "polaganje_ispita",
+    language: "sr",
+    academicYear,
+    sourceUrl,
+    generatedAt: new Date().toISOString(),
+    examPeriods,
+  };
+
+  const destination = dataFile(
+    `polaganje-ispita-${academicYearSlug(academicYear)}.json`,
+  );
+  writeJson(destination, output);
+}
+
+function sourceUrlFor(academicYear: string): string {
+  return `${SITE_ORIGIN}/article/polaganje-ispita/rasporedi-ispita-${academicYearSlug(academicYear)}`;
 }
 
 async function fetchExamPeriodLinks(sourceUrl: string): Promise<PdfLink[]> {
   return pdfLinks(cheerio.load(await fetchHtml(sourceUrl)));
+}
+
+async function parsePdf(pdfUrl: string): Promise<ExamEntry[]> {
+  const buffer = await fetchPdf(pdfUrl);
+  const text = await extractPdfText(buffer);
+  return parseExamRows(text);
 }
 
 function parseExamRows(pdfText: string): ExamEntry[] {
@@ -107,52 +147,12 @@ function parseExamRows(pdfText: string): ExamEntry[] {
   return exams;
 }
 
-async function parsePdf(pdfUrl: string): Promise<ExamEntry[]> {
-  const buffer = await fetchPdf(pdfUrl);
-  const text = await extractPdfText(buffer);
-  return parseExamRows(text);
-}
-
-export async function scrapeExamSchedule(
-  requestedYear?: string,
-): Promise<void> {
-  const academicYear = requireAcademicYear(requestedYear, "update:exams");
-  const sourceUrl = sourceUrlFor(academicYear);
-
-  const links = await fetchExamPeriodLinks(sourceUrl);
-
-  if (links.length === 0) {
-    throw new Error(
-      "No exam period links found on the source page. The page format may have changed.",
-    );
+function parseTime(rawTime?: string): Maybe<string> {
+  if (isNotDefined(rawTime)) {
+    return null;
   }
-
-  const examPeriods: ExamPeriodResult[] = [];
-  for (const { label, url } of links) {
-    const exams = await parsePdf(url);
-    if (exams.length === 0) {
-      throw new Error(
-        `No exam rows recognized in "${label}" (${url}). ` +
-          "The PDF format may have changed.",
-      );
-    }
-    examPeriods.push({ name: slugify(label), label, pdfUrl: url, exams });
-  }
-
-  const output: ExamScheduleDocument = {
-    schemaVersion: 1,
-    category: "polaganje_ispita",
-    language: "sr",
-    academicYear,
-    sourceUrl,
-    generatedAt: new Date().toISOString(),
-    examPeriods,
-  };
-
-  const destination = dataFile(
-    `polaganje-ispita-${academicYearSlug(academicYear)}.json`,
-  );
-  writeJson(destination, output);
+  const [hours, minutes] = rawTime.split(":");
+  return `${hours.padStart(2, "0")}:${minutes}`;
 }
 
 if (require.main === module) {

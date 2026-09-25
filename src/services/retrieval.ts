@@ -5,17 +5,14 @@ import { describeLookup, lookupExams } from "./examQuery";
 import { lookupCalendar } from "./calendarQuery";
 import { lookupSchedule } from "./scheduleQuery";
 import { lookupText } from "./textQuery";
+import { isDefined } from "../helper";
 
-/** Prazan kontekst znaci da grana nema odgovor na pitanje. */
 type BranchResult = {
   context: string;
-  /** Kategorija iz koje je podatak; grana koja pokriva vise njih javlja tacnu. */
   category: Maybe<Category>;
 };
 
-/** Jedna grana podataka: pitanje unutra, kontekst napolje. */
 type Branch = {
-  /** Kategorije sa fronta koje ova grana pokriva. */
   categories: readonly Category[];
   lookup: (
     question: string,
@@ -23,11 +20,6 @@ type Branch = {
   ) => Promise<BranchResult>;
 };
 
-/**
- * Podrazumevani redosled pretrage. Strukturirane grane idu prve jer su
- * deterministicne i besplatne; tekstualna je poslednja jer svako njeno
- * pokretanje trazi embedding pitanja, dakle poziv modelu.
- */
 const BRANCHES: readonly Branch[] = [
   {
     categories: [Category.ExamSchedule],
@@ -56,20 +48,12 @@ const BRANCHES: readonly Branch[] = [
       const lookup = await lookupText(question, category);
       return {
         context: lookup.context,
-        // Bez izabrane kategorije obe se pretrazuju, pa kategoriju odredjuje
-        // najbolji pogodak.
         category: (lookup.hits[0]?.category as Maybe<Category>) ?? category,
       };
     },
   },
 ];
 
-/**
- * Kad korisnik nije izabrao kategoriju, redosled grana odredjuje pitanje. Prvo
- * pravilo koje se poklopi odlucuje; ostale grane zadrzavaju podrazumevani red.
- * Kalendar je ispred ispita jer "prijava ispita" i "overa semestra" sadrze reci
- * koje bi inace povukle granu rasporeda ispita.
- */
 const INTENT_RULES: ReadonlyArray<[Category, RegExp]> = [
   [
     Category.Opportunities,
@@ -84,6 +68,13 @@ const INTENT_RULES: ReadonlyArray<[Category, RegExp]> = [
     /prijav|overa|overi|raspust|praznik|neradn|kalendar aktivnosti/,
   ],
   [Category.ExamSchedule, /ispit|polaganj|\brok/],
+  // Posle ispita, jer "ispit u drugom semestru" pominje semestar a pita o
+  // roku. Pitanje o samom semestru ne sadrzi nijednu rec iz pravila iznad,
+  // pa tek ovde bira kalendar. Prati temu Semester iz calendarQuery.
+  [
+    Category.ActivityCalendar,
+    /semestar|semestr|pocetak nastave|nastava pocinje/,
+  ],
   [
     Category.ClassSchedule,
     /\bcas|predavanj|vezb|sala|ucionic|raspored casova|imam|ponedelj|utor|sred|cetvrt|petak|subot/,
@@ -96,22 +87,17 @@ function branchFor(category: Category): Maybe<Branch> {
   );
 }
 
-function orderBranches(question: string): readonly Branch[] {
-  const normalized = toSearchForm(question);
-  const preferred = INTENT_RULES.find(([, pattern]) =>
-    pattern.test(normalized),
-  )?.[0];
-  const first = preferred ? branchFor(preferred) : null;
-
-  if (!first) return BRANCHES;
-  return [first, ...BRANCHES.filter((branch) => branch !== first)];
-}
+export type RetrievalQuery = {
+  // Ide granama u pretragu. Kod nadovezivanja sadrzi i preneto prethodno
+  // pitanje, bez kojeg "do kada traje?" nema o cemu da se pretrazi.
+  lookup: string;
+  // Bira granu: samo ono sto je korisnik zaista pitao.
+  routing: string;
+};
 
 export type Retrieved = {
   context: string;
-  /** Grana iz koje podatak zaista dolazi; null kad nista nije nadjeno. */
   source: Maybe<Category>;
-  /** Korisnik je izabrao jednu kategoriju, a odgovor dolazi iz druge. */
   fromOtherCategory: boolean;
 };
 
@@ -120,6 +106,91 @@ const EMPTY: Retrieved = {
   source: null,
   fromOtherCategory: false,
 };
+
+// Grana koju je izabralo samo korisnikovo pitanje sme da pretrazuje dopunjeni
+// upit, jer joj preneti deo daje predmet ("a raspored casova?" posle pitanja
+// o Fizici). Ostale grane dobijaju samo ono sto je korisnik rekao: inace bi
+// "kada je ispit?" posle pitanja o raspustu dobilo datume raspusta, jer bi
+// kalendar odgovorio na rec iz proslog pitanja. Kada pitanje samo ne nosi
+// nijedan signal, i rezervne grane rade nad dopunjenim upitom.
+async function search(
+  query: RetrievalQuery,
+  branches: readonly Branch[],
+): Promise<Maybe<{ category: Category; context: string }>> {
+  const [preferred, ...rest] = branches;
+  const fallback = isDefined(intentFor(query.routing))
+    ? query.routing
+    : query.lookup;
+
+  const first = isDefined(preferred)
+    ? await firstMatch([preferred], query.lookup, null)
+    : null;
+
+  return first ?? (await firstMatch(rest, fallback, null));
+}
+
+export async function retrieve(
+  query: RetrievalQuery,
+  category: Maybe<Category>,
+): Promise<Retrieved> {
+  if (!category) {
+    const match = await search(query, orderBranches(query));
+    return match
+      ? {
+          context: match.context,
+          source: match.category,
+          fromOtherCategory: false,
+        }
+      : EMPTY;
+  }
+
+  const selected = branchFor(category);
+  const selectedResult = selected
+    ? await selected.lookup(query.lookup, category)
+    : null;
+
+  if (selectedResult?.context) {
+    return {
+      context: selectedResult.context,
+      source: category,
+      fromOtherCategory: false,
+    };
+  }
+
+  const others = orderBranches(query).filter(
+    (branch) => branch !== selected,
+  );
+  const match = await search(query, others);
+
+  return match
+    ? {
+        context: match.context,
+        source: match.category,
+        fromOtherCategory: true,
+      }
+    : EMPTY;
+}
+
+function intentFor(question: string): Maybe<Category> {
+  const normalized = toSearchForm(question);
+  return (
+    INTENT_RULES.find(([, pattern]) => pattern.test(normalized))?.[0] ??
+    null
+  );
+}
+
+// Granu bira samo korisnikovo pitanje. Preneto prethodno pitanje treba
+// pretrazi unutar grane, ali ne sme da bira granu: rec iz prosle teme
+// ("prijava", "raspust") odvukla bi novo pitanje na pogresnu granu.
+// Kod pravog kontrapitanja ("Matematika 1" na pitanje "koji predmet?")
+// original ne nosi nijedan signal, pa tek tada odlucuje dopunjeni upit.
+function orderBranches(query: RetrievalQuery): readonly Branch[] {
+  const preferred = intentFor(query.routing) ?? intentFor(query.lookup);
+  const first = isDefined(preferred) ? branchFor(preferred) : null;
+
+  if (!first) return BRANCHES;
+  return [first, ...BRANCHES.filter((branch) => branch !== first)];
+}
 
 async function firstMatch(
   branches: readonly Branch[],
@@ -138,61 +209,13 @@ async function firstMatch(
   return null;
 }
 
-/**
- * Cinjenice za pitanje. Izabrana kategorija se gleda prva; ako u njoj nema
- * odgovora, pitanje ide kroz preostale grane, da pogresno izabrana kategorija
- * ne sakrije podatak koji postoji.
- */
-export async function retrieve(
-  question: string,
-  category: Maybe<Category>,
-): Promise<Retrieved> {
-  if (!category) {
-    const match = await firstMatch(orderBranches(question), question, null);
-    return match
-      ? {
-          context: match.context,
-          source: match.category,
-          fromOtherCategory: false,
-        }
-      : EMPTY;
-  }
-
-  const selected = branchFor(category);
-  const selectedResult = selected
-    ? await selected.lookup(question, category)
-    : null;
-
-  if (selectedResult?.context) {
-    return {
-      context: selectedResult.context,
-      source: category,
-      fromOtherCategory: false,
-    };
-  }
-
-  const others = orderBranches(question).filter(
-    (branch) => branch !== selected,
-  );
-  const match = await firstMatch(others, question, null);
-
-  return match
-    ? {
-        context: match.context,
-        source: match.category,
-        fromOtherCategory: true,
-      }
-    : EMPTY;
-}
-
-/** Kontekst spreman za sistemski prompt, sa napomenama o poreklu podatka. */
 export function describeRetrieved(
   retrieved: Retrieved,
   category: Maybe<Category>,
 ): string {
   if (!retrieved.context) {
-    return category
-      ? `Korisnik je izabrao kategoriju "${CATEGORY_LABELS[category]}", za koju nema podataka o ovom pitanju.`
+    return isDefined(category)
+      ? `The user selected the category "${CATEGORY_LABELS[category]}", for which there are no data available for this question.`
       : "";
   }
 
@@ -201,8 +224,8 @@ export function describeRetrieved(
   }
 
   return (
-    `Korisnik je izabrao kategoriju "${CATEGORY_LABELS[category]}", ali podaci ` +
-    `ispod dolaze iz kategorije "${CATEGORY_LABELS[retrieved.source]}"; napomeni mu to.\n` +
+    `The user selected the category "${CATEGORY_LABELS[category]}", but the data ` +
+    `below comes from the category "${CATEGORY_LABELS[retrieved.source]}"; remind him of this.\n` +
     retrieved.context
   );
 }

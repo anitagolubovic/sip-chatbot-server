@@ -3,9 +3,11 @@ import { scrapeOpportunities } from "./scraper/scrapeOpportunities";
 import { scrapeDocumentation } from "./scraper/scrapeDocumentation";
 import { scrapeActivityCalendar } from "./scraper/scrapeActivityCalendar";
 import { scrapeExamSchedule } from "./scraper/scrapeExamSchedule";
+import { scrapeExamSlots } from "./scraper/scrapeExamSlots";
 import { scrapeClassSchedules } from "./scraper/scrapeClassSchedules";
 import { terminateOcr } from "./scraper/lib/ocrService";
 import { currentAcademicYear } from "./scraper/lib/scraperRuntime";
+import { migrate } from "./db/migrate";
 import { ingestExams } from "./db/ingestExams";
 import { ingestCalendar } from "./db/ingestCalendar";
 import { ingestSchedules } from "./db/ingestSchedules";
@@ -13,9 +15,11 @@ import { ingestTextual } from "./db/ingestTextual";
 import { embedChunks } from "./db/embedChunks";
 
 enum ScraperTask {
+  Migrate = "migracija baze",
   ClassSchedules = "raspored časova",
   ActivityCalendar = "kalendar aktivnosti",
   ExamSchedule = "raspored ispita",
+  ExamSlots = "satnica ispita",
   Opportunities = "konkursi i aktivnosti",
   Documentation = "dokumentacija",
   IngestSchedules = "upis rasporeda časova u bazu",
@@ -43,6 +47,8 @@ async function run(): Promise<void> {
     console.log(`[SIP scraper] Updating data for ${academicYear}.`);
 
     const tasks: Array<[ScraperTask, () => Promise<void>]> = [
+      // Nova kolona iz migracije mora da postoji pre upisa, inace ingest pada.
+      [ScraperTask.Migrate, () => migrate()],
       [ScraperTask.ClassSchedules, () => scrapeClassSchedules()],
       [ScraperTask.IngestSchedules, () => ingestSchedules(academicYear)],
       [
@@ -51,6 +57,7 @@ async function run(): Promise<void> {
       ],
       [ScraperTask.IngestCalendar, () => ingestCalendar(academicYear)],
       [ScraperTask.ExamSchedule, () => scrapeExamSchedule(academicYear)],
+      [ScraperTask.ExamSlots, () => scrapeExamSlots(academicYear)],
       [ScraperTask.IngestExams, () => ingestExams(academicYear)],
       [ScraperTask.Opportunities, () => scrapeOpportunities(academicYear)],
       [ScraperTask.Documentation, () => scrapeDocumentation(academicYear)],

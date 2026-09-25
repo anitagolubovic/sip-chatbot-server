@@ -1,18 +1,5 @@
 import { PDFParse } from "pdf-parse";
 
-/**
- * Ovaj fajl se pokrece SAMO u odvojenom Node procesu, nikad require-ovan iz
- * glavnog procesa. "pdf-parse" nosi svoju verziju @napi-rs/canvas i pdfjs-dist,
- * odvojenu od one koju koristi scrapeClassSchedules (preko pdfPageLoader.ts).
- * Kad se obe ucitaju u isti proces, dva razlicita native (Rust) modula se
- * sudaraju i daju netacne greske ("Value is none of these types") ili
- * ("API version does not match Worker version"). Odvojen proces resava to bez
- * dodirivanja verzija paketa.
- *
- * PDF stize kao sirovi bajtovi na stdin; rezultat se ispisuje kao JSON na
- * stdout. Nista drugo ne sme da pise na stdout.
- */
-
 function readStdin(): Promise<Buffer> {
   return new Promise((resolve, reject) => {
     const chunks: Buffer[] = [];

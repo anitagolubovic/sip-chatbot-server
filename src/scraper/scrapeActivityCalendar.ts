@@ -16,43 +16,12 @@ import type {
   ExamPeriod,
   Period,
 } from "../models/calendar";
-
-function sourcesFor(academicYear: string) {
-  const slug = academicYearSlug(academicYear);
-  return [
-    {
-      studyLevel: "osnovne_akademske",
-      label: "OAS",
-      url: `${SITE_ORIGIN}/article/kalendar/kalendar-aktivnosti-${slug}`,
-    },
-    {
-      studyLevel: "master_akademske",
-      label: "MAS",
-      url: `${SITE_ORIGIN}/article/kalendar/kalendar-aktivnosti-mas-${slug}`,
-    },
-  ] as const;
-}
+import { Maybe } from "../models/types";
 
 type Source = ReturnType<typeof sourcesFor>[number];
 
 const RANGE =
   /\bod\s+(\d{1,2}\.\d{1,2}\.\d{4})\.\s*do\s+(\d{1,2}\.\d{1,2}\.\d{4})\./;
-
-function periodIn(line: string): Period {
-  const match = RANGE.exec(latinSearchText(line));
-  if (match) {
-    const [from, to] = [match[1], match[2]].map(
-      (date) => numericDatesIn(`${date}.`)[0],
-    );
-    return { from: from ?? null, to: to ?? null, raw: line };
-  }
-  const dates = numericDatesIn(line);
-  return {
-    from: dates[0] ?? null,
-    to: dates[dates.length - 1] ?? null,
-    raw: line,
-  };
-}
 
 function noteInParens(line: string): string {
   return line.match(/\(([^)]+)\)/)?.[1].trim() ?? "";
@@ -61,16 +30,7 @@ function noteInParens(line: string): string {
 const NOISE = "script, style, noscript, nav, header, footer, form";
 const BLOCKS = "p, li, h1, h2, h3, h4, h5, h6, td, th, blockquote, dd, dt";
 
-function toLines($: cheerio.CheerioAPI): string[] {
-  $(NOISE).remove();
-  return $(BLOCKS)
-    .filter((_, el) => $(el).find(BLOCKS).length === 0)
-    .map((_, el) => cleanText($(el).text()))
-    .get()
-    .filter((line) => line.length > 0);
-}
-
-function findPdfUrl($: cheerio.CheerioAPI): string | null {
+function findPdfUrl($: cheerio.CheerioAPI): Maybe<string> {
   return (
     pdfLinks($).find((link) => link.url.includes("kalendar-aktivnosti"))?.url ??
     null
@@ -96,7 +56,7 @@ function parseCalendar(source: Source, $: cheerio.CheerioAPI): Calendar {
   };
 
   let inHolidays = false;
-  let examPeriod: ExamPeriod | null = null;
+  let examPeriod: Maybe<ExamPeriod> = null;
 
   for (const line of lines) {
     const n = latinSearchText(line);
@@ -191,6 +151,31 @@ function parseCalendar(source: Source, $: cheerio.CheerioAPI): Calendar {
   return calendar;
 }
 
+function toLines($: cheerio.CheerioAPI): string[] {
+  $(NOISE).remove();
+  return $(BLOCKS)
+    .filter((_, el) => $(el).find(BLOCKS).length === 0)
+    .map((_, el) => cleanText($(el).text()))
+    .get()
+    .filter((line) => line.length > 0);
+}
+
+function periodIn(line: string): Period {
+  const match = RANGE.exec(latinSearchText(line));
+  if (match) {
+    const [from, to] = [match[1], match[2]].map(
+      (date) => numericDatesIn(`${date}.`)[0],
+    );
+    return { from: from ?? null, to: to ?? null, raw: line };
+  }
+  const dates = numericDatesIn(line);
+  return {
+    from: dates[0] ?? null,
+    to: dates[dates.length - 1] ?? null,
+    raw: line,
+  };
+}
+
 function assertParsed(calendar: Calendar): void {
   const missing = [
     calendar.examPeriods.length === 0 && "ispitni rokovi",
@@ -199,11 +184,7 @@ function assertParsed(calendar: Calendar): void {
   ].filter((item): item is string => typeof item === "string");
 
   if (missing.length > 0) {
-    throw new Error(
-      `${calendar.label}: nije prepoznato (${missing.join(", ")}) na ` +
-        `${calendar.sourceUrl}. Stranica je verovatno promenila format - ` +
-        `proveri kljucne reci u parseCalendar.`,
-    );
+    throw new Error(`${calendar.label}: not found`);
   }
 }
 
@@ -235,12 +216,27 @@ export async function scrapeActivityCalendar(
     `kalendar-aktivnosti-${academicYearSlug(academicYear)}.json`,
   );
   writeJson(destination, output);
-  console.log(`Sacuvan kalendar za ${levels.length} nivoa u ${destination}`);
+}
+
+function sourcesFor(academicYear: string) {
+  const slug = academicYearSlug(academicYear);
+  return [
+    {
+      studyLevel: "osnovne_akademske",
+      label: "OAS",
+      url: `${SITE_ORIGIN}/article/kalendar/kalendar-aktivnosti-${slug}`,
+    },
+    {
+      studyLevel: "master_akademske",
+      label: "MAS",
+      url: `${SITE_ORIGIN}/article/kalendar/kalendar-aktivnosti-mas-${slug}`,
+    },
+  ] as const;
 }
 
 if (require.main === module) {
   runCli(
     () => scrapeActivityCalendar(process.argv[2]),
-    "Greska prilikom scrape-ovanja kalendara aktivnosti:",
+    "Error scraping activity calendar",
   );
 }

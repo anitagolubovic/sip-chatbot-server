@@ -3,6 +3,7 @@ import { toSearchForm } from "../preprocessing";
 import { currentAcademicYear } from "../scraper/lib/scraperRuntime";
 import { Maybe } from "../models/types";
 import {
+  detectClassTypes,
   detectStudyLevel,
   STUDY_LEVEL_LABELS,
   type StudyLevelFilter,
@@ -10,6 +11,8 @@ import {
 
 const COURSE_MATCH_THRESHOLD = 0.45;
 const AMBIGUITY_MARGIN = 0.15;
+const STRONG_MATCH_SCORE = 0.6;
+const STRONG_MATCH_RATIO = 1.2;
 const MAX_CANDIDATES = 4;
 
 const DAY_LABELS: { [day: string]: string } = {
@@ -43,6 +46,7 @@ export type ScheduleSlot = {
   classType: Maybe<string>;
   room: Maybe<string>;
   groups: string[];
+  roomsByGroup: Record<string, string>;
   studyLevel: string;
   semester: Maybe<number>;
   semesterType: Maybe<string>;
@@ -51,7 +55,6 @@ export type ScheduleSlot = {
 };
 
 export function detectDay(normalizedQuestion: string): Maybe<string> {
-  // Upitni oblici ("u ponedeljak", "petkom") dele koren sa nazivom dana.
   const stems: ReadonlyArray<[string, RegExp]> = [
     ["ponedeljak", /ponedelj/],
     ["utorak", /utor/],
@@ -92,7 +95,15 @@ export function resolveScheduleCourse(
 ): Maybe<string> {
   const [best, next] = candidates;
   if (!best) return null;
-  return !next || best.score - next.score >= AMBIGUITY_MARGIN
+  if (!next || best.score - next.score >= AMBIGUITY_MARGIN) {
+    return best.course;
+  }
+  // Duze pitanje ("... na osnovnim studijama na UPS modulu") podize slicnost
+  // nevezanim predmetima koji dele pokoju rec, pa apsolutna razlika padne
+  // ispod margine i pored toga sto je prvi kandidat ubedljivo najbolji.
+  // Tada odlucuje odnos rezultata, ali samo za dovoljno jako poklapanje.
+  return best.score >= STRONG_MATCH_SCORE &&
+    best.score >= next.score * STRONG_MATCH_RATIO
     ? best.course
     : null;
 }
@@ -102,11 +113,16 @@ export async function findScheduleSlots(filters: {
   course: string;
   day?: Maybe<string>;
   studyLevel?: Maybe<StudyLevelFilter>;
+  classTypes?: Maybe<string[]>;
   limit?: number;
 }): Promise<ScheduleSlot[]> {
+  // DISTINCT: isti termin se ponavlja kada dva modula dele oznaku (npr. ELK
+  // pokriva i EKES i EMT), pa bi bez toga svaki red bio prikazan dvaput.
   return query<ScheduleSlot>(
-    `SELECT e.course, e.day, e.starts_at AS "startsAt", e.ends_at AS "endsAt",
-            e.class_type AS "classType", e.room, e.groups, e.from_ocr AS "fromOcr",
+    `SELECT DISTINCT
+            e.course, e.day, e.starts_at AS "startsAt", e.ends_at AS "endsAt",
+            e.class_type AS "classType", e.room, e.groups,
+            e.rooms_by_group AS "roomsByGroup", e.from_ocr AS "fromOcr",
             s.study_level AS "studyLevel", s.semester,
             s.semester_type AS "semesterType", s.module_label AS "moduleLabel"
      FROM schedule_entries e
@@ -115,13 +131,15 @@ export async function findScheduleSlots(filters: {
        AND e.course = $2
        AND ($3::text IS NULL OR e.day = $3)
        AND ($4::text IS NULL OR s.study_level = $4)
-     ORDER BY s.semester, e.day, e.starts_at
-     LIMIT $5`,
+       AND ($5::text[] IS NULL OR e.class_type = ANY($5))
+     ORDER BY s.semester, s.module_label, e.day, e.starts_at
+     LIMIT $6`,
     [
       filters.academicYear,
       filters.course,
       filters.day ?? null,
       filters.studyLevel ?? null,
+      filters.classTypes ?? null,
       filters.limit ?? 40,
     ],
   );
@@ -143,6 +161,22 @@ function slotGroupHeading(slot: ScheduleSlot): string {
   return `${slot.course} (${parts.join(", ")}):`;
 }
 
+// Prva godina OAS deli vezbe na grupe koje sede u razlicitim salama, pa se
+// sala navodi uz svaku grupu. Kada je sala ista kao sala celog termina (sto
+// je slucaj na predavanjima) ne ponavlja se, da kontekst ostane kratak.
+function formatGroups(slot: ScheduleSlot): Maybe<string> {
+  if (slot.groups.length === 0) {
+    return null;
+  }
+
+  const labelled = slot.groups.map((group) => {
+    const room = slot.roomsByGroup?.[group];
+    return room && room !== slot.room ? `${group} (сала ${room})` : group;
+  });
+
+  return `групе ${labelled.join(", ")}`;
+}
+
 export function formatScheduleContext(slots: ScheduleSlot[]): string {
   const lines: string[] = [];
   let currentHeading = "";
@@ -159,7 +193,7 @@ export function formatScheduleContext(slots: ScheduleSlot[]): string {
     const details = [
       CLASS_TYPE_LABELS[slot.classType ?? ""] ?? slot.classType,
       slot.room ? `сала ${slot.room}` : null,
-      slot.groups.length > 0 ? `групе ${slot.groups.join(", ")}` : null,
+      formatGroups(slot),
     ].filter(Boolean);
 
     lines.push(
@@ -170,10 +204,6 @@ export function formatScheduleContext(slots: ScheduleSlot[]): string {
   return lines.join("\n");
 }
 
-/**
- * Ceo put od pitanja do konteksta za raspored casova. Trazi se predmet, jer
- * pitanja bez predmeta ("koji su casovi u ponedeljak") pogadjaju ceo fakultet.
- */
 export async function lookupSchedule(
   question: string,
   academicYear = currentAcademicYear(),
@@ -196,17 +226,19 @@ export async function lookupSchedule(
 
   const day = detectDay(normalizedQuestion);
   const studyLevel = detectStudyLevel(normalizedQuestion);
+  const classTypes = detectClassTypes(normalizedQuestion);
 
   let slots = await findScheduleSlots({
     academicYear,
     course,
     day,
     studyLevel,
+    classTypes,
   });
 
-  // Predmet postoji, ali ne u tom danu ili na tom nivou: bolje pokazati ceo
-  // raspored predmeta nego odgovoriti da ga nema.
-  if (slots.length === 0 && (day || studyLevel)) {
+  // Predmet postoji, ali ne u tom danu, nivou ili vrsti nastave: bolje
+  // pokazati ceo raspored predmeta nego odgovoriti da ga nema.
+  if (slots.length === 0 && (day || studyLevel || classTypes)) {
     slots = await findScheduleSlots({ academicYear, course });
   }
 

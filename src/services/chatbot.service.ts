@@ -2,13 +2,19 @@ import OpenAI from "openai";
 import { buildSystemPrompt, buildUserMessage } from "../prompts/template";
 import { countTokens } from "../preprocessing";
 import { resolveCategory } from "../models/categories";
-import { describeRetrieved, retrieve } from "./retrieval";
+import {
+  describeRetrieved,
+  retrieve,
+  type RetrievalQuery,
+} from "./retrieval";
 import { Maybe } from "../models/types";
 import {
   buildRetrievalQuery,
   ChatMessage,
+  dropRepeatedQuestion,
   trimHistory,
 } from "./conversation";
+import { isNotDefined } from "../helper";
 
 export type { ChatMessage } from "./conversation";
 
@@ -20,11 +26,6 @@ export type ServiceResponse = {
   timestamp: string;
 };
 
-/**
- * Potrosnja po pitanju. Uz stvarne brojeve modela ispisuje i lokalnu procenu,
- * da bi se videlo koliko od ulaza otpada na sistemski prompt a koliko na
- * podatke iz baze.
- */
 function logTokenUsage(details: {
   question: string;
   model: string;
@@ -32,7 +33,7 @@ function logTokenUsage(details: {
   instructions: string;
   history: ChatMessage[];
   answer: string;
-  usage: OpenAI.Responses.ResponseUsage | undefined;
+  usage: Maybe<OpenAI.Responses.ResponseUsage>;
 }): void {
   const { usage, model } = details;
   const promptTokens = countTokens(details.instructions, model);
@@ -65,25 +66,6 @@ class ChatbotService {
     });
   }
 
-  /**
-   * Cinjenice iz baze za postavljeno pitanje. Kad baza nije dostupna, bot
-   * nastavlja bez konteksta umesto da pukne.
-   */
-  private async retrieveContext(
-    question: string,
-    category: ReturnType<typeof resolveCategory>,
-  ): Promise<string> {
-    try {
-      return describeRetrieved(await retrieve(question, category), category);
-    } catch (error) {
-      console.error(
-        "[chatbot] Retrieval failed:",
-        error instanceof Error ? error.message : error,
-      );
-      return "";
-    }
-  }
-
   async analyzeQuestion(
     question: string,
     conversationHistory: ChatMessage[] = [],
@@ -92,16 +74,21 @@ class ChatbotService {
   ): Promise<ServiceResponse> {
     const normalizedQuestion = buildUserMessage(question);
     const model = process.env.OPENAI_MODEL;
-    if (!model) {
+    if (isNotDefined(model)) {
       throw new Error("OPENAI_MODEL environment variable is required.");
     }
 
     const selectedCategory = resolveCategory(category);
-    // Modelu ide samo poslednjih nekoliko poruka; pretrazi ide pitanje
-    // dopunjeno prethodnim kada se na njega oslanja.
-    const history = trimHistory(conversationHistory, model);
+
+    const history = trimHistory(
+      dropRepeatedQuestion(conversationHistory, normalizedQuestion),
+      model,
+    );
     const retrieved = await this.retrieveContext(
-      buildRetrievalQuery(normalizedQuestion, history, model),
+      {
+        lookup: buildRetrievalQuery(normalizedQuestion, history, model),
+        routing: normalizedQuestion,
+      },
       selectedCategory,
     );
     const fullContext = [retrieved, context].filter(Boolean).join("\n\n");
@@ -132,6 +119,21 @@ class ChatbotService {
       answer: response.output_text,
       timestamp: new Date().toISOString(),
     };
+  }
+
+  private async retrieveContext(
+    query: RetrievalQuery,
+    category: ReturnType<typeof resolveCategory>,
+  ): Promise<string> {
+    try {
+      return describeRetrieved(await retrieve(query, category), category);
+    } catch (error) {
+      console.error(
+        "[chatbot] Retrieval failed:",
+        error instanceof Error ? error.message : error,
+      );
+      return "";
+    }
   }
 }
 

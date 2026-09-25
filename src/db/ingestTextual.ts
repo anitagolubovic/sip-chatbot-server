@@ -29,7 +29,6 @@ const CHUNK_COLUMNS = [
   "filters",
 ] as const;
 
-/** Zajednicki oblik zapisa iz oba tekstualna izvora. */
 type TextualRecord = {
   title: string;
   summary: string;
@@ -48,7 +47,6 @@ type TextualDocument = {
 type TextualSource = {
   category: Category;
   file: (academicYear: string) => string;
-  /** Polja koja se cuvaju za kasnije filtriranje pretrage. */
   filters: (record: TextualRecord) => Record<string, unknown>;
 };
 
@@ -73,8 +71,56 @@ const SOURCES: readonly TextualSource[] = [
   },
 ];
 
-function recordHash(record: TextualRecord): string {
-  return createHash("sha256").update(JSON.stringify(record)).digest("hex");
+export async function ingestTextual(
+  requestedYear?: string,
+  options: IngestOptions = {},
+): Promise<void> {
+  const academicYear = requestedYear ?? currentAcademicYear();
+
+  for (const source of SOURCES) {
+    const { path, document, contentHash } = readSourceFile<
+      TextualDocument & DocumentationDocument
+    >(source.file(academicYear));
+
+    if (document.category !== source.category) {
+      throw new Error(
+        `${path} has category "${document.category}", expected "${source.category}".`,
+      );
+    }
+
+    const records = document.records as unknown as TextualRecord[];
+    if (records.length === 0) {
+      throw new Error(`${path} contains no records.`);
+    }
+
+    await withTransaction(async (client) => {
+      const counts = { inserted: 0, updated: 0, unchanged: 0 };
+
+      for (const record of records) {
+        if (options.force) {
+          await client.query(
+            "UPDATE documents SET content_hash = '' WHERE source_url = $1",
+            [record.sourceUrl],
+          );
+        }
+        counts[await storeRecord(client, source, academicYear, record)] += 1;
+      }
+
+      const removed = await client.query(
+        `DELETE FROM documents
+         WHERE category = $1 AND academic_year = $2
+           AND source_url <> ALL($3::text[])`,
+        [source.category, academicYear, records.map((item) => item.sourceUrl)],
+      );
+
+      await recordSourceFile(client, path, contentHash, records.length);
+
+      console.log(
+        `${path}: ${counts.inserted} new, ${counts.updated} updated, ` +
+          `${counts.unchanged} unchanged, ${removed.rowCount ?? 0} removed.`,
+      );
+    });
+  }
 }
 
 async function storeRecord(
@@ -89,7 +135,6 @@ async function storeRecord(
     [record.sourceUrl],
   );
 
-  // Cuvanje vec izracunatih embeddinga: nepromenjen zapis se ne dira.
   if (existing.rows[0]?.content_hash === contentHash) {
     return "unchanged";
   }
@@ -158,57 +203,8 @@ async function storeRecord(
   return existing.rows.length > 0 ? "updated" : "inserted";
 }
 
-export async function ingestTextual(
-  requestedYear?: string,
-  options: IngestOptions = {},
-): Promise<void> {
-  const academicYear = requestedYear ?? currentAcademicYear();
-
-  for (const source of SOURCES) {
-    const { path, document, contentHash } = readSourceFile<
-      TextualDocument & DocumentationDocument
-    >(source.file(academicYear));
-
-    if (document.category !== source.category) {
-      throw new Error(
-        `${path} has category "${document.category}", expected "${source.category}".`,
-      );
-    }
-
-    const records = document.records as unknown as TextualRecord[];
-    if (records.length === 0) {
-      throw new Error(`${path} contains no records.`);
-    }
-
-    await withTransaction(async (client) => {
-      const counts = { inserted: 0, updated: 0, unchanged: 0 };
-
-      for (const record of records) {
-        if (options.force) {
-          await client.query(
-            "UPDATE documents SET content_hash = '' WHERE source_url = $1",
-            [record.sourceUrl],
-          );
-        }
-        counts[await storeRecord(client, source, academicYear, record)] += 1;
-      }
-
-      // Zapisi povuceni sa sajta ne smeju da ostanu u pretrazi.
-      const removed = await client.query(
-        `DELETE FROM documents
-         WHERE category = $1 AND academic_year = $2
-           AND source_url <> ALL($3::text[])`,
-        [source.category, academicYear, records.map((item) => item.sourceUrl)],
-      );
-
-      await recordSourceFile(client, path, contentHash, records.length);
-
-      console.log(
-        `${path}: ${counts.inserted} new, ${counts.updated} updated, ` +
-          `${counts.unchanged} unchanged, ${removed.rowCount ?? 0} removed.`,
-      );
-    });
-  }
+function recordHash(record: TextualRecord): string {
+  return createHash("sha256").update(JSON.stringify(record)).digest("hex");
 }
 
 if (require.main === module) {

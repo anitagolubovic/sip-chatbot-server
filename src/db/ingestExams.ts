@@ -1,12 +1,17 @@
 import "dotenv/config";
 import { createHash } from "crypto";
-import { readFileSync } from "fs";
+import { existsSync, readFileSync } from "fs";
 import path from "path";
 import type { PoolClient } from "pg";
 import { closePool, query, withTransaction } from "./pool";
 import { isDefined } from "../helper";
 import { canonicalCourseNames, toSearchForm } from "../preprocessing";
-import type { ExamScheduleDocument } from "../models/examSchedule";
+import type {
+  ExamScheduleDocument,
+  ExamSlot,
+  ExamSlotsDocument,
+} from "../models/examSchedule";
+import { latinSearchText } from "../scraper/lib/textNormalization";
 import {
   academicYearSlug,
   currentAcademicYear,
@@ -29,11 +34,16 @@ const COLUMNS = [
   "course_name_norm",
   "exam_date",
   "exam_time",
+  "duration_minutes",
+  "rooms",
+  "slot_url",
 ] as const;
 
 const ROWS_PER_BATCH = Math.floor(65535 / COLUMNS.length / 2);
 
-type ExamRow = Maybe<string>[];
+type ExamRow = Maybe<string | number>[];
+
+type SlotSource = ExamSlot & { url: string };
 
 function readDocument(file: string): {
   document: ExamScheduleDocument;
@@ -62,9 +72,58 @@ function readDocument(file: string): {
   };
 }
 
-function buildRows(document: ExamScheduleDocument): {
+function readSlots(
+  file: string,
+): Maybe<{ document: ExamSlotsDocument; contentHash: string }> {
+  // Satnica se objavljuje tek pred rok, pa raspored mora da se upise i bez nje.
+  if (!existsSync(file)) return null;
+
+  const raw = readFileSync(file, "utf8");
+  const document = JSON.parse(raw) as ExamSlotsDocument;
+
+  if (document.category !== "satnica_ispita") {
+    throw new Error(
+      `${file} is not an exam slots document (category: "${document.category}").`,
+    );
+  }
+
+  return {
+    document,
+    contentHash: createHash("sha256").update(raw).digest("hex"),
+  };
+}
+
+// Ista sifra je u satnici nekad latinicom ("3OEZ1O05"), a u rasporedu
+// cirilicom ("3ОЕЗ1О05"), pa se porede transliterovane.
+function slotKey(examPeriod: string, courseCode: string): string {
+  return `${examPeriod}|${latinSearchText(courseCode).replace(/\s+/g, "")}`;
+}
+
+function slotsByKey(
+  document: Maybe<ExamSlotsDocument>,
+): Map<string, SlotSource> {
+  const slots = new Map<string, SlotSource>();
+  // Stranice su poredjane po objavi, pa izmena satnice pregazi original.
+  for (const page of document?.pages ?? []) {
+    for (const slot of page.slots) {
+      slots.set(slotKey(page.examPeriod, slot.courseCode), {
+        ...slot,
+        url: page.url,
+      });
+    }
+  }
+  return slots;
+}
+
+function buildRows(
+  document: ExamScheduleDocument,
+  slots: Map<string, SlotSource>,
+): {
   rows: ExamRow[];
   renamed: number;
+  withSlot: number;
+  movedDates: number;
+  unmatchedSlots: number;
 } {
   const canonical = canonicalCourseNames(
     document.examPeriods.flatMap((period) =>
@@ -72,12 +131,24 @@ function buildRows(document: ExamScheduleDocument): {
     ),
   );
   let renamed = 0;
+  let withSlot = 0;
+  let movedDates = 0;
+  const usedSlots = new Set<string>();
 
   const rows = document.examPeriods.flatMap((period) =>
     period.exams.map((exam): ExamRow => {
       const courseName = canonical.get(exam.courseName) ?? exam.courseName;
       if (courseName !== exam.courseName) renamed += 1;
 
+      const key = slotKey(period.name, exam.courseCode);
+      const slot = slots.get(key);
+      if (slot) {
+        usedSlots.add(key);
+        withSlot += 1;
+        if (slot.date && exam.date && slot.date !== exam.date) movedDates += 1;
+      }
+
+      // Satnica je objavljena posle rasporeda, pa njen datum i vreme imaju prednost.
       return [
         document.academicYear,
         period.name,
@@ -90,13 +161,39 @@ function buildRows(document: ExamScheduleDocument): {
         exam.courseCode,
         courseName,
         toSearchForm(courseName),
-        exam.date ?? null,
-        exam.time ?? null,
+        slot?.date ?? exam.date ?? null,
+        slot?.time ?? exam.time ?? null,
+        slot?.durationMinutes ?? null,
+        slot?.rooms ?? null,
+        slot?.url ?? null,
       ];
     }),
   );
 
-  return { rows, renamed };
+  return {
+    rows,
+    renamed,
+    withSlot,
+    movedDates,
+    unmatchedSlots: slots.size - usedSlots.size,
+  };
+}
+
+async function recordSource(
+  client: PoolClient,
+  sourcePath: string,
+  contentHash: string,
+  recordCount: number,
+): Promise<void> {
+  await client.query(
+    `INSERT INTO source_files (path, sha256, record_count, ingested_at)
+     VALUES ($1, $2, $3, now())
+     ON CONFLICT (path) DO UPDATE
+       SET sha256 = EXCLUDED.sha256,
+           record_count = EXCLUDED.record_count,
+           ingested_at = EXCLUDED.ingested_at`,
+    [sourcePath, contentHash, recordCount],
+  );
 }
 
 async function insertRows(client: PoolClient, rows: ExamRow[]): Promise<void> {
@@ -127,25 +224,42 @@ export async function ingestExams(
   const file = dataFile(
     `polaganje-ispita-${academicYearSlug(academicYear)}.json`,
   );
+  const slotsFile = dataFile(
+    `satnica-ispita-${academicYearSlug(academicYear)}.json`,
+  );
   const sourcePath = path.relative(DATA_DIR, file).replace(/\\/g, "/");
+  const slotsPath = path.relative(DATA_DIR, slotsFile).replace(/\\/g, "/");
 
   const { document, contentHash } = readDocument(file);
+  const slotsSource = readSlots(slotsFile);
 
-  const [previous] = await query<{ sha256: string }>(
-    "SELECT sha256 FROM source_files WHERE path = $1",
-    [sourcePath],
+  const previous = new Map(
+    (
+      await query<{ path: string; sha256: string }>(
+        "SELECT path, sha256 FROM source_files WHERE path = ANY($1)",
+        [[sourcePath, slotsPath]],
+      )
+    ).map((row) => [row.path, row.sha256]),
   );
 
+  // Satnica menja iste redove kao raspored, pa se ponovo upisuje kad se
+  // promeni bilo koji od ta dva fajla.
   if (
     !options.force &&
-    isDefined(previous) &&
-    previous.sha256 === contentHash
+    previous.get(sourcePath) === contentHash &&
+    previous.get(slotsPath) === slotsSource?.contentHash
   ) {
-    console.log(`${sourcePath} is unchanged since the last ingest, skipping.`);
+    console.log(
+      `${sourcePath} and ${slotsPath} are unchanged since the last ingest, skipping.`,
+    );
     return;
   }
 
-  const { rows, renamed } = buildRows(document);
+  const slots = slotsByKey(slotsSource?.document ?? null);
+  const { rows, renamed, withSlot, movedDates, unmatchedSlots } = buildRows(
+    document,
+    slots,
+  );
 
   await withTransaction(async (client) => {
     const deleted = await client.query(
@@ -153,20 +267,20 @@ export async function ingestExams(
       [academicYear],
     );
     await insertRows(client, rows);
-    await client.query(
-      `INSERT INTO source_files (path, sha256, record_count, ingested_at)
-       VALUES ($1, $2, $3, now())
-       ON CONFLICT (path) DO UPDATE
-         SET sha256 = EXCLUDED.sha256,
-             record_count = EXCLUDED.record_count,
-             ingested_at = EXCLUDED.ingested_at`,
-      [sourcePath, contentHash, rows.length],
-    );
+    await recordSource(client, sourcePath, contentHash, rows.length);
+    if (isDefined(slotsSource)) {
+      await recordSource(client, slotsPath, slotsSource.contentHash, slots.size);
+    } else {
+      await client.query("DELETE FROM source_files WHERE path = $1", [
+        slotsPath,
+      ]);
+    }
 
     console.log(
       `${academicYear}: removed ${deleted.rowCount ?? 0}, inserted ${rows.length} exams ` +
         `from ${document.examPeriods.length} exam periods ` +
-        `(${renamed} course names unified).`,
+        `(${renamed} course names unified, ${withSlot} with rooms from the exam slots, ` +
+        `${movedDates} dates corrected by them, ${unmatchedSlots} slots without a matching exam).`,
     );
   });
 }

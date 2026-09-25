@@ -6,39 +6,18 @@ import { Category } from "../models/categories";
 import { Maybe } from "../models/types";
 import { formatDate } from "./questionParsing";
 
-/**
- * Konstanta iz RRF-a (Reciprocal Rank Fusion). Sto je veca, to su razlike
- * izmedju prvih mesta manje bitne; 60 je vrednost iz originalnog rada.
- */
 const RRF_K = 60;
 
-/** Koliko rezultata svaki pretrazivac daje pre spajanja. */
 const CANDIDATES_PER_SEARCH = 20;
 
-/** Koliko delova ide u kontekst. Svaki je do 400 tokena. */
 const MAX_CHUNKS = 3;
 
-/**
- * Kosinusna udaljenost preko koje se vektorski pogodak odbacuje. Bez nje bi
- * pretraga uvek vratila "najblize" delove, i za pitanja koja nemaju veze sa
- * tekstualnim izvorima.
- */
 const STRONG_VECTOR_DISTANCE = 0.45;
 
-/**
- * Gornja granica za vektorsku potvrdu leksickog pogotka. Izmereno na korpusu:
- * tacni pogoci koji zavise od ove provere stoje na 0.52, a najblizi netacni na
- * 0.54, pa je granica tesna i treba je ponovo izmeriti kad se korpus prosiri.
- */
 const SUPPORTING_VECTOR_DISTANCE = 0.53;
 
-/** Najmanja slicnost naslova sa pitanjem da bi trigram pretraga prijavila pogodak. */
 const MIN_TITLE_SIMILARITY = 0.5;
 
-/**
- * Upitne reci i veznici. U tsvectoru se koristi konfiguracija "simple", koja
- * ne poznaje srpske stop-reci, pa bi "kako", "da" i "o" inace ulazili u upit.
- */
 const STOP_WORDS = new Set([
   "a",
   "ako",
@@ -115,14 +94,6 @@ const STOP_WORDS = new Set([
   "hvala",
 ]);
 
-/**
- * OR upit od sadrzajnih reci. plainto_tsquery bi ih spojio sa AND, pa bi jedna
- * nepogodjena rec ponistila ceo upit.
- */
-/**
- * Udeo delova koje jedna rec sme da pogodi da bi ostala u upitu. Na studentskom
- * portalu "student" stoji u 80% tekstova i samo razblazuje rangiranje.
- */
 const MAX_DOCUMENT_FREQUENCY = 0.4;
 
 export function lexicalTerms(normalizedQuestion: string): string[] {
@@ -134,11 +105,6 @@ export function lexicalTerms(normalizedQuestion: string): string[] {
   return [...new Set(words.map(searchStem))];
 }
 
-/**
- * Izbacuje prerasprostranjene reci. Racuna se stvarna frekvencija u korpusu,
- * umesto rucnog spiska, da bi pravilo pratilo podatke. Ako bi sve reci ispale,
- * zadrzava se najredja.
- */
 export async function lexicalQuery(
   normalizedQuestion: string,
 ): Promise<Maybe<string>> {
@@ -163,14 +129,8 @@ export async function lexicalQuery(
   return kept.length > 0 ? kept.map((row) => row.term).join(" | ") : null;
 }
 
-/**
- * Konfiguracija "simple" ne stemuje, pa "praksi" ne bi naslo "praksu". Duze
- * reci se skracuju za dva znaka i traze kao prefiks, sto pokriva srpske
- * padezne nastavke bez pravog stemera.
- */
 function searchStem(word: string): string {
   if (word.length <= 3) return word;
-  // Prefiks nikad kraci od pet znakova: "prak:*" bi hvatao i "praktikum".
   const cut = Math.max(5, word.length - 2);
   return `${word.slice(0, cut)}:*`;
 }
@@ -196,7 +156,6 @@ function getOpenAI(): OpenAI {
   return openai;
 }
 
-/** Pitanje se embeduje u istom normalizovanom obliku kao i delovi teksta. */
 export async function embedQuestion(question: string): Promise<number[]> {
   const response = await getOpenAI().embeddings.create({
     model: EMBEDDING_MODEL,
@@ -205,11 +164,6 @@ export async function embedQuestion(question: string): Promise<number[]> {
   return response.data[0].embedding;
 }
 
-/**
- * Hibridna pretraga: vektorska (znacenje), full-text (tacne reci) i trigram
- * (greske u kucanju). Rezultati se spajaju RRF-om, koji sabira reciprocne
- * pozicije umesto rezultata, pa se tri nesamerljive skale ne moraju kalibrisati.
- */
 export async function searchChunks(
   question: string,
   category: Maybe<Category>,
@@ -351,10 +305,6 @@ export function formatTextContext(hits: TextHit[]): string {
   return `${heading}:\n${blocks.join("\n\n")}`;
 }
 
-/**
- * Nijedan od tri pretrazivaca nije sam po sebi pouzdan na ovom korpusu, pa se
- * pogodak zadrzava ako ima jedan jak signal ili dva slaba koja se poklapaju.
- */
 export function isRelevant(hit: TextHit): boolean {
   const distance = hit.vectorDistance ?? Number.POSITIVE_INFINITY;
 

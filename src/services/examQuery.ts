@@ -2,6 +2,7 @@ import { query } from "../db/pool";
 import { ordinalKey, toSearchForm } from "../preprocessing";
 import { currentAcademicYear } from "../scraper/lib/scraperRuntime";
 import { Maybe } from "../models/types";
+import { isDefined } from "../helper";
 import {
   detectStudyLevel,
   formatDate,
@@ -10,20 +11,14 @@ import {
   type StudyLevelFilter,
 } from "./questionParsing";
 
-// word_similarity poredi naziv sa najboljim isecrkom pitanja, pa "Matematika 1"
-// dobija 0.71 u recenici u kojoj bi obicna similarity dala 0.33.
 const COURSE_MATCH_THRESHOLD = 0.45;
 const EXAM_PERIOD_MATCH_THRESHOLD = 0.5;
 
-// Ako vodeci predmet nije bar ovoliko ispred sledeceg, pitanje je dvosmisleno.
 const AMBIGUITY_MARGIN = 0.15;
 const MAX_CANDIDATES = 4;
 
-// Pitanje o celom roku pogadja 1691 predmet, pa se lista skracuje.
 const MAX_TERMS_WITHOUT_COURSE = 12;
 
-// Redne oznake u pitanju: brojevi i rimski brojevi od dva znaka navise.
-// Samostalno "i" je izostavljeno jer je u srpskom veznik, a ne redna oznaka.
 const QUESTION_ORDINALS = /\d+|\b(?:i{2,3}|iv|vi{0,3}|ix|xi{0,2})\b/g;
 
 export type CourseCandidate = {
@@ -46,6 +41,10 @@ export type ExamTerm = {
   examPeriodLabel: string;
   examDate: string;
   examTime: Maybe<string>;
+  durationMinutes: Maybe<number>;
+  rooms: Maybe<string>;
+  /** Satnica roka je objavljena; termin bez sale tada nije u satnici. */
+  slotsPublished: boolean;
   accreditations: string;
   semesters: string;
 };
@@ -154,6 +153,12 @@ export async function findExamTerms(filters: {
             exam_period_label                                        AS "examPeriodLabel",
             exam_date                                                AS "examDate",
             exam_time                                                AS "examTime",
+            duration_minutes                                         AS "durationMinutes",
+            rooms,
+            EXISTS (SELECT 1 FROM exams slot
+                    WHERE slot.academic_year = $1
+                      AND slot.exam_period = exams.exam_period
+                      AND slot.rooms IS NOT NULL)                    AS "slotsPublished",
             string_agg(DISTINCT accreditation, '/' ORDER BY accreditation) AS accreditations,
             string_agg(DISTINCT semester, ', ' ORDER BY semester)    AS semesters
      FROM exams
@@ -163,8 +168,8 @@ export async function findExamTerms(filters: {
        AND ($4::text IS NULL OR study_level = $4)
        AND ($5::date IS NULL OR exam_date >= $5)
      GROUP BY course_name, study_level, exam_period, exam_period_label,
-              exam_date, exam_time
-     ORDER BY exam_date, course_name
+              exam_date, exam_time, duration_minutes, rooms
+     ORDER BY exam_date, course_name, accreditations
      LIMIT $6`,
     [
       filters.academicYear,
@@ -200,10 +205,6 @@ export type ExamLookup = {
   truncated: boolean;
 };
 
-/**
- * Ceo put od pitanja do konteksta za model: prepoznavanje predmeta i roka,
- * upit nad bazom i formatiranje. Ne poziva model.
- */
 export async function lookupExams(
   question: string,
   academicYear = currentAcademicYear(),
@@ -233,11 +234,8 @@ export async function lookupExams(
     examPeriod: filters.examPeriod,
   };
 
-  // Kad rok nije naveden, studenta zanimaju termini koji tek dolaze. Prosli se
-  // dodaju tek ako buducih nema, da odgovor ne bi ostao prazan.
   const upcoming = filters.examPeriod ? null : today();
 
-  // Redosled pokusaja: prvo najuzi skup, pa se filteri popustaju jedan po jedan.
   const attempts = [
     { studyLevel: filters.studyLevel, fromDate: upcoming },
     { studyLevel: filters.studyLevel, fromDate: null },
@@ -281,10 +279,6 @@ export async function lookupExams(
   };
 }
 
-/**
- * Pretvara rezultat pretrage u deo konteksta za sistemski prompt. Kod dvosmislenog
- * pitanja ne salje termine, nego uputstvo da se zatrazi pojasnjenje.
- */
 export function describeLookup(lookup: ExamLookup): string {
   if (lookup.status === "ambiguous") {
     const names = lookup.filters.candidates
@@ -307,6 +301,13 @@ export function describeLookup(lookup: ExamLookup): string {
       "Svi ovi rokovi su već prošli u ovoj školskoj godini; navedi to.",
     lookup.truncated &&
       "Ovo je samo deo termina u roku; predloži korisniku da pita za konkretan predmet.",
+    lookup.terms.some(
+      (term) => !term.slotsPublished && term.examDate >= today(),
+    ) &&
+      "Za termine bez sale satnica još nije objavljena; sala se objavljuje pred sam rok.",
+    lookup.terms.some((term) => !term.rooms && term.slotsPublished) &&
+      "Termin označen kao da nije u satnici ne postoji u objavljenoj satnici roka; " +
+        "savetuj korisniku da proveri kod predmetnog nastavnika ili studentske službe.",
   ].filter((note): note is string => typeof note === "string");
 
   const heading = lookup.filters.examPeriod
@@ -319,10 +320,6 @@ export function describeLookup(lookup: ExamLookup): string {
   );
 }
 
-/**
- * Kompaktan kontekst za model. Zaglavlje nosi podatke zajednicke svim terminima
- * da se ne bi ponavljali u svakom redu.
- */
 export function formatExamContext(terms: ExamTerm[]): string {
   if (terms.length === 0) return "";
 
@@ -334,12 +331,30 @@ export function formatExamContext(terms: ExamTerm[]): string {
     const [term] = terms;
     lines.push(
       `${term.courseName} (${STUDY_LEVEL_LABELS[term.studyLevel] ?? term.studyLevel}` +
-        `, акредитација ${term.accreditations}, семестар ${term.semesters}):`,
+        `, акредитација ${joinDistinct(terms, "accreditations", "/")}` +
+        `, семестар ${joinDistinct(terms, "semesters", ", ")}):`,
+    );
+    // Akreditacije istog predmeta u istom roku mogu biti u razlicitim salama,
+    // pa se tada svaki red oznacava akreditacijom.
+    const split = new Set(
+      terms
+        .filter(
+          (item, index) =>
+            terms.findIndex(
+              (other) => other.examPeriod === item.examPeriod,
+            ) !== index,
+        )
+        .map((item) => item.examPeriod),
     );
     for (const item of terms) {
       lines.push(
-        `- ${item.examPeriodLabel} рок: ${formatDate(item.examDate)}` +
-          (item.examTime ? ` у ${item.examTime}` : " (време није објављено)"),
+        `- ${item.examPeriodLabel} рок` +
+          (split.has(item.examPeriod)
+            ? ` (акредитација ${item.accreditations})`
+            : "") +
+          `: ${formatDate(item.examDate)}` +
+          (item.examTime ? ` у ${item.examTime}` : " (време није објављено)") +
+          formatSlot(item),
       );
     }
     return lines.join("\n");
@@ -349,8 +364,38 @@ export function formatExamContext(terms: ExamTerm[]): string {
     lines.push(
       `- ${term.courseName} (${STUDY_LEVEL_LABELS[term.studyLevel] ?? term.studyLevel}): ` +
         `${term.examPeriodLabel} рок, ${formatDate(term.examDate)}` +
-        (term.examTime ? ` у ${term.examTime}` : ""),
+        (term.examTime ? ` у ${term.examTime}` : "") +
+        formatSlot(term),
     );
   }
   return lines.join("\n");
+}
+
+function formatSlot(term: ExamTerm): string {
+  const duration = isDefined(term.durationMinutes)
+    ? `, трајање ${formatDuration(term.durationMinutes)}`
+    : "";
+  if (!term.rooms) {
+    return term.slotsPublished ? " (није у објављеној сатници)" : "";
+  }
+  return `${duration}, сала: ${term.rooms}`;
+}
+
+function formatDuration(minutes: number): string {
+  const hours = Math.floor(minutes / 60);
+  const rest = minutes % 60;
+  return [hours > 0 && `${hours} h`, rest > 0 && `${rest} min`]
+    .filter((part): part is string => typeof part === "string")
+    .join(" ");
+}
+
+function joinDistinct(
+  terms: ExamTerm[],
+  field: "accreditations" | "semesters",
+  separator: string,
+): string {
+  const values = new Set(
+    terms.flatMap((term) => term[field].split(separator)),
+  );
+  return [...values].sort().join(separator);
 }

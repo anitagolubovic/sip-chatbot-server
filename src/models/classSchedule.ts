@@ -1,4 +1,5 @@
 import type {
+  FirstYearEntry,
   GroupRooms,
   IndexGroupRange,
 } from "../scraper/lib/firstYearSchedule";
@@ -16,6 +17,7 @@ import { Maybe } from "./types";
 export type {
   ClassType,
   Day,
+  FirstYearEntry,
   GroupRooms,
   IndexGroupRange,
   IndexPage,
@@ -45,6 +47,11 @@ export type ScheduleCounts = {
   lowConfidenceCells: number;
 };
 
+// Rasporedi prve godine OAS prolaze kroz enrichFirstYearEntries, koji dodaje
+// razresene grupe i sale po grupi; ostali rasporedi ta polja ne nose.
+export type ScheduleDocumentEntry = ScheduleEntry &
+  Partial<Pick<FirstYearEntry, "groups" | "roomsByGroup">>;
+
 export type ClassScheduleDocument = DataDocument<"raspored_casova"> & {
   studyLevel: StudyLevel;
   studyLevelLabel: string;
@@ -61,8 +68,8 @@ export type ClassScheduleDocument = DataDocument<"raspored_casova"> & {
   groupRooms?: GroupRooms;
   indexGroups?: { sourceUrl: string; ranges: IndexGroupRange[] };
   warnings: string[];
-  scheduleByDay: Partial<Record<Day, ScheduleEntry[]>>;
-  schedule: ScheduleEntry[];
+  scheduleByDay: Partial<Record<Day, ScheduleDocumentEntry[]>>;
+  schedule: ScheduleDocumentEntry[];
 };
 
 export type ClassScheduleIndexEntry = {
